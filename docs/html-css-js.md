@@ -120,16 +120,17 @@ Avant de coder, il faut préparer un **environnement de travail**.
 4. Créez un fichier `index.html` avec le contenu suivant :
 
     ```bash
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Ma première page web</title>
-</head>
-<body>
-    <h1>Bonjour, le monde !</h1>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ma première page web</title>
+    </head>
+    <body>
+        <h1>Bonjour, le monde !</h1>
+    </body>
+    </html>
+    ```
 
 # Partie 2 : Les bases de HTML
 
