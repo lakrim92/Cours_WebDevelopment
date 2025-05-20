@@ -72,26 +72,27 @@ Chaque cours inclut des **exercices pratiques** et un **projet en groupe**. Les 
 **Comment tester les exemples**
 
 ### 1. Télécharger
-    . Sur GitHub, naviguez vers un fichier (ex. : html-css-js/exercises/partie2/exercice1.html).
-    . Cliquez sur “Download raw file” pour le sauvegarder.
+
+. Sur GitHub, naviguez vers un fichier (ex. : html-css-js/exercises/partie2/exercice1.html).
+. Cliquez sur “Download raw file” pour le sauvegarder.
 
 ### 2. Tester
 
-***. HTML et JavaScript :***
+**. HTML et JavaScript :**
 
-    . Ouvrez le fichier .html (ex. : index.html) dans un navigateur (double-clic).
-    . Vérifiez la console du navigateur (clic droit > Inspecter > Console) pour déboguer.
+. Ouvrez le fichier .html (ex. : index.html) dans un navigateur (double-clic).
+. Vérifiez la console du navigateur (clic droit > Inspecter > Console) pour déboguer.
 
-***. PHP :***
+**. PHP :**
 
-    . Placez les fichiers dans un dossier (ex. : php/project/public).
-    . Ouvrez un terminal dans ce dossier et lancez un serveur PHP :
+. Placez les fichiers dans un dossier (ex. : php/project/public).
+. Ouvrez un terminal dans ce dossier et lancez un serveur PHP :
     ```
 cd php/project/public
 php -S localhost:8200 -t .
     ```
 
-    . Ouvrez http://localhost:8200 dans un navigateur.
+. Ouvrez http://localhost:8200 dans un navigateur.
 
 ### 3. Éditer
 
@@ -103,18 +104,18 @@ Pour comprendre comment vos travaux seront évalués, consultez les barèmes sur
 
 ### . HTML, CSS, JavaScript
 
-    . Exercices
-    . Projet en groupe
+. Exercices
+. Projet en groupe
 
 ### . PHP
 
-    . Exercices
-    . Projet en groupe
+. Exercices
+. Projet en groupe
 
 ### . JavaScript
 
-    . Exercices
-    . Projet en groupe
+. Exercices
+. Projet en groupe
 
 Chaque barème détaille les critères (ex. : correction, respect des consignes) et les points attribués.
 
