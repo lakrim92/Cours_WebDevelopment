@@ -105,18 +105,18 @@ Pour comprendre comment vos travaux seront évalués, consultez les barèmes sur
 
 ### . HTML, CSS, JavaScript
 
-. Exercices
-. Projet en groupe
+- Exercices
+- Projet en groupe
 
 ### . PHP
 
-. Exercices
-. Projet en groupe
+- Exercices
+- Projet en groupe
 
 ### . JavaScript
 
-. Exercices
-. Projet en groupe
+- Exercices
+- Projet en groupe
 
 Chaque barème détaille les critères (ex. : correction, respect des consignes) et les points attribués.
 
@@ -129,8 +129,8 @@ Pour soumettre vos exercices ou projets en groupe (ex. : site vitrine, ToDoList)
 3. **Créer un dépôt** : Faites un dépôt (ex. : MonProjetWeb) pour vos travaux.
 4. **Pousser vos projets** :
 
-    . Créez vos fichiers (ex. : index.html, style.css, script.js).
-    . Utilisez ces commandes dans un terminal :
+    - Créez vos fichiers (ex. : index.html, style.css, script.js).
+    - Utilisez ces commandes dans un terminal :
 
     ```
     git add .
@@ -149,9 +149,9 @@ Pour soumettre vos exercices ou projets en groupe (ex. : site vitrine, ToDoList)
 
 **. Pour lire les cours :**  Un navigateur moderne (Chrome, Firefox, Edge).
 **. Pour tester localement :**
-    . Visual Studio Code (code.visualstudio.com).
-    . Git (git-scm.com) pour cloner ou pousser.
-    . PHP 7.4+ (php.net) pour le cours PHP.
+    - Visual Studio Code (code.visualstudio.com).
+    - Git (git-scm.com) pour cloner ou pousser.
+    - PHP 7.4+ (php.net) pour le cours PHP.
 
 **. Pour soumettre vos projets :** Compte GitHub et Git installé.
 
@@ -166,17 +166,17 @@ Pour soumettre vos exercices ou projets en groupe (ex. : site vitrine, ToDoList)
 ### Ressources supplémentaires
 
 **. Git et GitHub :**
-    . Documentation Git
-    . GitHub Docs
-    . GitHub Learning Lab (cours interactifs)
+    - Documentation Git
+    - GitHub Docs
+    - GitHub Learning Lab (cours interactifs)
 
 **. Développement web :**
-    . MDN Web Docs : Référence pour HTML, CSS, JavaScript, PHP.
-    . W3Schools : Tutoriels simples.
+    - MDN Web Docs : Référence pour HTML, CSS, JavaScript, PHP.
+    - W3Schools : Tutoriels simples.
 
 **. Outils :**
-    . Visual Studio Code
-    . PHP
+    - Visual Studio Code
+    - PHP
 
 ### Licence
 
@@ -186,7 +186,7 @@ Ce dépôt est sous licence MIT pour un usage éducatif. Vous pouvez consulter e
 
 Pour toute question :
 
-. Ouvrez une Issue sur GitHub.
-. Contactez moi par email ou votre plateforme de classe.
+- Ouvrez une Issue sur GitHub.
+- Contactez moi par email ou votre plateforme de classe.
 
 Bon apprentissage et amusez-vous à coder !
