@@ -74,20 +74,20 @@ Chaque cours inclut des **exercices pratiques** et un **projet en groupe**
 
 ### 1. Télécharger
 
-. Sur GitHub, naviguez vers un fichier (ex. : html-css-js/exercises/partie2/exercice1.html).
-. Cliquez sur “Download raw file” pour le sauvegarder.
+- Sur GitHub, naviguez vers un fichier (ex. : html-css-js/exercises/partie2/exercice1.html).
+- Cliquez sur “Download raw file” pour le sauvegarder.
 
 ### 2. Tester
 
 **. HTML et JavaScript :**
 
-. Ouvrez le fichier .html (ex. : index.html) dans un navigateur (double-clic).
-. Vérifiez la console du navigateur (clic droit > Inspecter > Console) pour déboguer.
+- Ouvrez le fichier .html (ex. : index.html) dans un navigateur (double-clic).
+- Vérifiez la console du navigateur (clic droit > Inspecter > Console) pour déboguer.
 
 **. PHP :**
 
-. Placez les fichiers dans un dossier (ex. : php/project/public).
-. Ouvrez un terminal dans ce dossier et lancez un serveur PHP :
+- Placez les fichiers dans un dossier (ex. : php/project/public).
+- Ouvrez un terminal dans ce dossier et lancez un serveur PHP :
     ```
 cd php/project/public
 php -S localhost:8200 -t .
