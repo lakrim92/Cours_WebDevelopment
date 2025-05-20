@@ -54,10 +54,12 @@ Si vous voulez travailler sur votre ordinateur (ex. : tester les exemples de cod
    ```
 
 Ouvrez le dossier WebDevelopmentCourses dans Visual Studio Code :
+
     ```bash
     tapez la commande
     codium Cours_WebDevelopment
     ```
+
 Consultez les fichiers Markdown (docs/html-css-js.md) et les exemples (html-css-js/project/index.html).
 
 **Note** : Vous ne pouvez pas modifier ce dépôt (lecture seule). Pour vos propres projets, suivez les instructions ci-dessous.
