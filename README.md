@@ -63,7 +63,8 @@ Consultez les fichiers Markdown (docs/html-css-js.md) et les exemples (html-css-
 
 ## Consulter les exemples de code
 
-Chaque cours inclut des **exercices pratiques** et un **projet en groupe**. Les fichiers sont disponibles sur GitHub :
+Chaque cours inclut des **exercices pratiques** et un **projet en groupe**
+. Les fichiers sont disponibles sur GitHub :
     . Introduction à GitHub : Exemples
     . HTML, CSS, JavaScript : Exercices et projet
     . PHP : Exercices et projet
