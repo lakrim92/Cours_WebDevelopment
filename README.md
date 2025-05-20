@@ -54,6 +54,7 @@ Si vous voulez travailler sur votre ordinateur (ex. : tester les exemples de cod
    ```
 
 Ouvrez le dossier WebDevelopmentCourses dans Visual Studio Code :
+
     ```bash
     codium Cours_WebDevelopment
     ```
