@@ -23,6 +23,7 @@ Dans `index.html`, ajoutez :
 
 ```html
 <img src="https://picsum.photos/150" alt="Image aléatoire">
+```
 
 - Ajoutez un attribut alt décrivant l’image.
 
