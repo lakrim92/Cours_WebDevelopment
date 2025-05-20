@@ -1,0 +1,41 @@
+# Ignorer les fichiers/dossiers temporaires et de cache
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+
+# Ignorer les dossiers de dépendances locales
+node_modules/
+vendor/
+
+# Ignorer les fichiers de configuration spécifiques à l'environnement
+.env
+*.env
+config.local.php
+local.config.js
+
+# Ignorer les fichiers de build ou de production
+dist/
+build/
+out/
+
+# Ignorer les fichiers spécifiques à certains IDE/éditeurs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorer les fichiers de cache ou de données locales
+.DS_Store
+Thumbs.db
+*.cache
+
+# Ignorer les dossiers/fichiers spécifiques au projet
+/docs/_build/  # Si vous utilisez un générateur de documentation
+/docs/_site/   # Pour des outils comme Jekyll ou MkDocs
+*.bak
+*.backup
+
+# Exceptions spécifiques (si nécessaire)
+# Par exemple, si vous voulez inclure un fichier spécifique dans un dossier ignoré :
