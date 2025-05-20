@@ -89,8 +89,6 @@ Chaque cours inclut des **exercices pratiques** et un **projet en groupe**
 - Placez les fichiers dans un dossier (ex. : php/project/public).
 - Ouvrez un terminal dans ce dossier et lancez un serveur PHP :
 
-    ```
-
 cd php/project/public
 php -S localhost:8200 -t .
     ```
