@@ -188,11 +188,13 @@ Résultat : Affiche un titre "Bienvenue !" et un paragraphe.
         <li>Jeux vidéo</li>
         <li><a href="https://example.com">Visiter un site</a></li>
     </ul>
+    ```
 
 Résultat : Affiche une liste à puces avec un lien cliquable.
 ### 3. Image :
 
-    ```
+    ```html
     <img src="https://picsum.photos/200" alt="Image aléatoire">
+    ```
 
-    Résultat : Affiche une image de 200x200 pixels.
+Résultat : Affiche une image de 200x200 pixels.
