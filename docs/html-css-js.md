@@ -26,16 +26,16 @@ Le web a transformé la façon dont nous communiquons, apprenons et partageons d
 ## L'évolution des langages
 
 - **HTML (1990)** : HTML, ou *HyperText Markup Language*, est créé par Tim Berners-Lee pour structurer le contenu du web.  
-  La première version (HTML 1.0) permettait d'afficher du texte, des titres et des liens.  
+    La première version (HTML 1.0) permettait d'afficher du texte, des titres et des liens.  
   Aujourd'hui, **HTML5** (la version actuelle) permet d'ajouter des vidéos, des animations et bien plus.  
 
 - **CSS (1996)** : *Cascading Style Sheets* arrive pour rendre les sites plus beaux.  
-  Avant CSS, les pages web étaient fades et difficiles à styliser.  
+    Avant CSS, les pages web étaient fades et difficiles à styliser.  
   CSS a permis de **séparer le contenu (HTML) du design** (couleurs, polices, mise en page).  
 
 - **JavaScript (1995)** : Créé par Brendan Eich, JavaScript a rendu le web interactif.  
-  Avant, les sites étaient statiques (comme un livre).  
-  Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations.  
+    Avant, les sites étaient statiques (comme un livre).  
+    Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations.  
 
 ## Le web aujourd'hui
 
@@ -64,34 +64,34 @@ Voici une sélection d’outils en ligne gratuits et interactifs qui rendent l�
 ## Outils recommandés
 
 1. **Flexbox Froggy** - [flexboxfroggy.com](https://flexboxfroggy.com)  
-   Un jeu interactif pour apprendre les concepts de CSS Flexbox.  
+    Un jeu interactif pour apprendre les concepts de CSS Flexbox.  
    **Activité** : Essayez les 3 premiers niveaux et discutez en groupe de ce que vous avez appris sur `justify-content` ou `align-items`.
 
 2. **CSS Grid Garden** - [cssgridgarden.com](https://cssgridgarden.com)  
-   Un autre jeu amusant pour apprendre CSS Grid.  
+    Un autre jeu amusant pour apprendre CSS Grid.  
    **Activité** : Complétez un niveau et partagez comment vous avez utilisé `grid-template-columns`.
 
 3. **CodePen** - [codepen.io](https://codepen.io)  
-   Une plateforme pour coder HTML, CSS et JavaScript dans un éditeur en ligne.  
+    Une plateforme pour coder HTML, CSS et JavaScript dans un éditeur en ligne.  
    **Activité** : Créez un compte, recréez votre page `index.html` sur CodePen et partagez-la avec un camarade.
 
 4. **W3Schools** - [w3schools.com](https://www.w3schools.com)  
-   Un site avec des tutoriels interactifs.  
+    Un site avec des tutoriels interactifs.  
    **Activité** : Suivez un tutoriel sur les sélecteurs CSS et testez vos connaissances.
 
 5. **FreeCodeCamp** - [freecodecamp.org](https://www.freecodecamp.org)  
-   Une plateforme gratuite avec des cours structurés et des projets pratiques.  
+    Une plateforme gratuite avec des cours structurés et des projets pratiques.  
    **Activité** : Commencez le module *Responsive Web Design* et complétez une leçon HTML ou CSS.
 
 6. **CSS Diner** - [css-diner.com](https://css-diner.com)  
-   Un jeu pour apprendre les sélecteurs CSS.  
+    Un jeu pour apprendre les sélecteurs CSS.  
    **Activité** : Terminez les 5 premiers niveaux et expliquez ce que fait le sélecteur `:nth-child`.
 
 ## 💡 Conseils pour utiliser ces outils
 
-- Pratiquez régulièrement : 10 à 15 minutes par jour suffisent.  
-- Partagez vos progrès : Obtenez des retours !  
-- Expérimentez : Modifiez le code, testez des idées !
+- **Pratiquez régulièrement** : 10 à 15 minutes par jour suffisent.  
+- **Partagez vos progrès** : Obtenez des retours !  
+- **Expérimentez** : Modifiez le code, testez des idées !
 
 ---
 
@@ -102,15 +102,15 @@ Avant de coder, il faut préparer un **environnement de travail**.
 ## 1.1 Outils nécessaires
 
 - **Éditeur de texte** : Visual Studio Code (recommandé)  
-  - Téléchargez sur : [code.visualstudio.com](https://code.visualstudio.com)  
-  - Installez-le sur votre ordinateur.
+    - Téléchargez sur : [code.visualstudio.com](https://code.visualstudio.com)  
+    - Installez-le sur votre ordinateur.
 
 - **Navigateur web** : Google Chrome, Firefox, etc.  
-  - Utilisez l’inspecteur (clic droit > "Inspecter") pour voir comment fonctionne le code.
+    - Utilisez l’inspecteur (clic droit > "Inspecter") pour voir comment fonctionne le code.
 
 - **Dossier de travail** :  
-  - Créez un dossier nommé `mon_premier_site`.  
-  - Créez-y des fichiers `.html`, `.css` et `.js`.
+    - Créez un dossier nommé `mon_premier_site`.  
+    - Créez-y des fichiers `.html`, `.css` et `.js`.
 
 ## 1.2 🛠️ Activité : Configurer son environnement
 
@@ -119,7 +119,7 @@ Avant de coder, il faut préparer un **environnement de travail**.
 3. Ouvrez ce dossier dans VS Code (Fichier > Ouvrir un dossier).  
 4. Créez un fichier `index.html` avec le contenu suivant :
 
-```html
+```bash
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -139,30 +139,30 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 ## 2.1 Concepts clés
 
 - **Balises** : Délimitées par `<` et `>`, souvent ouvertes et fermées (ex : `<p>` et `</p>`).  
-  Certaines sont auto-fermantes : `<img />`.
+    Certaines sont auto-fermantes : `<img />`.
 
 - **Attributs** : Fournissent des infos supplémentaires.  
-  Exemple : `<a href="https://example.com">`.
+    Exemple : `<a href="https://example.com">`.
 
 - **Structure HTML typique** :
-  - `<!DOCTYPE html>` : Déclare HTML5.
-  - `<html lang="fr">` : Langue du document.
-  - `<head>` : Métadonnées (titre, liens).
-  - `<body>` : Contenu visible.
+    - `<!DOCTYPE html>` : Déclare HTML5.
+    - `<html lang="fr">` : Langue du document.
+    - `<head>` : Métadonnées (titre, liens).
+    - `<body>` : Contenu visible.
 
 - **Balises courantes** :
-  - `<h1>` à `<h6>` : Titres.
-  - `<p>` : Paragraphe.
-  - `<a>` : Lien hypertexte.
-  - `<img>` : Image.
-  - `<ul>` / `<li>` : Liste à puces.
-  - `<div>` : Conteneur.
+    - `<h1>` à `<h6>` : Titres.
+    - `<p>` : Paragraphe.
+    - `<a>` : Lien hypertexte.
+    - `<img>` : Image.
+    - `<ul>` / `<li>` : Liste à puces.
+    - `<div>` : Conteneur.
 
 ## ✏️ 2.2 Exemples
 
 ### 1. Structure de base
 
-```html
+```bash
 <!DOCTYPE html>
 <html lang="fr">
 <head>
