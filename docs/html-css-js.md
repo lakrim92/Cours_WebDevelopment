@@ -1,28 +1,38 @@
 # Support de Cours : Introduction à HTML, CSS et JavaScript
-### Introduction : Bienvenue dans le monde du développement web !
+## Introduction : Bienvenue dans le monde du développement web !
 Ce cours est conçu pour vous apprendre à créer des sites web en utilisant **HTML, CSS** et **JavaScript**. Nous partirons de zéro, sans connaissances préalables, et vous serez guidés pas à pas pour construire votre première page web interactive. Le cours est interactif : vous allez coder, expérimenter et collaborer !
 
-## Objectifs du cours
+### Objectifs du cours
     • Comprendre les bases de HTML, CSS et JavaScript. 
     • Configurer un environnement de développement simple. 
     • Créer une page web interactive. 
     • Travailler en groupe sur des exercices pratiques. 
 
-### Partie 0 : Une brève histoire des sites web et de leurs langages
+## Partie 0 : Une brève histoire des sites web et de leurs langages
 Avant de plonger dans le code, comprenons d'où viennent les sites web et les langages que nous allons utiliser. Le web a transformé la façon dont nous communiquons, apprenons et partageons des informations !
-Les débuts du web
-    • 1989 : Tim Berners-Lee, un scientifique britannique, invente le World Wide Web au CERN (Suisse). Son idée était de créer un système pour partager des informations entre chercheurs via des ordinateurs connectés. 
-    • 1990 : Le premier site web est créé. Il était très simple, avec du texte et des liens hypertextes (pas d'images ni de couleurs !). 
-L'évolution des langages
-    • HTML (1990) : HTML, ou HyperText Markup Language, est créé par Tim Berners-Lee pour structurer le contenu du web. La première version (HTML 1.0) permettait d'afficher du texte, des titres et des liens. Aujourd'hui, HTML5 (la version actuelle) permet d'ajouter des vidéos, des animations et bien plus. 
-    • CSS (1996) : Cascading Style Sheets arrive pour rendre les sites plus beaux. Avant CSS, les pages web étaient fades et difficiles à styliser. CSS a permis de séparer le contenu (HTML) du design (couleurs, polices, mise en page). 
-    • JavaScript (1995) : Créé par Brendan Eich, JavaScript a rendu le web interactif. Avant, les sites étaient statiques (comme un livre). Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations. 
-Le web aujourd'hui
+
+### Les débuts du web
+    • **1989** : **Tim Berners-Lee**, un scientifique britannique, invente le **World Wide Web** au **CERN** (Suisse). Son idée était de créer un système pour partager des informations entre chercheurs via des ordinateurs connectés.
+
+    • **1990** : Le premier site web est créé. Il était très simple, avec du texte et des liens hypertextes (pas d'images ni de couleurs !).
+
+### L'évolution des langages
+    • **HTML (1990)** : HTML, ou HyperText Markup Language, est créé par Tim Berners-Lee pour structurer le contenu du web. La première version (HTML 1.0) permettait d'afficher du texte, des titres et des liens. Aujourd'hui, HTML5 (la version actuelle) permet d'ajouter des vidéos, des animations et bien plus.
+
+    • **CSS (1996)** : Cascading Style Sheets arrive pour rendre les sites plus beaux. Avant CSS, les pages web étaient fades et difficiles à styliser. CSS a permis de séparer le contenu (HTML) du design (couleurs, polices, mise en page). 
+
+    • **JavaScript (1995)** : Créé par Brendan Eich, JavaScript a rendu le web interactif. Avant, les sites étaient statiques (comme un livre). Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations. 
+
+    ### Le web aujourd'hui
 Aujourd'hui, presque tout ce que vous faites en ligne (réseaux sociaux, jeux, streaming) repose sur HTML, CSS et JavaScript. Ces trois langages sont les piliers du développement web :
-    • HTML donne la structure (comme les murs d'une maison). 
-    • CSS ajoute le style (comme la peinture et la décoration). 
-    • JavaScript apporte l'interactivité (comme les interrupteurs et les gadgets). 
-Activité : Réflexion en groupe
+
+    • **HTML** donne la structure (comme les murs d'une maison). 
+
+    • **CSS** ajoute le style (comme la peinture et la décoration). 
+
+    • **JavaScript** apporte l'interactivité (comme les interrupteurs et les gadgets). 
+
+    ### Activité : Réflexion en groupe
     • Regardez un site web simple (ex. : wikipedia.org). Essayez d'imaginer :
         ◦ Quel rôle joue HTML ? (Indice : cherchez la structure, comme les titres ou les paragraphes.) 
         ◦ Quel rôle joue CSS ? (Indice : regardez les couleurs et la mise en page.) 
