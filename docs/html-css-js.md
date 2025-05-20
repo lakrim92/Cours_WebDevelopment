@@ -119,7 +119,7 @@ Avant de coder, il faut préparer un **environnement de travail**.
 3. Ouvrez ce dossier dans VS Code (Fichier > Ouvrir un dossier).  
 4. Créez un fichier `index.html` avec le contenu suivant :
 
-    ```bash
+    ```html
     <!DOCTYPE html>
     <html lang="fr">
     <head>
