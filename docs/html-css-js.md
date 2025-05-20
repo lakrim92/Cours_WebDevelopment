@@ -196,3 +196,7 @@ Résultat : Affiche une liste à puces avec un lien cliquable.
     <img src="https://picsum.photos/200" alt="Image aléatoire">
 
 Résultat : Affiche une image de 200x200 pixels.
+
+## 2.3 Exercices pratiques
+
+À vous de jouer : [Exercices](./grading/html-css-js-exercises.md) | [Projet](./grading/html-css-js-project.md)
