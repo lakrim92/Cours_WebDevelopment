@@ -147,34 +147,34 @@ Pour soumettre vos exercices ou projets en groupe (ex. : site vitrine, ToDoList)
 
 ### Prérequis
 
-**. Pour lire les cours :**  Un navigateur moderne (Chrome, Firefox, Edge).
-**. Pour tester localement :**
+**- Pour lire les cours :**  Un navigateur moderne (Chrome, Firefox, Edge).
+**- Pour tester localement :**
     - Visual Studio Code (code.visualstudio.com).
     - Git (git-scm.com) pour cloner ou pousser.
     - PHP 7.4+ (php.net) pour le cours PHP.
 
-**. Pour soumettre vos projets :** Compte GitHub et Git installé.
+**- Pour soumettre vos projets :** Compte GitHub et Git installé.
 
 ### Conseils pour réussir
 
-**. Commencez par GitHub Pages :** Lisez les cours en ligne pour vous familiariser.
-**. Suivez le cours GitHub :** Il est conçu pour les débutants et explique tout pas à pas.
-**. Testez les exemples :** Téléchargez les fichiers et essayez-les avant de créer vos propres projets.
-**. Déboguez :** Utilisez la console du navigateur (Inspecter > Console) pour repérer les erreurs dans les projets HTML/JavaScript.
-**. Demandez de l’aide :** Si vous bloquez, contactez votre professeur ou ouvrez une Issue.
+**- Commencez par GitHub Pages :** Lisez les cours en ligne pour vous familiariser.
+**- Suivez le cours GitHub :** Il est conçu pour les débutants et explique tout pas à pas.
+**- Testez les exemples :** Téléchargez les fichiers et essayez-les avant de créer vos propres projets.
+**- Déboguez :** Utilisez la console du navigateur (Inspecter > Console) pour repérer les erreurs dans les projets HTML/JavaScript.
+**- Demandez de l’aide :** Si vous bloquez, contactez votre professeur ou ouvrez une Issue.
 
 ### Ressources supplémentaires
 
-**. Git et GitHub :**
+**- Git et GitHub :**
     - Documentation Git
     - GitHub Docs
     - GitHub Learning Lab (cours interactifs)
 
-**. Développement web :**
+**- Développement web :**
     - MDN Web Docs : Référence pour HTML, CSS, JavaScript, PHP.
     - W3Schools : Tutoriels simples.
 
-**. Outils :**
+**- Outils :**
     - Visual Studio Code
     - PHP
 
