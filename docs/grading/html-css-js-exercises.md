@@ -29,17 +29,25 @@ Dans `index.html`, ajoutez :
 
 - Testez dans le navigateur.
 
-❓ Que se passe-t-il si vous changez la taille (par exemple /150 à /300) ?
+**❓ Que se passe-t-il si vous changez la taille (par exemple /150 à /300) ?**
 
 ## 3. Exercice 3 : Organiser avec un div
 
 - Créez un <div> contenant :
 
-    - Un <h2> : "À propos"
+    - Un titre
+    
+    ```html
+    <h2> : "À propos"
+    ```
 
-    - Un <p> : une courte phrase sur vous.
+    - Un paragraphe
+    
+    ```html
+    <p> : une courte phrase sur vous.
+    ```
 
-- Ajoutez un deuxième <div> contenant une liste <ul> de 2 centres d’intérêt.
+- Ajoutez une deuxième `<div>` contenant une liste `<ul>` de 2 centres d’intérêt.
 
 ```html
 <div>
