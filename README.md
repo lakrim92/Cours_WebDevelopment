@@ -19,6 +19,7 @@ Approfondissez JavaScript pour créer des applications interactives (ex. : mode 
 ## Comment accéder aux cours
 
 Vous pouvez consulter les cours de deux façons principales :
+
 **1. Via GitHub Pages (recommandé)**
 
 - Ouvrez [votre-utilisateur.github.io/WebDevelopmentCourses](https://lakrim92.github.io/Cours_WebDevelopment).
