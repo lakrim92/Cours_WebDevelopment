@@ -22,7 +22,7 @@ Vous pouvez consulter les cours de deux façons principales :
 
 **1. Via GitHub Pages (recommandé)**
 
-- Ouvrez [votre-utilisateur.github.io/WebDevelopmentCourses](https://lakrim92.github.io/Cours_WebDevelopment).
+- Ouvrez [https://lakrim92.github.io/Cours_WebDevelopment](https://lakrim92.github.io/Cours_WebDevelopment).
 - Utilisez le menu de la page d’accueil pour naviguer vers :
   - [Introduction à GitHub](./docs/github-intro.md)
   - [HTML, CSS, JavaScript](./docs/html-css-js.md)
@@ -54,7 +54,7 @@ Si vous voulez travailler sur votre ordinateur (ex. : tester les exemples de cod
    ```
 
 Ouvrez le dossier WebDevelopmentCourses dans Visual Studio Code :
-    ```
+    ```bash
     codium Cours_WebDevelopment
     ```
 
