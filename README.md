@@ -13,14 +13,13 @@ Découvrez comment créer des sites web interactifs avec HTML (structure), CSS (
 
 **Introduction à PHP** ([Lire sur GitHub Pages](./docs/php.md))Développez des applications web dynamiques avec PHP, en apprenant à gérer des formulaires, sessions, et données. Inclut des exercices et un projet en groupe (ToDoList).
 
-**Introduction à PHP**([Lire sur GitHub Pages](./docs/javascript.md))
+**Introduction à PHP** ([Lire sur GitHub Pages](./docs/javascript.md))
 Approfondissez JavaScript pour créer des applications interactives (ex. : mode sombre, stockage local) en suivant la méthode des 3S (Structurer, Séparer, Simplifier). Inclut des exercices et un projet en groupe (ToDoList).
 
 ## Comment accéder aux cours
 
 Vous pouvez consulter les cours de deux façons principales :
-
-### 1. Via GitHub Pages (recommandé)
+**1. Via GitHub Pages (recommandé)**
 
 - Ouvrez [votre-utilisateur.github.io/WebDevelopmentCourses](https://lakrim92.github.io/Cours_WebDevelopment).
 - Utilisez le menu de la page d’accueil pour naviguer vers :
