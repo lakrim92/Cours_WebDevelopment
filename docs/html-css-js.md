@@ -163,15 +163,16 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 ### 1. Structure de base
 
-```bash
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Mon site</title>
-</head>
-<body>
-    <h1>Bienvenue !</h1>
-    <p>Ceci est ma première page web.</p>
-</body>
-</html>
+    ```html
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon site</title>
+    </head>
+    <body>
+        <h1>Bienvenue !</h1>
+        <p>Ceci est ma première page web.</p>
+    </body>
+    </html>
+    ```
