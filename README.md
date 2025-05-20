@@ -67,10 +67,10 @@ Chaque cours inclut des **exercices pratiques** et un **projet en groupe**
 
 . Les fichiers sont disponibles sur GitHub :
 
-    - Introduction à GitHub : Exemples
-    - HTML, CSS, JavaScript : Exercices et projet
-    - PHP : Exercices et projet
-    - JavaScript : Exercices et projet
+- Introduction à GitHub : Exemples
+- HTML, CSS, JavaScript : Exercices et projet
+- PHP : Exercices et projet
+- JavaScript : Exercices et projet
 **Comment tester les exemples**
 
 ### 1. Télécharger
