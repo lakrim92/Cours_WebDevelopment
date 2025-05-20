@@ -19,9 +19,8 @@ Avant de plonger dans le code, comprenons d'où viennent les sites web et les la
 Le web a transformé la façon dont nous communiquons, apprenons et partageons des informations !
 
 ## Les débuts du web
-
 - **1989** : Tim Berners-Lee, un scientifique britannique, invente le World Wide Web au CERN (Suisse).  
-  Son idée était de créer un système pour partager des informations entre chercheurs via des ordinateurs connectés.  
+    Son idée était de créer un système pour partager des informations entre chercheurs via des ordinateurs connectés.  
 - **1990** : Le premier site web est créé. Il était très simple, avec du texte et des liens hypertextes (pas d'images ni de couleurs !).  
 
 ## L'évolution des langages
