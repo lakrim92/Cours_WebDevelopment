@@ -181,20 +181,18 @@ Résultat : Affiche un titre "Bienvenue !" et un paragraphe.
 
 ### 2. Liste et lien :
 
-```html
-<h2>Mes hobbies</h2>
-<ul>
-    <li>Lecture</li>
-    <li>Jeux vidéo</li>
-    <li><a href="https://example.com">Visiter un site</a></li>
-</ul>
-```
+    <h2>Mes hobbies</h2>
+    <ul>
+        <li>Lecture</li>
+        <li>Jeux vidéo</li>
+        <li><a href="https://example.com">Visiter un site</a></li>
+    </ul>
+
 
 Résultat : Affiche une liste à puces avec un lien cliquable.
+
 ### 3. Image :
 
-```html
-<img src="https://picsum.photos/200" alt="Image aléatoire">
-```
+    <img src="https://picsum.photos/200" alt="Image aléatoire">
 
 Résultat : Affiche une image de 200x200 pixels.
