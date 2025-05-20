@@ -42,7 +42,7 @@ Vous pouvez consulter les cours de deux façons principales :
 Cliquez sur un fichier (ex. : docs/html-css-js.md) pour lire, ou sur html-css-js/exercises/partie2/exercice1.html pour voir le code.
 Avantage : Accédez aux fichiers sources pour les télécharger.
 
-## 3. Localement (optionnel)
+### 3. Localement (optionnel)
 
 Si vous voulez travailler sur votre ordinateur (ex. : tester les exemples de code) :
 
@@ -54,8 +54,7 @@ Si vous voulez travailler sur votre ordinateur (ex. : tester les exemples de cod
    ```
 
 Ouvrez le dossier WebDevelopmentCourses dans Visual Studio Code :
-
-    ```bash
+    ```
     codium Cours_WebDevelopment
     ```
 
@@ -71,8 +70,7 @@ Chaque cours inclut des **exercices pratiques** et un **projet en groupe**. Les 
 . HTML, CSS, JavaScript : Exercices et projet
 . PHP : Exercices et projet
 . JavaScript : Exercices et projet
-
-***Comment tester les exemples***
+**Comment tester les exemples**
 
 ### 1. Télécharger :
 
