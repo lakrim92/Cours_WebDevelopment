@@ -1,6 +1,6 @@
 # Cours de Développement Web
 
-Bienvenue dans **WebDevelopmentCourses**, un dépôt regroupant des cours interactifs pour apprendre le développement web, conçus pour des débutants. Ces cours sont accessibles [via GitHub Pages] (https://lakrim92.github.io/Cours_WebDevelopment
+Bienvenue dans **WebDevelopmentCourses**, un dépôt regroupant des cours interactifs pour apprendre le développement web, conçus pour des débutants. Ces cours sont accessibles [via GitHub Pages] (<https://lakrim92.github.io/Cours_WebDevelopment>
 ) pour une lecture facile dans votre navigateur, ou directement sur GitHub pour explorer les exemples de code.
 
 ## Cours disponibles
@@ -72,19 +72,19 @@ Chaque cours inclut des **exercices pratiques** et un **projet en groupe**. Les 
 . JavaScript : Exercices et projet
 **Comment tester les exemples**
 
-### 1. Télécharger :
+### 1. Télécharger
 
     . Sur GitHub, naviguez vers un fichier (ex. : html-css-js/exercises/partie2/exercice1.html).
     . Cliquez sur “Download raw file” pour le sauvegarder.
 
-### 2. Tester :
+### 2. Tester
 
-*** . HTML et JavaScript :***
+***. HTML et JavaScript :***
 
     . Ouvrez le fichier .html (ex. : index.html) dans un navigateur (double-clic).
     . Vérifiez la console du navigateur (clic droit > Inspecter > Console) pour déboguer.
 
-*** . PHP :***
+***. PHP :***
 
     . Placez les fichiers dans un dossier (ex. : php/project/public).
     . Ouvrez un terminal dans ce dossier et lancez un serveur PHP :
@@ -95,7 +95,7 @@ php -S localhost:8200 -t .
 
     . Ouvrez http://localhost:8200 dans un navigateur.
 
-### 3. Éditer :
+### 3. Éditer
 
 . Ouvrez les fichiers dans Visual Studio Code pour les modifier ou les utiliser comme base pour vos exercices.
 
@@ -103,18 +103,17 @@ php -S localhost:8200 -t .
 
 Pour comprendre comment vos travaux seront évalués, consultez les barèmes sur GitHub Pages :
 
-### . HTML, CSS, JavaScript :
+### . HTML, CSS, JavaScript
 
     . Exercices
     . Projet en groupe
 
-### . PHP :
+### . PHP
 
     . Exercices
     . Projet en groupe
 
-
-### . JavaScript :
+### . JavaScript
 
     . Exercices
     . Projet en groupe
@@ -132,13 +131,14 @@ Pour soumettre vos exercices ou projets en groupe (ex. : site vitrine, ToDoList)
 
     . Créez vos fichiers (ex. : index.html, style.css, script.js).
     . Utilisez ces commandes dans un terminal :
+
     ```
     git add .
     git commit -m "Ajout de mon projet"
     git push origin main
     ```
 
-**Partager** : Envoyez l’URL de votre dépôt (ex. : https://github.com/votre-nom/MonProjetWeb) à votre professeur pour évaluation.
+**Partager** : Envoyez l’URL de votre dépôt (ex. : <https://github.com/votre-nom/MonProjetWeb>) à votre professeur pour évaluation.
 
 **Activité pratique :**
 
