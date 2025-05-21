@@ -91,7 +91,7 @@ Voici une sélection d’outils en ligne gratuits et interactifs qui rendent l�
 
 - **Pratiquez régulièrement** : 10 à 15 minutes par jour suffisent.  
 - **Partagez vos progrès** : Obtenez des retours !  
-- **Expérimentez** : Modifiez le code, testez des idées !
+- **Explorez et expérimentez** : Modifiez le code, testez des idées !
 
 ---
 
@@ -114,10 +114,10 @@ Avant de coder, il faut préparer un **environnement de travail**.
 
 ## 1.2 🛠️ Activité : Configurer son environnement
 
-1. Téléchargez et installez Visual Studio Code.  
-2. Créez un dossier `mon_premier_site` sur votre bureau.  
-3. Ouvrez ce dossier dans VS Code (Fichier > Ouvrir un dossier).  
-4. Créez un fichier `index.html` avec le contenu suivant :
+1. Téléchargez et installez **Visual Studio Code**.  
+2. Créez un dossier **`mon_premier_site`** sur votre bureau.  
+3. Ouvrez ce dossier dans **VS Code (Fichier > Ouvrir un dossier)**.  
+4. Créez un fichier **`index.html`** avec le contenu suivant :
 
     ```html
     <!DOCTYPE html>
@@ -134,7 +134,7 @@ Avant de coder, il faut préparer un **environnement de travail**.
 
 # Partie 2 : Les bases de HTML
 
-HTML (*HyperText Markup Language*) structure le contenu d’une page web.  
+**HTML** (*HyperText Markup Language*) structure le contenu d’une page web.  
 Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 ## 2.1 Concepts clés
@@ -142,22 +142,22 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 - **Balises** : Délimitées par `<` et `>`, souvent ouvertes et fermées (ex : `<p>` et `</p>`).  
     Certaines sont auto-fermantes : `<img />`.
 
-- **Attributs** : Fournissent des infos supplémentaires.  
-    Exemple : `<a href="https://example.com">`.
+- **Attributs** : Fournissent des infos supplémentaires aux balises.  
+    Exemple : `<a href="https://example.com">` où `href` est l'attribut.
 
 - **Structure HTML typique** :
-    - `<!DOCTYPE html>` : Déclare HTML5.
-    - `<html lang="fr">` : Langue du document.
-    - `<head>` : Métadonnées (titre, liens).
-    - `<body>` : Contenu visible.
+    - **`<!DOCTYPE html>`** : Déclare HTML5.
+    - **`<html lang="fr">`** : Langue du document.
+    - **`<head>`** : Métadonnées (titre, liens).
+    - **`<body>`** : Contenu visible.
 
 - **Balises courantes** :
-    - `<h1>` à `<h6>` : Titres.
-    - `<p>` : Paragraphe.
-    - `<a>` : Lien hypertexte.
-    - `<img>` : Image.
-    - `<ul>` / `<li>` : Liste à puces.
-    - `<div>` : Conteneur.
+    - **`<h1>`** à **`<h6>`** : Titres.
+    - **`<p>`** : Paragraphe.
+    - **`<a>`** : Lien hypertexte.
+    - **`<img>`** : Image.
+    - **`<ul>` / `<li>`** : Liste à puces.
+    - **`<div>`** : Conteneur.
 
 ## ✏️ 2.2 Exemples
 
@@ -177,7 +177,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 </html>
 ```
 
-Résultat : Affiche un titre "Bienvenue !" et un paragraphe.
+***Résultat*** : Affiche un titre "Bienvenue !" et un paragraphe.
 
 ### 2. Liste et lien :
 
@@ -189,14 +189,86 @@ Résultat : Affiche un titre "Bienvenue !" et un paragraphe.
     </ul>
 
 
-Résultat : Affiche une liste à puces avec un lien cliquable.
+***Résultat*** : Affiche une liste à puces avec un lien cliquable.
 
 ### 3. Image :
 
     <img src="https://picsum.photos/200" alt="Image aléatoire">
 
-Résultat : Affiche une image de 200x200 pixels.
+***Résultat*** : Affiche une image de 200x200 pixels.
 
 ## 2.3 Exercices pratiques
 
-À vous de jouer : [Exercices](./grading/html-css-js-exercises.md) | [Projet](./grading/html-css-js-project.md)
+**À vous de jouer** : [Exercices](./grading/html-css-js-exercises.md) | [Projet](./grading/html-css-js-project.md)
+
+---
+
+# Partie 3 : Les bases de CSS
+
+**CSS** ***(Cascading Style Sheets)*** est le langage qui stylise une page web. Il permet de contrôler l’apparence (couleurs, tailles, positions) des éléments HTML, rendant le site visuellement attrayant.
+
+## 3.1 Concepts clés
+
+    • **Sélecteurs** : Ciblent les éléments HTML à styliser. Types courants :
+        ◦ Par balise : `h1 { ... }` (tous les `<h1>`). 
+        ◦ Par classe : `.ma-classe { ... }` (éléments avec `class="ma-classe"`). 
+        ◦ Par ID : `#mon-id { ... }` (élément unique avec `id="mon-id"`). 
+    • **Propriétés** : Définissent le style. Exemples :
+        ◦ color : Couleur du texte. 
+        ◦ font-size : Taille du texte (ex. : 16px, 1.2em). 
+        ◦ background-color : Couleur de fond. 
+        ◦ margin et padding : Espacement extérieur et intérieur. 
+    • **Connexion HTML-CSS** :
+        ◦ Créez un fichier style.css et liez-le avec `<link rel="stylesheet" href="style.css">` dans `<head>`. 
+        ◦ Ou utilisez une balise `<style>` dans `<head>` pour écrire du CSS directement. 
+    • **Box Model** : Chaque élément HTML est une "boîte" avec :
+        ◦ Contenu (texte, images). 
+        ◦ padding (espace interne). 
+        ◦ border (bordure autour). 
+        ◦ margin (espace externe). 
+    • **Positionnement** : Contrôle la disposition des éléments (ex. : display: block, text-align: center). 
+
+## 3.2 Exemples
+
+    **1. Style de base :**
+    ```html
+    <h1 class="titre">Mon Titre</h1>
+    <p id="intro">Bienvenue sur mon site.</p>
+    .titre {
+        color: navy;
+        font-size: 2em;
+        text-align: center;
+    }
+    #intro {
+        color: gray;
+        font-style: italic;
+    }
+    ```
+
+***Résultat*** : Le titre est bleu marine, centré, et le paragraphe est gris et en italique.
+
+    **2. Box Model :**
+
+    ```html
+    <div class="boite">Contenu</div>
+    .boite {
+        background-color: lightblue;
+        padding: 15px;
+        border: 2px solid black;
+        margin: 20px;
+    }
+    ```
+    
+***Résultat*** : Une boîte avec un fond bleu clair, une bordure noire, et des espaces internes/externes.
+
+    **3. Centrer une image :**
+
+    ```html
+    <img src="https://picsum.photos/200" alt="Image">
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    ```
+***Résultat*** : L’image est centrée avec des coins arrondis.
