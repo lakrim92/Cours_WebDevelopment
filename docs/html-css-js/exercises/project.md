@@ -31,12 +31,12 @@ Chaque élève choisit un rôle principal, mais tous collaborent sur toutes les 
 **Étape 1 : Choisir un thème et planifier**
 - **Durée** : 10 minutes 
 - **Activité** :
-    1. En groupe, choisissez un thème pour votre club/association (ex. : `"Club de danse"`, `"Association écologique"`). 
-    2. Décidez des éléments à inclure dans le site :
-        - Une page d’accueil avec un titre et une description. 
-        - Une section pour présenter les activités ou les membres. 
-        - Une image ou un logo (utilisez une URL en ligne, comme `https://picsum.photos/300`). 
-        - Un élément interactif (ex. : bouton pour afficher un message, menu cliquable).
+1. En groupe, choisissez un thème pour votre club/association (ex. : `"Club de danse"`, `"Association écologique"`). 
+2. Décidez des éléments à inclure dans le site :
+    - Une page d’accueil avec un titre et une description. 
+    - Une section pour présenter les activités ou les membres. 
+    - Une image ou un logo (utilisez une URL en ligne, comme `https://picsum.photos/300`). 
+    - Un élément interactif (ex. : bouton pour afficher un message, menu cliquable).
 
 **Étape 2 : Maquettage**
 - **Durée** : 15 minutes 
