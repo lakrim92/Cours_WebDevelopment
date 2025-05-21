@@ -199,8 +199,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 ## 2.3 Exercices pratiques
 
-**À vous de jouer** : [Exercices](./html-css-js/exercises/partie2/exercices-partie2.md) | [Projet](./project/html-css-js-project.md)
-
+**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie2.md) | [Projet](./grading/html-css-js-project.md)
 ---
 
 # Partie 3 : Les bases de CSS
