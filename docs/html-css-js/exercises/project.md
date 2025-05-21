@@ -44,10 +44,10 @@ Chaque élève choisit un rôle principal, mais tous collaborent sur toutes les 
 - **Responsable principal** : Coordinateur (ou tous ensemble) 
 - **Activité** :
 
-1. Avant de coder, créez une maquette de votre site pour visualiser sa mise en page. En entreprise, les développeurs utilisent des maquettes pour planifier le design et s’assurer que tout le monde est d’accord avant de commencer. 
+1. Avant de coder, créez une **maquette** de votre site pour visualiser sa mise en page. En entreprise, les développeurs utilisent des maquettes pour planifier le design et s’assurer que tout le monde est d’accord avant de commencer. 
 2. Options pour le maquettage :
-- Papier : Dessinez la page sur une feuille (ex. : placez le titre en haut, l’image au centre, le bouton en bas). 
-- Outil en ligne : Utilisez une plateforme comme Figma (version gratuite) ou Canva pour créer une maquette numérique simple. 
+- **Papier** : Dessinez la page sur une feuille (ex. : placez le titre en haut, l’image au centre, le bouton en bas). 
+- **Outil en ligne** : Utilisez une plateforme comme [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou Canva pour créer une maquette numérique simple. 
 3. Incluez dans votre maquette :
 - La disposition des éléments (titre, texte, image, bouton). 
 - Une idée des couleurs ou du style (ex. : "fond bleu clair, texte sombre"). 
@@ -56,17 +56,17 @@ Chaque élève choisit un rôle principal, mais tous collaborent sur toutes les 
 5. Gardez la maquette sous la main pour guider le codage. 
 
 **Étape 3 : Créer la structure HTML**
-    • Durée : 30 minutes 
-    • Responsable principal : Designer HTML 
-    • Activité :
-        1. Créez un fichier index.html dans un dossier nommé projet_groupe. 
-        2. Ajoutez une structure de base en suivant votre maquette :
-            ▪ Un titre (<h1>) pour le nom du club. 
-            ▪ Un paragraphe (<p>) pour une courte description. 
-            ▪ Une section (<div> ou <section>) pour les activités ou membres. 
-            ▪ Une image (<img>) pour illustrer le thème. 
-            ▪ Un bouton ou un élément cliquable pour l’interactivité. 
-        3. Exemple de structure de départ :
+- **Durée** : 30 minutes 
+- **Responsable principal** : Designer HTML 
+- **Activité** :
+1. Créez un fichier **index.html** dans un dossier nommé projet_groupe. 
+2. Ajoutez une structure de base en suivant votre maquette :
+    ▪ Un titre (<h1>) pour le nom du club. 
+    ▪ Un paragraphe (<p>) pour une courte description. 
+    ▪ Une section (<div> ou <section>) pour les activités ou membres. 
+    ▪ Une image (<img>) pour illustrer le thème. 
+    ▪ Un bouton ou un élément cliquable pour l’interactivité. 
+3. Exemple de structure de départ :
            <!DOCTYPE html>
            <html lang="fr">
            <head>
