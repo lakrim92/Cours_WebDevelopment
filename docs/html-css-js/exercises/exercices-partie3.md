@@ -9,7 +9,6 @@
 - Testez dans le navigateur. Partagez avec un voisin : le style correspond-il à vos attentes ?
 
 **2. Exercice 2** : Utiliser une classe :
-
 - Ajoutez une classe highlight à un `<p>` dans index.html (ex. : `<p class="highlight">Texte</p>`). 
 - Dans style.css, stylisez .highlight avec un fond jaune et une bordure noire. 
 - Testez et discutez en groupe : comment les classes permettent-elles de réutiliser des styles ? 
