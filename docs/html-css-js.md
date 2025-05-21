@@ -205,32 +205,38 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 # Partie 3 : Les bases de CSS
 
-**CSS** ***(Cascading Style Sheets)*** est le langage qui stylise une page web. Il permet de contrôler l’apparence (couleurs, tailles, positions) des éléments HTML, rendant le site visuellement attrayant.
+**CSS** (*Cascading Style Sheets*) est un langage utilisé pour styliser une page web. Il permet de contrôler l'apparence des éléments HTML, comme les couleurs, tailles, polices et positions, pour rendre un site visuellement attrayant.
 
 ## 3.1 Concepts clés
 
-• **Sélecteurs** : Ciblent les éléments HTML à styliser. Types courants :
-        - Par balise : `h1 { ... }` (tous les `<h1>`). 
-        - Par classe : `.ma-classe { ... }` (éléments avec `class="ma-classe"`). 
-        - Par ID : `#mon-id { ... }` (élément unique avec `id="mon-id"`). 
-• **Propriétés** : Définissent le style. Exemples :
-    ◦ color : Couleur du texte. 
-    ◦ font-size : Taille du texte (ex. : 16px, 1.2em). 
-    ◦ background-color : Couleur de fond. 
-    ◦ margin et padding : Espacement extérieur et intérieur. 
-• **Connexion HTML-CSS** :
-    ◦ Créez un fichier style.css et liez-le avec `<link rel="stylesheet" href="style.css">` dans `<head>`. 
-    ◦ Ou utilisez une balise `<style>` dans `<head>` pour écrire du CSS directement. 
-• **Box Model** : Chaque élément HTML est une "boîte" avec :
-    ◦ Contenu (texte, images). 
-    ◦ padding (espace interne). 
-    ◦ border (bordure autour). 
-    ◦ margin (espace externe). 
-• **Positionnement** : Contrôle la disposition des éléments (ex. : display: block, text-align: center). 
+- **Sélecteurs** : Ils ciblent les éléments HTML à styliser. Types courants :
+  - Par balise : `h1 { ... }` (sélectionne tous les `<h1>`).
+  - Par classe : `.ma-classe { ... }` (sélectionne les éléments avec `class="ma-classe"`).
+  - Par ID : `#mon-id { ... }` (sélectionne un élément unique avec `id="mon-id"`).
+- **Propriétés** : Elles définissent le style à appliquer. Exemples :
+  - `color` : Couleur du texte (ex. : `navy`, `#FF0000`).
+  - `font-size` : Taille du texte (ex. : `16px`, `1.2em`).
+  - `background-color` : Couleur de fond (ex. : `lightblue`).
+  - `margin` : Espacement extérieur.
+  - `padding` : Espacement intérieur.
+- **Connexion HTML-CSS** :
+  - Reliez un fichier CSS externe avec `<link rel="stylesheet" href="style.css">` dans la balise `<head>`.
+  - Ou intégrez le CSS directement dans une balise `<style>` dans `<head>`.
+- **Box Model** : Chaque élément HTML est une "boîte" composée de :
+  - Contenu (texte, images, etc.).
+  - `padding` (espace interne).
+  - `border` (bordure autour du contenu).
+  - `margin` (espace externe).
+- **Positionnement** : Contrôle la disposition des éléments. Exemples :
+  - `display: block` (occupe toute la largeur).
+  - `text-align: center` (centre le contenu horizontalement).
 
 ## 3.2 Exemples
 
+### Exemple 1 : Style de base
+
     **1. Style de base :**
+
     ```html
     <h1 class="titre">Mon Titre</h1>
     <p id="intro">Bienvenue sur mon site.</p>
