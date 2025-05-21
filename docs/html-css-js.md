@@ -199,7 +199,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 ## 2.3 Exercices pratiques
 
-**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie2.md) | [Projet](./project/html-css-js-project.md)
+**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie2.md)
 
 ---
 
@@ -279,3 +279,7 @@ img {
 ```
 
 ***Résultat*** : L’image est centrée avec des coins arrondis.
+
+**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie3.md)
+
+---
