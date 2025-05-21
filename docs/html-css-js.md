@@ -250,6 +250,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
     ```
 
 ***Résultat*** : Le titre est bleu marine, centré, et le paragraphe est gris et en italique.
+
 --
 
 **2. Box Model :**
