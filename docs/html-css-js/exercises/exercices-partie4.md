@@ -14,6 +14,6 @@
 
 **3. Exercice 3 : Utiliser une condition** :
 
-- Dans index.html, ajoutez un bouton <button onclick="verifierNombre()">Vérifier</button>. 
-- Dans script.js, créez une fonction verifierNombre avec une variable nombre = 10. Si nombre est supérieur à 5, affichez une alerte "Grand nombre !", sinon "Petit nombre !". 
+- Dans index.html, ajoutez un bouton `<button onclick="verifierNombre()">Vérifier</button>`. 
+- Dans script.js, créez une fonction **verifierNombre** avec une variable **nombre = 10**. Si nombre est supérieur à 5, affichez une alerte `"Grand nombre !"`, sinon `"Petit nombre !"`. 
 - Testez et modifiez la valeur de nombre. Partagez vos résultats. 
