@@ -47,7 +47,7 @@ Chaque élève choisit un rôle principal, mais tous collaborent sur toutes les 
 1. Avant de coder, créez une **maquette** de votre site pour visualiser sa mise en page. En entreprise, les développeurs utilisent des maquettes pour planifier le design et s’assurer que tout le monde est d’accord avant de commencer. 
 2. Options pour le maquettage :
 - **Papier** : Dessinez la page sur une feuille (ex. : placez le titre en haut, l’image au centre, le bouton en bas). 
-- **Outil en ligne** : Utilisez une plateforme comme [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou Canva pour créer une maquette numérique simple. 
+- **Outil en ligne** : Utilisez une plateforme comme [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou [Canva](https://www.canva.com/fr_fr/) pour créer une maquette numérique simple. 
 3. Incluez dans votre maquette :
 - La disposition des éléments (titre, texte, image, bouton). 
 - Une idée des couleurs ou du style (ex. : "fond bleu clair, texte sombre"). 
