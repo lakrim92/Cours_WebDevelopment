@@ -10,14 +10,14 @@
 
 **2. Exercice 2** : Utiliser une classe :
 
-    - Ajoutez une classe highlight à un `<p>` dans index.html (ex. : `<p class="highlight">Texte</p>`). 
-    - Dans style.css, stylisez .highlight avec un fond jaune et une bordure noire. 
-    - Testez et discutez en groupe : comment les classes permettent-elles de réutiliser des styles ? 
+- Ajoutez une classe highlight à un `<p>` dans index.html (ex. : `<p class="highlight">Texte</p>`). 
+- Dans style.css, stylisez .highlight avec un fond jaune et une bordure noire. 
+- Testez et discutez en groupe : comment les classes permettent-elles de réutiliser des styles ? 
 
 **3. Exercice 3** : Expérimenter le Box Model :
 
-    - Créez une `<div>` avec une classe carte contenant un `<p>` (ex. : une citation). 
-    - Dans style.css, ajoutez :
+- Créez une `<div>` avec une classe carte contenant un `<p>` (ex. : une citation). 
+- Dans style.css, ajoutez :
 
 ```css
 .carte {
