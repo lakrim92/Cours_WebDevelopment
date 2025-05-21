@@ -49,19 +49,19 @@ Dans `index.html`, ajoutez :
 
 - Ajoutez une deuxième `<div>` contenant une liste `<ul>` de 2 centres d’intérêt.
 
-```html
-<div>
-    <h2>À propos</h2>
-    <p>Je suis passionné par le développement web.</p>
-</div>
+    ```html
+    <div>
+        <h2>À propos</h2>
+        <p>Je suis passionné par le développement web.</p>
+    </div>
 
-<div>
-    <h2>Centres d’intérêt</h2>
-    <ul>
-        <li>Lecture</li>
-        <li>Musique</li>
-    </ul>
-</div>
-```
+    <div>
+        <h2>Centres d’intérêt</h2>
+        <ul>
+            <li>Lecture</li>
+            <li>Musique</li>
+        </ul>
+    </div>
+    ```
 
 🧩 Testez dans le navigateur et discutez en groupe : comment les <div> organisent-ils le contenu ?
