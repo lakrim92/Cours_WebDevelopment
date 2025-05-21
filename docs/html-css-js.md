@@ -235,23 +235,23 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 **1. Style de base :**
 
-    ```html
-    <h1 class="titre">Mon Titre</h1>
-    <p id="intro">Bienvenue sur mon site.</p>
-    .titre {
-        color: navy;
-        font-size: 2em;
-        text-align: center;
-    }
-    #intro {
-        color: gray;
-        font-style: italic;
-    }
-    ```
+```html
+<h1 class="titre">Mon Titre</h1>
+<p id="intro">Bienvenue sur mon site.</p>
+.titre {
+    color: navy;
+    font-size: 2em;
+    text-align: center;
+}
+#intro {
+    color: gray;
+    font-style: italic;
+}
+```
 
 ***Résultat*** : Le titre est bleu marine, centré, et le paragraphe est gris et en italique.
 
---
+
 
 **2. Box Model :**
 
