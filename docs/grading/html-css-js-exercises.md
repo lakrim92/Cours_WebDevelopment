@@ -65,3 +65,4 @@ Dans `index.html`, ajoutez :
     ```
 
 🧩 Testez dans le navigateur et discutez en groupe : comment les <div> organisent-ils le contenu ?
+
