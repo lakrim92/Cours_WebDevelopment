@@ -232,7 +232,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
   - `text-align: center` (centre le contenu horizontalement).
 
 ## 3.2 Exemples
-    ### 1. Style de base :
+    ## 1. Style de base :
 
     ```html
     <h1 class="titre">Mon Titre</h1>
@@ -249,7 +249,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
     ```
 
 ***Résultat*** : Le titre est bleu marine, centré, et le paragraphe est gris et en italique.
-    ### 2. Box Model :**
+    ## 2. Box Model :
 
     ```html
     <div class="boite">Contenu</div>
@@ -262,7 +262,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
     ```
     
 ***Résultat*** : Une boîte avec un fond bleu clair, une bordure noire, et des espaces internes/externes.
-    ### 3. Centrer une image :
+    ## 3. Centrer une image :
 
     ```html
     <img src="https://picsum.photos/200" alt="Image">
