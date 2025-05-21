@@ -317,7 +317,7 @@ function saluer() {
 ```
 
 ***Résultat : Une alerte affiche "Bonjour, Marie !"***
-.
+
 **2. Modifier le DOM** :
 ```js
 <p id="texte">Texte original</p>
