@@ -3,11 +3,11 @@
 **1. Exercice 1** :
 
 **Styliser une page** :
-    - Créez un fichier style.css et liez-le à index.html. 
-    - Ajoutez des styles pour :
-        - Le `<h1>` : couleur rouge, centré, taille **2.5em**. 
-        - Le `<p>` : texte en gris, taille 16px. 
-    - Testez dans le navigateur. Partagez avec un voisin : le style correspond-il à vos attentes ?
+- Créez un fichier style.css et liez-le à index.html. 
+- Ajoutez des styles pour :
+    - Le `<h1>` : couleur rouge, centré, taille **2.5em**. 
+    - Le `<p>` : texte en gris, taille 16px. 
+- Testez dans le navigateur. Partagez avec un voisin : le style correspond-il à vos attentes ?
 
 **2. Exercice 2** :
 **Utiliser une classe** :
