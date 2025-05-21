@@ -343,3 +343,5 @@ function verifierAge() {
 ```
 
 ***Résultat*** : Une alerte selon la condition.
+
+**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie4.md)
