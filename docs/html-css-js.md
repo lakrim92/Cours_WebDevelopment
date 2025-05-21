@@ -209,24 +209,24 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 ## 3.1 Concepts clés
 
-    • **Sélecteurs** : Ciblent les éléments HTML à styliser. Types courants :
-        ◦ Par balise : `h1 { ... }` (tous les `<h1>`). 
-        ◦ Par classe : `.ma-classe { ... }` (éléments avec `class="ma-classe"`). 
-        ◦ Par ID : `#mon-id { ... }` (élément unique avec `id="mon-id"`). 
-    • **Propriétés** : Définissent le style. Exemples :
-        ◦ color : Couleur du texte. 
-        ◦ font-size : Taille du texte (ex. : 16px, 1.2em). 
-        ◦ background-color : Couleur de fond. 
-        ◦ margin et padding : Espacement extérieur et intérieur. 
-    • **Connexion HTML-CSS** :
-        ◦ Créez un fichier style.css et liez-le avec `<link rel="stylesheet" href="style.css">` dans `<head>`. 
-        ◦ Ou utilisez une balise `<style>` dans `<head>` pour écrire du CSS directement. 
-    • **Box Model** : Chaque élément HTML est une "boîte" avec :
-        ◦ Contenu (texte, images). 
-        ◦ padding (espace interne). 
-        ◦ border (bordure autour). 
-        ◦ margin (espace externe). 
-    • **Positionnement** : Contrôle la disposition des éléments (ex. : display: block, text-align: center). 
+• **Sélecteurs** : Ciblent les éléments HTML à styliser. Types courants :
+    ◦ Par balise : `h1 { ... }` (tous les `<h1>`). 
+    ◦ Par classe : `.ma-classe { ... }` (éléments avec `class="ma-classe"`). 
+    ◦ Par ID : `#mon-id { ... }` (élément unique avec `id="mon-id"`). 
+• **Propriétés** : Définissent le style. Exemples :
+    ◦ color : Couleur du texte. 
+    ◦ font-size : Taille du texte (ex. : 16px, 1.2em). 
+    ◦ background-color : Couleur de fond. 
+    ◦ margin et padding : Espacement extérieur et intérieur. 
+• **Connexion HTML-CSS** :
+    ◦ Créez un fichier style.css et liez-le avec `<link rel="stylesheet" href="style.css">` dans `<head>`. 
+    ◦ Ou utilisez une balise `<style>` dans `<head>` pour écrire du CSS directement. 
+• **Box Model** : Chaque élément HTML est une "boîte" avec :
+    ◦ Contenu (texte, images). 
+    ◦ padding (espace interne). 
+    ◦ border (bordure autour). 
+    ◦ margin (espace externe). 
+• **Positionnement** : Contrôle la disposition des éléments (ex. : display: block, text-align: center). 
 
 ## 3.2 Exemples
 
