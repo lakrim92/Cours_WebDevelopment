@@ -255,26 +255,27 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 **2. Box Model :**
 
-    ```html
-    <div class="boite">Contenu</div>
-    .boite {
-        background-color: lightblue;
-        padding: 15px;
-        border: 2px solid black;
-        margin: 20px;
-    }
-    ```
+```html
+<div class="boite">Contenu</div>
+.boite {
+    background-color: lightblue;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 20px;
+}
+```
     
 ***Résultat*** : Une boîte avec un fond bleu clair, une bordure noire, et des espaces internes/externes.
 
 **3. Centrer une image :**
 
-    ```html
-    <img src="https://picsum.photos/200" alt="Image">
-    img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
-    ```
+```html
+<img src="https://picsum.photos/200" alt="Image">
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+```
+
 ***Résultat*** : L’image est centrée avec des coins arrondis.
