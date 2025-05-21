@@ -283,3 +283,62 @@ img {
 **À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie3.md)
 
 ---
+
+# Partie 4 : Les bases de JavaScript
+
+**JavaScript** rend les pages web interactives en ajoutant des comportements dynamiques, comme réagir aux clics ou modifier le contenu en temps réel.
+
+**4.1 Concepts clés**
+- **Variables** : Stockent des données. Types courants :
+    - let : Variable modifiable (ex. : `let age = 20;`). 
+    - const : Variable non modifiable (ex. : `const nom = "Alice";`). 
+- **Fonctions** : Blocs de code réutilisables. Exemple :
+
+```js
+function saluer() {
+    alert("Bonjour !");
+}
+```
+
+- **Événements** : Réactions aux actions des utilisateurs (ex. : `onclick, onmouseover`). 
+- **Manipulation du `DOM`** : Modifie les éléments HTML. Exemple : `document.getElementById("id").innerText = "Nouveau texte";`. 
+- **Connexion HTML-JavaScript** :
+    - Créez un fichier `script.js` et liez-le avec `<script src="script.js"></script>` à la fin de `<body>`. 
+    - Ou utilisez une balise `<script>` dans `<body>`.
+
+**4.2 Exemples**
+1. **Variable et alerte** :
+```js
+    <button onclick="montrerNom()">Afficher nom</button>
+    function montrerNom() {
+        let nom = "Marie";
+        alert("Bonjour, " + nom + " !");
+    }
+```
+
+***Résultat : Une alerte affiche "Bonjour, Marie !"***
+.
+**2. Modifier le DOM** :
+```js
+<p id="texte">Texte original</p>
+<button onclick="changerTexte()">Changer</button>
+function changerTexte() {
+    document.getElementById("texte").innerText = "Texte modifié !";
+}
+```
+
+***Résultat*** : Le texte du `<p>` change au clic.
+**3. Condition simple** :
+```js
+<button onclick="verifierAge()">Vérifier âge</button>
+function verifierAge() {
+    let age = 18;
+    if (age >= 18) {
+        alert("Vous êtes majeur !");
+    } else {
+        alert("Vous êtes mineur !");
+    }
+}
+```
+
+***Résultat*** : Une alerte selon la condition.
