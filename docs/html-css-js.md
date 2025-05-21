@@ -210,9 +210,9 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 ## 3.1 Concepts clés
 
 • **Sélecteurs** : Ciblent les éléments HTML à styliser. Types courants :
-    ◦ Par balise : `h1 { ... }` (tous les `<h1>`). 
-    ◦ Par classe : `.ma-classe { ... }` (éléments avec `class="ma-classe"`). 
-    ◦ Par ID : `#mon-id { ... }` (élément unique avec `id="mon-id"`). 
+    - Par balise : `h1 { ... }` (tous les `<h1>`). 
+    - Par classe : `.ma-classe { ... }` (éléments avec `class="ma-classe"`). 
+    - Par ID : `#mon-id { ... }` (élément unique avec `id="mon-id"`). 
 • **Propriétés** : Définissent le style. Exemples :
     ◦ color : Couleur du texte. 
     ◦ font-size : Taille du texte (ex. : 16px, 1.2em). 
