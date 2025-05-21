@@ -316,7 +316,7 @@ function saluer() {
     }
 ```
 
-***Résultat : Une alerte affiche "Bonjour, Marie !"***
+***Résultat : Une alerte affiche "Bonjour, Marie !"***.
 
 **2. Modifier le DOM** :
 ```js
@@ -328,6 +328,7 @@ function changerTexte() {
 ```
 
 ***Résultat*** : Le texte du `<p>` change au clic.
+
 **3. Condition simple** :
 ```js
 <button onclick="verifierAge()">Vérifier âge</button>
