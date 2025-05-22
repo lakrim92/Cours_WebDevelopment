@@ -36,19 +36,20 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
     - Une **section** pour afficher des **données dynamiques** (ex. : membres).
     - Une **image** (ex. : `https://picsum.photos/300`).
 
-Étape 2 : Maquettage
-    • Durée : 15 minutes 
-    • Responsable principal : Coordinateur (ou tous ensemble) 
-    • Activité :
-        1. Créez une maquette pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage. 
-        2. Options :
-            ▪ Papier : Dessinez la page (titre en haut, formulaire au centre, etc.). 
-            ▪ Outil en ligne : Utilisez Figma ou Canva. 
-        3. Incluez :
-            ▪ Disposition des éléments (titre, formulaire, image). 
-            ▪ Idées de couleurs/styles (ex. : "fond clair, texte sombre"). 
-            ▪ Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?). 
-        4. Validez la maquette en groupe et ajustez si nécessaire. 
+### Étape 2 : Maquettage
+- **Durée** : 15 minutes 
+- **Responsable principal** : Coordinateur (ou tous ensemble) 
+- **Activité** :
+
+1. Créez une **maquette** pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage. 
+2. Options :
+    - **Papier** : Dessinez la page (titre en haut, formulaire au centre, etc.). 
+    - **Outil en ligne** : Utilisez [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou [Canva](https://www.canva.com/fr_fr/) pour créer une maquette numérique simple.. 
+3. Incluez :
+    ▪ Disposition des éléments (titre, formulaire, image). 
+    ▪ Idées de couleurs/styles (ex. : "fond clair, texte sombre"). 
+    ▪ Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?). 
+4. Validez la maquette en groupe et ajustez si nécessaire. 
 Étape 3 : Créer la structure HTML
     • Durée : 30 minutes 
     • Responsable principal : Designer HTML 
