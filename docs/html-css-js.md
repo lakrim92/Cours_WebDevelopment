@@ -1,6 +1,10 @@
 # Introduction : Bienvenue dans le monde du développement web !
 
-
+<p align="center">
+  <img src="./img/html150.png" alt="Image 1" style="margin: 10px;">
+  <img src="./img/css150.png" alt="Image 2" style="margin: 10px;">
+  <img src="./img/js150.png" alt="Image 3" style="margin: 10px;">
+</p>
 
 Ce cours est conçu pour vous apprendre à créer des sites web en utilisant **HTML**, **CSS** et **JavaScript**.  
 Nous partirons de zéro, sans connaissances préalables, et vous serez guidés pas à pas pour construire votre première page web interactive.  
