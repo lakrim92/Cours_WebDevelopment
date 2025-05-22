@@ -1,7 +1,7 @@
 # Support de Cours : Introduction à PHP
 
 <div style="text-align: center;">
-    <img src="../img/php200.png" alt="Logo PHP">
+    <img src="./img/php200.png" alt="Logo PHP">
 </div>
 
 ## Introduction : Bienvenue dans le monde du développement web avec PHP !
@@ -26,7 +26,7 @@ Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si p
 
 
 <div style="text-align: center;">
-    <img src="../img/330px-Wikirl.jpg" alt="Rasmus Lerdorf">
+    <img src="./img/330px-Wikirl.jpg" alt="Rasmus Lerdorf">
     <br>
     <a href="https://fr.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf - Wikipédia</a>
 </div>
@@ -262,7 +262,7 @@ $fruits = ["pomme", "banane", "orange"];
 
 ### 2.3 Exercices pratiques
 
-À vous de jouer [Exercices](../php/exercises/exercices-partie2.md)
+À vous de jouer [Exercices](./php/exercises/exercices-partie2.md)
 
 ---
 
@@ -357,7 +357,7 @@ Ces tableaux associatifs permettent de récupérer les valeurs des champs de for
 
 ### 3.3 Exercices pratiques
 
-À vous de jouer [Exercices](../php/exercises/exercices-partie3.md)
+À vous de jouer [Exercices](./php/exercises/exercices-partie3.md)
 
 ---
 
@@ -466,10 +466,10 @@ $equipe = [
 
 ### 4.3 Exercices pratiques
 
-À vous de jouer [Exercices](../php/exercises/exercices-partie4.md)
+À vous de jouer [Exercices](./php/exercises/exercices-partie4.md)
 
 ---
 
 ## Partie 5 : Projet en groupe - Création d’une application web interactive
 
-**Cliquez sur le lien** : [Projet](../php/exercises/project.md)
+**Cliquez sur le lien** : [Projet](./php/exercises/project.md)
