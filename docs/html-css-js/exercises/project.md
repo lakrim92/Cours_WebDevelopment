@@ -227,7 +227,7 @@ function afficherMessage() {
 
 ## Ressources supplémentaires
 
-- Figma (figma.com) : Pour créer des maquettes numériques. 
-- Flexbox Froggy (flexboxfroggy.com) : Pour améliorer vos mises en page CSS. 
-- CodePen (codepen.io) : Testez votre site ou trouvez des idées de design. 
-- MDN Web Docs (developer.mozilla.org/fr/) : Référence pour HTML, CSS, JavaScript. 
+- **Figma** (figma.com) : Pour créer des maquettes numériques. 
+- **Flexbox Froggy** (flexboxfroggy.com) : Pour améliorer vos mises en page CSS. 
+- **CodePen** (codepen.io) : Testez votre site ou trouvez des idées de design. 
+- **MDN Web Docs** (developer.mozilla.org/fr/) : Référence pour HTML, CSS, JavaScript. 
