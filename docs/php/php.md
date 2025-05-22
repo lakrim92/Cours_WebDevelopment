@@ -1,7 +1,7 @@
 # Support de Cours : Introduction à PHP
 
 <div style="text-align: center;">
-!(./images/php.png)
+    ![Logo PHP](./images/php.png)
 </div>
 
 ## Introduction : Bienvenue dans le monde du développement web avec PHP !
