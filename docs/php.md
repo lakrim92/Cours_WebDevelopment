@@ -56,7 +56,7 @@ Bien que centré sur HTML/CSS/JavaScript, FreeCodeCamp propose des ressources po
 Une plateforme avec des défis de programmation, y compris en PHP. Parfait pour pratiquer les boucles, conditions et fonctions.
 ***Activité*** : Résolvez un défi PHP de niveau débutant et expliquez votre solution à un camarade.
 
-###cConseils pour utiliser ces outils
+### Conseils pour utiliser ces outils
 - Pratiquez régulièrement : Passez 10 à 15 minutes par jour sur un outil. 
 - Partagez vos progrès : Montrez vos scripts à vos camarades pour obtenir des retours. 
 - Expérimentez : Modifiez les exemples pour voir comment le code réagit. 
@@ -73,7 +73,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 - **Un terminal** : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux. 
 - **Un navigateur web** : Chrome, Firefox ou autre pour tester vos pages. 
 - **Un dossier de travail** :
-    - Créez un dossier nommé `mon_premier_site_php sur votre ordinateur (ex. : `C:\Users\VotreNom\mon_premier_site_php` ou `~/mon_premier_site_php`). 
+    - Créez un dossier nommé `mon_premier_site_php` sur votre ordinateur (ex. : `C:\Users\VotreNom\mon_premier_site_php ou ~/mon_premier_site_php`). 
     - À l’intérieur, créez un sous-dossier nommé **public** où vos fichiers **.php** seront placés. 
 
 ### 1.2 Activité : Configurer son environnement
