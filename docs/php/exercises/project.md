@@ -29,12 +29,12 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
 - **Durée** : 10 minutes  
 - **Activité** :
 
-    1. Choisissez un thème pour votre club/association (ex. : `"Club de danse"`).  
-    2. Décidez des éléments à inclure :
-        - Une page d’accueil avec un **titre** et une **description**.
-        - Un **formulaire** (ex. : inscription au club).
-        - Une **section** pour afficher des **données dynamiques** (ex. : membres).
-        - Une **image** (ex. : `https://picsum.photos/300`).
+1. Choisissez un thème pour votre club/association (ex. : `"Club de danse"`).  
+2. Décidez des éléments à inclure :
+    - Une page d’accueil avec un **titre** et une **description**.
+    - Un **formulaire** (ex. : inscription au club).
+    - Une **section** pour afficher des **données dynamiques** (ex. : membres).
+    - Une **image** (ex. : `https://picsum.photos/300`).
 
 Étape 2 : Maquettage
     • Durée : 15 minutes 
