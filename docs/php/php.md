@@ -168,7 +168,7 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 **PHP** est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
 
 ### 2.1 Concepts clés
-• **Syntaxe de base** : Le code PHP est entouré de balises `<?php et ?>`. Exemple :
+• **Syntaxe de base** : Le code PHP est toujours encadré par des balises `<?php et ?>`. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. Exemple :
 
 ```php
 <?php
@@ -177,9 +177,9 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 ```
 
 - Variables : Stockent des données avec $. Exemple : `$nom = "Alice"`;.
-    - Types : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
-- Écho et impression : echo ou print affichent du texte ou du HTML dans la page. 
-- Conditions : Permettent de prendre des décisions. Exemple :
+    - Types : Les principaux types sont : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
+- Écho et impression : (echo) ou (print) permettent d'afficher du texte ou du HTML dans la page. 
+- Conditions : Permettent d'executer des blocs de code selon qu'une condition soit vraie ou fausse(if, else, elseif, switch, etc.) prendre des décisions. Exemple :
 
 ```php
 if ($age >= 18) {
