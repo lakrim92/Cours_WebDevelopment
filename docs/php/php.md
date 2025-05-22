@@ -425,6 +425,7 @@ $equipe = [
 
 ***Résultat*** : Affiche "Nom : Marie, Note : 15".
 
+
 2. **Boucle foreach** :
 
 ```php
@@ -439,6 +440,7 @@ $equipe = [
 ```
 
 ***Résultat*** : Affiche une liste HTML de jours.
+
 
 3. **Fonction et tableau multidimensionnel** :
 
@@ -460,6 +462,7 @@ $equipe = [
 ```
 
 ***Résultat*** : Affiche une liste des membres et leurs rôles.
+
 
 ### 4.3 Exercices pratiques
 
