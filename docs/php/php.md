@@ -189,14 +189,15 @@ if ($age >= 18) {
 }
 ```
 
-- Boucles : Répètent des actions. Exemple avec une boucle for :
+- Boucles : Répètent des actions un certain nombre de fois ou tant qu'une condition est remplie (for, while, foreach, etc.). Exemple avec une boucle for :
 
 ```php
 for ($i = 1; $i <= 5; $i++) {
     echo "Numéro : $i<br>";
 }
+```
 
-- Tableaux : Stockent plusieurs valeurs. Exemple :
+- Tableaux : Stockent plusieurs valeurs dans une seule variable, accessibles via des index ou des clés. Exemple :
 
 ```php
 $fruits = ["pomme", "banane", "orange"];
@@ -259,7 +260,7 @@ $fruits = ["pomme", "banane", "orange"];
 
 ## Partie 3 : Les bases de PHP avec formulaires
 
-PHP excelle dans le traitement des données des utilisateurs, notamment via les formulaires HTML. Cette section explore comment PHP interagit avec les formulaires.
+PHP excelle dans le traitement des données des utilisateurs, notamment en récupérant les informations envoyées via les formulaires HTML. Cette section explore comment PHP interagit avec les formulaires.
 
 ### 3.1 Concepts clés
 - **Formulaires HTML** : Permettent aux utilisateurs d’envoyer des données (ex. : texte, choix).
@@ -272,14 +273,18 @@ PHP excelle dans le traitement des données des utilisateurs, notamment via les 
 ```
 
 - **Méthodes HTTP** :
-    - GET : Envoie les données via l’URL (visible, pour des recherches). 
-    - POST : Envoie les données de manière sécurisée (pour des formulaires sensibles).
+Les formulaires HTML utilisent principalement deux méthodes pour envoyer des données au serveur via PHP:
+    - GET : Envoie les données en les ajoutant à l’URL. Cela rend les informations visibles dans la barre d’adresse. Elle est adaptée pour des actions non sensibles comme des recherches ou des filtres.. 
+    - POST : Envoie les données de manière invisible dans le corps de la requête HTTP. Elle est plus sécurisée et donc recommandée pour des actions sensibles (connexion, envoi d’informations personnelles, etc.).
 
 - Superglobales : Variables PHP pour récupérer les données :
-    - $_POST : Données envoyées via POST. 
-    - $_GET : Données envoyées via GET. 
+PHP met à disposition des variables spéciales appelées superglobales pour accéder facilement aux données transmises par un formulaire :
+    - $_POST : Contient les données envoyées via la méthode POST. 
+    - $_GET : Contient les données envoyées via la méthode GET.
+    
+Ces tableaux associatifs permettent de récupérer les valeurs des champs de formulaire à l’aide de leur name.
 
-- Sécurité de base : Utilisez `htmlspecialchars()` pour éviter les attaques XSS (injections de code malveillant). 
+- Sécurité de base : Pour éviter les failles de sécurité comme les attaques XSS (Cross-Site Scripting), il est essentiel de sécuriser les données reçues. La fonction `htmlspecialchars()` permet de convertir les caractères spéciaux en entités HTML, empêchant ainsi l’exécution de code malveillant injecté par un utilisateur.
 
 ### 3.2 Exemples
 **1. Formulaire simple **:
