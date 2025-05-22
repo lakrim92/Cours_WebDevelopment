@@ -1,6 +1,6 @@
 # Support de Cours : Introduction à PHP
 
-![Image description](/images/php.png){style="display: block; margin: 0 auto;"}
+![Image description](./images/php.png){style="display: block; margin: 0 auto;"}
 
 ## Introduction : Bienvenue dans le monde du développement web avec PHP !
 Ce cours est conçu pour vous apprendre à créer des applications web dynamiques en utilisant **PHP**, un langage de programmation côté serveur. Nous partirons de zéro, sans connaissances préalables, et vous serez guidés pas à pas pour construire votre première application web interactive. Le cours est interactif : vous allez coder, expérimenter et collaborer !
