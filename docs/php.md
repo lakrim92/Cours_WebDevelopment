@@ -9,6 +9,8 @@ Ce cours est conçu pour vous apprendre à créer des applications web dynamique
 - Créer une application web dynamique avec PHP. 
 - Travailler en groupe sur des exercices pratiques. 
 
+---
+
 ## Partie 0 : Une brève histoire de PHP et de son utilisation
 
 Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si populaire dans le développement web.
@@ -35,6 +37,8 @@ PHP est un langage côté serveur** qui permet de générer des pages web dynami
     - Comment PHP diffère de HTML/CSS ? (Indice : PHP génère du contenu dynamiquement.) 
 - Partagez vos observations avec un camarade ! 
 
+---
+
 ## Partie 0.1 : Outils en ligne pour s’entraîner et apprendre
 
 Pour progresser en PHP, il est essentiel de pratiquer. Voici une sélection d’outils en ligne gratuits et interactifs pour coder PHP directement dans votre navigateur.
@@ -60,6 +64,8 @@ Une plateforme avec des défis de programmation, y compris en PHP. Parfait pour 
 - Pratiquez régulièrement : Passez 10 à 15 minutes par jour sur un outil. 
 - Partagez vos progrès : Montrez vos scripts à vos camarades pour obtenir des retours. 
 - Expérimentez : Modifiez les exemples pour voir comment le code réagit. 
+
+---
 
 ## Partie 1 : Préparer les outils
 
@@ -127,75 +133,101 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 - **Windows** : Utilisez PowerShell ou l’invite de commandes. Si le chemin contient des espaces, entourez-le de guillemets (ex. : `cd "C:\Users\Mon Nom\mon_premier_site_php"`). 
 - **Mac/Linux** : Utilisez le Terminal. Les commandes sont similaires. 
 
+---
+
 ## Partie 2 : Les bases de PHP
 
 **PHP** est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
+
 ### 2.1 Concepts clés
-    • Syntaxe de base : Le code PHP est entouré de balises <?php et ?>. Exemple :
-      <?php
-          echo "Bonjour !";
-      ?>
-    • Variables : Stockent des données avec $. Exemple : $nom = "Alice";.
-        ◦ Types : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
-    • Écho et impression : echo ou print affichent du texte ou du HTML dans la page. 
-    • Conditions : Permettent de prendre des décisions. Exemple :
-      if ($age >= 18) {
-          echo "Majeur";
-      } else {
-          echo "Mineur";
-      }
-    • Boucles : Répètent des actions. Exemple avec une boucle for :
-      for ($i = 1; $i <= 5; $i++) {
-          echo "Numéro : $i<br>";
-      }
-    • Tableaux : Stockent plusieurs valeurs. Exemple :
-      $fruits = ["pomme", "banane", "orange"];
-    • Intégration avec HTML : PHP peut générer du HTML dynamiquement. 
-2.2 Exemples
-    1. Affichage simple :
-       <!DOCTYPE html>
-       <html>
-       <body>
-           <?php
-               $message = "Bienvenue sur mon site !";
-               echo "<h1>$message</h1>";
-           ?>
-       </body>
-       </html>
-       Résultat : Affiche un titre "Bienvenue sur mon site !".
-    2. Condition :
-       <?php
-           $heure = 14;
-           if ($heure < 12) {
-               echo "<p>Bonjour, il est matin !</p>";
-           } else {
-               echo "<p>Bonjour, il est l'après-midi !</p>";
-           }
-       ?>
-       Résultat : Affiche un message selon l’heure.
-    3. Boucle et tableau :
-       <?php
-           $couleurs = ["rouge", "bleu", "vert"];
-           echo "<ul>";
-           foreach ($couleurs as $couleur) {
-               echo "<li>$couleur</li>";
-           }
-           echo "</ul>";
-       ?>
-       Résultat : Affiche une liste HTML de couleurs.
-2.3 Exercices pratiques
-    1. Exercice 1 : Afficher un message personnalisé :
-        ◦ Dans public/index.php, créez une variable $nom avec votre nom. 
-        ◦ Utilisez echo pour afficher <h2>Bienvenue, [votre nom] !</h2>. 
-        ◦ Lancez le serveur avec php -S localhost:8200 -t public et testez à http://localhost:8200. Partagez avec un voisin. 
-    2. Exercice 2 : Utiliser une condition :
-        ◦ Créez une variable $age avec un nombre (ex. : 20). 
-        ◦ Écrivez une condition if qui affiche "Vous êtes majeur !" si $age >= 18, sinon "Vous êtes mineur !". 
-        ◦ Testez à http://localhost:8200 et modifiez $age. Discutez en groupe : que se passe-t-il ? 
-    3. Exercice 3 : Afficher une liste dynamique :
-        ◦ Créez un tableau $hobbies avec 3 de vos hobbies. 
-        ◦ Utilisez une boucle foreach pour afficher chaque hobby dans une liste HTML <ul><li>. 
-        ◦ Testez à http://localhost:8200. Partagez vos résultats. 
+• **Syntaxe de base** : Le code PHP est entouré de balises `<?php et ?>`. Exemple :
+
+```php
+<?php
+    echo "Bonjour !";
+?>
+```
+
+- Variables : Stockent des données avec $. Exemple : `$nom = "Alice"`;.
+    - Types : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
+- Écho et impression : echo ou print affichent du texte ou du HTML dans la page. 
+- Conditions : Permettent de prendre des décisions. Exemple :
+
+```php
+if ($age >= 18) {
+    echo "Majeur";
+} else {
+    echo "Mineur";
+}
+```
+
+- Boucles : Répètent des actions. Exemple avec une boucle for :
+
+```php
+for ($i = 1; $i <= 5; $i++) {
+    echo "Numéro : $i<br>";
+}
+
+- Tableaux : Stockent plusieurs valeurs. Exemple :
+
+```php
+$fruits = ["pomme", "banane", "orange"];
+```
+
+- Intégration avec HTML : PHP peut générer du HTML dynamiquement. 
+
+### 2.2 Exemples
+**1. Affichage simple** :
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <?php
+        $message = "Bienvenue sur mon site !";
+        echo "<h1>$message</h1>";
+    ?>
+</body>
+</html>
+```
+
+***Résultat*** : Affiche un titre "Bienvenue sur mon site !".
+
+**2. Condition** :
+
+```php
+<?php
+    $heure = 14;
+    if ($heure < 12) {
+        echo "<p>Bonjour, il est matin !</p>";
+    } else {
+        echo "<p>Bonjour, il est l'après-midi !</p>";
+    }
+?>
+```
+
+***Résultat*** : Affiche un message selon l’heure.
+
+**3. Boucle et tableau** :
+
+```php
+<?php
+    $couleurs = ["rouge", "bleu", "vert"];
+    echo "<ul>";
+    foreach ($couleurs as $couleur) {
+        echo "<li>$couleur</li>";
+    }
+    echo "</ul>";
+?>
+```
+
+***Résultat*** : Affiche une liste HTML de couleurs.
+
+### 2.3 Exercices pratiques
+
+À vous de jouer [Exercices](./php/exercises/exercices-partie2.md)
+
+---
 
 Partie 3 : Les bases de PHP avec formulaires
 PHP excelle dans le traitement des données des utilisateurs, notamment via les formulaires HTML. Cette section explore comment PHP interagit avec les formulaires.
@@ -253,6 +285,8 @@ PHP excelle dans le traitement des données des utilisateurs, notamment via les 
            }
        ?>
        Résultat : Vérifie si le champ est vide avant d’afficher.
+
+
 3.3 Exercices pratiques
     1. Exercice 1 : Créer un formulaire simple :
         ◦ Créez un fichier public/formulaire.php avec un formulaire <form> (méthode POST) contenant un champ texte prenom. 
@@ -266,6 +300,8 @@ PHP excelle dans le traitement des données des utilisateurs, notamment via les 
         ◦ Modifiez public/traitement.php pour vérifier si le champ prenom est vide. 
         ◦ Si vide, affichez "Erreur : entrez un prénom." Sinon, affichez le message de bienvenue. 
         ◦ Testez à http://localhost:8200/formulaire.php avec un champ vide et non vide. Partagez vos observations. 
+
+---
 
 Partie 4 : Les bases de PHP avec tableaux et boucles
 PHP est puissant pour manipuler des données complexes, comme les tableaux, et automatiser des tâches avec des boucles.
