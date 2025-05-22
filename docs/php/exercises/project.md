@@ -193,39 +193,46 @@ section {
 - Durée : 15 minutes 
 - Responsable principal : Coordinateur (ou tous ensemble) 
 - Activité :
-    1. Vérifiez que le formulaire, le style et le PHP fonctionnent. 
-    2. Personnalisez avec des détails (ex. : activités du club, image thématique). 
-    3. Testez à http://localhost:8200 sur différents navigateurs. 
-    4. Préparez une présentation (2-3 minutes) pour expliquer :
-        - Le thème du club. 
-        - Le rôle de chaque membre. 
-        - Comment la maquette a guidé le travail. 
-        - Ce que vous avez appris. 
-    5. Présentez à la classe et recevez des retours. 
-Conseils pour un résultat attrayant
-    • Thème motivant : Choisissez un sujet passionnant (ex. : jeux vidéo). 
-    • Design soigné : Utilisez coolors.co pour des palettes. Ajoutez ombres et bordures arrondies. 
-    • Testez l’interactivité : Vérifiez que le formulaire fonctionne. 
-    • Personnalisez : Ajoutez des messages ou images uniques. 
-    • Suivez la maquette : Assurez-vous que le résultat correspond à votre vision. 
-Évaluation et partage
-    • Critères de réussite :
-        ◦ Une maquette claire a été créée et suivie. 
-        ◦ La structure HTML est correcte avec un formulaire. 
-        ◦ Le design est attrayant (CSS). 
-        ◦ Une fonctionnalité PHP est fonctionnelle (ex. : traitement de formulaire). 
-        ◦ Tous les membres ont contribué. 
-    • Présentation : Montrez votre application à la classe. 
-    • Bonus : Ajoutez une validation PHP (ex. : champ vide) or une animation CSS. 
 
-Conclusion
-Félicitations ! Vous avez appris les bases de PHP et créé une application web interactive en groupe. Continuez à explorer :
-    • Ajoutez des fonctionnalités PHP (ex. : connexion à une base de données). 
-    • Améliorez le design CSS (ex. : animations). 
-    • Partagez vos créations avec vos camarades ! 
-    • Utilisez les outils de la Partie 0.1 pour pratiquer. 
+1. Vérifiez que le formulaire, le style et le PHP fonctionnent. 
+2. Personnalisez avec des détails (ex. : activités du club, image thématique). 
+3. Testez à http://localhost:8200 sur différents navigateurs. 
+4. Préparez une présentation (2-3 minutes) pour expliquer :
+- Le thème du club. 
+- Le rôle de chaque membre. 
+- Comment la maquette a guidé le travail. 
+- Ce que vous avez appris. 
+5. Présentez à la classe et recevez des retours.
+
+## Conseils pour un résultat attrayant
+
+- **Thème motivant** : Choisissez un sujet passionnant (ex. : jeux vidéo). 
+- **Design soigné** : Utilisez [coolors.co](https://coolors.co/) pour des palettes. Ajoutez ombres et bordures arrondies. 
+- **Testez l’interactivité** : Vérifiez que le formulaire fonctionne. 
+- **Personnalisez** : Ajoutez des messages ou images uniques. 
+- S**uivez la maquette** : Assurez-vous que le résultat correspond à votre vision. 
+
+## Évaluation et partage
+
+- **Critères de réussite** :
+    - Une maquette claire a été créée et suivie. 
+    - La structure HTML est correcte avec un formulaire. 
+    - Le design est attrayant (CSS). 
+    - Une fonctionnalité PHP est fonctionnelle (ex. : traitement de formulaire). 
+    - Tous les membres ont contribué. 
+- **Présentation** : Montrez votre application à la classe. 
+- **Bonus** : Ajoutez une validation PHP (ex. : champ vide) or une animation CSS. 
+
+## Conclusion
+
+**Félicitations !** Vous avez appris les bases de PHP et créé une application web interactive en groupe. Continuez à explorer :
+- Ajoutez des fonctionnalités PHP (ex. : connexion à une base de données). 
+- Améliorez le design CSS (ex. : animations). 
+- Partagez vos créations avec vos camarades ! 
+- Utilisez les outils de la Partie 0.1 pour pratiquer. 
+
 Ressources supplémentaires
-    • Figma (figma.com) : Pour des maquettes. 
-    • PHP.net (php.net) : Documentation officielle. 
-    • W3Schools PHP (w3schools.com/php) : Tutoriels interactifs. 
-    • Repl.it (replit.com) : Testez vos scripts en ligne. 
+    - **Figma** [(figma.com)](https://www.figma.com/fr-fr/) : Pour des maquettes. 
+    - **PHP.net** [(php.net)](https://www.php.net/) : Documentation officielle. 
+    - **W3Schools PHP** [(w3schools.com/php)](https://www.w3schools.com/php/) : Tutoriels interactifs. 
+    - **Repl.it** [(replit.com)](https://replit.com/) : Testez vos scripts en ligne. 
