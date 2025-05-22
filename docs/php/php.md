@@ -168,7 +168,9 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 **PHP** est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
 
 ### 2.1 Concepts clés
-• **Syntaxe de base** : Le code PHP est toujours encadré par des balises `<?php et ?>`. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. Exemple :
+• **Syntaxe de base** : Le code PHP est toujours encadré par des balises `<?php et ?>`. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. 
+
+Exemple :
 
 ```php
 <?php
@@ -179,7 +181,9 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 - Variables : Stockent des données avec $. Exemple : `$nom = "Alice"`;.
     - Types : Les principaux types sont : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
 - Écho et impression : (echo) ou (print) permettent d'afficher du texte ou du HTML dans la page. 
-- Conditions : Permettent d'executer des blocs de code selon qu'une condition soit vraie ou fausse(if, else, elseif, switch, etc.) prendre des décisions. Exemple :
+- Conditions : Permettent d'executer des blocs de code selon qu'une condition soit vraie ou fausse(if, else, elseif, switch, etc.) prendre des décisions. 
+
+Exemple :
 
 ```php
 if ($age >= 18) {
@@ -189,7 +193,9 @@ if ($age >= 18) {
 }
 ```
 
-- Boucles : Répètent des actions un certain nombre de fois ou tant qu'une condition est remplie (for, while, foreach, etc.). Exemple avec une boucle for :
+- Boucles : Répètent des actions un certain nombre de fois ou tant qu'une condition est remplie (for, while, foreach, etc.). 
+
+Exemple avec une boucle for :
 
 ```php
 for ($i = 1; $i <= 5; $i++) {
@@ -197,7 +203,9 @@ for ($i = 1; $i <= 5; $i++) {
 }
 ```
 
-- Tableaux : Stockent plusieurs valeurs dans une seule variable, accessibles via des index ou des clés. Exemple :
+- Tableaux : Stockent plusieurs valeurs dans une seule variable, accessibles via des index ou des clés. 
+
+Exemple :
 
 ```php
 $fruits = ["pomme", "banane", "orange"];
@@ -363,14 +371,18 @@ Grâce aux boucles (for, while, foreach, etc.), PHP permet d’automatiser des t
 - **Tableaux associatifs** : Les tableaux associatifs en PHP permettent de stocker des paires clé-valeur, ce qui signifie que chaque élément du tableau est identifié par un nom (clé) plutôt que par un index numérique.
 Cela rend les données plus lisibles et facilite leur manipulation, notamment lorsque l’on travaille avec des ensembles d’informations structurées (par exemple : un utilisateur avec un nom, une adresse email, etc.).
 
-Ce type de tableau est très utilisé pour représenter des objets simples ou pour passer des données à des fonctions de manière organisée. Exemple :
+Ce type de tableau est très utilisé pour représenter des objets simples ou pour passer des données à des fonctions de manière organisée. 
+
+Exemple :
 
 ```php
 $utilisateur = ["nom" => "Alice", "age" => 25];
 ```
 
 - **Boucle foreach** : La boucle foreach est utilisée pour parcourir chaque élément d’un tableau. Elle est particulièrement utile avec les tableaux associatifs ou numériques, car elle permet d’accéder directement à chaque valeur (et éventuellement à la clé) sans avoir à gérer manuellement les index.
-Elle simplifie la lecture et le traitement de grandes quantités de données contenues dans un tableau. Exemple :
+Elle simplifie la lecture et le traitement de grandes quantités de données contenues dans un tableau. 
+
+Exemple :
 
 ```php
 foreach ($utilisateur as $cle => $valeur) {
@@ -379,7 +391,9 @@ foreach ($utilisateur as $cle => $valeur) {
 ```
 
 - **Fonctions** : Les fonctions en PHP sont des blocs de code réutilisables qui effectuent une tâche spécifique. Elles permettent de structurer le code, d’éviter les répétitions, et de rendre le programme plus lisible et plus facile à maintenir.
-Une fonction peut prendre des paramètres (données en entrée) et retourner un résultat. Exemple :
+Une fonction peut prendre des paramètres (données en entrée) et retourner un résultat. 
+
+Exemple :
 
 ```php
 function saluer($nom) {
@@ -388,7 +402,9 @@ function saluer($nom) {
 ```
 
 - **Tableaux multidimensionnels** : En PHP, les tableaux multidimensionnels sont des tableaux contenant d'autres tableaux. Ils permettent de structurer des données complexes, comme des tableaux de données en deux dimensions (lignes/colonnes) ou des objets composés.
-Ce type de structure est couramment utilisé pour gérer des listes de données associées, comme des utilisateurs avec leurs informations (nom, email, âge, etc.). Exemple :
+Ce type de structure est couramment utilisé pour gérer des listes de données associées, comme des utilisateurs avec leurs informations (nom, email, âge, etc.). 
+
+Exemple :
 
 ```php
 $equipe = [
