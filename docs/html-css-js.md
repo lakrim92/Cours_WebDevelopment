@@ -25,7 +25,7 @@ Avant de plonger dans le code, comprenons d'où viennent les sites web et les la
 Le web a transformé la façon dont nous communiquons, apprenons et partageons des informations !
 
 ## Les débuts du web
-- **1989** : Tim Berners-Lee, un scientifique britannique, invente le World Wide Web au CERN (Suisse).  
+- **1989** : ***Tim Berners-Lee***, un scientifique britannique, invente le World Wide Web au CERN (Suisse).  
     Son idée était de créer un système pour partager des informations entre chercheurs via des ordinateurs connectés.  
 - **1990** : Le premier site web est créé. Il était très simple, avec du texte et des liens hypertextes (pas d'images ni de couleurs !).  
 
@@ -41,7 +41,14 @@ Le web a transformé la façon dont nous communiquons, apprenons et partageons d
 
 - **JavaScript (1995)** : Créé par Brendan Eich, JavaScript a rendu le web interactif.  
     Avant, les sites étaient statiques (comme un livre).  
-    Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations.  
+    Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations.
+    
+<div style="text-align: center;">
+    <img src="./img/Tim-Berners-Lee-2801960553.jpg" alt="Tim-Berners-Lee">
+    <br>
+    <a href="https://fr.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf - Wikipédia</a>
+</div>
+
 
 ## Le web aujourd'hui
 
