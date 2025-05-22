@@ -46,7 +46,7 @@ Le web a transformé la façon dont nous communiquons, apprenons et partageons d
 <div style="text-align: center;">
     <img src="./img/Tim-Berners-Lee-2801960553.jpg" alt="Tim-Berners-Lee">
     <br>
-    <a href="https://fr.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf - Wikipédia</a>
+    <a href="https://fr.wikipedia.org/wiki/Tim_Berners-Lee">Rasmus Lerdorf - Wikipédia</a>
 </div>
 
 
