@@ -41,47 +41,49 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
 - **Responsable principal** : Coordinateur (ou tous ensemble) 
 - **Activité** :
 
-1. Créez une **maquette** pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage. 
-2. Options :
-    - **Papier** : Dessinez la page (titre en haut, formulaire au centre, etc.). 
-    - **Outil en ligne** : Utilisez [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou [Canva](https://www.canva.com/fr_fr/) pour créer une maquette numérique simple.. 
-3. Incluez :
-    ▪ Disposition des éléments (titre, formulaire, image). 
-    ▪ Idées de couleurs/styles (ex. : "fond clair, texte sombre"). 
-    ▪ Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?). 
-4. Validez la maquette en groupe et ajustez si nécessaire. 
-Étape 3 : Créer la structure HTML
-    • Durée : 30 minutes 
-    • Responsable principal : Designer HTML 
-    • Activité :
-        1. Créez un dossier projet_groupe dans mon_premier_site_php, et à l’intérieur, un sous-dossier public. 
-        2. Dans projet_groupe/public, créez un fichier index.php avec :
-           <!DOCTYPE html>
-           <html lang="fr">
-           <head>
-               <meta charset="UTF-8">
-               <title>Club de [Votre Thème]</title>
-               <link rel="stylesheet" href="style.css">
-           </head>
-           <body>
-               <h1>Bienvenue au Club de [Votre Thème] !</h1>
-               <p>Rejoignez-nous pour [description].</p>
-               <img src="https://picsum.photos/300" alt="Image du club">
-               <form action="traitement.php" method="post">
-                   <label>Nom :</label>
-                   <input type="text" name="nom">
-                   <input type="submit" value="S'inscrire">
-               </form>
-               <section>
-                   <h2>Membres</h2>
-                   <div id="membres"></div>
-               </section>
-           </body>
-           </html>
-        3. Lancez le serveur depuis projet_groupe avec :
-           php -S localhost:8200 -t public
-        4. Testez à http://localhost:8200. 
-Étape 4 : Styliser avec CSS
+    1. Créez une **maquette** pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage. 
+    2. Options :
+        - **Papier** : Dessinez la page (titre en haut, formulaire au centre, etc.). 
+        - **Outil en ligne** : Utilisez [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou [Canva](https://www.canva.com/fr_fr/) pour créer une maquette numérique simple.. 
+    3. Incluez :
+        - Disposition des éléments (titre, formulaire, image). 
+        - Idées de couleurs/styles (ex. : "fond clair, texte sombre"). 
+        - Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?). 
+    4. Validez la maquette en groupe et ajustez si nécessaire. 
+
+### Étape 3 : Créer la structure HTML
+• Durée : 30 minutes 
+• Responsable principal : Designer HTML 
+• Activité :
+    1. Créez un dossier projet_groupe dans mon_premier_site_php, et à l’intérieur, un sous-dossier public. 
+    2. Dans projet_groupe/public, créez un fichier index.php avec :
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club de [Votre Thème]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenue au Club de [Votre Thème] !</h1>
+    <p>Rejoignez-nous pour [description].</p>
+    <img src="https://picsum.photos/300" alt="Image du club">
+    <form action="traitement.php" method="post">
+        <label>Nom :</label>
+        <input type="text" name="nom">
+        <input type="submit" value="S'inscrire">
+    </form>
+    <section>
+        <h2>Membres</h2>
+        <div id="membres"></div>
+    </section>
+</body>
+</html>
+    3. Lancez le serveur depuis projet_groupe avec :
+        php -S localhost:8200 -t public
+    4. Testez à http://localhost:8200.
+
+### Étape 4 : Styliser avec CSS
     • Durée : 30 minutes 
     • Responsable principal : Artiste CSS 
     • Activité :
