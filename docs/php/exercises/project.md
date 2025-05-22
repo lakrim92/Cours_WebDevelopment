@@ -53,9 +53,10 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
 4. Validez la maquette en groupe et ajustez si nécessaire. 
 
 ### Étape 3 : Créer la structure HTML
-• **Durée** : 30 minutes 
-• **Responsable principal** : Designer HTML 
-• **Activité** :
+
+- **Durée** : 30 minutes 
+- **Responsable principal** : Designer HTML 
+- **Activité** :
 
 1. Créez un dossier projet_groupe dans mon_premier_site_php, et à l’intérieur, un sous-dossier public. 
 2. Dans projet_groupe/public, créez un fichier index.php avec :
@@ -86,107 +87,121 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
 ```
 
 3. Lancez le serveur depuis projet_groupe avec :
-    php -S localhost:8200 -t public
+`php -S localhost:8200 -t public`
 4. Testez à http://localhost:8200.
 
 ### Étape 4 : Styliser avec CSS
 
-• Durée : 30 minutes 
-• Responsable principal : Artiste CSS 
-• Activité :
-    1. Dans projet_groupe/public, créez un fichier style.css avec :
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f4f8;
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-            color: #34495e;
-            text-align: center;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        form {
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: #e74c3c;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #c0392b;
-        }
-        section {
-            background-color: white;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    2. Liez style.css à index.php. 
-    3. Testez à http://localhost:8200 et ajustez les styles en groupe. 
-Étape 5 : Ajouter l’interactivité avec PHP
-    • Durée : 30 minutes 
-    • Responsable principal : Magicien PHP 
-    • Activité :
-        1. Dans projet_groupe/public, créez un fichier traitement.php avec :
-           <?php
-               $nom = htmlspecialchars($_POST["nom"]);
-               $membres = [
-                   ["nom" => "Alice", "role" => "Président"],
-                   ["nom" => "Bob", "role" => "Membre"],
-                   ["nom" => $nom, "role" => "Nouveau membre"]
-               ];
-               echo "<h2>Bienvenue, $nom !</h2>";
-               echo "<ul>";
-               foreach ($membres as $membre) {
-                   echo "<li>" . $membre["nom"] . " - " . $membre["role"] . "</li>";
-               }
-               echo "</ul>";
-               echo '<a href="index.php">Retour</a>';
-           ?>
-        2. Testez en soumettant le formulaire à http://localhost:8200. Vérifiez les erreurs dans le navigateur ou le terminal. 
-Étape 6 : Finalisation et présentation
-    • Durée : 15 minutes 
-    • Responsable principal : Coordinateur (ou tous ensemble) 
-    • Activité :
-        1. Vérifiez que le formulaire, le style et le PHP fonctionnent. 
-        2. Personnalisez avec des détails (ex. : activités du club, image thématique). 
-        3. Testez à http://localhost:8200 sur différents navigateurs. 
-        4. Préparez une présentation (2-3 minutes) pour expliquer :
-            ▪ Le thème du club. 
-            ▪ Le rôle de chaque membre. 
-            ▪ Comment la maquette a guidé le travail. 
-            ▪ Ce que vous avez appris. 
-        5. Présentez à la classe et recevez des retours. 
+- **Durée** : 30 minutes 
+- **Responsable principal** : Artiste CSS 
+- **Activité** :
+
+1. Dans `projet_groupe/public`, créez un fichier style.css avec :
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.2em;
+    color: #34495e;
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+```
+
+2. Liez style.css à index.php. 
+3. Testez à http://localhost:8200 et ajustez les styles en groupe. 
+
+### Étape 5 : Ajouter l’interactivité avec PHP
+
+- **Durée** : 30 minutes 
+- **Responsable principal** : Magicien PHP 
+- **Activité** :
+
+1. Dans `projet_groupe/public`, créez un fichier `traitement.php` avec :
+
+```php
+<?php
+    $nom = htmlspecialchars($_POST["nom"]);
+    $membres = [
+        ["nom" => "Alice", "role" => "Président"],
+        ["nom" => "Bob", "role" => "Membre"],
+        ["nom" => $nom, "role" => "Nouveau membre"]
+    ];
+    echo "<h2>Bienvenue, $nom !</h2>";
+    echo "<ul>";
+    foreach ($membres as $membre) {
+        echo "<li>" . $membre["nom"] . " - " . $membre["role"] . "</li>";
+    }
+    echo "</ul>";
+    echo '<a href="index.php">Retour</a>';
+?>
+```
+
+2. Testez en soumettant le formulaire à http://localhost:8200. Vérifiez les erreurs dans le navigateur ou le terminal.
+
+### Étape 6 : Finalisation et présentation
+
+- Durée : 15 minutes 
+- Responsable principal : Coordinateur (ou tous ensemble) 
+- Activité :
+    1. Vérifiez que le formulaire, le style et le PHP fonctionnent. 
+    2. Personnalisez avec des détails (ex. : activités du club, image thématique). 
+    3. Testez à http://localhost:8200 sur différents navigateurs. 
+    4. Préparez une présentation (2-3 minutes) pour expliquer :
+        - Le thème du club. 
+        - Le rôle de chaque membre. 
+        - Comment la maquette a guidé le travail. 
+        - Ce que vous avez appris. 
+    5. Présentez à la classe et recevez des retours. 
 Conseils pour un résultat attrayant
     • Thème motivant : Choisissez un sujet passionnant (ex. : jeux vidéo). 
     • Design soigné : Utilisez coolors.co pour des palettes. Ajoutez ombres et bordures arrondies. 
