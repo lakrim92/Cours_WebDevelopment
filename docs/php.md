@@ -3,7 +3,7 @@
 ## Introduction : Bienvenue dans le monde du développement web avec PHP !
 Ce cours est conçu pour vous apprendre à créer des applications web dynamiques en utilisant **PHP**, un langage de programmation côté serveur. Nous partirons de zéro, sans connaissances préalables, et vous serez guidés pas à pas pour construire votre première application web interactive. Le cours est interactif : vous allez coder, expérimenter et collaborer !
 
-**Objectifs du cours**
+### Objectifs du cours
 - Comprendre les bases de PHP et son rôle dans le développement web. 
 - Configurer un environnement de développement simple avec le serveur intégré de PHP. 
 - Créer une application web dynamique avec PHP. 
@@ -14,32 +14,36 @@ Ce cours est conçu pour vous apprendre à créer des applications web dynamique
 Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si populaire dans le développement web.
 
 ### Les débuts de PHP
-- **1994** : PHP, ou PHP: Hypertext Preprocessor, est créé par **Rasmus Lerdorf** comme un ensemble d’outils pour gérer des pages web personnelles (initialement Personal Home Page). À l’époque, il s’agissait de scripts simples pour suivre les visiteurs d’un site. 
+- **1994** : PHP, ou ***PHP: Hypertext Preprocessor***, est créé par **Rasmus Lerdorf** comme un ensemble d’outils pour gérer des pages web personnelles (initialement ***Personal Home Page***). À l’époque, il s’agissait de scripts simples pour suivre les visiteurs d’un site. 
 - **1997** : PHP 2 introduit des fonctionnalités plus avancées, comme le traitement des formulaires. 
 - **1998** : PHP 3, développé par une communauté croissante, devient un langage de programmation complet, capable de générer des pages web dynamiques. 
 
-**L’évolution de PHP**
-    • 2004 : PHP 5 introduit la programmation orientée objet, améliorant la robustesse du langage. 
-    • 2015 : PHP 7 apporte des performances nettement meilleures, rendant le langage plus rapide et efficace. 
-    • Aujourd’hui : PHP 8 (et ses versions ultérieures) inclut des fonctionnalités modernes comme le typage strict et JIT (Just-In-Time compilation). PHP alimente environ 80 % des sites web dynamiques, comme WordPress, Drupal et Laravel. 
-PHP aujourd’hui
-PHP est un langage côté serveur qui permet de générer des pages web dynamiques en interagissant avec des bases de données, des formulaires et des sessions utilisateur. Il est souvent utilisé avec HTML, CSS et JavaScript pour créer des sites interactifs. Exemples d’utilisation :
-    • WordPress : Plateforme de blogs et de sites web. 
-    • Facebook : Utilise PHP pour certaines parties de son infrastructure. 
-    • E-commerce : Sites comme Magento pour gérer des boutiques en ligne. 
-Activité : Réflexion en groupe
-    • Visitez un site comme wordpress.com ou wikipedia.org (qui utilise MediaWiki, basé sur PHP). Essayez d’imaginer :
-        ◦ Où PHP pourrait intervenir ? (Indice : formulaires, contenu qui change selon l’utilisateur.) 
-        ◦ Comment PHP diffère de HTML/CSS ? (Indice : PHP génère du contenu dynamiquement.) 
-    • Partagez vos observations avec un camarade ! 
+### L’évolution de PHP
+- **2004** : PHP 5 introduit la programmation orientée objet, améliorant la robustesse du langage. 
+- **2015** : PHP 7 apporte des performances nettement meilleures, rendant le langage plus rapide et efficace. 
+- **Aujourd’hui** : PHP 8 (et ses versions ultérieures) inclut des fonctionnalités modernes comme le typage strict et JIT (***Just-In-Time compilation***). PHP alimente environ 80 % des sites web dynamiques, comme ***WordPress***, ***Drupal*** et ***Laravel***. 
 
-Partie 0.1 : Outils en ligne pour s’entraîner et apprendre
+### PHP aujourd’hui
+PHP est un langage côté serveur** qui permet de générer des pages web dynamiques en interagissant avec des bases de données, des formulaires et des sessions utilisateur. Il est souvent utilisé avec HTML, CSS et JavaScript pour créer des sites interactifs. Exemples d’utilisation :
+- WordPress : Plateforme de blogs et de sites web. 
+- Facebook : Utilise PHP pour certaines parties de son infrastructure. 
+- E-commerce : Sites comme ***Magento*** pour gérer des boutiques en ligne. 
+
+### Activité : Réflexion en groupe
+- Visitez un site comme [wordpress.com](https://wordpress.com/fr/) ou [wikipedia.org](https://www.wikipedia.org/) (qui utilise ***MediaWiki***, basé sur PHP). Essayez d’imaginer :
+    - Où PHP pourrait intervenir ? (Indice : formulaires, contenu qui change selon l’utilisateur.) 
+    - Comment PHP diffère de HTML/CSS ? (Indice : PHP génère du contenu dynamiquement.) 
+- Partagez vos observations avec un camarade ! 
+
+## Partie 0.1 : Outils en ligne pour s’entraîner et apprendre
+
 Pour progresser en PHP, il est essentiel de pratiquer. Voici une sélection d’outils en ligne gratuits et interactifs pour coder PHP directement dans votre navigateur.
-Outils recommandés
-    1. Repl.it (replit.com)
+
+### Outils recommandés
+1. **Repl.it** [(replit.com)](https://replit.com/)
 Une plateforme en ligne pour coder en PHP, HTML et CSS. Vous pouvez créer des projets simples et voir les résultats immédiatement.
-Activité : Créez un compte, essayez un script PHP simple (ex. : <?php echo "Bonjour !"; ?>) et partagez le résultat avec un camarade.
-    2. PHP Sandbox (onlinephp.io)
+***Activité*** : Créez un compte, essayez un script PHP simple (ex. : <?php echo "Bonjour !"; ?>) et partagez le résultat avec un camarade.
+2. **PHP Sandbox** [(onlinephp.io)](https://onlinephp.io/)
 Un environnement pour tester des scripts PHP avec différentes versions du langage. Idéal pour expérimenter avec du code serveur.
 Activité : Écrivez un script qui affiche votre nom et testez-le. Discutez de ce que fait la fonction echo.
     3. W3Schools PHP (w3schools.com/php)
