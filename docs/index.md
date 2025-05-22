@@ -6,7 +6,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 - [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
-- [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
+- [Introduction à PHP](./php/php.md) : Développez des applications web dynamiques.
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
 
 ## Barèmes de notation
