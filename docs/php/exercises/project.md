@@ -41,22 +41,25 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
 - **Responsable principal** : Coordinateur (ou tous ensemble) 
 - **Activité** :
 
-    1. Créez une **maquette** pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage. 
-    2. Options :
-        - **Papier** : Dessinez la page (titre en haut, formulaire au centre, etc.). 
-        - **Outil en ligne** : Utilisez [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou [Canva](https://www.canva.com/fr_fr/) pour créer une maquette numérique simple.. 
-    3. Incluez :
-        - Disposition des éléments (titre, formulaire, image). 
-        - Idées de couleurs/styles (ex. : "fond clair, texte sombre"). 
-        - Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?). 
-    4. Validez la maquette en groupe et ajustez si nécessaire. 
+1. Créez une **maquette** pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage. 
+2. Options :
+    - **Papier** : Dessinez la page (titre en haut, formulaire au centre, etc.). 
+    - **Outil en ligne** : Utilisez [Figma](https://www.figma.com/fr-fr/) (version gratuite) ou [Canva](https://www.canva.com/fr_fr/) pour créer une maquette numérique simple.. 
+3. Incluez :
+    - Disposition des éléments (titre, formulaire, image). 
+    - Idées de couleurs/styles (ex. : "fond clair, texte sombre"). 
+    - Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?). 
+4. Validez la maquette en groupe et ajustez si nécessaire. 
 
 ### Étape 3 : Créer la structure HTML
-• Durée : 30 minutes 
-• Responsable principal : Designer HTML 
-• Activité :
-    1. Créez un dossier projet_groupe dans mon_premier_site_php, et à l’intérieur, un sous-dossier public. 
-    2. Dans projet_groupe/public, créez un fichier index.php avec :
+• **Durée** : 30 minutes 
+• **Responsable principal** : Designer HTML 
+• **Activité** :
+
+1. Créez un dossier projet_groupe dans mon_premier_site_php, et à l’intérieur, un sous-dossier public. 
+2. Dans projet_groupe/public, créez un fichier index.php avec :
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -79,73 +82,76 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
     </section>
 </body>
 </html>
-    3. Lancez le serveur depuis projet_groupe avec :
-        php -S localhost:8200 -t public
-    4. Testez à http://localhost:8200.
+```
+
+3. Lancez le serveur depuis projet_groupe avec :
+    php -S localhost:8200 -t public
+4. Testez à http://localhost:8200.
 
 ### Étape 4 : Styliser avec CSS
-    • Durée : 30 minutes 
-    • Responsable principal : Artiste CSS 
-    • Activité :
-        1. Dans projet_groupe/public, créez un fichier style.css avec :
-           body {
-               font-family: Arial, sans-serif;
-               margin: 0;
-               padding: 20px;
-               background-color: #f0f4f8;
-           }
-           h1 {
-               color: #2c3e50;
-               text-align: center;
-               font-size: 2.5em;
-           }
-           p {
-               font-size: 1.2em;
-               color: #34495e;
-               text-align: center;
-           }
-           img {
-               display: block;
-               margin: 20px auto;
-               border-radius: 10px;
-               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-           }
-           form {
-               max-width: 400px;
-               margin: 20px auto;
-               padding: 20px;
-               background-color: white;
-               border-radius: 8px;
-               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-           }
-           input[type="text"] {
-               width: 100%;
-               padding: 10px;
-               margin: 10px 0;
-               border: 1px solid #ccc;
-               border-radius: 5px;
-           }
-           input[type="submit"] {
-               background-color: #e74c3c;
-               color: white;
-               padding: 10px 20px;
-               border: none;
-               border-radius: 5px;
-               cursor: pointer;
-           }
-           input[type="submit"]:hover {
-               background-color: #c0392b;
-           }
-           section {
-               background-color: white;
-               padding: 20px;
-               margin: 20px auto;
-               max-width: 600px;
-               border-radius: 8px;
-               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-           }
-        2. Liez style.css à index.php. 
-        3. Testez à http://localhost:8200 et ajustez les styles en groupe. 
+
+• Durée : 30 minutes 
+• Responsable principal : Artiste CSS 
+• Activité :
+    1. Dans projet_groupe/public, créez un fichier style.css avec :
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #c0392b;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    2. Liez style.css à index.php. 
+    3. Testez à http://localhost:8200 et ajustez les styles en groupe. 
 Étape 5 : Ajouter l’interactivité avec PHP
     • Durée : 30 minutes 
     • Responsable principal : Magicien PHP 
