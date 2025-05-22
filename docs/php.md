@@ -42,86 +42,95 @@ Pour progresser en PHP, il est essentiel de pratiquer. Voici une sélection d’
 ### Outils recommandés
 1. **Repl.it** [(replit.com)](https://replit.com/)
 Une plateforme en ligne pour coder en PHP, HTML et CSS. Vous pouvez créer des projets simples et voir les résultats immédiatement.
-***Activité*** : Créez un compte, essayez un script PHP simple (ex. : <?php echo "Bonjour !"; ?>) et partagez le résultat avec un camarade.
+***Activité*** : Créez un compte, essayez un script PHP simple (ex. : `<?php echo "Bonjour !"; ?>`) et partagez le résultat avec un camarade.
 2. **PHP Sandbox** [(onlinephp.io)](https://onlinephp.io/)
 Un environnement pour tester des scripts PHP avec différentes versions du langage. Idéal pour expérimenter avec du code serveur.
-Activité : Écrivez un script qui affiche votre nom et testez-le. Discutez de ce que fait la fonction echo.
-    3. W3Schools PHP (w3schools.com/php)
+***Activité*** : Écrivez un script qui affiche votre nom et testez-le. Discutez de ce que fait la fonction `echo`.
+3. **W3Schools PHP** [(w3schools.com/php)](https://www.w3schools.com/php/)
 Tutoriels clairs avec un éditeur en ligne pour tester des scripts PHP. Couvre les bases comme les variables, les formulaires et les boucles.
 Activité : Suivez un tutoriel sur les variables PHP et essayez l’exercice correspondant.
-    4. FreeCodeCamp (freecodecamp.org)
+4. **FreeCodeCamp** [(freecodecamp.org)](https://www.freecodecamp.org/)
 Bien que centré sur HTML/CSS/JavaScript, FreeCodeCamp propose des ressources pour PHP via ses forums et projets.
-Activité : Cherchez un tutoriel PHP sur le forum et essayez un exemple simple.
-    5. Codewars (codewars.com)
+***Activité*** : Cherchez un tutoriel PHP sur le forum et essayez un exemple simple.
+5. **Codewars** [(codewars.com)](https://www.codewars.com/)
 Une plateforme avec des défis de programmation, y compris en PHP. Parfait pour pratiquer les boucles, conditions et fonctions.
-Activité : Résolvez un défi PHP de niveau débutant et expliquez votre solution à un camarade.
-Conseils pour utiliser ces outils
-    • Pratiquez régulièrement : Passez 10 à 15 minutes par jour sur un outil. 
-    • Partagez vos progrès : Montrez vos scripts à vos camarades pour obtenir des retours. 
-    • Expérimentez : Modifiez les exemples pour voir comment le code réagit. 
+***Activité*** : Résolvez un défi PHP de niveau débutant et expliquez votre solution à un camarade.
 
-Partie 1 : Préparer les outils
+###cConseils pour utiliser ces outils
+- Pratiquez régulièrement : Passez 10 à 15 minutes par jour sur un outil. 
+- Partagez vos progrès : Montrez vos scripts à vos camarades pour obtenir des retours. 
+- Expérimentez : Modifiez les exemples pour voir comment le code réagit. 
+
+## Partie 1 : Préparer les outils
+
 Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécuter des scripts côté serveur. Nous utiliserons le serveur intégré de PHP, qui est simple à configurer et ne nécessite pas d’installation complexe comme XAMPP.
-1.1 Outils nécessaires
-    • PHP : Vous devez avoir PHP installé sur votre ordinateur.
-        ◦ Windows/Mac/Linux : Téléchargez PHP depuis php.net. Suivez les instructions d’installation pour votre système. 
-        ◦ Vérifiez l’installation en ouvrant un terminal et en tapant php -v. Vous devriez voir la version de PHP (ex. : PHP 8.x). 
-    • Un éditeur de texte : Visual Studio Code (gratuit, avec l’extension PHP Intelephense pour l’autocomplétion).
-        ◦ Téléchargez-le sur : code.visualstudio.com. 
-    • Un terminal : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux. 
-    • Un navigateur web : Chrome, Firefox ou autre pour tester vos pages. 
-    • Un dossier de travail :
-        ◦ Créez un dossier nommé mon_premier_site_php sur votre ordinateur (ex. : C:\Users\VotreNom\mon_premier_site_php ou ~/mon_premier_site_php). 
-        ◦ À l’intérieur, créez un sous-dossier nommé public où vos fichiers .php seront placés. 
-1.2 Activité : Configurer son environnement
-    1. Installez PHP :
-        ◦ Téléchargez et installez PHP depuis php.net. 
-        ◦ Ouvrez un terminal et tapez php -v pour vérifier que PHP est installé. 
-    2. Installez Visual Studio Code :
-        ◦ Téléchargez et installez VS Code. 
-        ◦ Installez l’extension PHP Intelephense via l’onglet Extensions. 
-    3. Créez la structure du projet :
-        ◦ Créez un dossier mon_premier_site_php sur votre bureau ou ailleurs. 
-        ◦ À l’intérieur, créez un sous-dossier public. 
-        ◦ Ouvrez mon_premier_site_php dans VS Code (Fichier > Ouvrir un dossier). 
-    4. Créez un fichier PHP :
-        ◦ Dans public, créez un fichier nommé index.php avec :
-          <!DOCTYPE html>
-          <html lang="fr">
-          <head>
-              <meta charset="UTF-8">
-              <title>Ma première page PHP</title>
-          </head>
-          <body>
-              <h1>Bienvenue !</h1>
-              <?php
-                  echo "<p>Ceci est généré par PHP !</p>";
-              ?>
-          </body>
-          </html>
-    5. Lancez le serveur PHP :
-        ◦ Ouvrez le terminal dans VS Code (Terminal > Nouveau terminal) ou utilisez votre terminal système. 
-        ◦ Naviguez vers le dossier mon_premier_site_php avec la commande :
-          cd chemin/vers/mon_premier_site_php
-          (Ex. : cd ~/mon_premier_site_php sur Mac/Linux ou cd C:\Users\VotreNom\mon_premier_site_php sur Windows). 
-        ◦ Lancez le serveur PHP avec :
-          php -S localhost:8200 -t public
-          Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Development Server started at localhost:8200. 
-    6. Testez votre page :
-        ◦ Ouvrez votre navigateur et allez à http://localhost:8200. 
-        ◦ Vous devriez voir une page avec un titre "Bienvenue !" et un paragraphe généré par PHP. 
-        ◦ Partagez avec un voisin : que se passe-t-il si vous modifiez le texte dans index.php et actualisez la page ? 
-Conseils pour le terminal
-    • Arrêter le serveur : Appuyez sur Ctrl+C dans le terminal pour arrêter le serveur. 
-    • Erreurs courantes :
-        ◦ Si php -v ne fonctionne pas, vérifiez que PHP est dans votre PATH système. 
-        ◦ Si http://localhost:8200 ne répond pas, assurez-vous que le terminal affiche le message du serveur et que le port 8200 n’est pas utilisé par une autre application. 
-    • Windows : Utilisez PowerShell ou l’invite de commandes. Si le chemin contient des espaces, entourez-le de guillemets (ex. : cd "C:\Users\Mon Nom\mon_premier_site_php"). 
-    • Mac/Linux : Utilisez le Terminal. Les commandes sont similaires. 
+### 1.1 Outils nécessaires
+- PHP : Vous devez avoir PHP installé sur votre ordinateur.
+    - **Windows/Mac/Linux **: Téléchargez PHP depuis [php.net](https://www.php.net/). Suivez les instructions d’installation pour votre système. 
+    - Vérifiez l’installation en ouvrant un terminal et en tapant `php -v`. Vous devriez voir la version de PHP (ex. : `PHP 8.x`). 
+- **Un éditeur de texte : Visual Studio Code** (gratuit, avec l’extension ***PHP Intelephense*** pour l’autocomplétion).
+    - Téléchargez-le sur : [code.visualstudio.com](https://code.visualstudio.com/). 
+- **Un terminal** : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux. 
+- **Un navigateur web** : Chrome, Firefox ou autre pour tester vos pages. 
+- **Un dossier de travail** :
+    - Créez un dossier nommé `mon_premier_site_php sur votre ordinateur (ex. : `C:\Users\VotreNom\mon_premier_site_php` ou `~/mon_premier_site_php`). 
+    - À l’intérieur, créez un sous-dossier nommé **public** où vos fichiers **.php** seront placés. 
 
-Partie 2 : Les bases de PHP
-PHP est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
-2.1 Concepts clés
+### 1.2 Activité : Configurer son environnement
+1. **Installez PHP** :
+- Téléchargez et installez PHP depuis [php.net](https://www.php.net/). 
+- Ouvrez un terminal et tapez `php -v` pour vérifier que PHP est installé. 
+2. **Installez Visual Studio Code** :
+◦ Téléchargez et installez VS Code. 
+◦ Installez l’extension ***PHP Intelephense*** via l’onglet Extensions. 
+3. **Créez la structure du projet** :
+- Créez un dossier `mon_premier_site_php` sur votre bureau ou ailleurs. 
+- À l’intérieur, créez un sous-dossier public. 
+- Ouvrez `mon_premier_site_php` dans VS Code (Fichier > Ouvrir un dossier). 
+4. **Créez un fichier PHP** :
+- Dans public, créez un fichier nommé **index.php** avec :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma première page PHP</title>
+</head>
+<body>
+    <h1>Bienvenue !</h1>
+    <?php
+        echo "<p>Ceci est généré par PHP !</p>";
+    ?>
+</body>
+</html>
+```
+
+5. **Lancez le serveur PHP** :
+- Ouvrez le terminal dans VS Code (Terminal > Nouveau terminal) ou utilisez votre terminal système. 
+- Naviguez vers le dossier **mon_premier_site_php** avec la commande :
+`cd chemin/vers/mon_premier_site_php`
+(Ex. : `cd ~/mon_premier_site_php` sur Mac/Linux ou `cd C:\Users\VotreNom\mon_premier_site_php` sur Windows). 
+- Lancez le serveur PHP avec :
+`php -S localhost:8200 -t public`
+Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Development Server started at localhost:8200. 
+6. **Testez votre page** :
+- Ouvrez votre navigateur et allez à http://localhost:8200. 
+- Vous devriez voir une page avec un titre "Bienvenue !" et un paragraphe généré par PHP. 
+- Partagez avec un voisin : que se passe-t-il si vous modifiez le texte dans **index.php** et actualisez la page ? 
+
+### Conseils pour le terminal
+- **Arrêter le serveur** : Appuyez sur `Ctrl+C` dans le terminal pour arrêter le serveur. 
+- **Erreurs courantes** :
+    - Si `php -v` ne fonctionne pas, vérifiez que PHP est dans votre **PATH** système. 
+    - Si `http://localhost:8200` ne répond pas, assurez-vous que le terminal affiche le message du serveur et que le port 8200 n’est pas utilisé par une autre application. 
+- **Windows** : Utilisez PowerShell ou l’invite de commandes. Si le chemin contient des espaces, entourez-le de guillemets (ex. : `cd "C:\Users\Mon Nom\mon_premier_site_php"`). 
+- **Mac/Linux** : Utilisez le Terminal. Les commandes sont similaires. 
+
+## Partie 2 : Les bases de PHP
+
+**PHP** est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
+### 2.1 Concepts clés
     • Syntaxe de base : Le code PHP est entouré de balises <?php et ?>. Exemple :
       <?php
           echo "Bonjour !";
