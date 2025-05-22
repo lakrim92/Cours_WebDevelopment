@@ -24,6 +24,7 @@ Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si p
 - **1997** : PHP 2 introduit des fonctionnalités plus avancées, comme le traitement des formulaires. 
 - **1998** : PHP 3, développé par une communauté croissante, devient un langage de programmation complet, capable de générer des pages web dynamiques. 
 
+
 <div style="text-align: center;">
     <img src="../img/330px-Wikirl.jpg" alt="Rasmus Lerdorf">
     <br>
@@ -36,10 +37,27 @@ Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si p
 - **Aujourd’hui** : PHP 8 (et ses versions ultérieures) inclut des fonctionnalités modernes comme le typage strict et JIT (***Just-In-Time compilation***). PHP alimente environ 80 % des sites web dynamiques, comme ***WordPress***, ***Drupal*** et ***Laravel***. 
 
 ### PHP aujourd’hui
-PHP est un langage côté serveur** qui permet de générer des pages web dynamiques en interagissant avec des bases de données, des formulaires et des sessions utilisateur. Il est souvent utilisé avec HTML, CSS et JavaScript pour créer des sites interactifs. Exemples d’utilisation :
-- WordPress : Plateforme de blogs et de sites web. 
-- Facebook : Utilise PHP pour certaines parties de son infrastructure. 
-- E-commerce : Sites comme ***Magento*** pour gérer des boutiques en ligne. 
+PHP est un langage de programmation côté serveur** qui permet de générer des pages web dynamiques. Contrairement au HTML, qui est statique, PHP peut interagir avec des bases de données, gerer des formulaires, suivre les sessions utilisateur et produire du contenu personnalisé en temps réel.
+
+### Fonctionnement
+PHP sintegre directement dans du code HTML à l'aide de balises `<?php ... ?>`. Lorsque l'utlisateur demande une page web, le **serveur exécute le code PHP** et renvoie uniquement le **résultat** (généralement du HTML) au navigateur. Le code source PHP, lui, reste invisible pour l'utilisateur final.
+
+### PHP est souvent utilisé avec :
+- **HTML** : pour structurer le contenu des pages.
+- **CSS** : pour le style et lamise en forme.
+- **Javascript** : pour les interactions côté client.
+
+### Exemples d'utilisation de PHP :
+- **WordPress** : Plateforme de blogs et de sites web. 
+- **Facebook** : Utilise PHP pour certaines parties de son infrastructure. 
+- **E-commerce** : Sites comme ***Magento*** pour gérer des boutiques en ligne dynamiques.
+- **Sites avec comptes utilisateurs** : gestion de l'inscription, de la connexion et des profils.
+
+### Avantages de PHP :
+- Facile à apprendre pour les débutants.
+- Compatible avec la plupart des serveurs web (Apache, Nginx).
+- Très utilisé, avec une grande communauté.
+- Nombreuses bibliotèques et framworks (ex. : Laravel, Symfony).
 
 ### Activité : Réflexion en groupe
 - Visitez un site comme [wordpress.com](https://wordpress.com/fr/) ou [wikipedia.org](https://www.wikipedia.org/) (qui utilise ***MediaWiki***, basé sur PHP). Essayez d’imaginer :
