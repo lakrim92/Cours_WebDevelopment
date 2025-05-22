@@ -82,7 +82,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
     - Créez un dossier nommé `mon_premier_site_php` sur votre ordinateur (ex. : `C:\Users\VotreNom\mon_premier_site_php ou ~/mon_premier_site_php`). 
     - À l’intérieur, créez un sous-dossier nommé **public** où vos fichiers **.php** seront placés. 
 
-### 1.2 Activité : Configurer son environnement
+## 1.2 Activité : Configurer son environnement
 1. **Installez PHP** :
 - Téléchargez et installez PHP depuis [php.net](https://www.php.net/). 
 - Ouvrez un terminal et tapez `php -v` pour vérifier que PHP est installé. 
@@ -229,127 +229,185 @@ $fruits = ["pomme", "banane", "orange"];
 
 ---
 
-Partie 3 : Les bases de PHP avec formulaires
+## Partie 3 : Les bases de PHP avec formulaires
+
 PHP excelle dans le traitement des données des utilisateurs, notamment via les formulaires HTML. Cette section explore comment PHP interagit avec les formulaires.
-3.1 Concepts clés
-    • Formulaires HTML : Permettent aux utilisateurs d’envoyer des données (ex. : texte, choix).
-      <form action="traitement.php" method="post">
-          <input type="text" name="nom">
-          <input type="submit" value="Envoyer">
-      </form>
-    • Méthodes HTTP :
-        ◦ GET : Envoie les données via l’URL (visible, pour des recherches). 
-        ◦ POST : Envoie les données de manière sécurisée (pour des formulaires sensibles). 
-    • Superglobales : Variables PHP pour récupérer les données :
-        ◦ $_POST : Données envoyées via POST. 
-        ◦ $_GET : Données envoyées via GET. 
-    • Sécurité de base : Utilisez htmlspecialchars() pour éviter les attaques XSS (injections de code malveillant). 
-3.2 Exemples
-    1. Formulaire simple :
-       <!-- public/formulaire.php -->
-       <form action="traitement.php" method="post">
-           <label>Entrez votre nom :</label>
-           <input type="text" name="nom">
-           <input type="submit" value="Envoyer">
-       </form>
-       <!-- public/traitement.php -->
-       <?php
-           $nom = htmlspecialchars($_POST["nom"]);
-           echo "<p>Bonjour, $nom !</p>";
-       ?>
-       Résultat : Affiche un message avec le nom saisi.
-    2. Formulaire avec choix :
-       <!-- public/choix.php -->
-       <form action="traitement_choix.php" method="get">
-           <label>Sport préféré :</label>
-           <select name="sport">
-               <option value="football">Football</option>
-               <option value="basket">Basket</option>
-           </select>
-           <input type="submit" value="Choisir">
-       </form>
-       <!-- public/traitement_choix.php -->
-       <?php
-           $sport = htmlspecialchars($_GET["sport"]);
-           echo "<p>Votre sport préféré est : $sport</p>";
-       ?>
-       Résultat : Affiche le sport sélectionné.
-    3. Validation simple :
-       <!-- public/traitement.php -->
-       <?php
-           $nom = htmlspecialchars($_POST["nom"]);
-           if (empty($nom)) {
-               echo "<p>Erreur : veuillez entrer un nom.</p>";
-           } else {
-               echo "<p>Bienvenue, $nom !</p>";
-           }
-       ?>
-       Résultat : Vérifie si le champ est vide avant d’afficher.
 
+### 3.1 Concepts clés
+- **Formulaires HTML** : Permettent aux utilisateurs d’envoyer des données (ex. : texte, choix).
 
-3.3 Exercices pratiques
-    1. Exercice 1 : Créer un formulaire simple :
-        ◦ Créez un fichier public/formulaire.php avec un formulaire <form> (méthode POST) contenant un champ texte prenom. 
-        ◦ Créez un fichier public/traitement.php qui affiche "Salut, [prenom] !" avec $_POST. 
-        ◦ Lancez le serveur (php -S localhost:8200 -t public) et testez à http://localhost:8200/formulaire.php. Partagez avec un voisin. 
-    2. Exercice 2 : Formulaire avec choix :
-        ◦ Dans public/formulaire.php, ajoutez un <select> avec 3 options (ex. : villes préférées). 
-        ◦ Dans public/traitement.php, récupérez le choix avec $_POST et affichez "Vous avez choisi : [ville]". 
-        ◦ Testez à http://localhost:8200/formulaire.php. Discutez en groupe : quelle est la différence entre POST et GET ? 
-    3. Exercice 3 : Ajouter une validation :
-        ◦ Modifiez public/traitement.php pour vérifier si le champ prenom est vide. 
-        ◦ Si vide, affichez "Erreur : entrez un prénom." Sinon, affichez le message de bienvenue. 
-        ◦ Testez à http://localhost:8200/formulaire.php avec un champ vide et non vide. Partagez vos observations. 
+```php
+<form action="traitement.php" method="post">
+    <input type="text" name="nom">
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+- **Méthodes HTTP** :
+    - GET : Envoie les données via l’URL (visible, pour des recherches). 
+    - POST : Envoie les données de manière sécurisée (pour des formulaires sensibles).
+
+- Superglobales : Variables PHP pour récupérer les données :
+    - $_POST : Données envoyées via POST. 
+    - $_GET : Données envoyées via GET. 
+
+- Sécurité de base : Utilisez `htmlspecialchars()` pour éviter les attaques XSS (injections de code malveillant). 
+
+### 3.2 Exemples
+**1. Formulaire simple **:
+
+```php
+<!-- public/formulaire.php -->
+<form action="traitement.php" method="post">
+    <label>Entrez votre nom :</label>
+    <input type="text" name="nom">
+    <input type="submit" value="Envoyer">
+</form>
+```
+
+```php
+<!-- public/traitement.php -->
+<?php
+    $nom = htmlspecialchars($_POST["nom"]);
+    echo "<p>Bonjour, $nom !</p>";
+?>
+```
+
+***Résultat*** : Affiche un message avec le nom saisi.
+
+2. **Formulaire avec choix** :
+
+```php
+<!-- public/choix.php -->
+<form action="traitement_choix.php" method="get">
+    <label>Sport préféré :</label>
+    <select name="sport">
+        <option value="football">Football</option>
+        <option value="basket">Basket</option>
+    </select>
+    <input type="submit" value="Choisir">
+</form>
+<!-- public/traitement_choix.php -->
+<?php
+    $sport = htmlspecialchars($_GET["sport"]);
+    echo "<p>Votre sport préféré est : $sport</p>";
+?>
+```
+
+***Résultat*** : Affiche le sport sélectionné.
+
+3. **Validation simple** :
+
+```php
+<!-- public/traitement.php -->
+<?php
+    $nom = htmlspecialchars($_POST["nom"]);
+    if (empty($nom)) {
+        echo "<p>Erreur : veuillez entrer un nom.</p>";
+    } else {
+        echo "<p>Bienvenue, $nom !</p>";
+    }
+?>
+```
+
+***Résultat*** : Vérifie si le champ est vide avant d’afficher.
+
+### 3.3 Exercices pratiques
+
+À vous de jouer [Exercices](./php/exercises/exercices-partie3.md)
 
 ---
 
-Partie 4 : Les bases de PHP avec tableaux et boucles
+## Partie 4 : Les bases de PHP avec tableaux et boucles
+
 PHP est puissant pour manipuler des données complexes, comme les tableaux, et automatiser des tâches avec des boucles.
-4.1 Concepts clés
-    • Tableaux associatifs : Stockent des paires clé-valeur. Exemple :
-      $utilisateur = ["nom" => "Alice", "age" => 25];
-    • Boucle foreach : Parcourt un tableau. Exemple :
-      foreach ($utilisateur as $cle => $valeur) {
-          echo "$cle : $valeur<br>";
-      }
-    • Fonctions : Blocs de code réutilisables. Exemple :
-      function saluer($nom) {
-          return "Bonjour, $nom !";
-      }
-    • Tableaux multidimensionnels : Tableaux dans des tableaux. Exemple :
-      $equipe = [
-          ["nom" => "Alice", "role" => "Designer"],
-          ["nom" => "Bob", "role" => "Développeur"]
-      ];
-4.2 Exemples
-    1. Tableau associatif :
-       <?php
-           $etudiant = ["nom" => "Marie", "note" => 15];
-           echo "<p>Nom : " . $etudiant["nom"] . ", Note : " . $etudiant["note"] . "</p>";
-       ?>
-       Résultat : Affiche "Nom : Marie, Note : 15".
-    2. Boucle foreach :
-       <?php
-           $jours = ["Lundi", "Mardi", "Mercredi"];
-           echo "<ul>";
-           foreach ($jours as $jour) {
-               echo "<li>$jour</li>";
-           }
-           echo "</ul>";
-       ?>
-       Résultat : Affiche une liste HTML de jours.
-    3. Fonction et tableau multidimensionnel :
-       <?php
-           function afficherEquipe($equipe) {
-               echo "<ul>";
-               foreach ($equipe as $membre) {
-                   echo "<li>" . $membre["nom"] . " - " . $membre["role"] . "</li>";
-               }
-               echo "</ul>";
-           }
-           $equipe = [
-               ["nom" => "Alice", "role" => "Designer"],
-               ["nom" => "Bob", "role" => "Développeur"]
-           ];
-           afficherEquipe($equipe);
-       ?>
+
+### 4.1 Concepts clés
+- **Tableaux associatifs** : Stockent des paires clé-valeur. Exemple :
+
+```php
+$utilisateur = ["nom" => "Alice", "age" => 25];
+```
+
+- **Boucle foreach** : Parcourt un tableau. Exemple :
+
+```php
+foreach ($utilisateur as $cle => $valeur) {
+    echo "$cle : $valeur<br>";
+}
+```
+
+- **Fonctions** : Blocs de code réutilisables. Exemple :
+
+```php
+function saluer($nom) {
+    return "Bonjour, $nom !";
+}
+```
+
+- **Tableaux multidimensionnels** : Tableaux dans des tableaux. Exemple :
+
+```php
+$equipe = [
+    ["nom" => "Alice", "role" => "Designer"],
+    ["nom" => "Bob", "role" => "Développeur"]
+];
+```
+
+### 4.2 Exemples
+1. **Tableau associatif** :
+
+```php
+<?php
+    $etudiant = ["nom" => "Marie", "note" => 15];
+    echo "<p>Nom : " . $etudiant["nom"] . ", Note : " . $etudiant["note"] . "</p>";
+?>
+```
+
+***Résultat*** : Affiche "Nom : Marie, Note : 15".
+
+2. **Boucle foreach** :
+
+```php
+<?php
+    $jours = ["Lundi", "Mardi", "Mercredi"];
+    echo "<ul>";
+    foreach ($jours as $jour) {
+        echo "<li>$jour</li>";
+    }
+    echo "</ul>";
+?>
+```
+
+***Résultat*** : Affiche une liste HTML de jours.
+
+3. **Fonction et tableau multidimensionnel** :
+
+```php
+<?php
+    function afficherEquipe($equipe) {
+        echo "<ul>";
+        foreach ($equipe as $membre) {
+            echo "<li>" . $membre["nom"] . " - " . $membre["role"] . "</li>";
+        }
+        echo "</ul>";
+    }
+    $equipe = [
+        ["nom" => "Alice", "role" => "Designer"],
+        ["nom" => "Bob", "role" => "Développeur"]
+    ];
+    afficherEquipe($equipe);
+?>
+```
+
+***Résultat*** : Affiche une liste des membres et leurs rôles.
+
+### 4.3 Exercices pratiques
+
+À vous de jouer [Exercices](./php/exercises/exercices-partie4.md)
+
+---
+
+## Partie 5 : Projet en groupe - Création d’une application web interactive
+
+**Cliquez sur le lien** : [Projet](./php/exercises/project.md)
