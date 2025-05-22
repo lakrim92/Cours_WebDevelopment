@@ -1,7 +1,7 @@
 # Support de Cours : Introduction à PHP
 
 <div style="text-align: center;">
-![](../img/php.png alt="Logo PHP" style="width: 300px; height: 300px;")
+    ![](../img/php.png alt="Logo PHP" style="width: 300px; height: 300px;")
 </div>
 
 ## Introduction : Bienvenue dans le monde du développement web avec PHP !
