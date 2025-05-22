@@ -37,6 +37,7 @@ Ce projet est conçu pour des **groupes de 3 à 4 élèves**, avec des rôles po
     - Une **image** (ex. : `https://picsum.photos/300`).
 
 ### Étape 2 : Maquettage
+
 - **Durée** : 15 minutes 
 - **Responsable principal** : Coordinateur (ou tous ensemble) 
 - **Activité** :
