@@ -40,11 +40,11 @@ Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si p
 PHP est un langage de programmation **côté serveur** qui permet de générer des pages web dynamiques. Contrairement au HTML, qui est statique, PHP peut interagir avec des bases de données, gerer des formulaires, suivre les sessions utilisateur et produire du contenu personnalisé en temps réel.
 
 ### Fonctionnement
-PHP sintegre directement dans du code HTML à l'aide de balises `<?php ... ?>`. Lorsque l'utlisateur demande une page web, le **serveur exécute le code PHP** et renvoie uniquement le **résultat** (généralement du HTML) au navigateur. Le code source PHP, lui, reste invisible pour l'utilisateur final.
+PHP s'integre directement dans du code HTML à l'aide de balises `<?php ... ?>`. Lorsque l'utlisateur demande une page web, le **serveur exécute le code PHP** et renvoie uniquement le **résultat** (généralement du HTML) au navigateur. Le code source PHP, lui, reste invisible pour l'utilisateur final.
 
 ### PHP est souvent utilisé avec :
 - **HTML** : pour structurer le contenu des pages.
-- **CSS** : pour le style et lamise en forme.
+- **CSS** : pour le style et la mise en forme.
 - **Javascript** : pour les interactions côté client.
 
 ### Exemples d'utilisation de PHP :
@@ -181,7 +181,7 @@ Exemple :
 - Variables : Stockent des données avec $. Exemple : `$nom = "Alice"`;.
     - Types : Les principaux types sont : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
 - Écho et impression : (echo) ou (print) permettent d'afficher du texte ou du HTML dans la page. 
-- Conditions : Permettent d'executer des blocs de code selon qu'une condition soit vraie ou fausse(if, else, elseif, switch, etc.) prendre des décisions. 
+- Conditions : Permettent d'executer des blocs de code selon qu'une condition soit vraie ou fausse(if, else, elseif, switch, etc.) et prendre des décisions. 
 
 Exemple :
 
@@ -262,7 +262,7 @@ $fruits = ["pomme", "banane", "orange"];
 
 ### 2.3 Exercices pratiques
 
-À vous de jouer [Exercices](./php/exercises/exercices-partie2.md)
+À vous de jouer [Exercices](../php/exercises/exercices-partie2.md)
 
 ---
 
