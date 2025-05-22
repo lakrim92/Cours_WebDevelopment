@@ -210,7 +210,7 @@ section {
 - **Design soigné** : Utilisez [coolors.co](https://coolors.co/) pour des palettes. Ajoutez ombres et bordures arrondies. 
 - **Testez l’interactivité** : Vérifiez que le formulaire fonctionne. 
 - **Personnalisez** : Ajoutez des messages ou images uniques. 
-- S**uivez la maquette** : Assurez-vous que le résultat correspond à votre vision. 
+- **Suivez la maquette** : Assurez-vous que le résultat correspond à votre vision. 
 
 ## Évaluation et partage
 
@@ -232,7 +232,10 @@ section {
 - Utilisez les outils de la Partie 0.1 pour pratiquer. 
 
 Ressources supplémentaires
-    - **Figma** [(figma.com)](https://www.figma.com/fr-fr/) : Pour des maquettes. 
-    - **PHP.net** [(php.net)](https://www.php.net/) : Documentation officielle. 
-    - **W3Schools PHP** [(w3schools.com/php)](https://www.w3schools.com/php/) : Tutoriels interactifs. 
+    - **Figma** [(figma.com)](https://www.figma.com/fr-fr/) : Pour des maquettes.
+
+    - **PHP.net** [(php.net)](https://www.php.net/) : Documentation officielle.
+
+    - **W3Schools PHP** [(w3schools.com/php)](https://www.w3schools.com/php/) : Tutoriels interactifs.
+
     - **Repl.it** [(replit.com)](https://replit.com/) : Testez vos scripts en ligne. 
