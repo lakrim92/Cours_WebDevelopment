@@ -274,11 +274,13 @@ PHP excelle dans le traitement des données des utilisateurs, notamment en récu
 
 - **Méthodes HTTP** :
 Les formulaires HTML utilisent principalement deux méthodes pour envoyer des données au serveur via PHP:
+
     - GET : Envoie les données en les ajoutant à l’URL. Cela rend les informations visibles dans la barre d’adresse. Elle est adaptée pour des actions non sensibles comme des recherches ou des filtres.. 
     - POST : Envoie les données de manière invisible dans le corps de la requête HTTP. Elle est plus sécurisée et donc recommandée pour des actions sensibles (connexion, envoi d’informations personnelles, etc.).
 
-- Superglobales : Variables PHP pour récupérer les données :
+- **Superglobales** : Variables PHP pour récupérer les données :
 PHP met à disposition des variables spéciales appelées superglobales pour accéder facilement aux données transmises par un formulaire :
+
     - $_POST : Contient les données envoyées via la méthode POST. 
     - $_GET : Contient les données envoyées via la méthode GET.
     
@@ -353,7 +355,8 @@ Ces tableaux associatifs permettent de récupérer les valeurs des champs de for
 
 ## Partie 4 : Les bases de PHP avec tableaux et boucles
 
-PHP est puissant pour manipuler des données complexes, comme les tableaux, et automatiser des tâches avec des boucles.
+PHP est particulièrement efficace pour gérer des structures de données comme les tableaux. Ces structures permettent de stocker plusieurs valeurs dans une seule variable et facilitent l'organisation de données sous forme de listes ou de paires clé/valeur (tableaux associatifs).
+Grâce aux boucles (for, while, foreach, etc.), PHP permet d’automatiser des tâches répétitives. Cela est très utile, par exemple, pour parcourir un tableau et afficher dynamiquement son contenu, générer des listes d’éléments HTML, ou encore exécuter un ensemble d’instructions plusieurs fois selon une condition.
 
 ### 4.1 Concepts clés
 - **Tableaux associatifs** : Stockent des paires clé-valeur. Exemple :
