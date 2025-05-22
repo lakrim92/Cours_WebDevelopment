@@ -24,6 +24,12 @@ Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si p
 - **1997** : PHP 2 introduit des fonctionnalités plus avancées, comme le traitement des formulaires. 
 - **1998** : PHP 3, développé par une communauté croissante, devient un langage de programmation complet, capable de générer des pages web dynamiques. 
 
+<div style="text-align: center;">
+    <img src="../img/330px-Wikirl.jpg" alt="Rasmus Lerdorf">
+    <br>
+    <a href="https://fr.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf - Wikipédia</a>
+</div>
+
 ### L’évolution de PHP
 - **2004** : PHP 5 introduit la programmation orientée objet, améliorant la robustesse du langage. 
 - **2015** : PHP 7 apporte des performances nettement meilleures, rendant le langage plus rapide et efficace. 
