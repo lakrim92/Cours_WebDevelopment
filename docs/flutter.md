@@ -93,14 +93,14 @@ Résolvez les problèmes signalés par **flutter doctor**.
 
 ## Créer un projet Flutter
 
-1. Ouvrez un terminal et exécutez : 
+- 1. Ouvrez un terminal et exécutez : 
 
 Copier
 ```bash
     flutter create mon_premier_projet cd mon_premier_projet
 ```
 
-2. Lancez l’application :
+- 2. Lancez l’application :
 
 Copier
 ```bash
