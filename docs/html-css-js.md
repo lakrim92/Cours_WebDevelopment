@@ -364,3 +364,6 @@ function verifierAge() {
 # Partie 5 : Projet en groupe - Création d'un site web interactif
 
 **Cliquez sur le lien** : [Projet](./html-css-js/exercises/project.md)
+
+[retour](./index.md)
+
