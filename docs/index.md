@@ -8,6 +8,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
 - [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
+- [Introduction à Flutter](./flutter.md) : Développez des applications mobiles avec.
 
 ## Barèmes de notation
 
