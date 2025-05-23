@@ -15,3 +15,12 @@
 - Modifiez `public/traitement.php` pour vérifier si le champ prenom est vide. 
 - Si vide, affichez `"Erreur : entrez un prénom."` Sinon, affichez le message de bienvenue. 
 - Testez à http://localhost:8200/formulaire.php avec un champ vide et non vide. Partagez vos observations. 
+
+
+---
+
+## Soumettre vos travaux
+
+- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
+- Ajoutez vos fichiers main.dart pour chaque exercice. 
+- Poussez votre code et partagez l’URL avec votre professeur. 

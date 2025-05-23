@@ -16,3 +16,11 @@
 - Créez un fichier `public/fonction.php` avec une fonction **afficherMembre** qui prend un tableau associatif `$membre (nom, role)` et affiche `"Nom : [nom], Rôle : [role]"`. 
 - Testez avec un tableau `$membre = ["nom" => "Paul", "role" => "Testeur"]` à http://localhost:8200/fonction.php. 
 - Partagez vos résultats. 
+
+---
+
+## Soumettre vos travaux
+
+- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
+- Ajoutez vos fichiers main.dart pour chaque exercice. 
+- Poussez votre code et partagez l’URL avec votre professeur. 

@@ -240,3 +240,17 @@ section {
 
 [retour](./php.md)
 - [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
+
+**Dépôt GitHub** : 
+- Créez un dépôt GitHub pour votre groupe (ex. : ToDoList-Equipe1). 
+- Poussez votre code : 
+
+```bash
+git add . git commit -m "Projet ToDoList" git push origin main
+```
+
+- Partagez l’URL du dépôt avec votre professeur (ex. : https://github.com/votre-nom/ToDoList-Equipe1).
+
+**Test** : 
+- Testez sur un émulateur Android ou iOS. 
+- Vérifiez que les tâches sont sauvegardées après avoir fermé/rouvert l’application. 

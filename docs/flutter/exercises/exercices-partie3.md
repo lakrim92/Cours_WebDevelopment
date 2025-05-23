@@ -1,15 +1,17 @@
 # Introduction Flutter exercices
 
-## Exercice 2.1 : Modifier l’application par défaut
+## Exercice 3.1 : Créer une liste interactive
 
-1. Changez le texte de l’application en « Bienvenue dans Flutter ! ». 
-2. Modifiez la couleur de la barre d’application (AppBar) en bleu (Colors.blue). 
-3. Ajoutez un bouton qui affiche un message dans la console lorsqu’il est cliqué : 
+1. Créez une application avec une liste de tâches vide. 
+2. Ajoutez un champ de texte et un bouton pour ajouter des tâches à la liste. 
+3. Affichez les tâches dans une ListView. 
+4. Bonus : Ajoutez un bouton pour supprimer une tâche. 
 
-Copier
-```dart
-ElevatedButton( onPressed: () { print('Bouton cliqué !'); }, child: Text('Cliquez-moi'), )
-```
+## Soumettre vos travaux
+
+- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
+- Ajoutez vos fichiers main.dart pour chaque exercice. 
+- Poussez votre code et partagez l’URL avec votre professeur. 
 
 ---
 

@@ -231,3 +231,17 @@ function afficherMessage() {
 - **Flexbox Froggy** (flexboxfroggy.com) : Pour améliorer vos mises en page CSS. 
 - **CodePen** (codepen.io) : Testez votre site ou trouvez des idées de design. 
 - **MDN Web Docs** (developer.mozilla.org/fr/) : Référence pour HTML, CSS, JavaScript. 
+
+**Dépôt GitHub** : 
+- Créez un dépôt GitHub pour votre groupe (ex. : ToDoList-Equipe1). 
+- Poussez votre code : 
+
+```bash
+git add . git commit -m "Projet ToDoList" git push origin main
+```
+
+- Partagez l’URL du dépôt avec votre professeur (ex. : https://github.com/votre-nom/ToDoList-Equipe1).
+
+**Test** : 
+- Testez sur un émulateur Android ou iOS. 
+- Vérifiez que les tâches sont sauvegardées après avoir fermé/rouvert l’application. 

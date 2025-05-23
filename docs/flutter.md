@@ -35,6 +35,8 @@ Le cours est pratique et interactif : vous allez coder, tester en temps réel, e
 
 **Partie 4** : Projet en groupe – ToDoList 
 
+---
+
 # Partie 1 : Découverte de Flutter et Dart
 
 ## Qu’est-ce que Flutter ?
@@ -68,7 +70,14 @@ Dart combine une syntaxe familière (proche de **Java**, **JavaScript** ou **C#*
 
 Copier
 ```dart
-void main() { print('Bonjour, Flutter !'); String nom = 'Étudiant'; int age = 20; print('Je m’appelle $nom et j’ai $age ans.'); }
+void main() {
+  print('Bonjour, Flutter !');
+
+  String nom = 'Étudiant';
+  int age = 20;
+
+  print('Je m’appelle $nom et j’ai $age ans.');
+}
 ```
 
 - **Syntaxe** : Similaire à JavaScript ou Java, avec des variables, fonctions, et classes. 
@@ -88,6 +97,8 @@ Copier
 `flutter doctor`
 
 Résolvez les problèmes signalés par **flutter doctor**. 
+
+---
 
 # Partie 2 : Créer votre première application Flutter
 
@@ -142,84 +153,70 @@ class MonApplication extends StatelessWidget {
 
 **À vous de jouer** : [Exercices](./flutter/exercises/exercices-partie2.md)
 
+---
+
 ## Partie 3 : Widgets et gestion d’état
 
-Les widgets : Blocs de construction
-En Flutter, tout est un widget : boutons, textes, images, mises en page. Il existe deux types de widgets :
-    • StatelessWidget : Pour les éléments statiques (ex. : texte fixe). 
-    • StatefulWidget : Pour les éléments dynamiques (ex. : compteur). 
+### Les widgets : Blocs de construction
+
+En Flutter, tout est un **widget** : boutons, textes, images, mises en page. Il existe deux types de widgets :
+- StatelessWidget : Pour les éléments statiques (ex. : texte fixe). 
+- StatefulWidget : Pour les éléments dynamiques (ex. : compteur).
+
 Exemple de compteur avec un StatefulWidget :
-dart
+
 Copier
-class Compteur extends StatefulWidget { @override _CompteurState createState() => _CompteurState(); } class _CompteurState extends State<Compteur> { int _compteur = 0; void _incrementer() { setState(() { _compteur++; }); } @override Widget build(BuildContext context) { return Column( mainAxisAlignment: MainAxisAlignment.center, children: [ Text('Compteur : $_compteur'), ElevatedButton( onPressed: _incrementer, child: Text('Incrémenter'), ), ], ); } }
-Gestion d’état
+```dart
+class Compteur extends StatefulWidget {
+  @override
+  _CompteurState createState() => _CompteurState();
+}
+
+class _CompteurState extends State<Compteur> {
+  int _compteur = 0;
+
+  void _incrementer() {
+    setState(() {
+      _compteur++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text('Compteur : $_compteur'),
+        ElevatedButton(
+          onPressed: _incrementer,
+          child: Text('Incrémenter'),
+        ),
+      ],
+    );
+  }
+}
+```
+
+### Gestion d’état
+
 La méthode setState met à jour l’interface lorsque l’état change. Pour des applications plus complexes, vous explorerez des solutions comme Provider ou Riverpod (niveau avancé).
-Exercice 3.1 : Créer une liste interactive
-    1. Créez une application avec une liste de tâches vide. 
-    2. Ajoutez un champ de texte et un bouton pour ajouter des tâches à la liste. 
-    3. Affichez les tâches dans une ListView. 
-    4. Bonus : Ajoutez un bouton pour supprimer une tâche. 
-Solution : Consultez l’exemple exercice3.1.
 
-Partie 4 : Projet en groupe – ToDoList
-Objectif
-Développez une application ToDoList en groupe (2-4 élèves) qui permet de :
-    • Ajouter une tâche avec un titre et une description. 
-    • Marquer une tâche comme terminée. 
-    • Supprimer une tâche. 
-    • Sauvegarder les tâches localement (avec shared_preferences). 
-Instructions
-    1. Structure : 
-        ◦ Créez un nouveau projet Flutter : flutter create todolist. 
-        ◦ Organisez le code avec des widgets séparés (ex. : TaskList, TaskItem). 
-    2. Fonctionnalités : 
-        ◦ Utilisez une ListView pour afficher les tâches. 
-        ◦ Implémentez un formulaire avec TextField pour ajouter des tâches. 
-        ◦ Ajoutez des cases à cocher (Checkbox) pour marquer les tâches comme terminées. 
-        ◦ Utilisez le package shared_preferences pour sauvegarder les tâches : 
-          yaml
-          Copier
-          dependencies: shared_preferences: ^2.0.15
-    3. Dépôt GitHub : 
-        ◦ Créez un dépôt GitHub pour votre groupe (ex. : ToDoList-Equipe1). 
-        ◦ Poussez votre code : 
-          bash
-          Copier
-          git add . git commit -m "Projet ToDoList" git push origin main
-        ◦ Partagez l’URL du dépôt avec votre professeur (ex. : https://github.com/votre-nom/ToDoList-Equipe1). 
-    4. Test : 
-        ◦ Testez sur un émulateur Android ou iOS. 
-        ◦ Vérifiez que les tâches sont sauvegardées après avoir fermé/rouvert l’application. 
-Exemple de code
-Consultez l’exemple de ToDoList dans projet pour vous inspirer.
-Évaluation
-    • Barème des exercices : Exercices Flutter. 
-    • Barème du projet : Projet ToDoList. 
+**À vous de jouer** : [Exercices](./flutter/exercises/exercices-partie3.md)
 
-Ressources supplémentaires
-    • Documentation officielle : 
-        ◦ Flutter 
-        ◦ Dart 
-    • Tutoriels : 
-        ◦ Flutter YouTube 
-        ◦ Code With Andrea pour des projets pratiques. 
-    • Communauté : 
-        ◦ Flutter Community 
-        ◦ Stack Overflow 
-Soumettre vos travaux
-    1. Exercices : 
-        ◦ Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
-        ◦ Ajoutez vos fichiers main.dart pour chaque exercice. 
-        ◦ Poussez votre code et partagez l’URL avec votre professeur. 
-    2. Projet : 
-        ◦ Soumettez l’URL de votre dépôt de groupe. 
-        ◦ Incluez un fichier README.md expliquant comment lancer l’application. 
-Exemple de commande pour soumettre :
-bash
-Copier
-git add . git commit -m "Exercice 2.1 et 3.1" git push origin main
-Contact
-Pour toute question :
-    • Ouvrez une Issue sur le dépôt. 
-    • Contactez votre professeur via email ou votre plateforme de classe. 
-Bon codage avec Flutter !
+## Partie 4 : Projet en groupe – ToDoList
+
+**Cliquez sur le lien** : [Projet](./flutter/exercises/project.md)
+
+### Ressources supplémentaires
+
+- Documentation officielle : 
+    - Flutter 
+    - Dart 
+- Tutoriels : 
+    - Flutter YouTube 
+    - Code With Andrea pour des projets pratiques. 
+- Communauté : 
+    - Flutter Community 
+    - Stack Overflow 
+
+## Bon codage avec Flutter !

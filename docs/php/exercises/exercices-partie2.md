@@ -18,3 +18,11 @@ Partagez avec un voisin.
 - Utilisez une boucle foreach pour afficher chaque hobby dans une liste HTML `<ul><li>`. 
 - Testez à `http://localhost:8200`. 
 Partagez vos résultats. 
+
+---
+
+## Soumettre vos travaux
+
+- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
+- Ajoutez vos fichiers main.dart pour chaque exercice. 
+- Poussez votre code et partagez l’URL avec votre professeur. 
