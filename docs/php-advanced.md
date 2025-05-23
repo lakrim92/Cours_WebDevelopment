@@ -17,13 +17,13 @@ Bienvenue dans le cours **PHP Avancé** ! Ce cours s’adresse aux apprenants ay
     - Familiarité avec MySQL, formulaires, sessions, et GET/POST. 
     - Notions de base sur HTML/CSS/JS (voir Introduction à HTML, CSS et JavaScript). 
 - Outils : 
-    ◦ [Visual Studio Code]() avec extensions PHP, Laravel. 
-    ◦ [PHP]() (version 8.1+ recommandée). 
-    ◦ [Composer]() pour gérer les dépendances. 
-    ◦ [MySQL]() ou [MariaDB](). 
-    ◦ [Laravel]() (installé via Composer). 
-    ◦ Navigateur moderne (Chrome, Firefox) avec outils de développement. 
-    ◦ Compte GitHub pour soumettre vos travaux (voir Introduction à GitHub). 
+    - [Visual Studio Code]() avec extensions PHP, Laravel. 
+    - [PHP]() (version 8.1+ recommandée). 
+    - [Composer]() pour gérer les dépendances. 
+    - [MySQL]() ou [MariaDB](). 
+    - [Laravel]() (installé via Composer). 
+    - Navigateur moderne (Chrome, Firefox) avec outils de développement. 
+    - Compte GitHub pour soumettre vos travaux (voir Introduction à GitHub). 
 - Temps estimé : 12-15 heures (lectures, exercices, projet). 
 
 ### Structure du cours
