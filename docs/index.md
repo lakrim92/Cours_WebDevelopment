@@ -4,14 +4,13 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 ## Cours
 
-## Frontend :
+### Frontend :
 
-- [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
-- [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
+- [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
 
-## Backend :
+### Backend :
 
 - [Introduction à Node.js](./nodejs.md) : 
 - [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
@@ -22,25 +21,25 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 - [Introduction à Kotlin](./Kotlin.md) :
 - [Introduction à C#](./c.md) :
 
-## Base de données
+### Base de données
 
 - [Introduction à SQL](./sql.md) : (PostgreSQL, MySql, SQLite)
 - [Introduction à NoSQL](./nosql.md) : (MongoDB, Firebase Firestore, Redis)
 
-## API et Authentification
+### API et Authentification
 
 - [Introduction à REST](./rest.md) :
 - [Introduction à GraphQL](./graphql.md) : 
 - [Introduction à oAuth2](./oauth2.md) : 
 
-## DEVOPS
+### DEVOPS
 
 - [Introduction à Docker](./docker.md) : 
 - [Introduction à CI/CD](./ci-cd.md) : (Github Actions, Gitlab CI ...)
 - [Introduction à Linux/Bash](./linux.md) : 
 - [Introduction à services cloud](./cloud.md) : (Firebase, AWS, Google Cloud, DigitalOcean...)
 
-## Bonus utiles
+### Bonus utiles
 
 - [Introduction à Flutter](./flutter.md) : Développez des applications mobiles.
 - [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
