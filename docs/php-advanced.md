@@ -1,6 +1,7 @@
 # Support de cours : PHP Avancé
 
-Bienvenue dans le cours **PHP Avancé** ! Ce cours s’adresse aux apprenants ayant suivi Introduction à PHP ou possédant des bases solides (variables, fonctions, formulaires, MySQL, sessions). Vous apprendrez des techniques modernes : **architecture MVC, ORM avec Eloquent (Laravel), sécurité (XSS, CSRF), API REST**, et **outils (Composer, PHPUnit**). À travers des exercices complexes et un projet en groupe (application de gestion d’utilisateurs), vous serez prêt à développer des applications backend robustes et sécurisées.
+Bienvenue dans le cours **PHP Avancé** ! 
+Ce cours s’adresse aux apprenants ayant suivi Introduction à PHP ou possédant des bases solides (variables, fonctions, formulaires, MySQL, sessions). Vous apprendrez des techniques modernes : **architecture MVC, ORM avec Eloquent (Laravel), sécurité (XSS, CSRF), API REST**, et **outils (Composer, PHPUnit**). À travers des exercices complexes et un projet en groupe (application de gestion d’utilisateurs), vous serez prêt à développer des applications backend robustes et sécurisées.
 
 ### Objectifs du cours
 
