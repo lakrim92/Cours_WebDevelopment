@@ -92,6 +92,7 @@ Résolvez les problèmes signalés par **flutter doctor**.
 # Partie 2 : Créer votre première application Flutter
 
 ## Créer un projet Flutter
+
 1. Ouvrez un terminal et exécutez : 
 
 Copier
@@ -99,29 +100,52 @@ Copier
     flutter create mon_premier_projet cd mon_premier_projet
 ```
 
-2. Lancez l’application : 
-    bash
-    Copier
-    flutter run
-    Une application par défaut s’affichera sur votre émulateur. 
-Structure d’un projet Flutter
-    • lib/main.dart : Point d’entrée de l’application. 
-    • pubspec.yaml : Fichier de configuration pour les dépendances. 
-    • android/, ios/ : Code natif pour chaque plateforme. 
-Exemple de lib/main.dart :
-dart
-Copier
-import 'package:flutter/material.dart'; void main() { runApp(MonApplication()); } class MonApplication extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( home: Scaffold( appBar: AppBar(title: Text('Ma Première Appli')), body: Center(child: Text('Bonjour, Flutter !')), ), ); } }
-Exercice 2.1 : Modifier l’application par défaut
-    1. Changez le texte de l’application en « Bienvenue dans Flutter ! ». 
-    2. Modifiez la couleur de la barre d’application (AppBar) en bleu (Colors.blue). 
-    3. Ajoutez un bouton qui affiche un message dans la console lorsqu’il est cliqué : 
-       dart
-       Copier
-       ElevatedButton( onPressed: () { print('Bouton cliqué !'); }, child: Text('Cliquez-moi'), )
-Solution : Consultez l’exemple exercice2.1 dans le dépôt.
+2. Lancez l’application :
 
-Partie 3 : Widgets et gestion d’état
+Copier
+```bash
+flutter run
+```
+
+Une application par défaut s’affichera sur votre émulateur. 
+
+## Structure d’un projet Flutter
+
+- lib/main.dart : Point d’entrée de l’application. 
+- pubspec.yaml : Fichier de configuration pour les dépendances. 
+- android/, ios/ : Code natif pour chaque plateforme. 
+
+Exemple de lib/main.dart :
+
+Copier
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MonApplication());
+}
+
+class MonApplication extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Ma Première Appli'),
+        ),
+        body: Center(
+          child: Text('Bonjour, Flutter !'),
+        ),
+      ),
+    );
+  }
+}
+```
+
+**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie2.md)
+
+## Partie 3 : Widgets et gestion d’état
+
 Les widgets : Blocs de construction
 En Flutter, tout est un widget : boutons, textes, images, mises en page. Il existe deux types de widgets :
     • StatelessWidget : Pour les éléments statiques (ex. : texte fixe). 
