@@ -27,9 +27,12 @@ Bienvenue dans le cours **PHP Avancé** ! Ce cours s’adresse aux apprenants ay
 - Temps estimé : 12-15 heures (lectures, exercices, projet). 
 
 ### Structure du cours
-**Partie 1 : Architecture MVC et Eloquent** 
+**Partie 1 : Architecture MVC et Eloquent**
+
 **Partie 2 : Sécurité et validation**
-**Partie 3 : API REST et tests avec PHPUnit** 
+
+**Partie 3 : API REST et tests avec PHPUnit**
+ 
 **Partie 4 : Projet en groupe – Application de gestion d’utilisateurs** 
 
 # Partie 1 : Architecture MVC et Eloquent
