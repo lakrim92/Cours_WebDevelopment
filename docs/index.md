@@ -7,14 +7,32 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 ### Frontend :
 
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
+- [HTML, CSS et Javascript avancé](./html-css-js-Advanced.md) :
+- [HTML, CSS et Javascript expert](./html-css-js-expert.md) : 
+
 - [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
+- [Dart avancé](./dart-advanced.md) : 
+- [Dart expert](./dart-expert.md) : 
+
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
+- [Javascript avancé](./javascript-advanced.md) : 
+- [Javascript expert](./javascript-expert.md) : 
 
 ### Backend :
 
-- [Introduction à Node.js](./nodejs.md) : 
+- [Introduction à Node.js](./nodejs.md) :
+- [Node.js avancé](./nodejs-advanced.md) :
+- [Node.js expert](./nodejs-expert.md) :
+
 - [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
+- [PHP avancé](./php-advanced.md) : 
+- [PHP expert](./php-expert.md) :
+
 - [Introduction à Python](./python.md) : (Django, Flask)
+- [Python avancé](./python-advanced.md) : 
+- [Python expert](./python-expert.md) : 
+
+
 - [Introduction à Dart (avec shelf)](./dartbend.md) :
 - [Introduction à Go](./go.md) :
 - [Introduction à Java](./java.md) :
