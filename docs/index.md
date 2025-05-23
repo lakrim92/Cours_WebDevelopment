@@ -4,11 +4,46 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 ## Cours
 
+## Frontend :
+
+- [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
 - [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
-- [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
+
+## Backend :
+
+- [Introduction à Node.js](./nodejs.md) : 
+- [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
+- [Introduction à Python](./python.md) : (Django, Flask)
+- [Introduction à Dart (avec shelf)](./dartbend.md) :
+- [Introduction à Go](./go.md) :
+- [Introduction à Java](./java.md) :
+- [Introduction à Kotlin](./Kotlin.md) :
+- [Introduction à C#](./c.md) :
+
+## Base de données
+
+- [Introduction à SQL](./sql.md) : (PostgreSQL, MySql, SQLite)
+- [Introduction à NoSQL](./nosql.md) : (MongoDB, Firebase Firestore, Redis)
+
+## API et Authentification
+
+- [Introduction à REST](./rest.md) :
+- [Introduction à GraphQL](./graphql.md) : 
+- [Introduction à oAuth2](./oauth2.md) : 
+
+## DEVOPS
+
+- [Introduction à Docker](./docker.md) : 
+- [Introduction à CI/CD](./ci-cd.md) : (Github Actions, Gitlab CI ...)
+- [Introduction à Linux/Bash](./linux.md) : 
+- [Introduction à services cloud](./cloud.md) : (Firebase, AWS, Google Cloud, DigitalOcean...)
+
+## Bonus utiles
+
 - [Introduction à Flutter](./flutter.md) : Développez des applications mobiles.
+- [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
 
 ## Barèmes de notation
 
