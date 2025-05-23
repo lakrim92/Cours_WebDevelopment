@@ -140,7 +140,7 @@ class MonApplication extends StatelessWidget {
 }
 ```
 
-**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie2.md)
+**À vous de jouer** : [Exercices](./flutter/exercises/exercices-partie2.md)
 
 ## Partie 3 : Widgets et gestion d’état
 
