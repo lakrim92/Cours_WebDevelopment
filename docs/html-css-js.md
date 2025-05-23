@@ -365,5 +365,7 @@ function verifierAge() {
 
 **Cliquez sur le lien** : [Projet](./html-css-js/exercises/project.md)
 
+---
+
 [retour](./index.md)
 
