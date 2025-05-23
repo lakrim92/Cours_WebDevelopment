@@ -60,7 +60,6 @@ composer require laravel/ui # Pour l’authentification (si nécessaire) compose
 DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=user_management DB_USERNAME=root DB_PASSWORD=
 ```
     - Migrez :
-
 ```bash
 php artisan migrate
 ```
@@ -74,7 +73,6 @@ git add .
 git commit -m "Projet User Management" 
 git push origin main
 ```
-
     - Partagez l’URL (ex. : https://github.com/votre-nom/UserManagement-Equipe1). 
 
 6. **Test** :
