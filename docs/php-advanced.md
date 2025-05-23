@@ -48,102 +48,122 @@ ___
 
 Exemple avec Laravel :
 
-1. Créez un projet :
+### 1. Créez un projet :
 
 ```bash
 composer create-project laravel/laravel user-management cd user-management php artisan serve
 ```
 
-2. Créez un modèle et un contrôleur :
+### 2. Créez un modèle et un contrôleur :
 
 ```bash
 php artisan make:model User -mcr
 ```
 
-◦ -m : Crée une migration. 
-◦ -c : Crée un contrôleur. 
-◦ -r : Rend le contrôleur RESTful.
+- -m : Crée une migration. 
+- -c : Crée un contrôleur. 
+- -r : Rend le contrôleur RESTful.
 
-3. Exemple de contrôleur (app/Http/Controllers/UserController.php) :
+### 3. Exemple de contrôleur (app/Http/Controllers/UserController.php) :
 
 ```php
 namespace App\Http\Controllers; use App\Models\User; use Illuminate\Http\Request; class UserController extends Controller { public function index() { $users = User::all(); return view('users.index', compact('users')); } }
 ```
 
-4. Exemple de vue (resources/views/users/index.blade.php) : 
-html
-Copier
+### 4. Exemple de vue (resources/views/users/index.blade.php) : 
+
+```html
 <!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <title>Utilisateurs</title> </head> <body> <h1>Liste des utilisateurs</h1> <ul> @foreach ($users as $user) <li>{{ $user->name }}</li> @endforeach </ul> </body> </html>
-Eloquent ORM
-Eloquent simplifie les interactions avec la base de données. Exemple :
-php
-Copier
+```
+
+## Eloquent ORM
+
+**Eloquent** simplifie les interactions avec la base de données. Exemple :
+
+```php
 // app/Models/User.php namespace App\Models; use Illuminate\Database\Eloquent\Model; class User extends Model { protected $fillable = ['name', 'email']; } // Récupérer des utilisateurs $users = User::where('name', 'like', '%John%')->get();
-Exercice 1.1 : Liste d’utilisateurs avec MVC
-    1. Créez un projet Laravel. 
-    2. Configurez une base de données MySQL et une migration pour la table users (colonnes : id, name, email). 
-    3. Créez un contrôleur UserController et une vue pour afficher la liste des utilisateurs. 
-    4. Utilisez Eloquent pour récupérer les utilisateurs depuis la base de données. 
-Solution : Consultez l’exemple exercice1.1.
+```
 
-Partie 2 : Sécurité et validation
-Sécurité
+### Exercice 1.1 : Liste d’utilisateurs avec MVC
+
+À vous de jouer [Exercices](./php/exercises/exercices-advanced1.1.md)
+
+# Partie 2 : Sécurité et validation
+
+## Sécurité
+
 Protégez votre application contre :
-    • XSS : Utilisez la syntaxe Blade {{ $variable }} pour échapper les sorties. 
-    • CSRF : Laravel inclut un token CSRF par défaut dans les formulaires (@csrf). 
-    • Injection SQL : Utilisez Eloquent ou des requêtes préparées. 
-Exemple de formulaire sécurisé :
-html
-Copier
-<form method="POST" action="/users"> @csrf <input type="text" name="name" required> <input type="email" name="email" required> <button type="submit">Ajouter</button> </form>
-Validation
-Validez les entrées avec Laravel :
-php
-Copier
-// app/Http/Controllers/UserController.php public function store(Request $request) { $validated = $request->validate([ 'name' => 'required|string|max:255', 'email' => 'required|email|unique:users,email', ]); User::create($validated); return redirect('/users'); }
-Exercice 2.1 : Formulaire sécurisé
-    1. Reprenez le projet de l’exercice 1.1. 
-    2. Ajoutez un formulaire pour créer un utilisateur avec validation (nom, email). 
-    3. Protégez contre XSS et CSRF. 
-    4. Affichez les erreurs de validation dans la vue. 
-Solution : Consultez l’exemple exercice2.1.
+- ***XSS*** : Utilisez la syntaxe Blade {{ $variable }} pour échapper les sorties. 
+- ***CSRF*** : Laravel inclut un token CSRF par défaut dans les formulaires (@csrf). 
+- ***Injection SQL*** : Utilisez Eloquent ou des requêtes préparées. 
 
-Partie 3 : API REST et tests avec PHPUnit
-API REST
+Exemple de formulaire sécurisé :
+
+```html
+<form method="POST" action="/users"> @csrf <input type="text" name="name" required> <input type="email" name="email" required> <button type="submit">Ajouter</button> </form>
+```
+
+## Validation
+
+Validez les entrées avec Laravel :
+
+```php
+// app/Http/Controllers/UserController.php public function store(Request $request) { $validated = $request->validate([ 'name' => 'required|string|max:255', 'email' => 'required|email|unique:users,email', ]); User::create($validated); return redirect('/users'); }
+```
+
+### Exercice 2.1 : Formulaire sécurisé
+
+À vous de jouer [Exercices](./php/exercises/exercices-advanced2.1.md)
+
+# Partie 3 : API REST et tests avec PHPUnit
+
+## API REST
+
 Créez une API REST avec Laravel :
-    1. Créez une route API (routes/api.php) : 
-       php
-       Copier
-       use App\Http\Controllers\UserController; Route::get('/users', [UserController::class, 'index']); Route::post('/users', [UserController::class, 'store']);
-    2. Exemple de réponse JSON : 
-       php
-       Copier
-       // app/Http/Controllers/UserController.php public function index() { return response()->json(User::all()); }
+1. Créez une route API (routes/api.php) :
+
+```php
+use App\Http\Controllers\UserController; Route::get('/users', [UserController::class, 'index']); Route::post('/users', [UserController::class, 'store']);
+```
+
+2. Exemple de réponse JSON :
+
+```php
+// app/Http/Controllers/UserController.php public function index() { return response()->json(User::all()); }
+```
+
 Testez avec un outil comme Postman ou curl :
-bash
-Copier
+
+```bash
 curl http://localhost:8000/api/users
-Tests avec PHPUnit
-Laravel utilise PHPUnit pour les tests. Exemple :
-php
-Copier
+```
+
+### Tests avec PHPUnit
+
+Laravel utilise **PHPUnit** pour les tests. Exemple :
+
+```php
 // tests/Feature/UserTest.php namespace Tests\Feature; use Illuminate\Foundation\Testing\RefreshDatabase; use Tests\TestCase; use App\Models\User; class UserTest extends TestCase { use RefreshDatabase; public function test_can_list_users() { User::factory()->count(3)->create(); $response = $this->get('/api/users'); $response->assertStatus(200) ->assertJsonCount(3); } }
+```
+
 Configurer les tests :
-    1. Créez une base de données de test (ex. : database/database.sqlite). 
-    2. Mettez à jour .env : 
-       text
-       Copier
-       DB_CONNECTION=sqlite DB_DATABASE=database/database.sqlite
-    3. Exécutez : 
-       bash
-       Copier
-       php artisan test
-Exercice 3.1 : API et tests
-    1. Reprenez le projet de l’exercice 2.1. 
-    2. Créez une API REST pour lister et ajouter des utilisateurs. 
-    3. Écrivez un test PHPUnit pour vérifier que l’API retourne la liste des utilisateurs. 
-    4. Testez l’API avec Postman ou curl. 
-Solution : Consultez l’exemple exercice3.1.
+1. Créez une base de données de test (ex. : database/database.sqlite). 
+2. Mettez à jour .env :
+
+```text
+DB_CONNECTION=sqlite DB_DATABASE=database/database.sqlite
+```
+
+3. Exécutez :
+
+```bash
+php artisan test
+```
+
+### Exercice 3.1 : API et tests
+
+À vous de jouer [Exercices](./php/exercises/exercices-advanced3.1.md)
+
 
 Partie 4 : Projet en groupe – Application de gestion d’utilisateurs
 Objectif
