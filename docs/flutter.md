@@ -199,7 +199,7 @@ class _CompteurState extends State<Compteur> {
 
 ### Gestion d’état
 
-La méthode setState met à jour l’interface lorsque l’état change. Pour des applications plus complexes, vous explorerez des solutions comme Provider ou Riverpod (niveau avancé).
+La méthode setState met à jour l’interface lorsque l’état change. Pour des applications plus complexes, vous explorerez des solutions comme **Provider** ou **Riverpod** (niveau avancé).
 
 **À vous de jouer** : [Exercices](./flutter/exercises/exercices-partie3.md)
 
