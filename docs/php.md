@@ -473,3 +473,7 @@ $equipe = [
 ## Partie 5 : Projet en groupe - Création d’une application web interactive
 
 **Cliquez sur le lien** : [Projet](./php/exercises/project.md)
+
+---
+
+[retour](./index.md)
