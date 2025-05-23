@@ -71,32 +71,38 @@ Copier
 void main() { print('Bonjour, Flutter !'); String nom = 'Étudiant'; int age = 20; print('Je m’appelle $nom et j’ai $age ans.'); }
 ```
 
-    • Syntaxe : Similaire à JavaScript ou Java, avec des variables, fonctions, et classes. 
-    • Null Safety : Dart protège contre les erreurs liées aux valeurs nulles. 
-Installation de Flutter
-    1. Téléchargez Flutter : Suivez le guide officiel flutter.dev. 
-    2. Installez Visual Studio Code : 
-        ◦ Ajoutez les extensions Flutter et Dart. 
-    3. Configurez un émulateur : 
-        ◦ Android : Installez Android Studio et configurez un appareil virtuel. 
-        ◦ iOS (macOS uniquement) : Installez Xcode et configurez un simulateur. 
-    4. Vérifiez l’installation : 
-       bash
-       Copier
-       flutter doctor
-       Résolvez les problèmes signalés par flutter doctor. 
+- **Syntaxe** : Similaire à JavaScript ou Java, avec des variables, fonctions, et classes. 
+- **Null Safety** : Dart protège contre les erreurs liées aux valeurs nulles. 
 
-Partie 2 : Créer votre première application Flutter
-Créer un projet Flutter
-    1. Ouvrez un terminal et exécutez : 
-       bash
-       Copier
-       flutter create mon_premier_projet cd mon_premier_projet
-    2. Lancez l’application : 
-       bash
-       Copier
-       flutter run
-       Une application par défaut s’affichera sur votre émulateur. 
+## Installation de Flutter
+
+1. **Téléchargez Flutter** : Suivez le guide officiel [flutter.dev](https://flutter.dev/). 
+2. **Installez Visual Studio Code** : 
+    - Ajoutez les extensions **Flutter** et **Dart**. 
+3. **Configurez un émulateur** : 
+    - Android : Installez Android Studio et configurez un appareil virtuel. 
+    - iOS (macOS uniquement) : Installez Xcode et configurez un simulateur. 
+4. **Vérifiez l’installation** : 
+
+Copier
+`flutter doctor`
+
+Résolvez les problèmes signalés par **flutter doctor**. 
+
+# Partie 2 : Créer votre première application Flutter
+
+## Créer un projet Flutter
+1. Ouvrez un terminal et exécutez : 
+```bash
+    Copier
+    flutter create mon_premier_projet cd mon_premier_projet
+```
+
+2. Lancez l’application : 
+    bash
+    Copier
+    flutter run
+    Une application par défaut s’affichera sur votre émulateur. 
 Structure d’un projet Flutter
     • lib/main.dart : Point d’entrée de l’application. 
     • pubspec.yaml : Fichier de configuration pour les dépendances. 
