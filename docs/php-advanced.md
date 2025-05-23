@@ -32,17 +32,19 @@ Bienvenue dans le cours **PHP Avancé** ! Ce cours s’adresse aux apprenants ay
 **Partie 2 : Sécurité et validation**
 
 **Partie 3 : API REST et tests avec PHPUnit**
- 
+
 **Partie 4 : Projet en groupe – Application de gestion d’utilisateurs** 
 
 # Partie 1 : Architecture MVC et Eloquent
 
+___
+
 ## Architecture MVC
 
 **MVC** (Model-View-Controller) organise le code :
-    - Model : Gère les données (base de données). 
-    - View : Affiche l’interface utilisateur. 
-    - Controller : Gère la logique et les requêtes. 
+- Model : Gère les données (base de données). 
+- View : Affiche l’interface utilisateur. 
+- Controller : Gère la logique et les requêtes. 
 
 Exemple avec Laravel :
 
