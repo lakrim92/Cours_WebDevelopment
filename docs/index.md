@@ -9,16 +9,20 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
 - [HTML, CSS et Javascript avancé](./html-css-js-Advanced.md) :
 - [HTML, CSS et Javascript expert](./html-css-js-expert.md) : 
+
 --
 
 - [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
 - [Dart avancé](./dart-advanced.md) : 
 - [Dart expert](./dart-expert.md) : 
 
+--
 
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
 - [Javascript avancé](./javascript-advanced.md) : 
 - [Javascript expert](./javascript-expert.md) : 
+
+--
 
 ### Backend :
 
