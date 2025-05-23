@@ -1,4 +1,4 @@
-# Introduction à Flutter : Bienvenue dans le cours Introduction à Flutter ! Ce cours est conçu pour les débutants souhaitant apprendre à créer des applications multiplateformes (iOS, Android, web, desktop) avec Flutter, un framework open-source développé par Google, et Dart, son langage de programmation. À travers des explications, des exercices pratiques, et un projet en groupe, vous apprendrez à concevoir des interfaces utilisateur (UI) modernes et performantes avec un seul code source.
+# Introduction à Flutter : Bienvenue dans le cours Introduction à Flutter ! 
 
 <p align="center">
   <img src="./img/flutter_logo150.png" alt="Flutter" style="margin: 10px;">
@@ -28,8 +28,11 @@ Le cours est pratique et interactif : vous allez coder, tester en temps réel, e
 ## Structure du cours
 
 **Partie 1** : Découverte de Flutter et Dart 
+
 **Partie 2** : Créer votre première application Flutter 
+
 **Partie 3** : Widgets et gestion d’état 
+
 **Partie 4** : Projet en groupe – ToDoList 
 
 # Partie 1 : Découverte de Flutter et Dart
@@ -63,8 +66,8 @@ Dart combine une syntaxe familière (proche de **Java**, **JavaScript** ou **C#*
 - **Compilation Just-In-Time (JIT)** pour un développement rapide (hot reload),
 - **Compilation Ahead-Of-Time (AOT)** pour des performances natives en production.
 
-```dart
 Copier
+```dart
 void main() { print('Bonjour, Flutter !'); String nom = 'Étudiant'; int age = 20; print('Je m’appelle $nom et j’ai $age ans.'); }
 ```
 
