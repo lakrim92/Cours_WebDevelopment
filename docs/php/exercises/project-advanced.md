@@ -59,7 +59,6 @@ composer require laravel/ui # Pour l’authentification (si nécessaire) compose
 ```text
 DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=user_management DB_USERNAME=root DB_PASSWORD=
 ```
-
     - Migrez :
 
 ```bash
