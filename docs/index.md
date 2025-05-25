@@ -73,6 +73,8 @@ ___
 - [Introduction à Flutter](./flutter.md) : Développez des applications mobiles.
 - [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
 
+___
+
 ## Barèmes de notation
 
 - HTML, CSS, JavaScript : [Exercices](./grading/html-css-js-exercises.md) | [Projet](./grading/html-css-js-project.md)
