@@ -106,4 +106,4 @@ ___
 
 ## Contact
 
-Posez vos questions via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/new?template=question-etudiant.md).
+Posez vos questions via [GitHub Issues]([Créer une nouvelle question](https://github.com/lakrim92/Cours_WebDevelopment/issues/new?title=[Question]&labels=question&body=-%20Cours%20concerné%3A%20%0A-%20Section%3A%20%0A-%20Question%3A%20%0A%0A%23%23%20Code%20(si%20applicable)%0A%60%60%60php%0A//%20Insérez%20votre%20code%20ici%0A%60%60%60%0A%0A%23%23%20Labels%20suggérés%0A-%20%5B%20%5D%20question%0A-%20%5B%20%5D%20php%20(ou%20autre%20cours)%0A-%20%5B%20%5D%20urgent%20(si%20nécessaire))).
