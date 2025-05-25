@@ -29,7 +29,7 @@ Partagez vos résultats.
 
 ## Contact
 
-Posez vos questions ! [Contact](contact.md)
+Posez vos questions ! [Contact](../../contact.md)
 
 
 [retour](../../php.md)
