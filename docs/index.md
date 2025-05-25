@@ -106,4 +106,4 @@ ___
 
 ## Contact
 
-Posez vos questions via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/1) ou contactez votre professeur.
+Posez vos questions via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/1) ou contactez votre professeur [Email](contact@ai-autoheal.com).
