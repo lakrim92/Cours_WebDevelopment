@@ -7,66 +7,66 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 ### Frontend :
 
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
-- [HTML, CSS et Javascript avancé](./html-css-js-Advanced.md) :
-- [HTML, CSS et Javascript expert](./html-css-js-expert.md) : 
+- [HTML, CSS et Javascript avancé](./html-css-js-Advanced.md) : Maîtrisez les techniques avancées pour des interfaces dynamiques.
+- [HTML, CSS et Javascript expert](./html-css-js-expert.md) : Développez des applications web complexes avec des performances optimisées.
 
 ***
 
 - [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
-- [Dart avancé](./dart-advanced.md) : 
-- [Dart expert](./dart-expert.md) : 
+- [Dart avancé](./dart-advanced.md) : Approfondissez Dart pour des applications Flutter performantes.
+- [Dart expert](./dart-expert.md) : Créez des solutions Flutter avancées avec une expertise technique.
 
 ---
 
 - [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
-- [Javascript avancé](./javascript-advanced.md) : 
-- [Javascript expert](./javascript-expert.md) : 
+- [Javascript avancé](./javascript-advanced.md) : Développez des fonctionnalités complexes avec JavaScript moderne.
+- [Javascript expert](./javascript-expert.md) : Maîtrisez les frameworks et outils JavaScript pour des projets d’envergure.
 
 ___
 
 ### Backend :
 
-- [Introduction à Node.js](./nodejs.md) :
-- [Node.js avancé](./nodejs-advanced.md) :
-- [Node.js expert](./nodejs-expert.md) :
+- [Introduction à Node.js](./nodejs.md) : Créez des serveurs performants avec JavaScript côté serveur.
+- [Node.js avancé](./nodejs-advanced.md) : Développez des applications backend scalables avec Node.js.
+- [Node.js expert](./nodejs-expert.md) : Optimisez et sécurisez des systèmes backend complexes avec Node.js.
 
 ___
 
 - [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
-- [PHP avancé](./php-advanced.md) : 
-- [PHP expert](./php-expert.md) :
+- [PHP avancé](./php-advanced.md) : Maîtrisez les fonctionnalités avancées de PHP pour des projets robustes.
+- [PHP expert](./php-expert.md) : Créez des applications PHP performantes avec des architectures modernes.
 
 ___
 
-- [Introduction à Python](./python.md) : (Django, Flask)
-- [Python avancé](./python-advanced.md) : 
-- [Python expert](./python-expert.md) : 
+- [Introduction à Python (Django, Flask)](./python.md) : Construisez des applications web avec Django et Flask.
+- [Python avancé](./python-advanced.md) : Développez des solutions backend complexes avec Python.
+- [Python expert](./python-expert.md) : Maîtrisez les frameworks Python pour des projets professionnels.
 
 ___
 
-- [Introduction à Dart (avec shelf)](./dartbend.md) :
-- [Introduction à Go](./go.md) :
-- [Introduction à Java](./java.md) :
-- [Introduction à Kotlin](./Kotlin.md) :
-- [Introduction à C#](./c.md) :
+- [Introduction à Dart (avec shelf)](./dartbend.md) : Développez des API backend avec Dart et Shelf.
+- [Introduction à Go](./go.md) : Créez des applications backend rapides et efficaces avec Go.
+- [Introduction à Java](./java.md) : Développez des applications backend robustes avec Java.
+- [Introduction à Kotlin](./Kotlin.md) : Construisez des backends modernes avec Kotlin.
+- [Introduction à C#](./c.md) : Créez des applications backend puissantes avec C#.
 
 ### Base de données
 
-- [Introduction à SQL](./sql.md) : (PostgreSQL, MySql, SQLite)
-- [Introduction à NoSQL](./nosql.md) : (MongoDB, Firebase Firestore, Redis)
+- [Introduction à SQL (PostgreSQL, MySql, SQLite)](./sql.md) : Apprenez à gérer des bases de données relationnelles.
+- [Introduction à NoSQL (MongoDB, Firebase Firestore, Redis)](./nosql.md) : Maîtrisez les bases de données non relationnelles.
 
 ### API et Authentification
 
-- [Introduction à REST](./rest.md) :
-- [Introduction à GraphQL](./graphql.md) : 
-- [Introduction à oAuth2](./oauth2.md) : 
+- [Introduction à REST](./rest.md) : Concevez des API RESTful pour des applications connectées.
+- [Introduction à GraphQL](./graphql.md) : Développez des API flexibles avec GraphQL.
+- [Introduction à oAuth2](./oauth2.md) : Sécurisez vos applications avec l’authentification oAuth2.
 
 ### DEVOPS
 
-- [Introduction à Docker](./docker.md) : 
-- [Introduction à CI/CD](./ci-cd.md) : (Github Actions, Gitlab CI ...)
-- [Introduction à Linux/Bash](./linux.md) : 
-- [Introduction à services cloud](./cloud.md) : (Firebase, AWS, Google Cloud, DigitalOcean...)
+- [Introduction à Docker](./docker.md) : Conteneurisez vos applications pour un déploiement simplifié.
+- [Introduction à CI/CD (Github Actions, Gitlab CI)](./ci-cd.md) : Automatisez vos déploiements avec CI/CD.
+- [Introduction à Linux/Bash](./linux.md) : Maîtrisez les commandes Linux pour gérer des serveurs.
+- [Introduction à services cloud (Firebase, AWS, Google Cloud, DigitalOcean...)](./cloud.md) : Déployez vos applications sur le cloud.
 
 ### Bonus utiles
 
