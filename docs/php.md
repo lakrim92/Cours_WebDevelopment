@@ -476,4 +476,8 @@ $equipe = [
 
 ---
 
+## Contact
+
+Posez vos questions ! [Contact](contact.md)
+
 [retour](./index.md)
