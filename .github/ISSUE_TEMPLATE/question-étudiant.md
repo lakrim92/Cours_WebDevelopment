@@ -10,7 +10,7 @@ assignees: ''
 ### Labels
 - [ ] question
 - [ ] urgent (si nécessaire)
-Cochez d'une croix [X] le label qui vous correspond
+Cochez le label qui vous correspond le mieux
 
 ### Titre
 [Décrivez votre question]
