@@ -106,4 +106,4 @@ ___
 
 ## Contact
 
-Posez vos questions via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/new?template=question-%C3%A9tudiant.md) ou contactez votre professeur.
+Posez vos questions via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/1) ou contactez votre professeur.
