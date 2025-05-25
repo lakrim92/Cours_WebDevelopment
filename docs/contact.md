@@ -8,23 +8,19 @@ Utilisez [**GitHub Issues**](https://github.com/lakrim92/Cours_WebDevelopment/is
 
 1. Cliquez sur ce lien : Créer une nouvelle question.
 2. Le modèle Question étudiant s’affichera automatiquement. Remplissez le formulaire :
-Titre : Donnez un titre clair (ex. : "Question sur les boucles PHP").
-Détails : Indiquez le cours (ex. : Introduction à PHP), la section (ex. : Boucles), et votre question.
-Code : Ajoutez un exemple de code si applicable (utilisez ```php pour formater).
-Labels suggérés : Cochez question, et php (ou html-css-js, etc.) selon le cours. Ajoutez urgent si nécessaire.
-
-
-Cliquez sur Submit new issue.
+    - **Titre** : Donnez un titre clair (ex. : "Question sur les boucles PHP").
+    - **Détails** : Indiquez le cours (ex. : Introduction à PHP), la section (ex. : Boucles), et votre question.
+    - **Code** : Ajoutez un exemple de code si applicable (utilisez ```php pour formater).
+    - **Labels** suggérés : Cochez questionou ajoutez urgent si nécessaire.
+3. Cliquez sur Submit new issue.
 
 Nous répondrons dans les plus brefs délais !
-Contacter le professeur
+
+## Contacter le professeur
+
 Si votre question est personnelle, contactez le professeur par email :
 
-Email : [insérez votre email, ex. : professeur@example.com]
-Objet : "Question Cours Web Development"
+- **Email** : [contact@ai-autoheal.com]
+- Objet : "Question Cours Web Development"
 
-
-  
-
-
-Retour à l'accueil
+[Retour à l'accueil](./index.md)
