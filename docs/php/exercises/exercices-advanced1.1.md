@@ -5,4 +5,9 @@
 3. Créez un contrôleur UserController et une vue pour afficher la liste des utilisateurs. 
 4. Utilisez Eloquent pour récupérer les utilisateurs depuis la base de données. 
 
+## Contact
+
+Posez vos questions ! [Contact](../../contact.md)
+
+
 [retour](../../php-advanced.md)

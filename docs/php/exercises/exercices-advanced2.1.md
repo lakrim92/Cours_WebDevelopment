@@ -5,4 +5,9 @@ Exercice 2.1 : Formulaire sécurisé
 3. Protégez contre XSS et CSRF. 
 4. Affichez les erreurs de validation dans la vue. 
 
+## Contact
+
+Posez vos questions ! [Contact](../../contact.md)
+
+
 [retour](../../php-advanced.md)

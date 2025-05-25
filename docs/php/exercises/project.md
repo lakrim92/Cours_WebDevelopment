@@ -254,4 +254,9 @@ git add . git commit -m "Projet ToDoList" git push origin main
 - Testez sur un émulateur Android ou iOS. 
 - Vérifiez que les tâches sont sauvegardées après avoir fermé/rouvert l’application. 
 
+## Contact
+
+Posez vos questions ! [Contact](../../contact.md)
+
+
 [retour](../../php.md)
