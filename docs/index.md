@@ -81,6 +81,8 @@ ___
 - PHP : [Exercices](./grading/php-exercises.md) | [Projet](./grading/php-project.md)
 - JavaScript : [Exercices](./grading/javascript-exercises.md) | [Projet](./grading/javascript-project.md)
 
+___
+
 ## Exemples de code
 
 Consultez les exemples sur GitHub :
@@ -88,6 +90,8 @@ Consultez les exemples sur GitHub :
 - [PHP](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/php)
 - [JavaScript](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/javascript)
 - [Introduction à GitHub](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/github-intro/examples)
+
+___
 
 ## Instructions
 
@@ -97,6 +101,8 @@ Consultez les exemples sur GitHub :
   - HTML/JS : Ouvrez `index.html` dans un navigateur.
   - PHP : Lancez `php -S localhost:8200 -t public` dans le dossier `public`.
 - **Vos projets** : Lisez [Introduction à GitHub](./github-intro.md) pour créer un dépôt et pousser vos travaux.
+
+___
 
 ## Contact
 
