@@ -27,4 +27,9 @@ Partagez vos résultats.
 - Ajoutez vos fichiers main.dart pour chaque exercice. 
 - Poussez votre code et partagez l’URL avec votre professeur. 
 
+## Contact
+
+Posez vos questions ! [Contact](contact.md)
+
+
 [retour](../../php.md)
