@@ -610,4 +610,4 @@ $equipe = [
 
 Posez vos questions ! [Contact](contact.md)
 
-[retour](./index.md)
+[retour](./index.md) | [Passez au PHP avancé](./php-advanced.md)
