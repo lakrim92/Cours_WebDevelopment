@@ -313,7 +313,7 @@ $personne = [
 echo $personne["nom"]; // Alice
 ```
 
-- Intégration avec HTML :
+- **Intégration avec HTML** :
 
 PHP s’intègre parfaitement avec le HTML, ce qui en fait un langage de choix pour développer des sites web dynamiques. Il permet de générer du contenu HTML en fonction des données, des conditions, ou de l’interaction utilisateur. Cela signifie que vous pouvez créer des pages web qui s’adaptent automatiquement au contexte (par exemple, afficher le nom d’un utilisateur connecté, ou générer une liste d’articles depuis une base de données).
 
@@ -338,9 +338,9 @@ On peut insérer du code PHP directement dans une page `.html` renommée en `.ph
 
 Dans cet exemple :
 
-    Le HTML structure la page.
+Le HTML structure la page.
 
-    PHP insère dynamiquement un message dans la page selon la variable `$message`.
+PHP insère dynamiquement un message dans la page selon la variable `$message`.
 
 Cette intégration rend PHP très puissant pour créer des sites adaptatifs, personnalisés, et interactifs.
 
