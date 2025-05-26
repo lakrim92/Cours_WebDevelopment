@@ -287,15 +287,37 @@ foreach ($fruits as $fruit) {
 }
 ```
 
-- Tableaux : Stockent plusieurs valeurs dans une seule variable, accessibles via des index ou des clés. 
+- **Tableaux** :
 
-Exemple :
+Les tableaux permettent de stocker plusieurs valeurs dans une seule variable. On distingue :
+
+- **Tableaux indexés** : les éléments sont accessibles par un index numérique.
+
+- **Tableaux associatifs** : les éléments sont définis avec des clés personnalisées.
+
+- **Tableaux multidimensionnels** : des tableaux contenant d'autres tableaux.
+
+Exemple de tableau indexé :
 
 ```php
 $fruits = ["pomme", "banane", "orange"];
 ```
 
-- Intégration avec HTML : PHP peut générer du HTML dynamiquement. 
+Exemple de tableau associatif :
+
+```php
+$personne = [
+    "nom" => "Alice",
+    "age" => 25
+];
+echo $personne["nom"]; // Alice
+```
+
+- Intégration avec HTML :
+
+PHP s’intègre parfaitement avec le HTML, ce qui en fait un langage de choix pour développer des sites web dynamiques. Il permet de générer du contenu HTML en fonction des données, des conditions, ou de l’interaction utilisateur. Cela signifie que vous pouvez créer des pages web qui s’adaptent automatiquement au contexte (par exemple, afficher le nom d’un utilisateur connecté, ou générer une liste d’articles depuis une base de données).
+
+On peut insérer du code PHP directement dans une page `.html` renommée en `.php`, et alterner très facilement entre HTML statique et logique PHP.
 
 ### 2.2 Exemples
 **1. Affichage simple** :
@@ -313,6 +335,14 @@ $fruits = ["pomme", "banane", "orange"];
 ```
 
 ***Résultat*** : Affiche un titre "Bienvenue sur mon site !".
+
+Dans cet exemple :
+
+    Le HTML structure la page.
+
+    PHP insère dynamiquement un message dans la page selon la variable `$message`.
+
+Cette intégration rend PHP très puissant pour créer des sites adaptatifs, personnalisés, et interactifs.
 
 **2. Condition** :
 
@@ -333,16 +363,32 @@ $fruits = ["pomme", "banane", "orange"];
 
 ```php
 <?php
+    // Déclaration d’un tableau contenant des couleurs
     $couleurs = ["rouge", "bleu", "vert"];
+
+    // Début de la liste HTML
     echo "<ul>";
+
+    // Parcours de chaque élément du tableau avec une boucle foreach
     foreach ($couleurs as $couleur) {
+        // Affiche chaque couleur dans un élément <li>
         echo "<li>$couleur</li>";
     }
+
+    // Fin de la liste HTML
     echo "</ul>";
 ?>
 ```
 
 ***Résultat*** : Affiche une liste HTML de couleurs.
+
+Explication :
+
+foreach (`$couleurs as $couleur`) : parcourt chaque valeur du tableau.
+
+Chaque itération affiche une `<li>` avec le nom de la couleur.
+
+Le résultat dans le navigateur sera une liste à puces : rouge, bleu, vert.
 
 ### 2.3 Exercices pratiques
 
