@@ -254,9 +254,11 @@ switch ($jour) {
 
 Les boucles sont utilisées pour répéter des instructions plusieurs fois. Elles sont particulièrement utiles pour parcourir des tableaux ou répéter une tâche jusqu’à ce qu’une condition soit remplie.
 
-    - `for` : boucle avec compteur.
-    - `while` : exécute tant qu’une condition est vraie.
-    - `foreach` : utilisée pour parcourir les tableaux.
+- `for` : boucle avec compteur.
+
+- `while` : exécute tant qu’une condition est vraie.
+
+- `foreach` : utilisée pour parcourir les tableaux.
 
 Exemple avec une boucle `for` :
 
