@@ -1,5 +1,7 @@
 ### 3.3 Exercices pratiques
 
+## Contexte : 
+Cette partie se concentre sur les formulaires HTML, les méthodes GET/POST, les superglobales $_GET/$_POST, et la validation de base. Les exercices impliquent la création de formulaires et le traitement des données.
 
 1. **Exercice 1 : Créer un formulaire de bienvenue** :
 - Créez deux fichiers dans `public/` : `bienvenue.html` et `traitement_bienvenue.php`. 
