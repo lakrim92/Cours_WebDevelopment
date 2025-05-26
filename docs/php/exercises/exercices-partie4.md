@@ -35,7 +35,18 @@ Fichiers à soumettre : `produits.php`.
 
 Fichiers à soumettre : `moyenne.php`.
 
-**Exercice 4 : Filtrage de données** :
+**Exercice 4 : Équipe dynamique** :
+- Créez un fichier `equipe.php` dans `public/`. 
+- Déclarez un tableau multidimensionnel `$equipe` avec 3 membres, chacun ayant nom et role. 
+- Définissez une fonction `afficherEquipe($equipe)` qui utilise `foreach` pour afficher une liste `<ul><li>` des membres. 
+- Appelez la fonction.
+- Testez à http://localhost:8200/equipe.php.
+
+**Exemple de résultat** : Une liste à puces comme "Alice - Designer".
+
+Fichiers à soumettre : `equipe.php`.
+
+**Exercice 5 : Filtrage de données** :
 - Créez un fichier `filtrage.php` dans `public/`. 
 - Déclarez un tableau multidimensionnel `$etudiants` avec 4 étudiants, chacun ayant nom et note. 
 - Utilisez `foreach` pour afficher uniquement les étudiants avec une note **≥ 10** dans une liste `<ul><li>`.
