@@ -1,31 +1,64 @@
 ### Exercices PHP - Mise en pratique
 
-**Exercice 1** : Afficher un message personnalisé :
-- Dans `public/index.php`, créez une variable `$nom` avec votre nom. 
-- Utilisez `echo` pour afficher `<h2>Bienvenue, [votre nom] !</h2>`. 
-- Lancez le serveur avec `php -S localhost:8200 -t public` et testez à `http://localhost:8200`. 
-Partagez avec un voisin. 
+## Contexte : 
 
-**Exercice 2** : Utiliser une condition :
-- Créez une variable `$age` avec un nombre (ex. : 20). 
-- Écrivez une condition if qui affiche `"Vous êtes majeur !"` si `$age >= 18`, sinon `"Vous êtes mineur !"`. 
+Cette partie couvre la syntaxe de base, les variables, les conditions, les boucles, les tableaux, et l'intégration avec HTML. Les exercices visent à pratiquer ces concepts dans des scripts PHP simples.
+
+**Exercice 1** : Afficher un message personnalisé :
+- Créez un fichier `bonjour.php` dans le dossier `public/.` 
+- Déclarez une variable `$prenom` avec votre prénom. 
+- Utilisez `echo` pour afficher un message dans une balise `<h1>` : "Bonjour, [prenom] !". 
+- Intégrez le code dans une page HTML valide avec `<!DOCTYPE html>`.
 - Testez à `http://localhost:8200` et modifiez `$age`. 
 
-**Discutez en groupe : que se passe-t-il ?**
+**Exemple de résultat** : Une page web affiche "Bonjour, Alice !" en grand titre.
+
+Fichiers à soumettre : `bonjour.php`
+
+**Exercice 2** : Vérification d’âge :
+- Créez un fichier `age.php` dans `public/`. 
+- Déclarez une variable `$age` avec un entier (ex. : 20). 
+- Utilisez une condition `if/else` pour afficher dans un paragraphe `<p> : "Vous êtes majeur"` si `$age >= 18`, sinon `"Vous êtes mineur"`. 
+- Testez avec différentes valeurs de `$age`.
+- Testez à `http://localhost:8200` et modifiez `$age`. 
+
+**Exemple de résultat** : Une page affiche "Vous êtes majeur" ou "Vous êtes mineur".
+
+Fichiers à soumettre : `age.php`.
 
 **Exercice 3** : Afficher une liste dynamique :
-- Créez un tableau $hobbies avec 3 de vos hobbies. 
-- Utilisez une boucle foreach pour afficher chaque hobby dans une liste HTML `<ul><li>`. 
-- Testez à `http://localhost:8200`. 
-Partagez vos résultats. 
+- Créez un fichier `courses.php` dans `public/`.
+- Déclarez un tableau indexé `$courses` contenant au moins 4 produits (ex. : "Pain", "Lait", "Œufs", "Fruits"). 
+- Utilisez une boucle `foreach` pour afficher chaque produit dans une liste HTML `<ul><li>`.
+
+**Exemple de résultat** : Une page affiche une liste à puces avec les produits.
+
+Fichiers à soumettre : `courses.php`.
+
+**Exercice 4** : Tableau des scores :
+- Créez un fichier `scores.php` dans `public/`. 
+- Déclarez un tableau associatif `$scores` avec 3 noms d’étudiants comme clés et leurs notes comme valeurs (ex. : "Alice" => 85). 
+- Utilisez une boucle `foreach` pour afficher chaque étudiant et sa note dans un paragraphe `<p>` (ex. : "Alice : 85").
+
+**Exemple de résultat** : Une page affiche "Alice : 85", "Bob : 90", etc.
+
+Fichiers à soumettre : `scores.php`.
 
 ---
 
 ## Soumettre vos travaux
 
-- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
-- Ajoutez vos fichiers main.dart pour chaque exercice. 
-- Poussez votre code et partagez l’URL avec votre professeur. 
+- Créez un dépôt GitHub (ex. : PHP-Exercices-partie2-VotreNom). 
+- Ajoutez vos fichiers pour chaque exercice. 
+- Poussez votre code 
+
+```bash
+git add .
+git commit -m "votre commentaire"
+git push origin main
+```
+
+et partagez l’URL avec votre professeur. 
 
 ## Contact
 
