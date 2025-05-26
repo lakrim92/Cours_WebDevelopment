@@ -21,9 +21,17 @@
 
 ## Soumettre vos travaux
 
-- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
-- Ajoutez vos fichiers main.dart pour chaque exercice. 
-- Poussez votre code et partagez l’URL avec votre professeur. 
+- Créez un dépôt GitHub (ex. : PHP-Exercices-partie2-VotreNom). 
+- Ajoutez vos fichiers pour chaque exercice. 
+- Poussez votre code 
+
+```bash
+git add .
+git commit -m "votre commentaire"
+git push origin main
+```
+
+et partagez l’URL avec votre professeur. 
 
 ## Contact
 

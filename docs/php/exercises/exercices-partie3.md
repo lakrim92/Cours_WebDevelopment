@@ -1,29 +1,62 @@
 ### 3.3 Exercices pratiques
 
 
-1. **Exercice 1 : Créer un formulaire simple** :
-- Créez un fichier `public/formulaire.php` avec un formulaire `<form>` (méthode POST) contenant un champ texte prenom. 
-- Créez un fichier `public/traitement.php` qui affiche `"Salut, [prenom] !"` avec `$_POST.` 
-- Lancez le serveur (php -S localhost:8200 -t public) et testez à http://localhost:8200/formulaire.php. Partagez avec un voisin.
+1. **Exercice 1 : Créer un formulaire de bienvenue** :
+- Créez deux fichiers dans `public/` : `bienvenue.html` et `traitement_bienvenue.php`. 
+- Dans `bienvenue.html`, ajoutez un formulaire `POST` avec un champ texte nom. 
+- Dans `traitement_bienvenue.php`, utilisez `$_POST` pour afficher "Bonjour, [nom] !" dans un `<p>`.
+- Testez à `http://localhost:8200 et modifier le nom ensuite voir le resultat`. 
+
+**Exemple de résultat** : Après soumission, une page affiche "Bonjour, Marie !".
+
+Fichiers à soumettre : `bienvenue.html`, `traitement_bienvenue.php`.
 
 2. **Exercice 2 : Formulaire avec choix** :
-- Dans `public/formulaire.php`, ajoutez un `<select>` avec 3 options (ex. : villes préférées). 
-- Dans `public/traitement.php`, récupérez le choix avec `$_POST` et affichez `"Vous avez choisi : [ville]"`. 
-- Testez à http://localhost:8200/formulaire.php. Discutez en groupe : quelle est la différence entre POST et GET ?
+- Créez deux fichiers : `couleur.html` et `traitement_couleur.php`. 
+- Dans `couleur.html`, ajoutez un formulaire `GET` avec un menu déroulant `<select>` proposant 3 couleurs (ex. : Rouge, Bleu, Vert). 
+- Dans `traitement_couleur.php`, affichez "Votre couleur préférée est : [couleur]" avec `$_GET`.
+- Testez à http://localhost:8200/couleur.html. Quelle est la différence entre POST et GET ?
 
-3. **Exercice 3 : Ajouter une validation** :
-- Modifiez `public/traitement.php` pour vérifier si le champ prenom est vide. 
-- Si vide, affichez `"Erreur : entrez un prénom."` Sinon, affichez le message de bienvenue. 
-- Testez à http://localhost:8200/formulaire.php avec un champ vide et non vide. Partagez vos observations. 
+**Exemple de résultat** : Une page affiche "Votre couleur préférée est : Bleu".
 
+Fichiers à soumettre : **couleur.html**, **traitement_couleur.php**.
+
+3. **Exercice 3 : validation de formulaire** :
+- Créez deux fichiers : `inscription.html` et `traitement_inscription.php`. 
+- Dans `inscription.html`, ajoutez un formulaire `POST` avec un champ email. 
+- Dans `traitement_inscription.php`, vérifiez si email est non vide avec `empty()`. 
+- Affichez "Inscription réussie : [email]" ou "Erreur : email vide" dans un `<p>`.
+- Testez à http://localhost:8200/inscription.html avec un champ vide et non vide.
+
+**Exemple de résultat** : Une page affiche le résultat de la validation.
+
+Fichiers à soumettre : `inscription.html`, `traitement_inscription.php`.
+
+4. **Exercice 4 : Formulaire sécurisé** :
+- Modifiez l’exercice 1 (bienvenue.html et traitement_bienvenue.php). 
+- Dans `traitement_bienvenue.php`, utilisez `htmlspecialchars()` pour sécuriser l’affichage de `$_POST["nom"]`. 
+- Testez avec une entrée contenant `<script>alert("test")</script>`.
+- Testez à http://localhost:8200/bienvenue.html.
+
+**Exemple de résultat** : L’entrée malveillante est affichée comme texte brut.
+
+Fichiers à soumettre : `bienvenue.html`, `traitement_bienvenue.php`.
 
 ---
 
 ## Soumettre vos travaux
 
-- Créez un dépôt GitHub (ex. : Flutter-Exercices-VotreNom). 
-- Ajoutez vos fichiers main.dart pour chaque exercice. 
-- Poussez votre code et partagez l’URL avec votre professeur. 
+- Créez un dépôt GitHub (ex. : PHP-Exercices-partie2-VotreNom). 
+- Ajoutez vos fichiers pour chaque exercice. 
+- Poussez votre code 
+
+```bash
+git add .
+git commit -m "votre commentaire"
+git push origin main
+```
+
+et partagez l’URL avec votre professeur. 
 
 ## Contact
 
