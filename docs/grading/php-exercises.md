@@ -31,4 +31,4 @@
 - **Délais** : Le délai de remise pour les exercices est d'une semaine pour chaque module. 
 - **Feedback** : Fournissez une note et des commentaires dans les Issues.
 
-[Retour à l'accueil](./index.md)
+[Retour à l'accueil](../../index.md)
