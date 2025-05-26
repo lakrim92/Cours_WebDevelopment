@@ -1,21 +1,49 @@
 ### 4.3 Exercices pratiques
 
-**Exercice 1 : Créer un tableau associatif** :
-- Créez un fichier public/tableau.php avec un tableau associatif `$profil` contenant vos nom, age, et ville. 
-- Affichez ces informations avec `echo` dans un paragraphe HTML. 
-- Testez à http://localhost:8200/tableau.php. Partagez avec un voisin.
 
-**Exercice 2 : Utiliser une boucle foreach** :
-- Créez un fichier `public/liste.php` avec un tableau `$sports` contenant 4 sports. 
-- Utilisez foreach pour afficher chaque sport dans une liste HTML `<ul><li>`. 
-- Testez à http://localhost:8200/liste.php. Discutez en groupe :
+## Contexte : 
+Cette partie explore les tableaux associatifs, la boucle foreach, les fonctions, et les tableaux multidimensionnels. Les exercices mettent l’accent sur la manipulation de données complexes.
+
+**Exercice 1 : Affichage d’un profil** :
+- Créez un fichier `profil.php` dans `public/`. 
+- Déclarez un tableau associatif `$profil` avec les clés nom, age, et ville (ex. : "nom" => "Luc", etc.). 
+- Affichez chaque information dans un paragraphe `<p>` avec foreach.
+- Testez à http://localhost:8200/profil.php.
+- Fichiers à soumettre : `profil.php`.
+
+**Exemple de résultat** : Une page affiche "Nom : Luc", "Âge : 22", "Ville : Paris".
+
+**Exercice 2 : Liste de produits** :
+- Créez un fichier `produits.php` dans `public/`. 
+- Déclarez un tableau multidimensionnel `$produits` avec 3 produits, chacun ayant nom et prix (ex. : ["nom" => "Livre", "prix" => 15]). 
+- Utilisez `foreach` pour afficher une liste `<ul><li>` avec chaque produit (ex. : "Livre - 15€").
+- Testez à http://localhost:8200/produits.php.
+
+**Exemple de résultat** : Une liste à puces des produits et prix.
+
+Fichiers à soumettre : `produits.php`.
 
 **comment la boucle simplifie-t-elle le code ?**
 
-**Exercice 3 : Créer une fonction** :
-- Créez un fichier `public/fonction.php` avec une fonction **afficherMembre** qui prend un tableau associatif `$membre (nom, role)` et affiche `"Nom : [nom], Rôle : [role]"`. 
-- Testez avec un tableau `$membre = ["nom" => "Paul", "role" => "Testeur"]` à http://localhost:8200/fonction.php. 
-- Partagez vos résultats. 
+**Exercice 3 : Fonction de moyenne** :
+- Créez un fichier `moyenne.php` dans `public/`. 
+- Définissez une fonction `calculerMoyenne($notes)` qui prend un tableau de notes (ex. : [85, 90, 88]) et retourne la moyenne. 
+- Appelez la fonction avec un tableau et affichez le résultat dans un `<p>`.
+- Testez à http://localhost:8200/moyenne.php.
+
+**Exemple de résultat** : Une page affiche "Moyenne : 87.67".
+
+Fichiers à soumettre : `moyenne.php`.
+
+**Exercice 4 : Filtrage de données** :
+- Créez un fichier `filtrage.php` dans `public/`. 
+- Déclarez un tableau multidimensionnel `$etudiants` avec 4 étudiants, chacun ayant nom et note. 
+- Utilisez `foreach` pour afficher uniquement les étudiants avec une note **≥ 10** dans une liste `<ul><li>`.
+- Testez à http://localhost:8200/filtrage.php.
+
+**Exemple de résultat** : Une liste des étudiants ayant réussi.
+
+Fichiers à soumettre : `filtrage.php`.
 
 ---
 
