@@ -168,7 +168,8 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 **PHP** est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
 
 ### 2.1 Concepts clés
-• **Syntaxe de base** : 
+• **Syntaxe de base** :
+
 Le code PHP est toujours encadré par les balises <?php et ?>. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. En dehors de ces balises, on peut écrire du HTML qui sera directement renvoyé au navigateur. Cela permet de mélanger facilement HTML et PHP dans une même page.
 
 Exemple :
@@ -179,12 +180,14 @@ Exemple :
 ?>
 ```
 
-- **Variables** : 
+- **Variables** :
+
 Les variables en PHP permettent de stocker des informations (comme du texte, des nombres ou des tableaux) qui pourront être utilisées ou modifiées plus tard dans le script. Une variable commence toujours par le symbole $.
 
 Exemple : `$nom = "Alice"`;.
 
-- **Types de données** : 
+- **Types de données** :
+
 PHP prend en charge plusieurs types de données, dont :
 
 - ***String*** (chaîne de caractères) : texte entre guillemets.
@@ -207,7 +210,8 @@ Exemple : `$actif = true`;
 
 Exemple : `$fruits = array("Pomme", "Banane", "Orange")`;
 
-- **Affichage** : 
+- **Affichage** :
+
 Les fonctions **echo** et **print** permettent d'afficher du texte ou du code HTML dans la page. echo est légèrement plus rapide et peut afficher plusieurs chaînes à la fois, tandis que print retourne une valeur (utile dans certaines situations).
 
 Exemple : 
@@ -216,7 +220,8 @@ echo "Bonjour, monde !";
 print "<p>Bienvenue sur mon site.</p>";
 ```
 
-- **Conditions** : 
+- **Conditions** :
+
 Les structures conditionnelles permettent d'exécuter différents blocs de code en fonction de certaines conditions. PHP propose plusieurs formes : `if`, `else`, `elseif`, `switch`.
 
 Exemple avec `if/else` :
@@ -245,7 +250,8 @@ switch ($jour) {
 }
 ```
 
-- **Boucles** : 
+- **Boucles** :
+
 Les boucles sont utilisées pour répéter des instructions plusieurs fois. Elles sont particulièrement utiles pour parcourir des tableaux ou répéter une tâche jusqu’à ce qu’une condition soit remplie.
     - `for` : boucle avec compteur.
 
