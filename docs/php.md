@@ -168,7 +168,8 @@ Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Develo
 **PHP** est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.
 
 ### 2.1 Concepts clés
-• **Syntaxe de base** : Le code PHP est toujours encadré par des balises `<?php et ?>`. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. 
+• **Syntaxe de base** : 
+Le code PHP est toujours encadré par les balises <?php et ?>. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. En dehors de ces balises, on peut écrire du HTML qui sera directement renvoyé au navigateur. Cela permet de mélanger facilement HTML et PHP dans une même page.
 
 Exemple :
 
@@ -178,12 +179,47 @@ Exemple :
 ?>
 ```
 
-- Variables : Stockent des données avec $. Exemple : `$nom = "Alice"`;.
-    - Types : Les principaux types sont : chaînes (string), nombres (int, float), tableaux (array), booléens (true/false). 
-- Écho et impression : (echo) ou (print) permettent d'afficher du texte ou du HTML dans la page. 
-- Conditions : Permettent d'executer des blocs de code selon qu'une condition soit vraie ou fausse(if, else, elseif, switch, etc.) et prendre des décisions. 
+- **Variables** : 
+Les variables en PHP permettent de stocker des informations (comme du texte, des nombres ou des tableaux) qui pourront être utilisées ou modifiées plus tard dans le script. Une variable commence toujours par le symbole $.
 
-Exemple :
+Exemple : `$nom = "Alice"`;.
+
+- **Types de données** : 
+PHP prend en charge plusieurs types de données, dont :
+
+- ***String*** (chaîne de caractères) : texte entre guillemets.
+
+Exemple : `$message = "Bienvenue !"`;
+
+- ***Integer*** (entier) : nombre sans décimale.
+
+Exemple : `$nombre = 10`;
+
+- ***Float*** (nombre à virgule) : nombre décimal.
+
+Exemple : `$prix = 9.99`;
+
+- ***Boolean*** : true ou false, utilisé pour exprimer une condition vraie ou fausse.
+
+Exemple : `$actif = true`;
+
+- ***Array*** (tableau) : ensemble de valeurs regroupées.
+
+Exemple : `$fruits = array("Pomme", "Banane", "Orange")`;
+
+- **Affichage** : 
+Les fonctions **echo** et **print** permettent d'afficher du texte ou du code HTML dans la page. echo est légèrement plus rapide et peut afficher plusieurs chaînes à la fois, tandis que print retourne une valeur (utile dans certaines situations).
+
+Exemple : 
+```php
+echo "Bonjour, monde !";
+print "<p>Bienvenue sur mon site.</p>";
+```
+
+- **Conditions** : 
+Les structures conditionnelles permettent d'exécuter différents blocs de code en fonction de certaines conditions. PHP propose plusieurs formes : `if`, `else`, `elseif`, `switch`.
+
+Exemple avec `if/else` :
 
 ```php
 if ($age >= 18) {
@@ -192,14 +228,55 @@ if ($age >= 18) {
     echo "Mineur";
 }
 ```
+Exemple avec `switch` :
 
-- Boucles : Répètent des actions un certain nombre de fois ou tant qu'une condition est remplie (for, while, foreach, etc.). 
+```php
+$jour = "lundi";
 
-Exemple avec une boucle for :
+switch ($jour) {
+    case "lundi":
+        echo "Début de semaine.";
+        break;
+    case "vendredi":
+        echo "Bientôt le week-end !";
+        break;
+    default:
+        echo "Journée ordinaire.";
+}
+```
+
+- **Boucles** : 
+Les boucles sont utilisées pour répéter des instructions plusieurs fois. Elles sont particulièrement utiles pour parcourir des tableaux ou répéter une tâche jusqu’à ce qu’une condition soit remplie.
+    - `for` : boucle avec compteur.
+
+    - `while` : exécute tant qu’une condition est vraie.
+
+    - `foreach` : utilisée pour parcourir les tableaux.
+
+Exemple avec une boucle `for` :
 
 ```php
 for ($i = 1; $i <= 5; $i++) {
     echo "Numéro : $i<br>";
+}
+```
+
+Exemple avec while :
+
+```php
+$i = 1;
+while ($i <= 3) {
+    echo "Ligne $i<br>";
+    $i++;
+}
+```
+
+Exemple avec `foreach` :
+
+```php
+$fruits = ["Pomme", "Banane", "Cerise"];
+foreach ($fruits as $fruit) {
+    echo "$fruit<br>";
 }
 ```
 
