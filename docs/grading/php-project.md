@@ -23,7 +23,7 @@
     - 0 points : Aucune structure HTML ou non fonctionnelle.
 - **Preuve** : Code dans `index.php` poussé sur le dépôt GitHub.
 
-3 **Design CSS (20 points)** :
+**3 Design CSS (20 points)** :
 
 - **Description **: Le fichier `style.css` stylise la page pour un rendu attrayant (polices, couleurs, marges, ombres, bordures arrondies).
 - **Critères** :
@@ -33,7 +33,7 @@
     - 0 points : Aucun style ou CSS non lié.
 - **Preuve** : Code dans `style.css` poussé sur le dépôt GitHub.
 
-4. **Fonctionnalité PHP (25 points)** :
+**4. Fonctionnalité PHP (25 points)** :
 
 - **Description** : Le fichier `traitement.php` traite le formulaire (ex. : récupère `$_POST["nom"]`, sécurise avec `htmlspecialchars()`) et affiche des données dynamiques (ex. : liste des membres avec `foreach`).
 - **Critères** :
@@ -43,7 +43,7 @@
     - 0 points : Aucune fonctionnalité PHP ou non fonctionnelle.
 - **Preuve** : Code dans traitement.php poussé sur le dépôt GitHub.
 
-5. **Collaboration et contribution (10 points)** :
+**5. Collaboration et contribution (10 points)** :
 
 - **Description** : Tous les membres du groupe contribuent activement, avec des rôles clairs (Designer HTML, Artiste CSS, Magicien PHP, Coordinateur).
 - **Critères** :
@@ -52,7 +52,7 @@
     - 0 points : Contribution d’un seul membre ou absence de collaboration.
 - **Preuve** : Historique des commits sur le dépôt GitHub, description des rôles dans la présentation.
 
-6. **Présentation orale (10 points)** :
+**6. Présentation orale (10 points)** :
 
 - **Description** : Le groupe présente le projet à la classe (2-3 min), expliquant le thème, les rôles, la maquette, et les apprentissages.
 - **Critères** :
@@ -61,7 +61,7 @@
     - 0 points : Aucune présentation ou non réalisée.
 - **Preuve** : Observation en classe, notes du professeur.
 
-7. **Bonus (jusqu’à 10 points)** :
+**7. Bonus (jusqu’à 10 points)** :
 
 - **Description** : Points supplémentaires pour des fonctionnalités avancées.
 - **Critères** :
