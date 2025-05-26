@@ -30,6 +30,7 @@ Fichiers à soumettre : `age.php`.
 - Créez un fichier `courses.php` dans `public/`.
 - Déclarez un tableau indexé `$courses` contenant au moins 4 produits (ex. : "Pain", "Lait", "Œufs", "Fruits"). 
 - Utilisez une boucle `foreach` pour afficher chaque produit dans une liste HTML `<ul><li>`.
+- Testez à `http://localhost:8200` et modifiez `$age`. 
 
 **Exemple de résultat** : Une page affiche une liste à puces avec les produits.
 
@@ -39,6 +40,7 @@ Fichiers à soumettre : `courses.php`.
 - Créez un fichier `scores.php` dans `public/`. 
 - Déclarez un tableau associatif `$scores` avec 3 noms d’étudiants comme clés et leurs notes comme valeurs (ex. : "Alice" => 85). 
 - Utilisez une boucle `foreach` pour afficher chaque étudiant et sa note dans un paragraphe `<p>` (ex. : "Alice : 85").
+- Testez à `http://localhost:8200` et modifiez `$age`. 
 
 **Exemple de résultat** : Une page affiche "Alice : 85", "Bob : 90", etc.
 
