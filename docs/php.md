@@ -266,7 +266,7 @@ for ($i = 1; $i <= 5; $i++) {
 }
 ```
 
-Exemple avec while :
+Exemple avec `while` :
 
 ```php
 $i = 1;
