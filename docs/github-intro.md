@@ -18,6 +18,7 @@ Si tu n’as **jamais utilisé Git ni GitHub**, tu es au bon endroit ! 👨‍�
 - ✅ **Sauvegarde :** Ton code est stocké dans le cloud, accessible partout.  
 - ✅ **Professionnalisme :** Les développeurs utilisent GitHub tous les jours !
 - ✅ **Soumission facile :** Partage tes exercices et projets via GitHub Issues.
+
 ---
 
 ## 🔧 Prérequis
@@ -167,12 +168,16 @@ git push origin ma-branche
    - **Description** : URL du dépôt et ta contribution (ex. : “J’ai créé style.css”).
    - **Labels** : question.
 
+___
+
 ## 💡 Conseils pour débutants
 - **Vérifie souvent** : Utilise `git status` pour voir l’état de ton dépôt.
 - **Commits fréquents** : Sauvegarde à chaque étape avec `git commit`.
 - **Messages clairs** : Écris des messages de commit descriptifs (ex. : “Correction bug formulaire”).
 - **Évite les conflits** : Travaille sur des branches séparées en groupe.
 - **Demande de l’aide** : Pose tes questions via GitHub Issues.
+
+___
 
 ## ⚠️ Dépannage
 - **Erreur** `git push` **(authentification)** :
@@ -202,6 +207,8 @@ git pull origin main
 - **Issue non visible** :
    - Vérifie les labels `question` etc... sur GitHub Issues.
 
+___
+
 ## 🎯 Activité : Ton premier push
 Teste tes compétences avec cette activité simple !
 
@@ -222,6 +229,8 @@ git push origin main
 
 3. Vérifie sur GitHub que `README.md` apparaît.
 4. Soumets l’URL de ton dépôt via GitHub Issues (titre : “Test premier push - Votre Nom”).
+
+___
 
 ## 📚 Ressources supplémentaires
 - **GitHub Docs** : [docs.github.com](https://docs.github.com/en/get-started) (guide officiel).
