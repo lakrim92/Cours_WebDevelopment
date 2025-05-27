@@ -80,7 +80,7 @@ Un environnement pour tester des scripts PHP avec différentes versions du langa
 ***Activité*** : Écrivez un script qui affiche votre nom et testez-le. Discutez de ce que fait la fonction `echo`.
 3. **W3Schools PHP** [(w3schools.com/php)](https://www.w3schools.com/php/)
 Tutoriels clairs avec un éditeur en ligne pour tester des scripts PHP. Couvre les bases comme les variables, les formulaires et les boucles.
-Activité : Suivez un tutoriel sur les variables PHP et essayez l’exercice correspondant.
+***Activité*** : Suivez un tutoriel sur les variables PHP et essayez l’exercice correspondant.
 4. **FreeCodeCamp** [(freecodecamp.org)](https://www.freecodecamp.org/)
 Bien que centré sur HTML/CSS/JavaScript, FreeCodeCamp propose des ressources pour PHP via ses forums et projets.
 ***Activité*** : Cherchez un tutoriel PHP sur le forum et essayez un exemple simple.
@@ -99,12 +99,12 @@ Une plateforme avec des défis de programmation, y compris en PHP. Parfait pour 
 
 Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécuter des scripts côté serveur. Nous utiliserons le serveur intégré de PHP, qui est simple à configurer et ne nécessite pas d’installation complexe comme XAMPP.
 ### 1.1 Outils nécessaires
-- PHP : Vous devez avoir PHP installé sur votre ordinateur.
-    - **Windows/Mac/Linux **: Téléchargez PHP depuis [php.net](https://www.php.net/). Suivez les instructions d’installation pour votre système. 
-    - Vérifiez l’installation en ouvrant un terminal et en tapant `php -v`. Vous devriez voir la version de PHP (ex. : `PHP 8.x`). 
 - **Un éditeur de texte : Visual Studio Code** (gratuit, avec l’extension ***PHP Intelephense*** pour l’autocomplétion).
     - Téléchargez-le sur : [code.visualstudio.com](https://code.visualstudio.com/). 
-- **Un terminal** : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux. 
+- **PHP** : Vous devez avoir PHP installé sur votre ordinateur.
+    - **Windows/Mac/Linux **: Téléchargez PHP depuis [php.net](https://www.php.net/). Suivez les instructions d’installation pour votre système. 
+    - Vérifiez l’installation en ouvrant un terminal et en tapant `php -v`. Vous devriez voir la version de PHP (ex. : `PHP 8.x`). 
+    - **Un terminal** : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux. 
 - **Un navigateur web** : Chrome, Firefox ou autre pour tester vos pages. 
 - **Git et GitHub** : Git pour versionner votre code localement, et GitHub pour héberger et partager vos projets (exercices et projet en groupe).
     - Téléchargez Git depuis git-scm.com.
