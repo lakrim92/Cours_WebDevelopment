@@ -124,6 +124,7 @@ Pour le projet en groupe (vitrine web), créez un **dépôt de groupe** (ex. : `
 - Ajoute les coéquipiers comme collaborateurs :
    - Sur GitHub, va dans **Settings > Collaborators > Add people**.
    - Invite tes coéquipiers par leur nom d’utilisateur GitHub.
+
 **2. Cloner le dépôt
 - Chaque membre clone le dépôt :
 
@@ -133,6 +134,7 @@ cd Club-Equipe1
 ```
 
 - Copie le dossier projet_groupe/public/ (avec index.php, style.css, traitement.php) dans Club-Equipe1.
+
 **3. Travailler sur une branche**
 - Crée une branche pour tes modifications :
 
@@ -161,6 +163,7 @@ git push origin ma-branche
 - Ajoute un titre (ex. : “Ajout du formulaire”) et une description.
 - Clique sur **Create pull request**.
 - Un coéquipier ou le coordinateur valide et fusionne la PR.
+
 **6. Soumettre le projet**
 - Le groupe soumet l’URL du dépôt (ex. : `https://github.com/proprietaire/Club-Equipe1`) via GitHub Issues.
 - Chaque membre soumet une Issue individuelle :
