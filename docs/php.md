@@ -106,6 +106,10 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
     - Téléchargez-le sur : [code.visualstudio.com](https://code.visualstudio.com/). 
 - **Un terminal** : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux. 
 - **Un navigateur web** : Chrome, Firefox ou autre pour tester vos pages. 
+- **Git et GitHub** : Git pour versionner votre code localement, et GitHub pour héberger et partager vos projets (exercices et projet en groupe).
+    - Téléchargez Git depuis git-scm.com.
+    - Créez un compte sur github.com.
+    - **Voir le cours [Introduction à GitHub](./github-intro.md) pour configurer GitHub et apprendre les bases.**
 - **Un dossier de travail** :
     - Créez un dossier nommé `mon_premier_site_php` sur votre ordinateur (ex. : `C:\Users\VotreNom\mon_premier_site_php ou ~/mon_premier_site_php`). 
     - À l’intérieur, créez un sous-dossier nommé **public** où vos fichiers **.php** seront placés. 
@@ -116,12 +120,22 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 - Ouvrez un terminal et tapez `php -v` pour vérifier que PHP est installé. 
 2. **Installez Visual Studio Code** :
 ◦ Téléchargez et installez VS Code. 
-◦ Installez l’extension ***PHP Intelephense*** via l’onglet Extensions. 
-3. **Créez la structure du projet** :
+◦ Installez l’extension ***PHP Intelephense*** via l’onglet Extensions.
+3. **Installez Git** :
+- Téléchargez et installez Git depuis git-scm.com.
+- Vérifiez l’installation avec :
+```bash
+git --version
+```
+
+Vous devriez voir une version (ex. : git version 2.x.x).
+4. **Créez un compte GitHub** :
+- Inscrivez-vous sur github.com et vérifiez votre email.
+5. **Créez la structure du projet** :
 - Créez un dossier `mon_premier_site_php` sur votre bureau ou ailleurs. 
 - À l’intérieur, créez un sous-dossier public. 
 - Ouvrez `mon_premier_site_php` dans VS Code (Fichier > Ouvrir un dossier). 
-4. **Créez un fichier PHP** :
+6. **Créez un fichier PHP** :
 - Dans public, créez un fichier nommé **index.php** avec :
 
 ```html
@@ -140,7 +154,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 </html>
 ```
 
-5. **Lancez le serveur PHP** :
+7. **Lancez le serveur PHP** :
 - Ouvrez le terminal dans VS Code (Terminal > Nouveau terminal) ou utilisez votre terminal système. 
 - Naviguez vers le dossier **mon_premier_site_php** avec la commande :
 `cd chemin/vers/mon_premier_site_php`
@@ -148,7 +162,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 - Lancez le serveur PHP avec :
 `php -S localhost:8200 -t public`
 Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Development Server started at localhost:8200. 
-6. **Testez votre page** :
+8. **Testez votre page** :
 - Ouvrez votre navigateur et allez à http://localhost:8200. 
 - Vous devriez voir une page avec un titre "Bienvenue !" et un paragraphe généré par PHP. 
 - Partagez avec un voisin : que se passe-t-il si vous modifiez le texte dans **index.php** et actualisez la page ? 
