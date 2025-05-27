@@ -125,7 +125,7 @@ Pour le projet en groupe (vitrine web), créez un **dépôt de groupe** (ex. : `
    - Sur GitHub, va dans **Settings > Collaborators > Add people**.
    - Invite tes coéquipiers par leur nom d’utilisateur GitHub.
 
-**2. Cloner le dépôt
+**2. Cloner le dépôt**
 - Chaque membre clone le dépôt :
 
 ```bash
