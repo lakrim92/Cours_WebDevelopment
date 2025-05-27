@@ -71,8 +71,9 @@
 
 ### Modalités :
 
-- **Soumission** : Le groupe crée un dépôt GitHub (ex. : `ToDoList-Equipe1`) et pousse le code (`index.php`, `style.css`, `traitement.php,` maquette). Partagez l’URL du dépôt via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/1). Chaque membre soumet une Issue individuelle décrivant sa contribution (ex. : "J’ai créé le formulaire dans `index.php`").
-- **Délais** : Fixez une date limite (ex. : 2 semaines après le début du projet).
+- **Soumission** : Le groupe crée un dépôt GitHub (ex. : `ToDoList-Equipe1`) et pousse le code (`index.php`, `style.css`, `traitement.php,` maquette). 
+- Partagez l’URL du dépôt via [GitHub Issues](https://github.com/lakrim92/Cours_WebDevelopment/issues/1). Chaque membre soumet une Issue individuelle décrivant sa contribution (ex. : "J’ai créé le formulaire dans `index.php`").
+- **Délais** : Délais fixés en fonction des projets.
 - **Feedback** : Fournissez une note globale pour le groupe et des commentaires individuels dans les Issues.
 
 ### Total des points :
