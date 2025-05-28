@@ -2,6 +2,7 @@
 layout: default
 title: Extensions PHP pour VS Code
 ---
+
 ## 3.3 Exercices pratiques
 
 **1. Exercice 1 : Styliser une page** :

@@ -2,6 +2,7 @@
 layout: default
 title: Extensions PHP pour VS Code
 ---
+
 ## 4.3 Exercices pratiques
 
 **1. Exercice 1 : Créer une alerte personnalisée** :
