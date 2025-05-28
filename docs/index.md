@@ -15,11 +15,14 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
   <button class="dropbtn">Frontend ▼</button>
   <div class="dropdown-content">
     <a href="/html-css-js.md">Introduction HTML/CSS/JS</a>
+    <a href="/html-css-js-avance.md">HTML/CSS/JS avancé</a>
+    <a href="/html-css-js-expert.md">HTML/CSS/JS expert</a>
     <a href="/Cours_WebDevelopment/html-css-js/exercises/exercices-partie2.md">Exercices Partie 2</a>
     <a href="/Cours_WebDevelopment/html-css-js/exercises/exercices-partie3.md">Exercices Partie 3</a>
     <a href="/Cours_WebDevelopment/html-css-js/exercises/exercices-partie4.md">Exercices Partie 4</a>
   </div>
 </div>
+
 - [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
 - [HTML, CSS et Javascript avancé](./html-css-js-Advanced.md) : Maîtrisez les techniques avancées pour des interfaces dynamiques.
 - [HTML, CSS et Javascript expert](./html-css-js-expert.md) : Développez des applications web complexes avec des performances optimisées.
