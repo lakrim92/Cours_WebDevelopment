@@ -121,7 +121,7 @@ composer global require friendsofphp/php-cs-fixer
 
 **Fonctionnalités** :
 
-- Auto-complétion des docblocks avec `/**` + Entrée.
+- Auto-complétion des docblocks.
 - Support des annotations (@param, @return).
 
 **Installation** :
