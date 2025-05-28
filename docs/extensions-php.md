@@ -63,18 +63,18 @@ xdebug.client_port=9003
 - Crée un fichier `.vscode/launch.json` :
 ```json
 {
-  "version": "0.2.0",
-  "configurations": [
+    "version": "0.2.0",
+    "configurations": [
     {
-      "name": "Listen for Xdebug",
-      "type": "php",
-      "request": "launch",
-      "port": 9003,
-      "pathMappings": {
-        "/path/to/mon_premier_site_php": "${workspaceFolder}"
-      }
-    }
-  ]
+        "name": "Listen for Xdebug",
+        "type": "php",
+        "request": "launch",
+        "port": 9003,
+        "pathMappings": {
+            "/path/to/mon_premier_site_php": "${workspaceFolder}"
+        }
+        }
+    ]
 }
 ```
 
@@ -100,8 +100,8 @@ composer global require friendsofphp/php-cs-fixer
 - Ajoute dans `settings.json` :
 ```json
 "[php]": {
-  "editor.defaultFormatter": "junstyle.php-cs-fixer",
-  "editor.formatOnSave": true
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.formatOnSave": true
 },
 "php-cs-fixer.executablePath": "/home/user/.composer/vendor/bin/php-cs-fixer"
 ```
