@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 # Extensions PHP pour Visual Studio Code 🛠️
 
 Bienvenue dans ce guide des meilleures extensions pour coder en PHP avec **Visual Studio Code (VS Code)** ! 👨‍💻👩‍💻 Ces extensions te simplifieront la vie pour les exercices des Parties 2, 3, 4 (ex. : `bonjour.php`) et le projet en groupe (Partie 5 : vitrine web). Elles offrent autocomplétion, débogage, formatage, et bien plus. Allons-y ! 🚀

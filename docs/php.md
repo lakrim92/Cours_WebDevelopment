@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 # Support de Cours : Introduction à PHP
 
 <div style="text-align: center;">
