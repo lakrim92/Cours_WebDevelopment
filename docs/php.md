@@ -590,7 +590,7 @@ $equipe = [
 ***Résultat*** : Affiche une liste HTML de jours.
 
 
-3. **Fonction et tableau multidimensionnel** :
+**3. Fonction et tableau multidimensionnel** :
 
 ```php
 <?php
