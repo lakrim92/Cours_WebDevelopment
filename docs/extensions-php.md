@@ -136,326 +136,144 @@ composer global require friendsofphp/php-cs-fixer
 
 **Fonctionnalités** :
 
-Exécution des commandes Composer (install, update).
+- Exécution des commandes Composer (`install`, `update`).
+- Autocomplétion pour `composer.json`.
+- Recherche de packages Packagist.
 
+**Installation** :
 
-
-Autocomplétion pour composer.json.
-
-
-
-Recherche de packages Packagist.
-
-Installation :
-
-
-
-
-
-Recherche Composer (ikvasnica.composer).
-
-
-
-Assure-toi que Composer est installé :
-
+- Recherche `Composer`.
+- Assure-toi que Composer est installé :
+```bash
 composer --version
+```
 
-Pourquoi ? : Facilite l’ajout de dépendances (ex. : pour un framework ou une librairie dans Club-Equipe1).
+- **Pourquoi ?** : Facilite l’ajout de dépendances (ex. : pour un framework ou une librairie).
 
-6. PHPUnit
+### 6. PHPUnit
 
-Description : Intègre le framework de tests PHPUnit pour exécuter et visualiser les tests unitaires dans VS Code.
+**Description** : Intègre le framework de tests **PHPUnit** pour exécuter et visualiser les tests unitaires dans VS Code.
 
-Fonctionnalités :
+**Fonctionnalités** :
 
+- Exécution des tests via l’interface.
+- Affichage des résultats (pass/fail).
 
+**Installation** :
 
-
-
-Exécution des tests via l’interface.
-
-
-
-Affichage des résultats (pass/fail).
-
-Installation :
-
-
-
-
-
-Recherche PHPUnit (emallin.phpunit).
-
-
-
-Installe PHPUnit via Composer :
-
+- Recherche `PHPUnit` (emallin.phpunit).
+- Installe PHPUnit via Composer :
+```bash
 composer require --dev phpunit/phpunit
+```
 
-Pourquoi ? : Utile pour tester les fonctionnalités PHP dans les exercices avancés ou le projet.
+- **Pourquoi ?** : Utile pour tester les fonctionnalités PHP dans les exercices avancés ou le projet.
 
-7. Twig Language Support
+### 7. Twig Language Support
 
-Description : Fournit la coloration syntaxique, l’autocomplétion et les snippets pour les templates Twig, utilisés dans certains projets PHP.
+**Description** : Fournit la coloration syntaxique, l’autocomplétion et les snippets pour les templates `Twig`, utilisés dans certains projets PHP.
 
-Fonctionnalités :
+**Fonctionnalités** :
 
+-Coloration des fichiers `.twig`.
+- Snippets pour les directives (`{% for %}, {% if %}`).
 
+**Installation** :
 
+- Recherche `Twig Language`.
 
+- **Pourquoi ?** : Pertinent si tes exercices ou projets utilisent Twig (exemple : templates Partie 4).
 
-Coloration des fichiers .twig.
+### 8. GitLens
 
+**Description** : Améliore l’intégration de Git dans VS Code, facilitant le suivi des modifications et la collaboration via GitHub.
 
+**Fonctionnalités** :
 
-Snippets pour les directives ({% for %}, {% if %}).
+- Annotations de blame (auteur des lignes).
+- Historique des commits.
+- Visualisation des branches.
 
-Installation :
+**Installation** :
 
+- Recherche `GitLens`.
+- **Pourquoi ?** : Indispensable pour gérer tes dépôts.
 
+## 📌 Instructions pour l’installation
 
+**1. Ouvrir l’onglet Extensions** :
+- Appuie sur `Ctrl+Shift+X` ou clique sur l’icône Extensions dans la barre latérale.
 
+**2. Rechercher et installer** :
+- Tape le nom de l’extension (ex. : PHP Intelephense).
+- Clique sur **Install**.
 
-Recherche Twig Language (mblode.twig-language).
+**3. Vérifier l’activation** :
+- Redémarre VS Code si nécessaire (`Ctrl+Shift+P` > `Developer: Reload Window`).
 
-Pourquoi ? : Pertinent si tes exercices ou projets utilisent Twig (exemple : templates Partie 4).
+**4. Configurer les extensions** :
+- Suis les instructions ci-dessus pour `PHP Intelephense`, `PHP Debug`, et `PHP CS Fixer`.
 
-8. GitLens
+**5. Tester** :
+- Ouvre `public/index.php`.
+- Vérifie l’autocomplétion (Ctrl+Space), le formatage (enregistre), et le débogage (F5 avec Xdebug).
 
-Description : Améliore l’intégration de Git dans VS Code, facilitant le suivi des modifications et la collaboration via GitHub.
+## 😊 Conseils pour les élèves
 
-Fonctionnalités :
+- **Priorise PHP Intelephense** : Installe-la en premier, comme dans Partie 1 : Préparer les outils. Elle t’aide pour tous les exercices.
+- **Utilise GitLens avec GitHub** : Consulte Introduction à GitHub pour pousser sur **php-exercices-votre-nom**.
+- **Débogue avec PHP Debug** : Trouve les erreurs dans tes fichiers php.
+- **Formate avec PHP CS Fixer** : Garde ton code propre avant de soumettre via GitHub Issues.
+- **Évite les conflits** : Désactive les extensions inutiles (ex. : PHP IntelliSense si tu utilises Intelephense).
 
+## 🔧 Dépannage
 
+**PHP Intelephense ne fonctionne pas** :
 
-
-
-Annotations de blame (auteur des lignes).
-
-
-
-Historique des commits.
-
-
-
-Visualisation des branches.
-
-Installation :
-
-
-
-
-
-Recherche GitLens (eamodio.gitlens).
-
-Pourquoi ? : Indispensable pour gérer tes dépôts php-exercices-votre-nom et Club-Equipe1 sur GitHub.
-
-📌 Instructions pour l’installation
-
-
-
-
-
-Ouvrir l’onglet Extensions :
-
-
-
-
-
-Appuie sur Ctrl+Shift+X ou clique sur l’icône Extensions dans la barre latérale.
-
-
-
-Rechercher et installer :
-
-
-
-
-
-Tape le nom de l’extension (ex. : PHP Intelephense).
-
-
-
-Clique sur Install.
-
-
-
-Vérifier l’activation :
-
-
-
-
-
-Redémarre VS Code si nécessaire (Ctrl+Shift+P > Developer: Reload Window).
-
-
-
-Configurer les extensions :
-
-
-
-
-
-Suis les instructions ci-dessus pour PHP Intelephense, PHP Debug, et PHP CS Fixer.
-
-
-
-Tester :
-
-
-
-
-
-Ouvre public/index.php dans mon_premier_site_php.
-
-
-
-Vérifie l’autocomplétion (Ctrl+Space), le formatage (enregistre), et le débogage (F5 avec Xdebug).
-
-😊 Conseils pour les élèves
-
-
-
-
-
-Priorise PHP Intelephense : Installe-la en premier, comme dans Partie 1 : Préparer les outils. Elle t’aide pour bonjour.php et tous les exercices.
-
-
-
-Utilise GitLens avec GitHub : Consulte Introduction à GitHub pour pousser sur php-exercices-votre-nom.
-
-
-
-Débogue avec PHP Debug : Trouve les erreurs dans index.php ou traitement.php.
-
-
-
-Formate avec PHP CS Fixer : Garde ton code propre avant de soumettre via GitHub Issues.
-
-
-
-Évite les conflits : Désactive les extensions inutiles (ex. : PHP IntelliSense si tu utilises Intelephense).
-
-🔧 Dépannage
-
-
-
-
-
-PHP Intelephense ne fonctionne pas :
-
-
-
-
-
-Vérifie que "php.suggest.basic": false est dans settings.json.
-
-
-
-Confirme que PHP est dans le PATH :
-
+- Vérifie que `"php.suggest.basic": false` est dans `settings.json`.
+- Confirme que `PHP` est dans le `PATH` :
+```bash
 php -v
+```
 
+**PHP Debug ne se connecte pas** :
 
-
-PHP Debug ne se connecte pas :
-
-
-
-
-
-Vérifie que Xdebug est activé :
-
+- Vérifie que Xdebug est activé :
+```bash
 php -i | grep xdebug
+```
 
+- Contrôle `launch.json` et le port (9003).
 
+**PHP CS Fixer ne formate pas** :
 
-Contrôle launch.json et le port (9003).
+- **Vérifie l’installation globale** : 
+```bash 
+~/.composer/vendor/bin/php-cs-fixer --version
+```
 
+- Corrige le chemin dans `settings.json`.
 
+**Problèmes GitLens** :
 
-PHP CS Fixer ne formate pas :
-
-
-
-
-
-Vérifie l’installation globale : -```bash ~/.composer/vendor/bin/php-cs-fixer --version
-
-
-
-
-
-Corrige le chemin dans settings.json.
-
-
-
-Problèmes GitLens :
-
-
-
-
-
-Assure-toi que Git est configuré :
-
+- Assure-toi que Git est configuré :
+```bash
 git --version
+```
 
-📚 Ressources
+## 📚 Ressources
 
+- [Guide VS Code](https://code.visualstudio.com/docs/languages/php) pour PHP (officiel).
+- [Dev.to](https://dev.to/) : Top extensions PHP 2024.
+- [Codevoweb](https://codevoweb.com/) : Extensions PHP 2025.
+- [Laravel News](https://laravel-news.com/) : Extensions PHP/Laravel.
+- [DigitalOcean](https://www.digitalocean.com/) : Configuration PHP dans VS Code.
+- [TheDropTimes](https://www.thedroptimes.com/) : Extensions PHP 2025.
 
-
-
-
-Guide VS Code pour PHP (officiel).
-
-
-
-Dev.to : Top extensions PHP 2024.
-
-
-
-Codevoweb : Extensions PHP 2025.
-
-
-
-Laravel News : Extensions PHP/Laravel.
-
-
-
-DigitalOcean : Configuration PHP dans VS Code.
-
-
-
-TheDropTimes : Extensions PHP 2025.
-
-
-
-X Posts :
-
-
-
-
-
-@baka_engineer (2021) : PHP Intelephense pour PHP.
-
-
-
-@mjcoder (2025) : Extensions Laravel/PHP.
-
-
-
-Cours :
-
-
-
-
-
-Introduction à PHP : Contexte du cours.
-
-
-
-Introduction à GitHub : Pousser ton code.
+**X Posts** :
+- @baka_engineer (2021) : PHP Intelephense pour PHP.
+- @mjcoder (2025) : Extensions Laravel/PHP.
 
 Félicitations ! 🎉 Avec ces extensions, tu es prêt à coder, déboguer et partager tes projets PHP. Pose tes questions via GitHub Issues ! 🚀
 
-Retour au cours
+[retour](../../php.md)
