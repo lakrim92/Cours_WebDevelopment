@@ -2,3 +2,9 @@ title: Cours Web Development
 description: Support de cours pour le développement web
 theme: jekyll-theme-minimal
 markdown: GFM
+plugins:
+  - jekyll-seo-tag
+  - jekyll-relative-links
+include:
+  - assets/css/style.css
+  - assets/js/dropdown.js
