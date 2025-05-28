@@ -136,10 +136,6 @@ composer global require friendsofphp/php-cs-fixer
 
 **Fonctionnalités** :
 
-
-
-
-
 Exécution des commandes Composer (install, update).
 
 
