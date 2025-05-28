@@ -562,7 +562,7 @@ $equipe = [
 ```
 
 ### 4.2 Exemples
-1. **Tableau associatif** :
+**1. Tableau associatif** :
 
 ```php
 <?php
@@ -574,7 +574,7 @@ $equipe = [
 ***Résultat*** : Affiche "Nom : Marie, Note : 15".
 
 
-2. **Boucle foreach** :
+**2. Boucle foreach** :
 
 ```php
 <?php
