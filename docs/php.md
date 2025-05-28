@@ -122,7 +122,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 **2. Installez Visual Studio Code** :
 - Téléchargez et installez VS Code. 
 - Installez l’extension ***PHP Intelephense*** via l’onglet Extensions.
-[**Extensions**](./extensions-php.md)
+| [**Extensions**](./extensions-php.md)
 
 **3. Installez Git** :
 - Téléchargez et installez Git depuis git-scm.com.
