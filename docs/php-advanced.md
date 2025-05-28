@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Support de cours : PHP Avancé
 
 Bienvenue dans le cours **PHP Avancé** !

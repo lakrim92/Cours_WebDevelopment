@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 ### 4.3 Exercices pratiques
 
 

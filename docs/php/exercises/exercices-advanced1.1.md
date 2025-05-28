@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 ### Exercice 1.1 : Liste d’utilisateurs avec MVC
 
 1. Créez un projet Laravel. 

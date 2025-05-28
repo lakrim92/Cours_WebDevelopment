@@ -1,4 +1,9 @@
-### Exercice 3.1 : API et tests
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
+## Exercice 3.1 : API et tests
 
 1. Reprenez le projet de l’exercice 2.1. 
 2. Créez une API REST pour lister et ajouter des utilisateurs. 

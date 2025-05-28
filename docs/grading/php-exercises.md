@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 ## Barème de notation pour les exercices
 
 **Total** : 100 points, répartis équitablement entre les 13 exercices (4 pour la Partie 2, 4 pour la Partie 3, 5 pour la Partie 4). Chaque exercice vaut 8 points.

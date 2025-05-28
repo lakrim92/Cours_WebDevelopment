@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Introduction à Flutter : Bienvenue dans le cours Introduction à Flutter ! 
 
 <p align="center">

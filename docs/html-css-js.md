@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Introduction : Bienvenue dans le monde du développement web !
 
 <p align="center">

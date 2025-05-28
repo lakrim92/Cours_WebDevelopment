@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 # Barème de notation pour le projet en groupe
 
 **Total** : 100 points, répartis entre les composantes du projet, la collaboration, la présentation, et les bonus.

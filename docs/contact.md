@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Contact
 
 Vous avez des questions sur les cours ? Voici comment nous contacter :

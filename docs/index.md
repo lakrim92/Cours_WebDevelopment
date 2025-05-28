@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Bienvenue aux Cours de Développement Web
 
 Ce site regroupe des cours interactifs pour apprendre le développement web, conçus pour des débutants. Utilisez le menu ci-dessous pour naviguer.

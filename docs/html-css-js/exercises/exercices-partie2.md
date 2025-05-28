@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 # Exercices HTML - Mise en pratique
 
 ## 1. Exercice 1 : Créer une page personnelle

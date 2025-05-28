@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Partie 4 : Projet en groupe – Application de gestion d’utilisateurs
 
 ### Objectif

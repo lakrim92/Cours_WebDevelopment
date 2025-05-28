@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Partie 5 : Projet en groupe - Création d’une application web interactive
 
 ## Objectif

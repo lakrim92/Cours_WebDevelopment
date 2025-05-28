@@ -1,3 +1,8 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+
 # Introduction à GitHub 🐙
 
 Bienvenue dans ce cours d’introduction à **GitHub**.  
@@ -25,7 +30,7 @@ Si tu n’as **jamais utilisé Git ni GitHub**, tu es au bon endroit ! 👨‍�
 
 Avant de commencer, assure-toi d’avoir :
 
-- Un compte GitHub ➜ [https://github.com/join](https://github.com/join)
+- Un compte GitHub ➜ [github.com/join](https://github.com/join)
 - Git installé ➜ Télécharge sur ton ordinateur ➜ [git-scm.com](https://git-scm.com/downloads)
 - Un terminal ➜ Utilise celui de VS Code (Terminal > Nouveau terminal), PowerShell (Windows), ou Terminal (Mac/Linux).
 - Le dossier exemple (mon_premier_site_php) créé.
