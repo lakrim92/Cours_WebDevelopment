@@ -115,27 +115,26 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
     - À l’intérieur, créez un sous-dossier nommé **public** où vos fichiers **.php** seront placés. 
 
 ## 1.2 Activité : Configurer son environnement
-1. **Installez PHP** :
+**1. Installez PHP** :
 - Téléchargez et installez PHP depuis [php.net](https://www.php.net/). 
 - Ouvrez un terminal et tapez `php -v` pour vérifier que PHP est installé. 
-2. **Installez Visual Studio Code** :
+**2. Installez Visual Studio Code** :
 ◦ Téléchargez et installez VS Code. 
 ◦ Installez l’extension ***PHP Intelephense*** via l’onglet Extensions.
-3. **Installez Git** :
+**3. Installez Git** :
 - Téléchargez et installez Git depuis git-scm.com.
 - Vérifiez l’installation avec :
 ```bash
 git --version
 ```
-
 Vous devriez voir une version (ex. : git version 2.x.x).
-4. **Créez un compte GitHub** :
+**4. Créez un compte GitHub** :
 - Inscrivez-vous sur github.com et vérifiez votre email.
-5. **Créez la structure du projet** :
+**5. Créez la structure du projet** :
 - Créez un dossier `mon_premier_site_php` sur votre bureau ou ailleurs. 
 - À l’intérieur, créez un sous-dossier public. 
 - Ouvrez `mon_premier_site_php` dans VS Code (Fichier > Ouvrir un dossier). 
-6. **Créez un fichier PHP** :
+**6. Créez un fichier PHP** :
 - Dans public, créez un fichier nommé **index.php** avec :
 
 ```html
@@ -154,7 +153,7 @@ Vous devriez voir une version (ex. : git version 2.x.x).
 </html>
 ```
 
-7. **Lancez le serveur PHP** :
+**7. Lancez le serveur PHP** :
 - Ouvrez le terminal dans VS Code (Terminal > Nouveau terminal) ou utilisez votre terminal système. 
 - Naviguez vers le dossier **mon_premier_site_php** avec la commande :
 `cd chemin/vers/mon_premier_site_php`
@@ -162,7 +161,7 @@ Vous devriez voir une version (ex. : git version 2.x.x).
 - Lancez le serveur PHP avec :
 `php -S localhost:8200 -t public`
 Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Development Server started at localhost:8200. 
-8. **Testez votre page** :
+**8. Testez votre page** :
 - Ouvrez votre navigateur et allez à http://localhost:8200. 
 - Vous devriez voir une page avec un titre "Bienvenue !" et un paragraphe généré par PHP. 
 - Partagez avec un voisin : que se passe-t-il si vous modifiez le texte dans **index.php** et actualisez la page ? 
