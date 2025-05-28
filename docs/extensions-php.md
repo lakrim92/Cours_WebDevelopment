@@ -185,21 +185,21 @@ composer require --dev phpunit/phpunit
 
 ## 📌 Instructions pour l’installation
 **1. Ouvrir l’onglet Extensions** :
-    - Appuie sur `Ctrl+Shift+X` ou clique sur l’icône Extensions dans la barre latérale.
+- Appuie sur `Ctrl+Shift+X` ou clique sur l’icône Extensions dans la barre latérale.
 
 **2. Rechercher et installer** :
-    - Tape le nom de l’extension (ex. : `PHP Intelephense`).
-    - Clique sur Install.
+- Tape le nom de l’extension (ex. : `PHP Intelephense`).
+- Clique sur Install.
 
 **3. Vérifier l’activation** :
-    - Redémarre VS Code si nécessaire (Ctrl+Shift+P > `Developer: Reload Window`).
+- Redémarre VS Code si nécessaire (Ctrl+Shift+P > `Developer: Reload Window`).
 
 **4. Configurer les extensions** :
-    - Suis les instructions ci-dessus pour `PHP Intelephense`, `PHP Debug`, et `PHP CS Fixer`.
-    
+- Suis les instructions ci-dessus pour `PHP Intelephense`, `PHP Debug`, et `PHP CS Fixer`.
+
 **5. Tester** :
-    - Ouvre `public/index.php` dans `mon_premier_site_php`.
-    - Vérifie l’autocomplétion (Ctrl+Space), le formatage (enregistre), et le débogage (F5 avec Xdebug).
+- Ouvre `public/index.php` dans `mon_premier_site_php`.
+- Vérifie l’autocomplétion (Ctrl+Space), le formatage (enregistre), et le débogage (F5 avec Xdebug).
 
 ## 😊 Conseils pour les élèves
 - **Priorise PHP Intelephense** : Installe-la en premier, comme dans Partie 1 : Préparer les outils. Elle t’aide pour tous les exercices.
