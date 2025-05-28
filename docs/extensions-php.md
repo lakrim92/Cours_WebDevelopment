@@ -162,7 +162,7 @@ composer require --dev phpunit/phpunit
 
 **Fonctionnalités** :
 - Coloration des fichiers `.twig`.
-- Snippets pour les directives (`{% for %}`, `{% if %}`).
+- Snippets pour les directives.
 
 **Installation** :
 - Recherche `Twig Language` (mblode.twig-language).
