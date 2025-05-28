@@ -1,4 +1,8 @@
-Exercice 2.1 : Formulaire sécurisé
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
+## Exercice 2.1 : Formulaire sécurisé
 
 1. Reprenez le projet de l’exercice 1.1. 
 2. Ajoutez un formulaire pour créer un utilisateur avec validation (nom, email). 

@@ -246,3 +246,5 @@ git --version
     - @mjcoder (2025) : Extensions Laravel/PHP.
 
 **Félicitations !** 🎉 Avec ces extensions, tu es prêt à coder, déboguer et partager tes projets PHP. Pose tes questions via GitHub Issues ! 🚀
+
+[retour](../../php.md)
