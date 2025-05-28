@@ -130,12 +130,15 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 git --version
 ```
 Vous devriez voir une version (ex. : git version 2.x.x).
+
 **4. Créez un compte GitHub** :
 - Inscrivez-vous sur github.com et vérifiez votre email.
+
 **5. Créez la structure du projet** :
 - Créez un dossier `mon_premier_site_php` sur votre bureau ou ailleurs. 
 - À l’intérieur, créez un sous-dossier public. 
 - Ouvrez `mon_premier_site_php` dans VS Code (Fichier > Ouvrir un dossier). 
+
 **6. Créez un fichier PHP** :
 - Dans public, créez un fichier nommé **index.php** avec :
 
