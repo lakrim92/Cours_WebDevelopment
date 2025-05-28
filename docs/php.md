@@ -410,7 +410,7 @@ Le résultat dans le navigateur sera une liste à puces : rouge, bleu, vert.
 
 ### 2.3 Exercices pratiques
 
-À vous de jouer [Exercices](./php/exercises/exercices-partie2.md)
+À vous de jouer | [Exercices](./php/exercises/exercices-partie2.md)
 
 ---
 
