@@ -184,25 +184,20 @@ composer require --dev phpunit/phpunit
 **Pourquoi ?** : Indispensable pour gérer tes dépôts `php-exercices-votre-nom` et projets sur GitHub.
 
 ## 📌 Instructions pour l’installation
-**1. Ouvrir l’onglet Extensions** :
-
+1. Ouvrir l’onglet Extensions :
 - Appuie sur `Ctrl+Shift+X` ou clique sur l’icône Extensions dans la barre latérale.
 
-**2. Rechercher et installer** :
-
+2. Rechercher et installer :
 - Tape le nom de l’extension (ex. : `PHP Intelephense`).
 - Clique sur Install.
 
-**3. Vérifier l’activation** :
-
+3. Vérifier l’activation :
 - Redémarre VS Code si nécessaire (Ctrl+Shift+P > `Developer: Reload Window`).
 
-**4. Configurer les extensions** :
-
+4. Configurer les extensions :
 - Suis les instructions ci-dessus pour `PHP Intelephense`, `PHP Debug`, et `PHP CS Fixer`.
 
-**5. Tester** :
-
+5. Tester :
 - Ouvre `public/index.php` dans `mon_premier_site_php`.
 - Vérifie l’autocomplétion (Ctrl+Space), le formatage (enregistre), et le débogage (F5 avec Xdebug).
 
