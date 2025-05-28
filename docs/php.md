@@ -410,7 +410,7 @@ Le résultat dans le navigateur sera une liste à puces : rouge, bleu, vert.
 
 ### 2.3 Exercices pratiques
 
-À vous de jouer | [Exercices](./php/exercises/exercices-partie2.md)
+**À vous de jouer** | [Exercices](./php/exercises/exercices-partie2.md)
 
 ---
 
@@ -505,7 +505,7 @@ Ces tableaux associatifs permettent de récupérer les valeurs des champs de for
 
 ### 3.3 Exercices pratiques
 
-À vous de jouer | [Exercices](./php/exercises/exercices-partie3.md)
+**À vous de jouer** | [Exercices](./php/exercises/exercices-partie3.md)
 
 ---
 
@@ -614,7 +614,7 @@ $equipe = [
 
 ### 4.3 Exercices pratiques
 
-À vous de jouer|  [Exercices](./php/exercises/exercices-partie4.md)
+**À vous de jouer** |  [Exercices](./php/exercises/exercices-partie4.md)
 
 ---
 
@@ -626,6 +626,6 @@ $equipe = [
 
 ## Contact
 
-Posez vos questions ! | [Contact](contact.md)
+**Posez vos questions !** | [Contact](contact.md)
 
 [retour](./index.md) | [Passez au PHP avancé](./php-advanced.md)
