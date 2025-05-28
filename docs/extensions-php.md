@@ -134,7 +134,7 @@ composer global require friendsofphp/php-cs-fixer
 
 **Description** : Intègre **Composer**, le gestionnaire de dépendances PHP, dans VS Code. Utile pour gérer les bibliothèques dans le projet en groupe.
 
-Fonctionnalités :
+**Fonctionnalités** :
 
 
 
