@@ -7,9 +7,9 @@ title: Extensions PHP pour VS Code
 
 Ce site regroupe des cours interactifs pour apprendre le développement web, conçus pour des débutants. Utilisez le menu ci-dessous pour naviguer.
 
-## Cours
+# Cours
 
-## Frontend :
+## Frontend 
 
 <div class="dropdown">
   <button class="dropbtn">HTML-CSS-JS ▼</button>
@@ -40,7 +40,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 ---
 
-## Backend :
+## Backend 
 
 <div class="dropdown">
   <button class="dropbtn">Nodejs ▼</button>
