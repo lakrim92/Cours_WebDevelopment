@@ -14,7 +14,7 @@ Les extensions transforment VS Code en un outil puissant pour PHP :
 - **Collaboration** : Produis un code propre pour GitHub.
 - **Apprentissage** : Débogue facilement pour comprendre tes scripts.
 
-Ce guide est conçu pour les débutants du cours [Introduction à PHP](../php.md). Installe ces extensions pour coder comme un pro ! 💻
+Ce guide est conçu pour les débutants du cours [Introduction à PHP]({{ site.baseurl }}/php/php.html). Installe ces extensions pour coder comme un pro ! 💻
 
 ## 📋 Liste des extensions
 
@@ -251,4 +251,4 @@ git --version
 
 **Félicitations !** 🎉 Avec ces extensions, tu es prêt à coder, déboguer et partager tes projets PHP. Pose tes questions via GitHub Issues ! 🚀
 
-[retour]({{ site.baseurl }}/php.html)
+[retour]({{ site.baseurl }}/php/php.html)
