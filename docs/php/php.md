@@ -2,10 +2,11 @@
 layout: default
 title: Extensions PHP pour VS Code
 ---
+
 # Support de Cours : Introduction à PHP
 
 <div style="text-align: center;">
-    <img src="./img/php200.png" alt="Logo PHP">
+    <img src="../img/php200.png" alt="Logo PHP">
 </div>
 
 ## Introduction : Bienvenue dans le monde du développement web avec PHP !
@@ -30,7 +31,7 @@ Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si p
 
 
 <div style="text-align: center;">
-    <img src="./img/330px-Wikirl.jpg" alt="Rasmus Lerdorf">
+    <img src="../img/330px-Wikirl.jpg" alt="Rasmus Lerdorf" class="profile-image">
     <br>
     <a href="https://fr.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf - Wikipédia</a>
 </div>
@@ -113,7 +114,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 - **Git et GitHub** : Git pour versionner votre code localement, et GitHub pour héberger et partager vos projets (exercices et projet en groupe).
     - Téléchargez Git depuis git-scm.com.
     - Créez un compte sur github.com.
-    - **Voir le cours [Introduction à GitHub](./github-intro.md) pour configurer GitHub et apprendre les bases.**
+    - **Voir le cours [Introduction à GitHub]({{ site.baseurl }}/github-intro.html) pour configurer GitHub et apprendre les bases.**
 - **Un dossier de travail** :
     - Créez un dossier nommé `mon_premier_site_php` sur votre ordinateur (ex. : `C:\Users\VotreNom\mon_premier_site_php ou ~/mon_premier_site_php`). 
     - À l’intérieur, créez un sous-dossier nommé **public** où vos fichiers **.php** seront placés. 
@@ -126,7 +127,7 @@ Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécute
 **2. Installez Visual Studio Code** :
 - Téléchargez et installez VS Code. 
 - Installez l’extension ***PHP Intelephense*** via l’onglet Extensions.
-- Consultez la liste des extensions recommandées : [Extensions](./extensions-php.md).
+- Consultez la liste des extensions recommandées : [Extensions]({{ site.baseurl }}/extensions-php.html).
 
 **3. Installez Git** :
 - Téléchargez et installez Git depuis git-scm.com.
@@ -415,7 +416,7 @@ Le résultat dans le navigateur sera une liste à puces : rouge, bleu, vert.
 
 ### 2.3 Exercices pratiques
 
-**À vous de jouer**  [Exercices](./php/exercises/exercices-partie2.md)
+**À vous de jouer**  [Exercices]({{ site.baseurl }}/php/exercises/exercices-partie2.html)
 
 ---
 
@@ -510,7 +511,7 @@ Ces tableaux associatifs permettent de récupérer les valeurs des champs de for
 
 ### 3.3 Exercices pratiques
 
-**À vous de jouer** [Exercices](./php/exercises/exercices-partie3.md)
+**À vous de jouer** [Exercices]({{ site.baseurl }}/php/exercises/exercices-partie3.html)
 
 ---
 
@@ -619,18 +620,18 @@ $equipe = [
 
 ### 4.3 Exercices pratiques
 
-**À vous de jouer**  [Exercices](./php/exercises/exercices-partie4.md)
+**À vous de jouer**  [Exercices]({{ site.baseurl }}/php/exercises/exercices-partie4.html)
 
 ---
 
 ## Partie 5 : Projet en groupe - Création d’une application web interactive
 
-**Cliquez sur le lien** : [Projet](./php/exercises/project.md)
+**Cliquez sur le lien** : [Projet]({{ site.baseurl }}/php/exercises/project.html)
 
 ---
 
 ## Contact
 
-**Posez vos questions !** [Contact](contact.md)
+**Posez vos questions !** [Contact]({{ site.baseurl }}/contact.html)
 
-[retour](./index.md) | [Passez au PHP avancé](./php-advanced.md)
+[retour]({{ site.baseurl }}/index.html) | [Passez au PHP avancé]({{ site.baseurl }}/php-advanced.html)

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/extensions-php.html" />
+<meta property="og:url" content="http://localhost:4000/extensions-php.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/extensions-php.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h1 id="extensions-php-pour-visual-studio-code-">Extensions PHP pour Visual Studio Code 🛠️</h1>
+<p>Bienvenue dans ce guide des meilleures extensions pour coder en PHP avec <strong>Visual Studio Code (VS Code)</strong> ! 👨‍💻👩‍💻 Ces extensions te simplifieront la vie pour les exercices des Parties 2, 3, 4 (ex. : <code>bonjour.php</code>) et le projet en groupe (Partie 5 : vitrine web). Elles offrent autocomplétion, débogage, formatage, et bien plus. Allons-y ! 🚀</p>
+<h2 id="pourquoi-utiliser-des-extensions-">🌟 Pourquoi utiliser des extensions ?</h2>
+<p>Les extensions transforment VS Code en un outil puissant pour PHP :</p>
+<ul>
+<li><strong>Productivité</strong> : Code plus vite avec l’autocomplétion.</li>
+<li><strong>Qualité</strong> : Détecte les erreurs avant qu’elles ne te bloquent.</li>
+<li><strong>Collaboration</strong> : Produis un code propre pour GitHub.</li>
+<li><strong>Apprentissage</strong> : Débogue facilement pour comprendre tes scripts.</li>
+</ul>
+<p>Ce guide est conçu pour les débutants du cours <a href="../php.md">Introduction à PHP</a>. Installe ces extensions pour coder comme un pro ! 💻</p>
+<h2 id="liste-des-extensions">📋 Liste des extensions</h2>
+<h3 id="php-intelephense">1. PHP Intelephense</h3>
+<p><strong>Description</strong> : L’extension <strong>essentielle</strong> pour PHP, recommandée dans la Partie 1 du cours. Elle offre une autocomplétion intelligente, détecte les erreurs en temps réel, et te guide dans ton code.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Autocomplétion rapide (camelCase, underscore).</li>
+<li>Détection d’erreurs instantanée.</li>
+<li>Navigation vers classes/fonctions (clic droit &gt; Go to Definition).</li>
+<li>Documentation survolée pour les fonctions PHP.</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Ouvre l’onglet Extensions (Ctrl+Shift+X).</li>
+<li>Recherche <code>PHP Intelephense</code>.</li>
+<li>Installe <code>bmewburn.vscode-intelephense-client</code>.</li>
+</ul>
+<p>(Ouvre <code>settings.json</code> via Ctrl+, &gt; icône <code>{}</code> en haut à droite).</p>
+<p><strong>Pourquoi ?</strong> : Indispensable pour coder efficacement tout les projets.</p>
+<h3 id="php-debug">2. PHP Debug</h3>
+<p><strong>Description</strong> : Permet de déboguer ton code PHP avec Xdebug directement dans VS Code. Idéal pour trouver les erreurs.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Points d’arrêt (breakpoints) pour arrêter l’exécution.</li>
+<li>Inspection des variables en temps réel.</li>
+<li>Exécution pas à pas (step-through).</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>PHP Debug</code> (xdebug.php-debug).</li>
+<li>Configure Xdebug dans ton environnement PHP (voir xdebug.org).</li>
+</ul>
+<p><strong>Configuration</strong> :</p>
+<ul>
+<li>Ajoute dans <code>php.ini</code> :</li>
+</ul>
+<div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[xdebug]</span>
+<span class="py">xdebug.mode</span><span class="p">=</span><span class="s">debug</span>
+<span class="py">xdebug.start_with_request</span><span class="p">=</span><span class="s">yes</span>
+<span class="py">xdebug.client_host</span><span class="p">=</span><span class="s">127.0.0.1</span>
+<span class="py">xdebug.client_port</span><span class="p">=</span><span class="s">9003</span>
+</code></pre></div></div>
+<ul>
+<li>Crée un fichier <code>.vscode/launch.json</code> :</li>
+</ul>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Listen for Xdebug"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"php"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="s2">"launch"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">9003</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"pathMappings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"/path/to/mon_premier_site_php"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>Remplace <code>/path/to/mon_premier_site_php</code> par le chemin réel (ex. : <code>C:/Users/VotreNom/mon_premier_site_php</code>).</p>
+<p><strong>Pourquoi ?</strong> : Simplifie le débogage pour les débutants, évitant les <code>var_dump()</code> ou <code>die()</code>. Parfait pour les projets en groupe.</p>
+<h3 id="php-cs-fixer">3. PHP CS Fixer</h3>
+<p><strong>Description</strong> : Formate automatiquement ton code PHP selon les standards <strong>PSR-2</strong> et <strong>PSR-12</strong>, garantissant un code lisible et professionnel.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Formatage automatique à l’enregistrement.</li>
+<li>Respect des conventions de codage.</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>PHP CS Fixer</code> (junstyle.php-cs-fixer).</li>
+<li>Installe <code>php-cs-fixer</code> globalement :</li>
+</ul>
+<p>composer global require friendsofphp/php-cs-fixer</p>
+<p><strong>Configuration</strong> :</p>
+<ul>
+<li>Ajoute dans <code>settings.json</code> :</li>
+</ul>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"[php]"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"editor.defaultFormatter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"junstyle.php-cs-fixer"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"editor.formatOnSave"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="err">,</span><span class="w">
+</span><span class="nl">"php-cs-fixer.executablePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/home/user/.composer/vendor/bin/php-cs-fixer"</span><span class="w">
+</span></code></pre></div></div>
+<p><strong>Pourquoi ?</strong> : Assure un code propre pour les soumissions via GitHub, facilitant la collaboration.</p>
+<h3 id="php-docblocker">4. PHP DocBlocker</h3>
+<p><strong>Description</strong> : Génère des blocs de commentaires PHPDoc pour fonctions, classes et propriétés, améliorant la documentation.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Auto-complétion des docblocks.</li>
+<li>Support des annotations (@param, @return).</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>PHP DocBlocker</code> (neilbrayfield.php-docblocker).</li>
+</ul>
+<p><strong>Pourquoi ?</strong> : Simplifie la documentation, un atout pour les exercices et les projet.</p>
+<h3 id="composer">5. Composer</h3>
+<p><strong>Description</strong> : Intègre <strong>Composer</strong>, le gestionnaire de dépendances PHP, dans VS Code. Utile pour gérer les bibliothèques dans le projet en groupe.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Exécution des commandes Composer (<code>install</code>, <code>update</code>).</li>
+<li>Autocomplétion pour <code>composer.json</code>.</li>
+<li>Recherche de packages Packagist.</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>Composer</code> (ikvasnica.composer).</li>
+<li>Assure-toi que Composer est installé :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer <span class="nt">--version</span>
+</code></pre></div></div>
+<p><strong>Pourquoi ?</strong> : Facilite l’ajout de dépendances (ex. : pour un framework ou une librairie).</p>
+<h3 id="phpunit">6. PHPUnit</h3>
+<p><strong>Description</strong> : Intègre le framework de tests <strong>PHPUnit</strong> pour exécuter et visualiser les tests unitaires dans VS Code.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Exécution des tests via l’interface.</li>
+<li>Affichage des résultats (pass/fail).</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>PHPUnit</code> (emallin.phpunit).</li>
+<li>Installe PHPUnit via Composer :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require <span class="nt">--dev</span> phpunit/phpunit
+</code></pre></div></div>
+<p><strong>Pourquoi ?</strong> : Utile pour tester les fonctionnalités PHP dans les exercices avancés ou les projet.</p>
+<h3 id="twig-language-support">7. Twig Language Support</h3>
+<p><strong>Description</strong> : Fournit la coloration syntaxique, l’autocomplétion et les snippets pour les templates Twig, utilisés dans certains projets PHP.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Coloration des fichiers <code>.twig</code>.</li>
+<li>Snippets pour les directives.</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>Twig Language</code> (mblode.twig-language).</li>
+</ul>
+<p><strong>Pourquoi ?</strong> : Pertinent si tes exercices ou projets utilisent Twig.</p>
+<h3 id="gitlens">8. GitLens</h3>
+<p><strong>Description</strong> : Améliore l’intégration de Git dans VS Code, facilitant le suivi des modifications et la collaboration via GitHub.</p>
+<p><strong>Fonctionnalités</strong> :</p>
+<ul>
+<li>Annotations de blame (auteur des lignes).</li>
+<li>Historique des commits.</li>
+<li>Visualisation des branches.</li>
+</ul>
+<p><strong>Installation</strong> :</p>
+<ul>
+<li>Recherche <code>GitLens</code> (eamodio.gitlens).</li>
+</ul>
+<p><strong>Pourquoi ?</strong> : Indispensable pour gérer tes dépôts <code>php-exercices-votre-nom</code> et projets sur GitHub.</p>
+<h2 id="instructions-pour-linstallation">📌 Instructions pour l’installation</h2>
+<ol>
+<li>Ouvrir l’onglet Extensions :</li>
+</ol>
+<ul>
+<li>Appuie sur <code>Ctrl+Shift+X</code> ou clique sur l’icône Extensions dans la barre latérale.</li>
+</ul>
+<ol start="2">
+<li>Rechercher et installer :</li>
+</ol>
+<ul>
+<li>Tape le nom de l’extension (ex. : <code>PHP Intelephense</code>).</li>
+<li>Clique sur Install.</li>
+</ul>
+<ol start="3">
+<li>Vérifier l’activation :</li>
+</ol>
+<ul>
+<li>Redémarre VS Code si nécessaire (Ctrl+Shift+P &gt; <code>Developer: Reload Window</code>).</li>
+</ul>
+<ol start="4">
+<li>Configurer les extensions :</li>
+</ol>
+<ul>
+<li>Suis les instructions ci-dessus pour <code>PHP Intelephense</code>, <code>PHP Debug</code>, et <code>PHP CS Fixer</code>.</li>
+</ul>
+<ol start="5">
+<li>Tester :</li>
+</ol>
+<ul>
+<li>Ouvre <code>public/index.php</code> dans <code>mon_premier_site_php</code>.</li>
+<li>Vérifie l’autocomplétion (Ctrl+Space), le formatage (enregistre), et le débogage (F5 avec Xdebug).</li>
+</ul>
+<h2 id="conseils-pour-les-lves">😊 Conseils pour les élèves</h2>
+<ul>
+<li><strong>Priorise PHP Intelephense</strong> : Installe-la en premier, comme dans Partie 1 : Préparer les outils. Elle t’aide pour tous les exercices.</li>
+<li><strong>Utilise GitLens avec GitHub</strong> : Consulte Introduction à GitHub pour pousser sur <code>php-exercices-votre-nom</code>.</li>
+<li><strong>Débogue avec PHP Debug</strong> : Trouve les erreurs dans index.php ou traitement.php etc...</li>
+<li><strong>Formate avec PHP CS Fixer</strong> : Garde ton code propre avant de soumettre via GitHub Issues.</li>
+<li><strong>Évite les conflits</strong> : Désactive les extensions inutiles (ex. : <code>PHP IntelliSense</code> si tu utilises <code>Intelephense</code>).</li>
+</ul>
+<h2 id="dpannage">🔧 Dépannage</h2>
+<ul>
+<li><strong>PHP Intelephense ne fonctionne pas</strong> :
+<ul>
+<li>Vérifie que <code>&quot;php.suggest.basic&quot;: false</code> est dans <code>settings.json</code>.</li>
+<li>Confirme que PHP est dans le PATH :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php <span class="nt">-v</span>
+</code></pre></div></div>
+<ul>
+<li><strong>PHP Debug ne se connecte pas</strong> :
+<ul>
+<li>Vérifie que Xdebug est activé :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php <span class="nt">-i</span> | <span class="nb">grep </span>xdebug
+</code></pre></div></div>
+<pre><code>- Contrôle `launch.json` et le port (9003).
+</code></pre>
+<ul>
+<li><strong>PHP CS Fixer ne formate pas</strong> :
+<ul>
+<li>Vérifie l’installation globale :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.composer/vendor/bin/php-cs-fixer <span class="nt">--version</span>
+</code></pre></div></div>
+<pre><code>- Corrige le chemin dans `settings.json`.
+</code></pre>
+<ul>
+<li><strong>Problèmes GitLens</strong> :
+<ul>
+<li>Assure-toi que Git est configuré :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--version</span>
+</code></pre></div></div>
+<h2 id="ressources">📚 Ressources</h2>
+<ul>
+<li><a href="https://code.visualstudio.com/">Guide VS Code</a> pour PHP (officiel).</li>
+<li><a href="https://dev.to/">Dev.to</a> : Top extensions PHP 2024.</li>
+<li><a href="http://codevoweb.com/">Codevoweb</a> : Extensions PHP 2025.</li>
+<li><a href="https://laravel-news.com/">Laravel News</a> : Extensions PHP/Laravel.</li>
+<li><a href="https://www.digitalocean.com/">DigitalOcean</a> : Configuration PHP dans VS Code.</li>
+<li><a href="https://www.thedroptimes.com/">TheDropTimes</a> : Extensions PHP 2025.</li>
+<li><strong>X Posts</strong> :
+<ul>
+<li>@baka_engineer (2021) : PHP Intelephense pour PHP.</li>
+<li>@mjcoder (2025) : Extensions Laravel/PHP.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Félicitations !</strong> 🎉 Avec ces extensions, tu es prêt à coder, déboguer et partager tes projets PHP. Pose tes questions via GitHub Issues ! 🚀</p>
+<p><a href="/php.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

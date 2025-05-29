@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/exercises/project.html" />
+<meta property="og:url" content="http://localhost:4000/php/exercises/project.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/exercises/project.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h1 id="partie-5--projet-en-groupe---cration-dune-application-web-interactive">Partie 5 : Projet en groupe - Création d’une application web interactive</h1>
+<h2 id="objectif">Objectif</h2>
+<p>Créer une application web interactive pour présenter une <strong>vitrine d’un club ou d’une association</strong> (ex. : club de sport, de musique, ou association scolaire). L’application doit inclure :</p>
+<ul>
+<li>Une structure HTML claire avec un formulaire.</li>
+<li>Un design attrayant avec CSS.</li>
+<li>Une fonctionnalité PHP dynamique (ex. : traitement d’un formulaire, affichage de données).</li>
+<li>Un résultat final motivant et professionnel.
+Ce projet est conçu pour des <strong>groupes de 3 à 4 élèves</strong>, avec des rôles pour encourager la collaboration.</li>
+</ul>
+<h2 id="organisation-du-travail-en-groupe">Organisation du travail en groupe</h2>
+<h3 id="rles-dans-le-groupe">Rôles dans le groupe</h3>
+<ol>
+<li><strong>Designer HTML</strong> : Crée la structure HTML et le formulaire.</li>
+<li><strong>Artiste CSS</strong> : Stylise la page pour un rendu moderne.</li>
+<li><strong>Magicien PHP</strong> : Gère le code PHP (traitement des formulaires, tableaux).</li>
+<li><strong>Coordinateur</strong> (optionnel, si groupe de 4) : Gère le temps et coordonne les idées.</li>
+</ol>
+<h3 id="conseils-pour-la-collaboration">Conseils pour la collaboration</h3>
+<ul>
+<li>Planifiez ensemble : Choisissez un thème (ex. : &quot;Club de codage&quot;).</li>
+<li>Partagez vos idées : Proposez des fonctionnalités (ex. : formulaire d’inscription).</li>
+<li>Testez régulièrement : Vérifiez votre application à <a href="http://localhost:8200">http://localhost:8200</a>.</li>
+<li>Présentez votre travail : Montrez votre application à la classe.</li>
+</ul>
+<h2 id="tapes-du-projet">Étapes du projet</h2>
+<h3 id="tape-1--choisir-un-thme-et-planifier">Étape 1 : Choisir un thème et planifier</h3>
+<ul>
+<li><strong>Durée</strong> : 10 minutes</li>
+<li><strong>Activité</strong> :</li>
+</ul>
+<ol>
+<li>Choisissez un thème pour votre club/association (ex. : <code>&quot;Club de danse&quot;</code>).</li>
+<li>Décidez des éléments à inclure :
+<ul>
+<li>Une page d’accueil avec un <strong>titre</strong> et une <strong>description</strong>.</li>
+<li>Un <strong>formulaire</strong> (ex. : inscription au club).</li>
+<li>Une <strong>section</strong> pour afficher des <strong>données dynamiques</strong> (ex. : membres).</li>
+<li>Une <strong>image</strong> (ex. : <code>https://picsum.photos/300</code>).</li>
+</ul>
+</li>
+</ol>
+<h3 id="tape-2--maquettage">Étape 2 : Maquettage</h3>
+<ul>
+<li><strong>Durée</strong> : 15 minutes</li>
+<li><strong>Responsable principal</strong> : Coordinateur (ou tous ensemble)</li>
+<li><strong>Activité</strong> :</li>
+</ul>
+<ol>
+<li>Créez une <strong>maquette</strong> pour visualiser la mise en page. En entreprise, les maquettes alignent l’équipe avant le codage.</li>
+<li>Options :
+<ul>
+<li><strong>Papier</strong> : Dessinez la page (titre en haut, formulaire au centre, etc.).</li>
+<li><strong>Outil en ligne</strong> : Utilisez <a href="https://www.figma.com/fr-fr/">Figma</a> (version gratuite) ou <a href="https://www.canva.com/fr_fr/">Canva</a> pour créer une maquette numérique simple..</li>
+</ul>
+</li>
+<li>Incluez :
+<ul>
+<li>Disposition des éléments (titre, formulaire, image).</li>
+<li>Idées de couleurs/styles (ex. : &quot;fond clair, texte sombre&quot;).</li>
+<li>Emplacement des éléments dynamiques (ex. : où afficher les données PHP ?).</li>
+</ul>
+</li>
+<li>Validez la maquette en groupe et ajustez si nécessaire.</li>
+</ol>
+<h3 id="tape-3--crer-la-structure-html">Étape 3 : Créer la structure HTML</h3>
+<ul>
+<li><strong>Durée</strong> : 30 minutes</li>
+<li><strong>Responsable principal</strong> : Designer HTML</li>
+<li><strong>Activité</strong> :</li>
+</ul>
+<ol>
+<li>Créez un dossier projet_groupe dans mon_premier_site_php, et à l’intérieur, un sous-dossier public.</li>
+<li>Dans projet_groupe/public, créez un fichier index.php avec :</li>
+</ol>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Club de [Votre Thème]<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Bienvenue au Club de [Votre Thème] !<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Rejoignez-nous pour [description].<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://picsum.photos/300"</span> <span class="na">alt=</span><span class="s">"Image du club"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"traitement.php"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label&gt;</span>Nom :<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"nom"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"S'inscrire"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;section&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>Membres<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"membres"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<ol start="3">
+<li>Lancez le serveur depuis projet_groupe avec :
+<code>php -S localhost:8200 -t public</code></li>
+<li>Testez à <a href="http://localhost:8200">http://localhost:8200</a>.</li>
+</ol>
+<h3 id="tape-4--styliser-avec-css">Étape 4 : Styliser avec CSS</h3>
+<ul>
+<li><strong>Durée</strong> : 30 minutes</li>
+<li><strong>Responsable principal</strong> : Artiste CSS</li>
+<li><strong>Activité</strong> :</li>
+</ul>
+<ol>
+<li>Dans <code>projet_groupe/public</code>, créez un fichier style.css avec :</li>
+</ol>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f0f4f8</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#2c3e50</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">2.5em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.2em</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#34495e</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">img</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">8px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">form</span> <span class="p">{</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">8px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"text"</span><span class="o">]</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"submit"</span><span class="o">]</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#e74c3c</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"submit"</span><span class="o">]</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#c0392b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">section</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">8px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ol start="2">
+<li>Liez style.css à index.php.</li>
+<li>Testez à <a href="http://localhost:8200">http://localhost:8200</a> et ajustez les styles en groupe.</li>
+</ol>
+<h3 id="tape-5--ajouter-linteractivit-avec-php">Étape 5 : Ajouter l’interactivité avec PHP</h3>
+<ul>
+<li><strong>Durée</strong> : 30 minutes</li>
+<li><strong>Responsable principal</strong> : Magicien PHP</li>
+<li><strong>Activité</strong> :</li>
+</ul>
+<ol>
+<li>Dans <code>projet_groupe/public</code>, créez un fichier <code>traitement.php</code> avec :</li>
+</ol>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nv">$nom</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">]);</span>
+    <span class="nv">$membres</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Président"</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Membre"</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="nv">$nom</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Nouveau membre"</span><span class="p">]</span>
+    <span class="p">];</span>
+    <span class="k">echo</span> <span class="s2">"&lt;h2&gt;Bienvenue, </span><span class="nv">$nom</span><span class="s2"> !&lt;/h2&gt;"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">"&lt;ul&gt;"</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$membres</span> <span class="k">as</span> <span class="nv">$membre</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;li&gt;"</span> <span class="mf">.</span> <span class="nv">$membre</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">]</span> <span class="mf">.</span> <span class="s2">" - "</span> <span class="mf">.</span> <span class="nv">$membre</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]</span> <span class="mf">.</span> <span class="s2">"&lt;/li&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s2">"&lt;/ul&gt;"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">'&lt;a href="index.php"&gt;Retour&lt;/a&gt;'</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<ol start="2">
+<li>Testez en soumettant le formulaire à <a href="http://localhost:8200">http://localhost:8200</a>. Vérifiez les erreurs dans le navigateur ou le terminal.</li>
+</ol>
+<h3 id="tape-6--finalisation-et-prsentation">Étape 6 : Finalisation et présentation</h3>
+<ul>
+<li>Durée : 15 minutes</li>
+<li>Responsable principal : Coordinateur (ou tous ensemble)</li>
+<li>Activité :</li>
+</ul>
+<ol>
+<li>Vérifiez que le formulaire, le style et le PHP fonctionnent.</li>
+<li>Personnalisez avec des détails (ex. : activités du club, image thématique).</li>
+<li>Testez à <a href="http://localhost:8200">http://localhost:8200</a> sur différents navigateurs.</li>
+<li>Préparez une présentation (2-3 minutes) pour expliquer :</li>
+</ol>
+<ul>
+<li>Le thème du club.</li>
+<li>Le rôle de chaque membre.</li>
+<li>Comment la maquette a guidé le travail.</li>
+<li>Ce que vous avez appris.</li>
+</ul>
+<ol start="5">
+<li>Présentez à la classe et recevez des retours.</li>
+</ol>
+<h2 id="conseils-pour-un-rsultat-attrayant">Conseils pour un résultat attrayant</h2>
+<ul>
+<li><strong>Thème motivant</strong> : Choisissez un sujet passionnant (ex. : jeux vidéo).</li>
+<li><strong>Design soigné</strong> : Utilisez <a href="https://coolors.co/">coolors.co</a> pour des palettes. Ajoutez ombres et bordures arrondies.</li>
+<li><strong>Testez l’interactivité</strong> : Vérifiez que le formulaire fonctionne.</li>
+<li><strong>Personnalisez</strong> : Ajoutez des messages ou images uniques.</li>
+<li><strong>Suivez la maquette</strong> : Assurez-vous que le résultat correspond à votre vision.</li>
+</ul>
+<h2 id="valuation-et-partage">Évaluation et partage</h2>
+<ul>
+<li><strong>Critères de réussite</strong> :
+<ul>
+<li>Une maquette claire a été créée et suivie.</li>
+<li>La structure HTML est correcte avec un formulaire.</li>
+<li>Le design est attrayant (CSS).</li>
+<li>Une fonctionnalité PHP est fonctionnelle (ex. : traitement de formulaire).</li>
+<li>Tous les membres ont contribué.</li>
+</ul>
+</li>
+<li><strong>Présentation</strong> : Montrez votre application à la classe.</li>
+<li><strong>Bonus</strong> : Ajoutez une validation PHP (ex. : champ vide) or une animation CSS.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p><strong>Félicitations !</strong> Vous avez appris les bases de PHP et créé une application web interactive en groupe. Continuez à explorer :</p>
+<ul>
+<li>Ajoutez des fonctionnalités PHP (ex. : connexion à une base de données).</li>
+<li>Améliorez le design CSS (ex. : animations).</li>
+<li>Partagez vos créations avec vos camarades !</li>
+<li>Utilisez les outils de la Partie 0.1 pour pratiquer.</li>
+</ul>
+<h2 id="ressources-supplmentaires">Ressources supplémentaires</h2>
+<ul>
+<li>
+<p><strong>Figma</strong> <a href="https://www.figma.com/fr-fr/">(figma.com)</a> : Pour des maquettes.</p>
+</li>
+<li>
+<p><strong>PHP.net</strong> <a href="https://www.php.net/">(php.net)</a> : Documentation officielle.</p>
+</li>
+<li>
+<p><strong>W3Schools PHP</strong> <a href="https://www.w3schools.com/php/">(w3schools.com/php)</a> : Tutoriels interactifs.</p>
+</li>
+<li>
+<p><strong>Repl.it</strong> <a href="https://replit.com/">(replit.com)</a> : Testez vos scripts en ligne.</p>
+</li>
+<li>
+<p><a href="./php.md">Introduction à PHP</a> : Développez des applications web dynamiques.</p>
+</li>
+</ul>
+<p><strong>Dépôt GitHub</strong> :</p>
+<ul>
+<li>Créez un dépôt GitHub pour votre groupe (ex. : ToDoList-Equipe1).</li>
+<li>Poussez votre code :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span> git commit <span class="nt">-m</span> <span class="s2">"Projet ToDoList"</span> git push origin main
+</code></pre></div></div>
+<ul>
+<li>Partagez l’URL du dépôt avec votre professeur (ex. : <a href="https://github.com/votre-nom/ToDoList-Equipe1">https://github.com/votre-nom/ToDoList-Equipe1</a>).</li>
+</ul>
+<p><strong>Test</strong> :</p>
+<ul>
+<li>Testez sur un émulateur Android ou iOS.</li>
+<li>Vérifiez que les tâches sont sauvegardées après avoir fermé/rouvert l’application.</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
+<p><a href="/php/php.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

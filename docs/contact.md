@@ -28,4 +28,4 @@ Si votre question est personnelle, contactez le professeur par email :
 - **Email** : [contact@ai-autoheal.com]
 - Objet : "Question Cours Web Development"
 
-[Retour à l'accueil](./index.md)
+[Retour à l'accueil]({{ site.baseurl }}/index.html)

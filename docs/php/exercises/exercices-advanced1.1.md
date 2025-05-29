@@ -12,7 +12,7 @@ title: Extensions PHP pour VS Code
 
 ## Contact
 
-Posez vos questions ! [Contact](../../contact.md)
+Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 
 
-[retour](../../php-advanced.md)
+[retour]({{ site.baseurl }}/php/php-advanced.html)

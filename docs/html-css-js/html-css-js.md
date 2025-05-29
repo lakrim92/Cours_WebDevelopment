@@ -6,9 +6,9 @@ title: Extensions PHP pour VS Code
 # Introduction : Bienvenue dans le monde du développement web !
 
 <p align="center">
-  <img src="./img/html150.png" alt="HTML" style="margin: 10px;">
-  <img src="./img/css150.png" alt="CSS" style="margin: 10px;">
-  <img src="./img/js150.png" alt="Javascript" style="margin: 10px;">
+    <img src="../img/html150.png" alt="HTML" style="margin: 10px;">
+    <img src="../img/css150.png" alt="CSS" style="margin: 10px;">
+    <img src="../img/js150.png" alt="Javascript" style="margin: 10px;">
 </p>
 
 Ce cours est conçu pour vous apprendre à créer des sites web en utilisant **HTML**, **CSS** et **JavaScript**.  
@@ -49,7 +49,7 @@ Le web a transformé la façon dont nous communiquons, apprenons et partageons d
     Avec JavaScript, on peut ajouter des boutons, des formulaires dynamiques et des animations.
     
 <div style="text-align: center;">
-    <img src="./img/Tim-Berners-Lee-2801960553.jpg" alt="Tim-Berners-Lee">
+    <img src="../img/Tim-Berners-Lee-2801960553.jpg" alt="Tim-Berners-Lee" class="profile-image">
     <br>
     <a href="https://fr.wikipedia.org/wiki/Tim_Berners-Lee">Rasmus Lerdorf - Wikipédia</a>
 </div>
@@ -150,6 +150,8 @@ Avant de coder, il faut préparer un **environnement de travail**.
     </html>
     ```
 
+___
+
 # Partie 2 : Les bases de HTML
 
 **HTML** (*HyperText Markup Language*) structure le contenu d’une page web.  
@@ -217,7 +219,7 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 
 ## 2.3 Exercices pratiques
 
-**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie2.md)
+**À vous de jouer** : [Exercices]({{ site.baseurl }}/html-css-js/exercises/exercices-partie2.html)
 
 ---
 
@@ -228,26 +230,26 @@ Il forme le squelette d’un site avec des titres, paragraphes, images et liens.
 ## 3.1 Concepts clés
 
 - **Sélecteurs** : Ils ciblent les éléments HTML à styliser. Types courants :
-  - Par balise : `h1 { ... }` (sélectionne tous les `<h1>`).
-  - Par classe : `.ma-classe { ... }` (sélectionne les éléments avec `class="ma-classe"`).
-  - Par ID : `#mon-id { ... }` (sélectionne un élément unique avec `id="mon-id"`).
+    - Par balise : `h1 { ... }` (sélectionne tous les `<h1>`).
+    - Par classe : `.ma-classe { ... }` (sélectionne les éléments avec `class="ma-classe"`).
+    - Par ID : `#mon-id { ... }` (sélectionne un élément unique avec `id="mon-id"`).
 - **Propriétés** : Elles définissent le style à appliquer. Exemples :
-  - `color` : Couleur du texte (ex. : `navy`, `#FF0000`).
-  - `font-size` : Taille du texte (ex. : `16px`, `1.2em`).
-  - `background-color` : Couleur de fond (ex. : `lightblue`).
-  - `margin` : Espacement extérieur.
-  - `padding` : Espacement intérieur.
+    - `color` : Couleur du texte (ex. : `navy`, `#FF0000`).
+    - `font-size` : Taille du texte (ex. : `16px`, `1.2em`).
+    - `background-color` : Couleur de fond (ex. : `lightblue`).
+    - `margin` : Espacement extérieur.
+    - `padding` : Espacement intérieur.
 - **Connexion HTML-CSS** :
-  - Reliez un fichier CSS externe avec `<link rel="stylesheet" href="style.css">` dans la balise `<head>`.
-  - Ou intégrez le CSS directement dans une balise `<style>` dans `<head>`.
+    - Reliez un fichier CSS externe avec `<link rel="stylesheet" href="style.css">` dans la balise `<head>`.
+    - Ou intégrez le CSS directement dans une balise `<style>` dans `<head>`.
 - **Box Model** : Chaque élément HTML est une "boîte" composée de :
-  - Contenu (texte, images, etc.).
-  - `padding` (espace interne).
-  - `border` (bordure autour du contenu).
-  - `margin` (espace externe).
+    - Contenu (texte, images, etc.).
+    - `padding` (espace interne).
+    - `border` (bordure autour du contenu).
+    - `margin` (espace externe).
 - **Positionnement** : Contrôle la disposition des éléments. Exemples :
-  - `display: block` (occupe toute la largeur).
-  - `text-align: center` (centre le contenu horizontalement).
+    - `display: block` (occupe toute la largeur).
+    - `text-align: center` (centre le contenu horizontalement).
 
 ## 3.2 Exemples
 
@@ -298,7 +300,7 @@ img {
 
 ***Résultat*** : L’image est centrée avec des coins arrondis.
 
-**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie3.md)
+**À vous de jouer** : [Exercices]({{ site.baseurl }}/html-css-js/exercises/exercices-partie3.html)
 
 ---
 
@@ -362,15 +364,15 @@ function verifierAge() {
 
 ***Résultat*** : Une alerte selon la condition.
 
-**À vous de jouer** : [Exercices](./html-css-js/exercises/exercices-partie4.md)
+**À vous de jouer** : [Exercices]({{ site.baseurl }}/html-css-js/exercises/exercices-partie4.html)
 
 ---
 
 # Partie 5 : Projet en groupe - Création d'un site web interactif
 
-**Cliquez sur le lien** : [Projet](./html-css-js/exercises/project.md)
+**Cliquez sur le lien** : [Projet]({{ site.baseurl }}/html-css-js/exercises/project.html)
 
 ---
 
-[retour](./index.md)
+[retour]({{ site.baseurl }}/index.html)
 

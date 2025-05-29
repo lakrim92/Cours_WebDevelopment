@@ -156,7 +156,7 @@ class MonApplication extends StatelessWidget {
 }
 ```
 
-**À vous de jouer** : [Exercices](./flutter/exercises/exercices-partie2.md)
+**À vous de jouer** : [Exercices]({{ site.baseurl }}/flutter/exercises/exercices-partie2.html)
 
 ---
 
@@ -206,11 +206,11 @@ class _CompteurState extends State<Compteur> {
 
 La méthode setState met à jour l’interface lorsque l’état change. Pour des applications plus complexes, vous explorerez des solutions comme **Provider** ou **Riverpod** (niveau avancé).
 
-**À vous de jouer** : [Exercices](./flutter/exercises/exercices-partie3.md)
+**À vous de jouer** : [Exercices]({{ site.baseurl }}/flutter/exercises/exercices-partie3.html)
 
 ## Partie 4 : Projet en groupe – ToDoList
 
-**Cliquez sur le lien** : [Projet](./flutter/exercises/project.md)
+**Cliquez sur le lien** : [Projet]({{ site.baseurl }}/flutter/exercises/project.html)
 
 ### Ressources supplémentaires
 
@@ -226,4 +226,4 @@ La méthode setState met à jour l’interface lorsque l’état change. Pour de
 
 ## Bon codage avec Flutter !
 
-[retour](./index.md)
+[retour]({{ site.baseurl }}/index.html)

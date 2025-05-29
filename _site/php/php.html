@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/php.html" />
+<meta property="og:url" content="http://localhost:4000/php/php.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/php.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h1 id="support-de-cours--introduction--php">Support de Cours : Introduction à PHP</h1>
+<div style="text-align: center;">
+    <img src="../img/php200.png" alt="Logo PHP">
+</div>
+<h2 id="introduction--bienvenue-dans-le-monde-du-dveloppement-web-avec-php-">Introduction : Bienvenue dans le monde du développement web avec PHP !</h2>
+<p>Ce cours est conçu pour vous apprendre à créer des applications web dynamiques en utilisant <strong>PHP</strong>, un langage de programmation côté serveur. Nous partirons de zéro, sans connaissances préalables, et vous serez guidés pas à pas pour construire votre première application web interactive. Le cours est interactif : vous allez coder, expérimenter et collaborer !</p>
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+<ul>
+<li>Comprendre les bases de PHP et son rôle dans le développement web.</li>
+<li>Configurer un environnement de développement simple avec le serveur intégré de PHP.</li>
+<li>Créer une application web dynamique avec PHP.</li>
+<li>Travailler en groupe sur des exercices pratiques.</li>
+</ul>
+<hr />
+<h2 id="partie-0--une-brve-histoire-de-php-et-de-son-utilisation">Partie 0 : Une brève histoire de PHP et de son utilisation</h2>
+<p>Avant de coder, comprenons ce qu’est PHP, son histoire et pourquoi il est si populaire dans le développement web.</p>
+<h3 id="les-dbuts-de-php">Les débuts de PHP</h3>
+<ul>
+<li><strong>1994</strong> : PHP, ou <em><strong>PHP: Hypertext Preprocessor</strong></em>, est créé par <strong>Rasmus Lerdorf</strong> comme un ensemble d’outils pour gérer des pages web personnelles (initialement <em><strong>Personal Home Page</strong></em>). À l’époque, il s’agissait de scripts simples pour suivre les visiteurs d’un site.</li>
+<li><strong>1997</strong> : PHP 2 introduit des fonctionnalités plus avancées, comme le traitement des formulaires.</li>
+<li><strong>1998</strong> : PHP 3, développé par une communauté croissante, devient un langage de programmation complet, capable de générer des pages web dynamiques.</li>
+</ul>
+<div style="text-align: center;">
+    <img src="../img/330px-Wikirl.jpg" alt="Rasmus Lerdorf" class="profile-image">
+    <br>
+    <a href="https://fr.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf - Wikipédia</a>
+</div>
+<h3 id="lvolution-de-php">L’évolution de PHP</h3>
+<ul>
+<li><strong>2004</strong> : PHP 5 introduit la programmation orientée objet, améliorant la robustesse du langage.</li>
+<li><strong>2015</strong> : PHP 7 apporte des performances nettement meilleures, rendant le langage plus rapide et efficace.</li>
+<li><strong>Aujourd’hui</strong> : PHP 8 (et ses versions ultérieures) inclut des fonctionnalités modernes comme le typage strict et JIT (<em><strong>Just-In-Time compilation</strong></em>). PHP alimente environ 80 % des sites web dynamiques, comme <em><strong>WordPress</strong></em>, <em><strong>Drupal</strong></em> et <em><strong>Laravel</strong></em>.</li>
+</ul>
+<h3 id="php-aujourdhui">PHP aujourd’hui</h3>
+<p>PHP est un langage de programmation <strong>côté serveur</strong> qui permet de générer des pages web dynamiques. Contrairement au HTML, qui est statique, PHP peut interagir avec des bases de données, gerer des formulaires, suivre les sessions utilisateur et produire du contenu personnalisé en temps réel.</p>
+<h3 id="fonctionnement">Fonctionnement</h3>
+<p>PHP s'integre directement dans du code HTML à l'aide de balises <code>&lt;?php ... ?&gt;</code>. Lorsque l'utlisateur demande une page web, le <strong>serveur exécute le code PHP</strong> et renvoie uniquement le <strong>résultat</strong> (généralement du HTML) au navigateur. Le code source PHP, lui, reste invisible pour l'utilisateur final.</p>
+<h3 id="php-est-souvent-utilis-avec-">PHP est souvent utilisé avec :</h3>
+<ul>
+<li><strong>HTML</strong> : pour structurer le contenu des pages.</li>
+<li><strong>CSS</strong> : pour le style et la mise en forme.</li>
+<li><strong>Javascript</strong> : pour les interactions côté client.</li>
+</ul>
+<h3 id="exemples-dutilisation-de-php-">Exemples d'utilisation de PHP :</h3>
+<ul>
+<li><strong>WordPress</strong> : Plateforme de blogs et de sites web.</li>
+<li><strong>Facebook</strong> : Utilise PHP pour certaines parties de son infrastructure.</li>
+<li><strong>E-commerce</strong> : Sites comme <em><strong>Magento</strong></em> pour gérer des boutiques en ligne dynamiques.</li>
+<li><strong>Sites avec comptes utilisateurs</strong> : gestion de l'inscription, de la connexion et des profils.</li>
+</ul>
+<h3 id="avantages-de-php-">Avantages de PHP :</h3>
+<ul>
+<li>Facile à apprendre pour les débutants.</li>
+<li>Compatible avec la plupart des serveurs web (Apache, Nginx).</li>
+<li>Très utilisé, avec une grande communauté.</li>
+<li>Nombreuses bibliotèques et framworks (ex. : Laravel, Symfony).</li>
+</ul>
+<h3 id="activit--rflexion-en-groupe">Activité : Réflexion en groupe</h3>
+<ul>
+<li>Visitez un site comme <a href="https://wordpress.com/fr/">wordpress.com</a> ou <a href="https://www.wikipedia.org/">wikipedia.org</a> (qui utilise <em><strong>MediaWiki</strong></em>, basé sur PHP). Essayez d’imaginer :
+<ul>
+<li>Où PHP pourrait intervenir ? (Indice : formulaires, contenu qui change selon l’utilisateur.)</li>
+<li>Comment PHP diffère de HTML/CSS ? (Indice : PHP génère du contenu dynamiquement.)</li>
+</ul>
+</li>
+<li>Partagez vos observations avec un camarade !</li>
+</ul>
+<hr />
+<h2 id="partie-01--outils-en-ligne-pour-sentraner-et-apprendre">Partie 0.1 : Outils en ligne pour s’entraîner et apprendre</h2>
+<p>Pour progresser en PHP, il est essentiel de pratiquer. Voici une sélection d’outils en ligne gratuits et interactifs pour coder PHP directement dans votre navigateur.</p>
+<h3 id="outils-recommands">Outils recommandés</h3>
+<ol>
+<li><strong>Repl.it</strong> <a href="https://replit.com/">(replit.com)</a>
+Une plateforme en ligne pour coder en PHP, HTML et CSS. Vous pouvez créer des projets simples et voir les résultats immédiatement.
+<em><strong>Activité</strong></em> : Créez un compte, essayez un script PHP simple (ex. : <code>&lt;?php echo &quot;Bonjour !&quot;; ?&gt;</code>) et partagez le résultat avec un camarade.</li>
+<li><strong>PHP Sandbox</strong> <a href="https://onlinephp.io/">(onlinephp.io)</a>
+Un environnement pour tester des scripts PHP avec différentes versions du langage. Idéal pour expérimenter avec du code serveur.
+<em><strong>Activité</strong></em> : Écrivez un script qui affiche votre nom et testez-le. Discutez de ce que fait la fonction <code>echo</code>.</li>
+<li><strong>W3Schools PHP</strong> <a href="https://www.w3schools.com/php/">(w3schools.com/php)</a>
+Tutoriels clairs avec un éditeur en ligne pour tester des scripts PHP. Couvre les bases comme les variables, les formulaires et les boucles.
+<em><strong>Activité</strong></em> : Suivez un tutoriel sur les variables PHP et essayez l’exercice correspondant.</li>
+<li><strong>FreeCodeCamp</strong> <a href="https://www.freecodecamp.org/">(freecodecamp.org)</a>
+Bien que centré sur HTML/CSS/JavaScript, FreeCodeCamp propose des ressources pour PHP via ses forums et projets.
+<em><strong>Activité</strong></em> : Cherchez un tutoriel PHP sur le forum et essayez un exemple simple.</li>
+<li><strong>Codewars</strong> <a href="https://www.codewars.com/">(codewars.com)</a>
+Une plateforme avec des défis de programmation, y compris en PHP. Parfait pour pratiquer les boucles, conditions et fonctions.
+<em><strong>Activité</strong></em> : Résolvez un défi PHP de niveau débutant et expliquez votre solution à un camarade.</li>
+</ol>
+<h3 id="conseils-pour-utiliser-ces-outils">Conseils pour utiliser ces outils</h3>
+<ul>
+<li>Pratiquez régulièrement : Passez 10 à 15 minutes par jour sur un outil.</li>
+<li>Partagez vos progrès : Montrez vos scripts à vos camarades pour obtenir des retours.</li>
+<li>Expérimentez : Modifiez les exemples pour voir comment le code réagit.</li>
+</ul>
+<hr />
+<h2 id="partie-1--prparer-les-outils">Partie 1 : Préparer les outils</h2>
+<p>Pour coder en PHP, vous avez besoin d’un environnement qui permet d’exécuter des scripts côté serveur. Nous utiliserons le serveur intégré de PHP, qui est simple à configurer et ne nécessite pas d’installation complexe comme XAMPP.</p>
+<h3 id="outils-ncessaires">1.1 Outils nécessaires</h3>
+<ul>
+<li><strong>Un éditeur de texte : Visual Studio Code</strong> (gratuit, avec l’extension <em><strong>PHP Intelephense</strong></em> pour l’autocomplétion).
+<ul>
+<li>Téléchargez-le sur : <a href="https://code.visualstudio.com/">code.visualstudio.com</a>.</li>
+</ul>
+</li>
+<li><strong>PHP</strong> : Vous devez avoir PHP installé sur votre ordinateur.
+<ul>
+<li>**Windows/Mac/Linux **: Téléchargez PHP depuis <a href="https://www.php.net/">php.net</a>. Suivez les instructions d’installation pour votre système.</li>
+<li>Vérifiez l’installation en ouvrant un terminal et en tapant <code>php -v</code>. Vous devriez voir la version de PHP (ex. : <code>PHP 8.x</code>).</li>
+<li><strong>Un terminal</strong> : Utilisez le terminal intégré de VS Code, PowerShell (Windows), Terminal (Mac), ou tout terminal Linux.</li>
+</ul>
+</li>
+<li><strong>Un navigateur web</strong> : Chrome, Firefox ou autre pour tester vos pages.</li>
+<li><strong>Git et GitHub</strong> : Git pour versionner votre code localement, et GitHub pour héberger et partager vos projets (exercices et projet en groupe).
+<ul>
+<li>Téléchargez Git depuis git-scm.com.</li>
+<li>Créez un compte sur github.com.</li>
+<li><strong>Voir le cours <a href="/github-intro.html">Introduction à GitHub</a> pour configurer GitHub et apprendre les bases.</strong></li>
+</ul>
+</li>
+<li><strong>Un dossier de travail</strong> :
+<ul>
+<li>Créez un dossier nommé <code>mon_premier_site_php</code> sur votre ordinateur (ex. : <code>C:\Users\VotreNom\mon_premier_site_php ou ~/mon_premier_site_php</code>).</li>
+<li>À l’intérieur, créez un sous-dossier nommé <strong>public</strong> où vos fichiers <strong>.php</strong> seront placés.</li>
+</ul>
+</li>
+</ul>
+<h2 id="activit--configurer-son-environnement">1.2 Activité : Configurer son environnement</h2>
+<p><strong>1. Installez PHP</strong> :</p>
+<ul>
+<li>Téléchargez et installez PHP depuis <a href="https://www.php.net/">php.net</a>.</li>
+<li>Ouvrez un terminal et tapez <code>php -v</code> pour vérifier que PHP est installé.</li>
+</ul>
+<p><strong>2. Installez Visual Studio Code</strong> :</p>
+<ul>
+<li>Téléchargez et installez VS Code.</li>
+<li>Installez l’extension <em><strong>PHP Intelephense</strong></em> via l’onglet Extensions.</li>
+<li>Consultez la liste des extensions recommandées : <a href="/extensions-php.html">Extensions</a>.</li>
+</ul>
+<p><strong>3. Installez Git</strong> :</p>
+<ul>
+<li>Téléchargez et installez Git depuis git-scm.com.</li>
+<li>Vérifiez l’installation avec :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--version</span>
+</code></pre></div></div>
+<p>Vous devriez voir une version (ex. : git version 2.x.x).</p>
+<p><strong>4. Créez un compte GitHub</strong> :</p>
+<ul>
+<li>Inscrivez-vous sur github.com et vérifiez votre email.</li>
+</ul>
+<p><strong>5. Créez la structure du projet</strong> :</p>
+<ul>
+<li>Créez un dossier <code>mon_premier_site_php</code> sur votre bureau ou ailleurs.</li>
+<li>À l’intérieur, créez un sous-dossier public.</li>
+<li>Ouvrez <code>mon_premier_site_php</code> dans VS Code (Fichier &gt; Ouvrir un dossier).</li>
+</ul>
+<p><strong>6. Créez un fichier PHP</strong> :</p>
+<ul>
+<li>Dans public, créez un fichier nommé <strong>index.php</strong> avec :</li>
+</ul>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Ma première page PHP<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Bienvenue !<span class="nt">&lt;/h1&gt;</span>
+    <span class="cp">&lt;?php
+        echo "&lt;p&gt;Ceci est généré par PHP !&lt;/p&gt;";
+    ?&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p><strong>7. Lancez le serveur PHP</strong> :</p>
+<ul>
+<li>Ouvrez le terminal dans VS Code (Terminal &gt; Nouveau terminal) ou utilisez votre terminal système.</li>
+<li>Naviguez vers le dossier <strong>mon_premier_site_php</strong> avec la commande :
+<code>cd chemin/vers/mon_premier_site_php</code>
+(Ex. : <code>cd ~/mon_premier_site_php</code> sur Mac/Linux ou <code>cd C:\Users\VotreNom\mon_premier_site_php</code> sur Windows).</li>
+<li>Lancez le serveur PHP avec :
+<code>php -S localhost:8200 -t public</code>
+Vous devriez voir un message comme : [Tue May 20 11:58:00 2025] PHP 8.x.x Development Server started at localhost:8200.
+<strong>8. Testez votre page</strong> :</li>
+<li>Ouvrez votre navigateur et allez à <a href="http://localhost:8200">http://localhost:8200</a>.</li>
+<li>Vous devriez voir une page avec un titre &quot;Bienvenue !&quot; et un paragraphe généré par PHP.</li>
+<li>Partagez avec un voisin : que se passe-t-il si vous modifiez le texte dans <strong>index.php</strong> et actualisez la page ?</li>
+</ul>
+<h3 id="conseils-pour-le-terminal">Conseils pour le terminal</h3>
+<ul>
+<li><strong>Arrêter le serveur</strong> : Appuyez sur <code>Ctrl+C</code> dans le terminal pour arrêter le serveur.</li>
+<li><strong>Erreurs courantes</strong> :
+<ul>
+<li>Si <code>php -v</code> ne fonctionne pas, vérifiez que PHP est dans votre <strong>PATH</strong> système.</li>
+<li>Si <code>http://localhost:8200</code> ne répond pas, assurez-vous que le terminal affiche le message du serveur et que le port 8200 n’est pas utilisé par une autre application.</li>
+</ul>
+</li>
+<li><strong>Windows</strong> : Utilisez PowerShell ou l’invite de commandes. Si le chemin contient des espaces, entourez-le de guillemets (ex. : <code>cd &quot;C:\Users\Mon Nom\mon_premier_site_php&quot;</code>).</li>
+<li><strong>Mac/Linux</strong> : Utilisez le Terminal. Les commandes sont similaires.</li>
+</ul>
+<hr />
+<h2 id="partie-2--les-bases-de-php">Partie 2 : Les bases de PHP</h2>
+<p><strong>PHP</strong> est un langage de programmation côté serveur qui génère du contenu web dynamique. Il peut être intégré dans du HTML pour créer des pages qui changent en fonction des données ou des actions des utilisateurs.</p>
+<h3 id="concepts-cls">2.1 Concepts clés</h3>
+<p>• <strong>Syntaxe de base</strong> :</p>
+<p>Le code PHP est toujours encadré par les balises <?php et ?>. Tout ce qui se trouve à l’intérieur de ces balises est interprété par le serveur comme du code PHP. En dehors de ces balises, on peut écrire du HTML qui sera directement renvoyé au navigateur. Cela permet de mélanger facilement HTML et PHP dans une même page.</p>
+<p>Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="s2">"Bonjour !"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Variables</strong> :</li>
+</ul>
+<p>Les variables en PHP permettent de stocker des informations (comme du texte, des nombres ou des tableaux) qui pourront être utilisées ou modifiées plus tard dans le script. Une variable commence toujours par le symbole $.</p>
+<p>Exemple : <code>$nom = &quot;Alice&quot;</code>;.</p>
+<ul>
+<li><strong>Types de données</strong> :</li>
+</ul>
+<p>PHP prend en charge plusieurs types de données, dont :</p>
+<ul>
+<li><em><strong>String</strong></em> (chaîne de caractères) : texte entre guillemets.</li>
+</ul>
+<p>Exemple : <code>$message = &quot;Bienvenue !&quot;</code>;</p>
+<ul>
+<li><em><strong>Integer</strong></em> (entier) : nombre sans décimale.</li>
+</ul>
+<p>Exemple : <code>$nombre = 10</code>;</p>
+<ul>
+<li><em><strong>Float</strong></em> (nombre à virgule) : nombre décimal.</li>
+</ul>
+<p>Exemple : <code>$prix = 9.99</code>;</p>
+<ul>
+<li><em><strong>Boolean</strong></em> : true ou false, utilisé pour exprimer une condition vraie ou fausse.</li>
+</ul>
+<p>Exemple : <code>$actif = true</code>;</p>
+<ul>
+<li><em><strong>Array</strong></em> (tableau) : ensemble de valeurs regroupées.</li>
+</ul>
+<p>Exemple : <code>$fruits = array(&quot;Pomme&quot;, &quot;Banane&quot;, &quot;Orange&quot;)</code>;</p>
+<ul>
+<li><strong>Affichage</strong> :</li>
+</ul>
+<p>Les fonctions <strong>echo</strong> et <strong>print</strong> permettent d'afficher du texte ou du code HTML dans la page. echo est légèrement plus rapide et peut afficher plusieurs chaînes à la fois, tandis que print retourne une valeur (utile dans certaines situations).</p>
+<p>Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">echo</span> <span class="s2">"Bonjour, monde !"</span><span class="p">;</span>
+<span class="k">print</span> <span class="s2">"&lt;p&gt;Bienvenue sur mon site.&lt;/p&gt;"</span><span class="p">;</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Conditions</strong> :</li>
+</ul>
+<p>Les structures conditionnelles permettent d'exécuter différents blocs de code en fonction de certaines conditions. PHP propose plusieurs formes : <code>if</code>, <code>else</code>, <code>elseif</code>, <code>switch</code>.</p>
+<p>Exemple avec <code>if/else</code> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nv">$age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Majeur"</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Mineur"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Exemple avec <code>switch</code> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$jour</span> <span class="o">=</span> <span class="s2">"lundi"</span><span class="p">;</span>
+
+<span class="k">switch</span> <span class="p">(</span><span class="nv">$jour</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s2">"lundi"</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s2">"Début de semaine."</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">"vendredi"</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s2">"Bientôt le week-end !"</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s2">"Journée ordinaire."</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Boucles</strong> :</li>
+</ul>
+<p>Les boucles sont utilisées pour répéter des instructions plusieurs fois. Elles sont particulièrement utiles pour parcourir des tableaux ou répéter une tâche jusqu’à ce qu’une condition soit remplie.</p>
+<ul>
+<li>
+<p><code>for</code> : boucle avec compteur.</p>
+</li>
+<li>
+<p><code>while</code> : exécute tant qu’une condition est vraie.</p>
+</li>
+<li>
+<p><code>foreach</code> : utilisée pour parcourir les tableaux.</p>
+</li>
+</ul>
+<p>Exemple avec une boucle <code>for</code> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Numéro : </span><span class="nv">$i</span><span class="s2">&lt;br&gt;"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Exemple avec <code>while</code> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Ligne </span><span class="nv">$i</span><span class="s2">&lt;br&gt;"</span><span class="p">;</span>
+    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Exemple avec <code>foreach</code> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Pomme"</span><span class="p">,</span> <span class="s2">"Banane"</span><span class="p">,</span> <span class="s2">"Cerise"</span><span class="p">];</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$fruits</span> <span class="k">as</span> <span class="nv">$fruit</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$fruit</span><span class="s2">&lt;br&gt;"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Tableaux</strong> :</li>
+</ul>
+<p>Les tableaux permettent de stocker plusieurs valeurs dans une seule variable. On distingue :</p>
+<ul>
+<li>
+<p><strong>Tableaux indexés</strong> : les éléments sont accessibles par un index numérique.</p>
+</li>
+<li>
+<p><strong>Tableaux associatifs</strong> : les éléments sont définis avec des clés personnalisées.</p>
+</li>
+<li>
+<p><strong>Tableaux multidimensionnels</strong> : des tableaux contenant d'autres tableaux.</p>
+</li>
+</ul>
+<p>Exemple de tableau indexé :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"pomme"</span><span class="p">,</span> <span class="s2">"banane"</span><span class="p">,</span> <span class="s2">"orange"</span><span class="p">];</span>
+</code></pre></div></div>
+<p>Exemple de tableau associatif :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$personne</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Alice"</span><span class="p">,</span>
+    <span class="s2">"age"</span> <span class="o">=&gt;</span> <span class="mi">25</span>
+<span class="p">];</span>
+<span class="k">echo</span> <span class="nv">$personne</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">];</span> <span class="c1">// Alice</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Intégration avec HTML</strong> :</li>
+</ul>
+<p>PHP s’intègre parfaitement avec le HTML, ce qui en fait un langage de choix pour développer des sites web dynamiques. Il permet de générer du contenu HTML en fonction des données, des conditions, ou de l’interaction utilisateur. Cela signifie que vous pouvez créer des pages web qui s’adaptent automatiquement au contexte (par exemple, afficher le nom d’un utilisateur connecté, ou générer une liste d’articles depuis une base de données).</p>
+<p>On peut insérer du code PHP directement dans une page <code>.html</code> renommée en <code>.php</code>, et alterner très facilement entre HTML statique et logique PHP.</p>
+<h3 id="exemples">2.2 Exemples</h3>
+<p><strong>1. Affichage simple</strong> :</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="cp">&lt;?php
+        $message = "Bienvenue sur mon site !";
+        echo "&lt;h1&gt;$message&lt;/h1&gt;";
+    ?&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche un titre &quot;Bienvenue sur mon site !&quot;.</p>
+<p>Dans cet exemple :</p>
+<p>Le HTML structure la page.</p>
+<p>PHP insère dynamiquement un message dans la page selon la variable <code>$message</code>.</p>
+<p>Cette intégration rend PHP très puissant pour créer des sites adaptatifs, personnalisés, et interactifs.</p>
+<p><strong>2. Condition</strong> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nv">$heure</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$heure</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;p&gt;Bonjour, il est matin !&lt;/p&gt;"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;p&gt;Bonjour, il est l'après-midi !&lt;/p&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche un message selon l’heure.</p>
+<p><strong>3. Boucle et tableau</strong> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="c1">// Déclaration d’un tableau contenant des couleurs</span>
+    <span class="nv">$couleurs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"rouge"</span><span class="p">,</span> <span class="s2">"bleu"</span><span class="p">,</span> <span class="s2">"vert"</span><span class="p">];</span>
+
+    <span class="c1">// Début de la liste HTML</span>
+    <span class="k">echo</span> <span class="s2">"&lt;ul&gt;"</span><span class="p">;</span>
+
+    <span class="c1">// Parcours de chaque élément du tableau avec une boucle foreach</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$couleurs</span> <span class="k">as</span> <span class="nv">$couleur</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Affiche chaque couleur dans un élément &lt;li&gt;</span>
+        <span class="k">echo</span> <span class="s2">"&lt;li&gt;</span><span class="nv">$couleur</span><span class="s2">&lt;/li&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Fin de la liste HTML</span>
+    <span class="k">echo</span> <span class="s2">"&lt;/ul&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche une liste HTML de couleurs.</p>
+<p>Explication :</p>
+<p>foreach (<code>$couleurs as $couleur</code>) : parcourt chaque valeur du tableau.</p>
+<p>Chaque itération affiche une <code>&lt;li&gt;</code> avec le nom de la couleur.</p>
+<p>Le résultat dans le navigateur sera une liste à puces : rouge, bleu, vert.</p>
+<h3 id="exercices-pratiques">2.3 Exercices pratiques</h3>
+<p><strong>À vous de jouer</strong>  <a href="/php/exercises/exercices-partie2.html">Exercices</a></p>
+<hr />
+<h2 id="partie-3--les-bases-de-php-avec-formulaires">Partie 3 : Les bases de PHP avec formulaires</h2>
+<p>PHP est tres puissant dans le traitement des données des utilisateurs, notamment en récupérant les informations envoyées via les formulaires HTML. Cette section explore comment PHP interagit avec les formulaires.</p>
+<h3 id="concepts-cls-1">3.1 Concepts clés</h3>
+<ul>
+<li><strong>Formulaires HTML</strong> : Permettent aux utilisateurs d’envoyer des données (ex. : texte, choix).</li>
+</ul>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"traitement.php"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"nom"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Envoyer"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+<ul>
+<li>
+<p><strong>Méthodes HTTP</strong> :
+Les formulaires HTML utilisent principalement deux méthodes pour envoyer des données au serveur via PHP:</p>
+<ul>
+<li><strong>GET</strong> : Envoie les données en les ajoutant à l’URL. Cela rend les informations visibles dans la barre d’adresse. Elle est adaptée pour des actions non sensibles comme des recherches ou des filtres..</li>
+<li><strong>POST</strong> : Envoie les données de manière invisible dans le corps de la requête HTTP. Elle est plus sécurisée et donc recommandée pour des actions sensibles (connexion, envoi d’informations personnelles, etc.).</li>
+</ul>
+</li>
+<li>
+<p><strong>Superglobales</strong> : Variables PHP pour récupérer les données :
+PHP met à disposition des variables spéciales appelées superglobales pour accéder facilement aux données transmises par un formulaire :</p>
+<ul>
+<li><strong>$_POST</strong> : Contient les données envoyées via la méthode POST.</li>
+<li><strong>$_GET</strong> : Contient les données envoyées via la méthode GET.</li>
+</ul>
+</li>
+</ul>
+<p>Ces tableaux associatifs permettent de récupérer les valeurs des champs de formulaire à l’aide de leur name.</p>
+<ul>
+<li>Sécurité de base : Pour éviter les failles de sécurité comme les attaques XSS (Cross-Site Scripting), il est essentiel de sécuriser les données reçues. La fonction <code>htmlspecialchars()</code> permet de convertir les caractères spéciaux en entités HTML, empêchant ainsi l’exécution de code malveillant injecté par un utilisateur.</li>
+</ul>
+<h3 id="exemples-1">3.2 Exemples</h3>
+<p>**1. Formulaire simple **:</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- public/formulaire.php --&gt;</span>
+<span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"traitement.php"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>Entrez votre nom :<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"nom"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Envoyer"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- public/traitement.php --&gt;</span>
+<span class="cp">&lt;?php</span>
+    <span class="nv">$nom</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">]);</span>
+    <span class="k">echo</span> <span class="s2">"&lt;p&gt;Bonjour, </span><span class="nv">$nom</span><span class="s2"> !&lt;/p&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche un message avec le nom saisi.</p>
+<ol start="2">
+<li><strong>Formulaire avec choix</strong> :</li>
+</ol>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- public/choix.php --&gt;</span>
+<span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"traitement_choix.php"</span> <span class="na">method=</span><span class="s">"get"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>Sport préféré :<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"sport"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"football"</span><span class="nt">&gt;</span>Football<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"basket"</span><span class="nt">&gt;</span>Basket<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Choisir"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+<span class="c">&lt;!-- public/traitement_choix.php --&gt;</span>
+<span class="cp">&lt;?php</span>
+    <span class="nv">$sport</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s2">"sport"</span><span class="p">]);</span>
+    <span class="k">echo</span> <span class="s2">"&lt;p&gt;Votre sport préféré est : </span><span class="nv">$sport</span><span class="s2">&lt;/p&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche le sport sélectionné.</p>
+<ol start="3">
+<li><strong>Validation simple</strong> :</li>
+</ol>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- public/traitement.php --&gt;</span>
+<span class="cp">&lt;?php</span>
+    <span class="nv">$nom</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">]);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$nom</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;p&gt;Erreur : veuillez entrer un nom.&lt;/p&gt;"</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;p&gt;Bienvenue, </span><span class="nv">$nom</span><span class="s2"> !&lt;/p&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Vérifie si le champ est vide avant d’afficher.</p>
+<h3 id="exercices-pratiques-1">3.3 Exercices pratiques</h3>
+<p><strong>À vous de jouer</strong> <a href="/php/exercises/exercices-partie3.html">Exercices</a></p>
+<hr />
+<h2 id="partie-4--les-bases-de-php-avec-tableaux-et-boucles">Partie 4 : Les bases de PHP avec tableaux et boucles</h2>
+<p>PHP est particulièrement efficace pour gérer des structures de données comme les tableaux. Ces structures permettent de stocker plusieurs valeurs dans une seule variable et facilitent l'organisation de données sous forme de listes ou de paires clé/valeur (tableaux associatifs).</p>
+<p>Grâce aux boucles (for, while, foreach, etc.), PHP permet d’automatiser des tâches répétitives. Cela est très utile, par exemple, pour parcourir un tableau et afficher dynamiquement son contenu, générer des listes d’éléments HTML, ou encore exécuter un ensemble d’instructions plusieurs fois selon une condition.</p>
+<h3 id="concepts-cls-2">4.1 Concepts clés</h3>
+<ul>
+<li><strong>Tableaux associatifs</strong> : Les tableaux associatifs en PHP permettent de stocker des paires clé-valeur, ce qui signifie que chaque élément du tableau est identifié par un nom (clé) plutôt que par un index numérique.
+Cela rend les données plus lisibles et facilite leur manipulation, notamment lorsque l’on travaille avec des ensembles d’informations structurées (par exemple : un utilisateur avec un nom, une adresse email, etc.).</li>
+</ul>
+<p>Ce type de tableau est très utilisé pour représenter des objets simples ou pour passer des données à des fonctions de manière organisée.</p>
+<p>Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$utilisateur</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"age"</span> <span class="o">=&gt;</span> <span class="mi">25</span><span class="p">];</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Boucle foreach</strong> : La boucle foreach est utilisée pour parcourir chaque élément d’un tableau. Elle est particulièrement utile avec les tableaux associatifs ou numériques, car elle permet d’accéder directement à chaque valeur (et éventuellement à la clé) sans avoir à gérer manuellement les index.
+Elle simplifie la lecture et le traitement de grandes quantités de données contenues dans un tableau.</li>
+</ul>
+<p>Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span> <span class="p">(</span><span class="nv">$utilisateur</span> <span class="k">as</span> <span class="nv">$cle</span> <span class="o">=&gt;</span> <span class="nv">$valeur</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$cle</span><span class="s2"> : </span><span class="nv">$valeur</span><span class="s2">&lt;br&gt;"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Fonctions</strong> : Les fonctions en PHP sont des blocs de code réutilisables qui effectuent une tâche spécifique. Elles permettent de structurer le code, d’éviter les répétitions, et de rendre le programme plus lisible et plus facile à maintenir.
+Une fonction peut prendre des paramètres (données en entrée) et retourner un résultat.</li>
+</ul>
+<p>Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="n">saluer</span><span class="p">(</span><span class="nv">$nom</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">"Bonjour, </span><span class="nv">$nom</span><span class="s2"> !"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Tableaux multidimensionnels</strong> : En PHP, les tableaux multidimensionnels sont des tableaux contenant d'autres tableaux. Ils permettent de structurer des données complexes, comme des tableaux de données en deux dimensions (lignes/colonnes) ou des objets composés.
+Ce type de structure est couramment utilisé pour gérer des listes de données associées, comme des utilisateurs avec leurs informations (nom, email, âge, etc.).</li>
+</ul>
+<p>Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$equipe</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Designer"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Développeur"</span><span class="p">]</span>
+<span class="p">];</span>
+</code></pre></div></div>
+<h3 id="exemples-2">4.2 Exemples</h3>
+<p><strong>1. Tableau associatif</strong> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nv">$etudiant</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Marie"</span><span class="p">,</span> <span class="s2">"note"</span> <span class="o">=&gt;</span> <span class="mi">15</span><span class="p">];</span>
+    <span class="k">echo</span> <span class="s2">"&lt;p&gt;Nom : "</span> <span class="mf">.</span> <span class="nv">$etudiant</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">]</span> <span class="mf">.</span> <span class="s2">", Note : "</span> <span class="mf">.</span> <span class="nv">$etudiant</span><span class="p">[</span><span class="s2">"note"</span><span class="p">]</span> <span class="mf">.</span> <span class="s2">"&lt;/p&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche &quot;Nom : Marie, Note : 15&quot;.</p>
+<p><strong>2. Boucle foreach</strong> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nv">$jours</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Lundi"</span><span class="p">,</span> <span class="s2">"Mardi"</span><span class="p">,</span> <span class="s2">"Mercredi"</span><span class="p">];</span>
+    <span class="k">echo</span> <span class="s2">"&lt;ul&gt;"</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$jours</span> <span class="k">as</span> <span class="nv">$jour</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;li&gt;</span><span class="nv">$jour</span><span class="s2">&lt;/li&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">echo</span> <span class="s2">"&lt;/ul&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche une liste HTML de jours.</p>
+<p><strong>3. Fonction et tableau multidimensionnel</strong> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">function</span> <span class="n">afficherEquipe</span><span class="p">(</span><span class="nv">$equipe</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"&lt;ul&gt;"</span><span class="p">;</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$equipe</span> <span class="k">as</span> <span class="nv">$membre</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">echo</span> <span class="s2">"&lt;li&gt;"</span> <span class="mf">.</span> <span class="nv">$membre</span><span class="p">[</span><span class="s2">"nom"</span><span class="p">]</span> <span class="mf">.</span> <span class="s2">" - "</span> <span class="mf">.</span> <span class="nv">$membre</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]</span> <span class="mf">.</span> <span class="s2">"&lt;/li&gt;"</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="s2">"&lt;/ul&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$equipe</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Designer"</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">"nom"</span> <span class="o">=&gt;</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"role"</span> <span class="o">=&gt;</span> <span class="s2">"Développeur"</span><span class="p">]</span>
+    <span class="p">];</span>
+    <span class="nf">afficherEquipe</span><span class="p">(</span><span class="nv">$equipe</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<p><em><strong>Résultat</strong></em> : Affiche une liste des membres et leurs rôles.</p>
+<h3 id="exercices-pratiques-2">4.3 Exercices pratiques</h3>
+<p><strong>À vous de jouer</strong>  <a href="/php/exercises/exercices-partie4.html">Exercices</a></p>
+<hr />
+<h2 id="partie-5--projet-en-groupe---cration-dune-application-web-interactive">Partie 5 : Projet en groupe - Création d’une application web interactive</h2>
+<p><strong>Cliquez sur le lien</strong> : <a href="/php/exercises/project.html">Projet</a></p>
+<hr />
+<h2 id="contact">Contact</h2>
+<p><strong>Posez vos questions !</strong> <a href="/contact.html">Contact</a></p>
+<p><a href="/index.html">retour</a> | <a href="/php-advanced.html">Passez au PHP avancé</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

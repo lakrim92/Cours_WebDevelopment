@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/grading/php-project.html" />
+<meta property="og:url" content="http://localhost:4000/grading/php-project.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/grading/php-project.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h1 id="barme-de-notation-pour-le-projet-en-groupe">Barème de notation pour le projet en groupe</h1>
+<p><strong>Total</strong> : 100 points, répartis entre les composantes du projet, la collaboration, la présentation, et les bonus.</p>
+<h3 id="critres-dvaluation-">Critères d’évaluation :</h3>
+<p><strong>1. Maquette (15 points)</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Une maquette claire (papier ou numérique via Figma/Canva) est créée et suivie, définissant la disposition, les couleurs, et les éléments dynamiques.</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>10 points : Maquette complète, claire, validée par le groupe, et respectée dans le résultat final.</li>
+<li>5 points : Maquette partielle ou peu détaillée, mais utilisée.</li>
+<li>0 points : Aucune maquette ou non suivie.</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Soumettre une photo de la maquette papier ou un lien Figma/Canva via GitHub Issues.</li>
+</ul>
+<p><strong>2. Structure HTML (20 points)</strong> :</p>
+<ul>
+<li><strong>Description</strong> : La page <code>index.php</code> contient une structure HTML valide avec un formulaire fonctionnel, un titre, une description, une image, et une section pour les données dynamiques.</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>15 points : Structure HTML complète, valide (DOCTYPE, balises sémantiques), formulaire POST vers <code>traitement.php</code>.</li>
+<li>10 points : Structure correcte mais avec des erreurs mineures (ex. : balises mal fermées).</li>
+<li>5 points : Structure incomplète ou formulaire non fonctionnel.</li>
+<li>0 points : Aucune structure HTML ou non fonctionnelle.</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Code dans <code>index.php</code> poussé sur le dépôt GitHub.</li>
+</ul>
+<p><strong>3 Design CSS (20 points)</strong> :</p>
+<ul>
+<li>**Description **: Le fichier <code>style.css</code> stylise la page pour un rendu attrayant (polices, couleurs, marges, ombres, bordures arrondies).</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>15 points : Design professionnel, cohérent avec la maquette, palette de couleurs harmonieuse.</li>
+<li>10 points : Design fonctionnel mais basique ou avec incohérences.</li>
+<li>5 points : Design minimal ou avec erreurs (ex. : éléments mal alignés).</li>
+<li>0 points : Aucun style ou CSS non lié.</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Code dans <code>style.css</code> poussé sur le dépôt GitHub.</li>
+</ul>
+<p><strong>4. Fonctionnalité PHP (25 points)</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Le fichier <code>traitement.php</code> traite le formulaire (ex. : récupère <code>$_POST[&quot;nom&quot;]</code>, sécurise avec <code>htmlspecialchars()</code>) et affiche des données dynamiques (ex. : liste des membres avec <code>foreach</code>).</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>20 points : Fonctionnalité PHP complète, formulaire traité, données dynamiques affichées, sécurisé.</li>
+<li>15 points : Fonctionnalité partielle (ex. : formulaire traité mais sans affichage dynamique).</li>
+<li>10 points : PHP basique avec erreurs (ex. : formulaire non sécurisé).</li>
+<li>0 points : Aucune fonctionnalité PHP ou non fonctionnelle.</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Code dans traitement.php poussé sur le dépôt GitHub.</li>
+</ul>
+<p><strong>5. Collaboration et contribution (10 points)</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Tous les membres du groupe contribuent activement, avec des rôles clairs (Designer HTML, Artiste CSS, Magicien PHP, Coordinateur).</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>10 points : Contributions équilibrées, rôles bien définis, collaboration évidente (ex. : commits GitHub variés).</li>
+<li>5 points : Contributions inégales ou rôles flous.</li>
+<li>0 points : Contribution d’un seul membre ou absence de collaboration.</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Historique des commits sur le dépôt GitHub, description des rôles dans la présentation.</li>
+</ul>
+<p><strong>6. Présentation orale (10 points)</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Le groupe présente le projet à la classe (2-3 min), expliquant le thème, les rôles, la maquette, et les apprentissages.</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>10 points : Présentation claire, complète, tous les membres participent.</li>
+<li>5 points : Présentation partielle ou peu structurée.</li>
+<li>0 points : Aucune présentation ou non réalisée.</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Observation en classe, notes du professeur.</li>
+</ul>
+<p><strong>7. Bonus (jusqu’à 10 points)</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Points supplémentaires pour des fonctionnalités avancées.</li>
+<li><strong>Critères</strong> :
+<ul>
+<li>+5 points : Validation PHP (ex. : vérification des champs vides dans <code>traitement.php</code>).</li>
+<li>+5 points : Animation CSS (ex. : transition sur le bouton de soumission dans <code>style.css</code>).</li>
+</ul>
+</li>
+<li><strong>Preuve</strong> : Code dans traitement.php ou style.css, démontré lors de la présentation.</li>
+</ul>
+<h3 id="modalits-">Modalités :</h3>
+<ul>
+<li><strong>Soumission</strong> : Le groupe crée un dépôt GitHub (ex. : <code>ToDoList-Equipe1</code>) et pousse le code (<code>index.php</code>, <code>style.css</code>, <code>traitement.php,</code> maquette).</li>
+<li>Partagez l’URL du dépôt via <a href="https://github.com/lakrim92/Cours_WebDevelopment/issues/1">GitHub Issues</a>. Chaque membre soumet une Issue individuelle décrivant sa contribution (ex. : &quot;J’ai créé le formulaire dans <code>index.php</code>&quot;).</li>
+<li><strong>Délais</strong> : Délais fixés en fonction des projets.</li>
+<li><strong>Feedback</strong> : Fournissez une note globale pour le groupe et des commentaires individuels dans les Issues.</li>
+</ul>
+<h3 id="total-des-points-">Total des points :</h3>
+<ul>
+<li>Maquette : 15 points.</li>
+<li>Structure HTML : 20 points.</li>
+<li>Design CSS : 20 points.</li>
+<li>Fonctionnalité PHP : 25 points.</li>
+<li>Collaboration : 10 points.</li>
+<li>Présentation : 10 points.</li>
+<li>Bonus : jusqu’à 10 points.</li>
+<li><strong>Total</strong> : 100 points (bonus inclus dans le maximum).</li>
+</ul>
+<p><a href="/">Retour à l'accueil</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

@@ -90,7 +90,7 @@ git push origin main
 
 ## Contact
 
-Posez vos questions ! [Contact](../../contact.md)
+Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 
 
-[retour](../../php-advanced.md)
+[retour]({{ site.baseurl }}/php/php-advanced.html)

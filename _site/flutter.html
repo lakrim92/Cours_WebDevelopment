@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/flutter.html" />
+<meta property="og:url" content="http://localhost:4000/flutter.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/flutter.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h1 id="introduction--flutter--bienvenue-dans-le-cours-introduction--flutter-">Introduction à Flutter : Bienvenue dans le cours Introduction à Flutter !</h1>
+<p align="center">
+  <img src="./img/flutter_logo150.png" alt="Flutter" style="margin: 10px;">
+</p>
+<p>Ce cours est conçu pour vous apprendre à créer des applications mobiles avec Flutter, le framework UI développé par Google.
+Vous n’avez pas besoin d’expérience préalable en développement mobile : nous commencerons depuis les bases, et vous serez accompagnés étape par étape pour construire votre première application mobile multiplateforme (Android/iOS).
+Le cours est pratique et interactif : vous allez coder, tester en temps réel, et découvrir comment créer des interfaces modernes, fluides et réactives avec Dart, le langage de Flutter.</p>
+<h2 id="objectifs-du-cours">Objectifs du cours</h2>
+<ul>
+<li>Comprendre les bases de <strong>Flutter</strong> et <strong>Dart</strong>.</li>
+<li>Créer des applications mobiles simples avec des interfaces interactives.</li>
+<li>Apprendre à structurer une application Flutter avec des widgets.</li>
+<li>Développer un <strong>projet en groupe</strong> : une application de liste de tâches (ToDoList).</li>
+<li>Déployer une application Flutter sur Android ou iOS (simulateur).</li>
+</ul>
+<h2 id="prrequis">Prérequis</h2>
+<ul>
+<li><strong>Connaissances de base</strong> : Familiarité avec la programmation (ex. : variables, fonctions), comme vu dans Introduction à JavaScript.</li>
+<li><strong>Outils</strong> :
+<ul>
+<li>Un ordinateur (Windows, macOS, ou Linux).</li>
+<li><a href="https://visualstudio.com">Visual Studio Code</a> avec l’extension Flutter.</li>
+<li><a href="https://docs.flutter.dev/get-started/install">Flutter SDK</a> et un émulateur (<a href="https://developer.android.com/studio?hl=fr">Android Studio</a> ou <a href="https://developer.apple.com/xcode/">Xcode</a> pour iOS).</li>
+<li>Compte <a href="https://github.com/">GitHub</a> pour soumettre vos travaux (voir <a href="/github-intro.html">Introduction à GitHub</a>).</li>
+</ul>
+</li>
+</ul>
+<h2 id="structure-du-cours">Structure du cours</h2>
+<p><strong>Partie 1</strong> : Découverte de Flutter et Dart</p>
+<p><strong>Partie 2</strong> : Créer votre première application Flutter</p>
+<p><strong>Partie 3</strong> : Widgets et gestion d’état</p>
+<p><strong>Partie 4</strong> : Projet en groupe – ToDoList</p>
+<hr />
+<h1 id="partie-1--dcouverte-de-flutter-et-dart">Partie 1 : Découverte de Flutter et Dart</h1>
+<h2 id="quest-ce-que-flutter-">Qu’est-ce que Flutter ?</h2>
+<p><strong>Flutter</strong> est un framework open-source développé par <strong>Google</strong> qui permet de créer des applications multiplateformes à partir d’un seul code source. Il repose sur le langage <strong>Dart</strong>, également conçu par <strong>Google</strong>, spécialement optimisé pour construire des interfaces utilisateur réactives et fluides.</p>
+<h3 id="pourquoi-choisir-flutter-">Pourquoi choisir Flutter ?</h3>
+<ul>
+<li><strong>Multiplateforme unifiée</strong> : Avec Flutter, vous pouvez développer une seule application qui fonctionne sur <strong>Android</strong>, <strong>iOS</strong>, le <strong>Web</strong>, <strong>Windows</strong>, <strong>macOS</strong> et <strong>Linux</strong>. Cela réduit considérablement le temps et les coûts de développement, tout en garantissant une expérience utilisateur cohérente sur toutes les plateformes.</li>
+<li><strong>Excellente performance</strong> : Contrairement à d'autres frameworks multiplateformes qui reposent sur des ponts natifs, Flutter compile directement en code natif. Cela permet des animations fluides, des temps de chargement rapides et des interactions très réactives, même pour des applications complexes.</li>
+<li><strong>Hot Reload</strong> : Cette fonctionnalité phare permet de <strong>voir instantanément les résultats de vos modifications dans l’application, sans devoir tout recompiler</strong>. C’est un gain de temps précieux pour le prototypage rapide, les tests et le design d’interface.</li>
+<li><strong>Widgets personnalisables</strong> : Flutter propose une bibliothèque riche de widgets flexibles et hautement personnalisables, qui respectent les standards visuels de chaque plateforme (Material Design pour Android, Cupertino pour iOS).</li>
+</ul>
+<h3 id="exemples-dentreprises-utilisant-flutter-">Exemples d’entreprises utilisant Flutter :</h3>
+<ul>
+<li><strong>Alibaba</strong> : pour certaines parties de son application e-commerce servant des millions d’utilisateurs.</li>
+<li><strong>BMW</strong> : utilise Flutter pour des applications internes et clients, unifiant l’expérience entre différents supports.</li>
+<li><strong>Nubank</strong> : une des plus grandes banques digitales d’Amérique Latine, a adopté Flutter pour améliorer la performance et la maintenabilité de ses applications.</li>
+</ul>
+<h2 id="introduction--dart">Introduction à Dart</h2>
+<p><strong>Dart</strong> est un langage de programmation simple, moderne et <strong>orienté objet</strong> développé par Google. Il est principalement utilisé avec Flutter pour construire des interfaces performantes, réactives et multiplateformes.</p>
+<p>Dart combine une syntaxe familière (proche de <strong>Java</strong>, <strong>JavaScript</strong> ou <strong>C#</strong>) avec des fonctionnalités puissantes comme :</p>
+<ul>
+<li><strong>Typage fort mais flexible</strong> (avec inférence de type),</li>
+<li><strong>Gestion asynchrone</strong> simple avec <code>async</code> / <code>await</code>,</li>
+<li><strong>Support de la programmation orientée objet et fonctionnelle</strong>,</li>
+<li><strong>Compilation Just-In-Time (JIT)</strong> pour un développement rapide (hot reload),</li>
+<li><strong>Compilation Ahead-Of-Time (AOT)</strong> pour des performances natives en production.</li>
+</ul>
+<p>Copier</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">print</span><span class="p">(</span><span class="s">'Bonjour, Flutter !'</span><span class="p">);</span>
+
+  <span class="kt">String</span> <span class="n">nom</span> <span class="o">=</span> <span class="s">'Étudiant'</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+
+  <span class="n">print</span><span class="p">(</span><span class="s">'Je m’appelle </span><span class="si">$nom</span><span class="s"> et j’ai </span><span class="si">$age</span><span class="s"> ans.'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Syntaxe</strong> : Similaire à JavaScript ou Java, avec des variables, fonctions, et classes.</li>
+<li><strong>Null Safety</strong> : Dart protège contre les erreurs liées aux valeurs nulles.</li>
+</ul>
+<h2 id="installation-de-flutter">Installation de Flutter</h2>
+<ol>
+<li><strong>Téléchargez Flutter</strong> : Suivez le guide officiel <a href="https://flutter.dev/">flutter.dev</a>.</li>
+<li><strong>Installez Visual Studio Code</strong> :
+<ul>
+<li>Ajoutez les extensions <strong>Flutter</strong> et <strong>Dart</strong>.</li>
+</ul>
+</li>
+<li><strong>Configurez un émulateur</strong> :
+<ul>
+<li>Android : Installez Android Studio et configurez un appareil virtuel.</li>
+<li>iOS (macOS uniquement) : Installez Xcode et configurez un simulateur.</li>
+</ul>
+</li>
+<li><strong>Vérifiez l’installation</strong> :</li>
+</ol>
+<p>Copier
+<code>flutter doctor</code></p>
+<p>Résolvez les problèmes signalés par <strong>flutter doctor</strong>.</p>
+<hr />
+<h1 id="partie-2--crer-votre-premire-application-flutter">Partie 2 : Créer votre première application Flutter</h1>
+<h2 id="crer-un-projet-flutter">Créer un projet Flutter</h2>
+<ol>
+<li>Ouvrez un terminal et exécutez :
+Copier</li>
+</ol>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    flutter create mon_premier_projet <span class="nb">cd </span>mon_premier_projet
+</code></pre></div></div>
+<ol start="2">
+<li>Lancez l’application :</li>
+</ol>
+<p>Copier</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flutter run
+</code></pre></div></div>
+<p>Une application par défaut s’affichera sur votre émulateur.</p>
+<h2 id="structure-dun-projet-flutter">Structure d’un projet Flutter</h2>
+<ul>
+<li>lib/main.dart : Point d’entrée de l’application.</li>
+<li>pubspec.yaml : Fichier de configuration pour les dépendances.</li>
+<li>android/, ios/ : Code natif pour chaque plateforme.</li>
+</ul>
+<p>Exemple de lib/main.dart :</p>
+<p>Copier</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">runApp</span><span class="p">(</span><span class="n">MonApplication</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">MonApplication</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="p">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">MaterialApp</span><span class="p">(</span>
+      <span class="nl">home:</span> <span class="n">Scaffold</span><span class="p">(</span>
+        <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="p">(</span>
+          <span class="nl">title:</span> <span class="n">Text</span><span class="p">(</span><span class="s">'Ma Première Appli'</span><span class="p">),</span>
+        <span class="p">),</span>
+        <span class="nl">body:</span> <span class="n">Center</span><span class="p">(</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="p">(</span><span class="s">'Bonjour, Flutter !'</span><span class="p">),</span>
+        <span class="p">),</span>
+      <span class="p">),</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><strong>À vous de jouer</strong> : <a href="/flutter/exercises/exercices-partie2.html">Exercices</a></p>
+<hr />
+<h2 id="partie-3--widgets-et-gestion-dtat">Partie 3 : Widgets et gestion d’état</h2>
+<h3 id="les-widgets--blocs-de-construction">Les widgets : Blocs de construction</h3>
+<p>En Flutter, tout est un <strong>widget</strong> : boutons, textes, images, mises en page. Il existe deux types de widgets :</p>
+<ul>
+<li>StatelessWidget : Pour les éléments statiques (ex. : texte fixe).</li>
+<li>StatefulWidget : Pour les éléments dynamiques (ex. : compteur).</li>
+</ul>
+<p>Exemple de compteur avec un StatefulWidget :</p>
+<p>Copier</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Compteur</span> <span class="kd">extends</span> <span class="n">StatefulWidget</span> <span class="p">{</span>
+  <span class="nd">@override</span>
+  <span class="n">_CompteurState</span> <span class="n">createState</span><span class="p">()</span> <span class="o">=</span><span class="p">&gt;</span> <span class="n">_CompteurState</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">_CompteurState</span> <span class="kd">extends</span> <span class="n">State</span><span class="p">&lt;</span><span class="n">Compteur</span><span class="p">&gt;</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">_compteur</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="kt">void</span> <span class="n">_incrementer</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">setState</span><span class="p">(()</span> <span class="p">{</span>
+      <span class="n">_compteur</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Column</span><span class="p">(</span>
+      <span class="nl">mainAxisAlignment:</span> <span class="n">MainAxisAlignment</span><span class="o">.</span><span class="na">center</span><span class="p">,</span>
+      <span class="nl">children:</span> <span class="p">[</span>
+        <span class="n">Text</span><span class="p">(</span><span class="s">'Compteur : </span><span class="si">$_compteur</span><span class="s">'</span><span class="p">),</span>
+        <span class="n">ElevatedButton</span><span class="p">(</span>
+          <span class="nl">onPressed:</span> <span class="n">_incrementer</span><span class="p">,</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="p">(</span><span class="s">'Incrémenter'</span><span class="p">),</span>
+        <span class="p">),</span>
+      <span class="p">],</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h3 id="gestion-dtat">Gestion d’état</h3>
+<p>La méthode setState met à jour l’interface lorsque l’état change. Pour des applications plus complexes, vous explorerez des solutions comme <strong>Provider</strong> ou <strong>Riverpod</strong> (niveau avancé).</p>
+<p><strong>À vous de jouer</strong> : <a href="/flutter/exercises/exercices-partie3.html">Exercices</a></p>
+<h2 id="partie-4--projet-en-groupe--todolist">Partie 4 : Projet en groupe – ToDoList</h2>
+<p><strong>Cliquez sur le lien</strong> : <a href="/flutter/exercises/project.html">Projet</a></p>
+<h3 id="ressources-supplmentaires">Ressources supplémentaires</h3>
+<ul>
+<li>Documentation officielle :
+<ul>
+<li>Flutter</li>
+<li>Dart</li>
+</ul>
+</li>
+<li>Tutoriels :
+<ul>
+<li>Flutter YouTube</li>
+<li>Code With Andrea pour des projets pratiques.</li>
+</ul>
+</li>
+<li>Communauté :
+<ul>
+<li>Flutter Community</li>
+<li>Stack Overflow</li>
+</ul>
+</li>
+</ul>
+<h2 id="bon-codage-avec-flutter-">Bon codage avec Flutter !</h2>
+<p><a href="/index.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

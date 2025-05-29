@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/exercises/exercices-partie3.html" />
+<meta property="og:url" content="http://localhost:4000/php/exercises/exercices-partie3.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/exercises/exercices-partie3.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h3 id="exercices-pratiques">3.3 Exercices pratiques</h3>
+<h2 id="contexte-">Contexte :</h2>
+<p>Cette partie se concentre sur les formulaires HTML, les méthodes GET/POST, les superglobales $_GET/$_POST, et la validation de base. Les exercices impliquent la création de formulaires et le traitement des données.</p>
+<ol>
+<li><strong>Exercice 1 : Créer un formulaire de bienvenue</strong> :</li>
+</ol>
+<ul>
+<li>Créez deux fichiers dans <code>public/</code> : <code>bienvenue.html</code> et <code>traitement_bienvenue.php</code>.</li>
+<li>Dans <code>bienvenue.html</code>, ajoutez un formulaire <code>POST</code> avec un champ texte nom.</li>
+<li>Dans <code>traitement_bienvenue.php</code>, utilisez <code>$_POST</code> pour afficher &quot;Bonjour, [nom] !&quot; dans un <code>&lt;p&gt;</code>.</li>
+<li>Testez à <code>http://localhost:8200 et modifier le nom ensuite voir le resultat</code>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Après soumission, une page affiche &quot;Bonjour, Marie !&quot;.</p>
+<p>Fichiers à soumettre : <code>bienvenue.html</code>, <code>traitement_bienvenue.php</code>.</p>
+<ol start="2">
+<li><strong>Exercice 2 : Formulaire avec choix</strong> :</li>
+</ol>
+<ul>
+<li>Créez deux fichiers : <code>couleur.html</code> et <code>traitement_couleur.php</code>.</li>
+<li>Dans <code>couleur.html</code>, ajoutez un formulaire <code>GET</code> avec un menu déroulant <code>&lt;select&gt;</code> proposant 3 couleurs (ex. : Rouge, Bleu, Vert).</li>
+<li>Dans <code>traitement_couleur.php</code>, affichez &quot;Votre couleur préférée est : [couleur]&quot; avec <code>$_GET</code>.</li>
+<li>Testez à <a href="http://localhost:8200/couleur.html">http://localhost:8200/couleur.html</a>. Quelle est la différence entre POST et GET ?</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche &quot;Votre couleur préférée est : Bleu&quot;.</p>
+<p>Fichiers à soumettre : <strong>couleur.html</strong>, <strong>traitement_couleur.php</strong>.</p>
+<ol start="3">
+<li><strong>Exercice 3 : validation de formulaire</strong> :</li>
+</ol>
+<ul>
+<li>Créez deux fichiers : <code>inscription.html</code> et <code>traitement_inscription.php</code>.</li>
+<li>Dans <code>inscription.html</code>, ajoutez un formulaire <code>POST</code> avec un champ email.</li>
+<li>Dans <code>traitement_inscription.php</code>, vérifiez si email est non vide avec <code>empty()</code>.</li>
+<li>Affichez &quot;Inscription réussie : [email]&quot; ou &quot;Erreur : email vide&quot; dans un <code>&lt;p&gt;</code>.</li>
+<li>Testez à <a href="http://localhost:8200/inscription.html">http://localhost:8200/inscription.html</a> avec un champ vide et non vide.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche le résultat de la validation.</p>
+<p>Fichiers à soumettre : <code>inscription.html</code>, <code>traitement_inscription.php</code>.</p>
+<ol start="4">
+<li><strong>Exercice 4 : Formulaire sécurisé</strong> :</li>
+</ol>
+<ul>
+<li>Modifiez l’exercice 1 (bienvenue.html et traitement_bienvenue.php).</li>
+<li>Dans <code>traitement_bienvenue.php</code>, utilisez <code>htmlspecialchars()</code> pour sécuriser l’affichage de <code>$_POST[&quot;nom&quot;]</code>.</li>
+<li>Testez avec une entrée contenant <code>&lt;script&gt;alert(&quot;test&quot;)&lt;/script&gt;</code>.</li>
+<li>Testez à <a href="http://localhost:8200/bienvenue.html">http://localhost:8200/bienvenue.html</a>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : L’entrée malveillante est affichée comme texte brut.</p>
+<p>Fichiers à soumettre : <code>bienvenue.html</code>, <code>traitement_bienvenue.php</code>.</p>
+<hr />
+<h2 id="soumettre-vos-travaux">Soumettre vos travaux</h2>
+<ul>
+<li>Créez un dépôt GitHub (ex. : PHP-Exercices-partie2-VotreNom).</li>
+<li>Ajoutez vos fichiers pour chaque exercice.</li>
+<li>Poussez votre code</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"votre commentaire"</span>
+git push origin main
+</code></pre></div></div>
+<p>et partagez l’URL avec votre professeur.</p>
+<h2 id="contact">Contact</h2>
+<p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
+<p><a href="/php/php.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

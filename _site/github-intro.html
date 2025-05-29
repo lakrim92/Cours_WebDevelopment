@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/github-intro.html" />
+<meta property="og:url" content="http://localhost:4000/github-intro.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/github-intro.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h1 id="introduction--github-">Introduction à GitHub 🐙</h1>
+<p>Bienvenue dans ce cours d’introduction à <strong>GitHub</strong>.<br />
+Si tu n’as <strong>jamais utilisé Git ni GitHub</strong>, tu es au bon endroit ! 👨‍💻👩‍💻 Ce guide t’accompagne pour configurer GitHub, pousser tes exercices PHP et tes projets en groupe , et collaborer comme un pro. Allons-y ! 🚀</p>
+<hr />
+<h2 id="quest-ce-que-git-et-github-">🌐 Qu'est-ce que Git et GitHub ?</h2>
+<ul>
+<li><strong>Git</strong> est un outil gratuit pour gérer les versions de ton code. Il suit tes modifications, te permet de revenir en arrière, et facilite le travail en équipe.</li>
+<li><strong>GitHub</strong> est une <strong>plateforme en ligne</strong> qui héberge tes projets Git. Tu peux y sauvegarder ton code, collaborer avec ton groupe, et partager ton travail avec ton professeur via une URL</li>
+</ul>
+<hr />
+<h2 id="pourquoi-apprendre-github-">🧠 Pourquoi apprendre GitHub ?</h2>
+<ul>
+<li>✅ <strong>Collaboration :</strong> Travailler à plusieurs sur un projet</li>
+<li>✅ <strong>Sauvegarde :</strong> Ton code est stocké dans le cloud, accessible partout.</li>
+<li>✅ <strong>Professionnalisme :</strong> Les développeurs utilisent GitHub tous les jours !</li>
+<li>✅ <strong>Soumission facile :</strong> Partage tes exercices et projets via GitHub Issues.</li>
+</ul>
+<hr />
+<h2 id="prrequis">🔧 Prérequis</h2>
+<p>Avant de commencer, assure-toi d’avoir :</p>
+<ul>
+<li>Un compte GitHub ➜ <a href="https://github.com/join">github.com/join</a></li>
+<li>Git installé ➜ Télécharge sur ton ordinateur ➜ <a href="https://git-scm.com/downloads">git-scm.com</a></li>
+<li>Un terminal ➜ Utilise celui de VS Code (Terminal &gt; Nouveau terminal), PowerShell (Windows), ou Terminal (Mac/Linux).</li>
+<li>Le dossier exemple (mon_premier_site_php) créé.</li>
+</ul>
+<hr />
+<h2 id="concepts-cls">📚 Concepts clés</h2>
+<ul>
+<li><strong>Dépôt (repository)</strong> : Un dossier contenant ton projet et son historique (ex. : <code>php-exercices-votre-nom</code>).</li>
+<li><strong>Commit</strong> : Une sauvegarde de tes modifications avec un message (ex. : “Ajout de bonjour.php”).</li>
+<li><strong>Push</strong> : Envoie tes commits locaux vers GitHub.</li>
+<li><strong>Clone</strong> : Télécharge un dépôt GitHub sur ton ordinateur.</li>
+<li><strong>Branche</strong> : Une version parallèle de ton projet pour travailler sans affecter le code principal.</li>
+<li><strong>Pull Request (PR)</strong> : Une proposition pour fusionner tes modifications dans le dépôt principal.</li>
+</ul>
+<hr />
+<h2 id="pousser-tes-exercices">📁 Pousser tes exercices</h2>
+<p>Chaque élève doit créer un <strong>dépôt individuel</strong> pour les exercices (ex. : <code>php-exercices-votre-nom</code>).
+Voici comment faire.</p>
+<p><strong>1. Créer un dépôt GitHub</strong></p>
+<ul>
+<li>Connecte-toi à <a href="https://github.com/">github.com</a>.</li>
+<li>Clique sur <strong>+ &gt; New repository</strong>.</li>
+<li>Remplis :
+<ul>
+<li>Nom : <code>php-exercices-votre-nom</code> (ex. : <code>php-exercices-jean</code>).</li>
+<li>Description (optionnelle) : “Exercices PHP pour le cours”.</li>
+<li>Visibilité : <strong>Public</strong> (ou <strong>Private</strong> si préféré).</li>
+<li>Coche <strong>Add a README file</strong>.</li>
+</ul>
+</li>
+<li>Clique sur <strong>Create repository</strong>.
+<strong>2. Initialiser ton dépôt local</strong></li>
+<li>Ouvre un terminal dans <code>mon_premier_site_php</code> :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/mon_premier_site_php
+</code></pre></div></div>
+<ul>
+<li>Si ce n’est pas déjà un dépôt Git, initialise-le :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+</code></pre></div></div>
+<ul>
+<li>Ajoute tes fichiers (ex. : <code>public/bonjour.php</code>) :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+</code></pre></div></div>
+<ul>
+<li>Crée un commit :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"Ajout des exercices de la Partie 2"</span>
+</code></pre></div></div>
+<p><strong>3. Lier à GitHub</strong></p>
+<ul>
+<li>Copie l’URL de ton dépôt (ex. : <code>https://github.com/votre-nom/php-exercices-votre-nom.git</code>).</li>
+<li>Lie ton dépôt local :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/votre-nom/php-exercices-votre-nom.git
+</code></pre></div></div>
+<p><strong>4. Pousser sur GitHub</strong></p>
+<ul>
+<li>Envoie tes fichiers :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
+<ul>
+<li>Si demandé, entre ton nom d’utilisateur GitHub et ton PAT.</li>
+<li>Vérifie sur GitHub que tes fichiers (ex. : <code>public/bonjour.php</code>) sont visibles.</li>
+</ul>
+<p><strong>5. Soumettre via GitHub Issues</strong></p>
+<ul>
+<li>Va sur <a href="https://github.com/lakrim92/Cours_WebDevelopment/issues/1"><strong>GitHub Issues</strong></a>.</li>
+<li>Remplis le modèle :
+<ul>
+<li><strong>Titre</strong> : “Soumission exercices Partie X - Votre Nom”.</li>
+<li><strong>Description</strong> : Indique la partie (ex. : Partie 2) et l’URL du dépôt (ex. : <code>https://github.com/votre-nom/php-exercices-votre-nom</code>).</li>
+<li><strong>Code</strong> : Copie un extrait clé (ex. : contenu de <code>bonjour.php</code>).</li>
+<li><strong>Labels</strong> : Ajoute <code>question</code> et l'exercice concérné.</li>
+</ul>
+</li>
+<li>Soumets l’Issue.</li>
+</ul>
+<p>✨ Bravo, ton dépôt est créé !</p>
+<hr />
+<h2 id="pousser-le-projet-en-groupe">🤝 Pousser le projet en groupe</h2>
+<p>Pour le projet en groupe (vitrine web), créez un <strong>dépôt de groupe</strong> (ex. : <code>Club-Equipe1</code>). Voici les étapes.</p>
+<p><strong>1. Créer un dépôt de groupe</strong></p>
+<ul>
+<li>Un membre du groupe (le “propriétaire”) crée le dépôt :
+<ul>
+<li>Nom : <code>Club-Equipe1</code> (ou selon votre thème).</li>
+<li>Coche <strong>Add a README file</strong>.</li>
+<li>Visibilité : <strong>Public</strong>.</li>
+</ul>
+</li>
+<li>Ajoute les coéquipiers comme collaborateurs :
+<ul>
+<li>Sur GitHub, va dans <strong>Settings &gt; Collaborators &gt; Add people</strong>.</li>
+<li>Invite tes coéquipiers par leur nom d’utilisateur GitHub.</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Cloner le dépôt</strong></p>
+<ul>
+<li>Chaque membre clone le dépôt :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/proprietaire/Club-Equipe1.git
+<span class="nb">cd </span>Club-Equipe1
+</code></pre></div></div>
+<ul>
+<li>Copie le dossier projet_groupe/public/ (avec index.php, style.css, traitement.php) dans Club-Equipe1.</li>
+</ul>
+<p><strong>3. Travailler sur une branche</strong></p>
+<ul>
+<li>Crée une branche pour tes modifications :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> ma-branche
+</code></pre></div></div>
+<ul>
+<li>Modifie les fichiers (ex. : ajoute le formulaire dans <code>index.php</code>).</li>
+<li>Ajoute et commite :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Ajout du formulaire HTML"</span>
+</code></pre></div></div>
+<p><strong>4. Pousser la branche</strong></p>
+<ul>
+<li>Pousse ta branche :</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin ma-branche
+</code></pre></div></div>
+<p><strong>5. Créer une Pull Request</strong></p>
+<ul>
+<li>Sur GitHub, va dans l’onglet <strong>Pull requests &gt; New pull request</strong>.</li>
+<li>Sélectionne ta branche (<code>ma-branche</code>) et compare avec <code>main</code>.</li>
+<li>Ajoute un titre (ex. : “Ajout du formulaire”) et une description.</li>
+<li>Clique sur <strong>Create pull request</strong>.</li>
+<li>Un coéquipier ou le coordinateur valide et fusionne la PR.</li>
+</ul>
+<p><strong>6. Soumettre le projet</strong></p>
+<ul>
+<li>Le groupe soumet l’URL du dépôt (ex. : <code>https://github.com/proprietaire/Club-Equipe1</code>) via GitHub Issues.</li>
+<li>Chaque membre soumet une Issue individuelle :
+<ul>
+<li><strong>Titre</strong> : “Soumission projet groupe - Votre Nom”.</li>
+<li><strong>Description</strong> : URL du dépôt et ta contribution (ex. : “J’ai créé style.css”).</li>
+<li><strong>Labels</strong> : question.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="conseils-pour-dbutants">💡 Conseils pour débutants</h2>
+<ul>
+<li><strong>Vérifie souvent</strong> : Utilise <code>git status</code> pour voir l’état de ton dépôt.</li>
+<li><strong>Commits fréquents</strong> : Sauvegarde à chaque étape avec <code>git commit</code>.</li>
+<li><strong>Messages clairs</strong> : Écris des messages de commit descriptifs (ex. : “Correction bug formulaire”).</li>
+<li><strong>Évite les conflits</strong> : Travaille sur des branches séparées en groupe.</li>
+<li><strong>Demande de l’aide</strong> : Pose tes questions via GitHub Issues.</li>
+</ul>
+<hr />
+<h2 id="dpannage">⚠️ Dépannage</h2>
+<ul>
+<li><strong>Erreur</strong> <code>git push</code> <strong>(authentification)</strong> :
+<ul>
+<li>Vérifie ton PAT.</li>
+<li>Réinitialise le remote :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote set-url origin https://github.com/votre-nom/votre-depot.git
+</code></pre></div></div>
+<ul>
+<li><strong>Commande</strong> <code>git</code> <strong>non reconnue</strong> :
+<ul>
+<li>Réinstalle Git .</li>
+<li>Vérifie le PATH :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--version</span>
+</code></pre></div></div>
+<ul>
+<li><strong>Conflits Git</strong> :
+<ul>
+<li>Tire les dernières modifications :</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull origin main
+</code></pre></div></div>
+<ul>
+<li>Résous les conflits dans VS Code et recommite.</li>
+<li><strong>Issue non visible</strong> :
+<ul>
+<li>Vérifie les labels <code>question</code> etc... sur GitHub Issues.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="activit--ton-premier-push">🎯 Activité : Ton premier push</h2>
+<p>Teste tes compétences avec cette activité simple !</p>
+<ol>
+<li>Dans <code>mon_premier_site_php</code>, crée un fichier <code>README.md</code> :</li>
+</ol>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Mes Exercices PHP</span>
+Exercices et projet pour le cours Introduction à PHP.
+</code></pre></div></div>
+<ol start="2">
+<li>Ajoute, commite, et pousse :</li>
+</ol>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add README.md
+git commit <span class="nt">-m</span> <span class="s2">"Ajout du README"</span>
+git push origin main
+</code></pre></div></div>
+<ol start="3">
+<li>Vérifie sur GitHub que <code>README.md</code> apparaît.</li>
+<li>Soumets l’URL de ton dépôt via GitHub Issues (titre : “Test premier push - Votre Nom”).</li>
+</ol>
+<hr />
+<h2 id="ressources-supplmentaires">📚 Ressources supplémentaires</h2>
+<ul>
+<li><strong>GitHub Docs</strong> : <a href="https://docs.github.com/en/get-started">docs.github.com</a> (guide officiel).</li>
+<li><strong>W3Schools Git</strong> : <a href="https://www.w3schools.com/git/">w3schools.com/git</a> (tutoriel simple).</li>
+<li><strong>Learn Git Branching</strong> : <a href="https://learngitbranching.js.org/">learngitbranching.js.org</a> (jeu interactif).</li>
+<li><strong>Git Cheat Sheet</strong> : <a href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">training.github.com</a> (résumé des commandes).</li>
+<li><strong>Introduction à PHP</strong> : Retour au cours principal.</li>
+</ul>
+<p><strong>Félicitations !</strong> 🎉 Tu es prêt à utiliser GitHub pour tes exercices et projets. Continue à coder et à partager tes créations ! 💻</p>
+<hr />
+<p><a href="/index.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

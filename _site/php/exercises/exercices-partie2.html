@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/exercises/exercices-partie2.html" />
+<meta property="og:url" content="http://localhost:4000/php/exercises/exercices-partie2.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/exercises/exercices-partie2.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h3 id="exercices-php---mise-en-pratique">Exercices PHP - Mise en pratique</h3>
+<h2 id="contexte-">Contexte :</h2>
+<p>Cette partie couvre la syntaxe de base, les variables, les conditions, les boucles, les tableaux, et l'intégration avec HTML. Les exercices visent à pratiquer ces concepts dans des scripts PHP simples.</p>
+<p><strong>Exercice 1 : Afficher un message personnalisé :</strong></p>
+<ul>
+<li>Créez un fichier <code>bonjour.php</code> dans le dossier <code>public/.</code></li>
+<li>Déclarez une variable <code>$prenom</code> avec votre prénom.</li>
+<li>Utilisez <code>echo</code> pour afficher un message dans une balise <code>&lt;h1&gt;</code> : &quot;Bonjour, [prenom] !&quot;.</li>
+<li>Intégrez le code dans une page HTML valide avec <code>&lt;!DOCTYPE html&gt;</code>.</li>
+<li>Testez à <code>http://localhost:8200</code>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page web affiche &quot;Bonjour, Alice !&quot; en grand titre.</p>
+<p>Fichiers à soumettre : <code>bonjour.php</code></p>
+<p><strong>Exercice 2 : Vérification d’âge :</strong></p>
+<ul>
+<li>Créez un fichier <code>age.php</code> dans <code>public/</code>.</li>
+<li>Déclarez une variable <code>$age</code> avec un entier (ex. : 20).</li>
+<li>Utilisez une condition <code>if/else</code> pour afficher dans un paragraphe <code>&lt;p&gt; : &quot;Vous êtes majeur&quot;</code> si <code>$age &gt;= 18</code>, sinon <code>&quot;Vous êtes mineur&quot;</code>.</li>
+<li>Testez avec différentes valeurs de <code>$age</code>.</li>
+<li>Testez à <code>http://localhost:8200</code> et modifiez <code>$age</code>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche &quot;Vous êtes majeur&quot; ou &quot;Vous êtes mineur&quot;.</p>
+<p>Fichiers à soumettre : <code>age.php</code>.</p>
+<p><strong>Exercice 3 : Afficher une liste dynamique :</strong></p>
+<ul>
+<li>Créez un fichier <code>courses.php</code> dans <code>public/</code>.</li>
+<li>Déclarez un tableau indexé <code>$courses</code> contenant au moins 4 produits (ex. : &quot;Pain&quot;, &quot;Lait&quot;, &quot;Œufs&quot;, &quot;Fruits&quot;).</li>
+<li>Utilisez une boucle <code>foreach</code> pour afficher chaque produit dans une liste HTML <code>&lt;ul&gt;&lt;li&gt;</code>.</li>
+<li>Testez à <code>http://localhost:8200</code> et modifiez la lsite.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche une liste à puces avec les produits.</p>
+<p>Fichiers à soumettre : <code>courses.php</code>.</p>
+<p><strong>Exercice 4 : Tableau des scores :</strong></p>
+<ul>
+<li>Créez un fichier <code>scores.php</code> dans <code>public/</code>.</li>
+<li>Déclarez un tableau associatif <code>$scores</code> avec 3 noms d’étudiants comme clés et leurs notes comme valeurs (ex. : &quot;Alice&quot; =&gt; 85).</li>
+<li>Utilisez une boucle <code>foreach</code> pour afficher chaque étudiant et sa note dans un paragraphe <code>&lt;p&gt;</code> (ex. : &quot;Alice : 85&quot;).</li>
+<li>Testez à <code>http://localhost:8200</code> et ajouter des etudiants.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche &quot;Alice : 85&quot;, &quot;Bob : 90&quot;, etc.</p>
+<p>Fichiers à soumettre : <code>scores.php</code>.</p>
+<hr />
+<h2 id="soumettre-vos-travaux">Soumettre vos travaux</h2>
+<ul>
+<li>Créez un dépôt GitHub (ex. : PHP-Exercices-partie2-VotreNom).</li>
+<li>Ajoutez vos fichiers pour chaque exercice.</li>
+<li>Poussez votre code</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"votre commentaire"</span>
+git push origin main
+</code></pre></div></div>
+<p>et partagez l’URL avec votre professeur.</p>
+<h2 id="contact">Contact</h2>
+<p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
+<p><a href="/php/php.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

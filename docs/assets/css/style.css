@@ -79,3 +79,11 @@ body {
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
+/* Style pour les images de profil */
+.profile-image {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

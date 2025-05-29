@@ -2,6 +2,7 @@
 layout: default
 title: Extensions PHP pour VS Code
 ---
+
 ### 3.3 Exercices pratiques
 
 ## Contexte : 
@@ -66,7 +67,7 @@ et partagez l’URL avec votre professeur.
 
 ## Contact
 
-Posez vos questions ! [Contact](../../contact.md)
+Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 
 
-[retour](../../php.md)
+[retour](/php/php.html)

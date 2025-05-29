@@ -11,43 +11,73 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 ### Frontend :
 
-- [Introduction à HTML, CSS et JavaScript](./html-css-js.md) : Créez des sites web interactifs.
-- [HTML, CSS et Javascript avancé](./html-css-js-Advanced.md) : Maîtrisez les techniques avancées pour des interfaces dynamiques.
-- [HTML, CSS et Javascript expert](./html-css-js-expert.md) : Développez des applications web complexes avec des performances optimisées.
-
-***
-
-- [Introduction à Dart](./dart.md) : Développez  des applications avec Flutter.
-- [Dart avancé](./dart-advanced.md) : Approfondissez Dart pour des applications Flutter performantes.
-- [Dart expert](./dart-expert.md) : Créez des solutions Flutter avancées avec une expertise technique.
+<div class="dropdown">
+  <button class="dropbtn">HTML-CSS-JS ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/html-css-js/html-css-js.html">Introduction HTML/CSS/JS</a>
+    <a href="{{ site.baseurl }}/html-css-js/html-css-js-advanced.html">HTML/CSS/JS avancé</a>
+    <a href="{{ site.baseurl }}/html-css-js/html-css-js-expert.html">HTML/CSS/JS expert</a>
+  </div>
+</div>
 
 ---
 
-- [Introduction à JavaScript](./javascript.md) : Approfondissez JavaScript avec la méthode des 3S.
-- [Javascript avancé](./javascript-advanced.md) : Développez des fonctionnalités complexes avec JavaScript moderne.
-- [Javascript expert](./javascript-expert.md) : Maîtrisez les frameworks et outils JavaScript pour des projets d’envergure.
 
-___
+<div class="dropdown">
+  <button class="dropbtn">Dart ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}">Introduction à Dart</a>
+    <a href="{{ site.baseurl }}">Dart avancé</a>
+    <a href="{{ site.baseurl }}">Dart expert</a>
+  </div>
+</div>
+
+---
+
+<div class="dropdown">
+  <button class="dropbtn">Javascript ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/javascript/javascript.html">Introduction Javascript</a>
+    <a href="{{ site.baseurl }}">Javascript avancé</a>
+    <a href="{{ site.baseurl }}">Javascript expert</a>
+  </div>
+</div>
+
+---
 
 ### Backend :
 
-- [Introduction à Node.js](./nodejs.md) : Créez des serveurs performants avec JavaScript côté serveur.
-- [Node.js avancé](./nodejs-advanced.md) : Développez des applications backend scalables avec Node.js.
-- [Node.js expert](./nodejs-expert.md) : Optimisez et sécurisez des systèmes backend complexes avec Node.js.
+<div class="dropdown">
+  <button class="dropbtn">Nodejs ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}">Introduction Nodejs</a>
+    <a href="{{ site.baseurl }}">Nodejs avancé</a>
+    <a href="{{ site.baseurl }}">Nodejs expert</a>
+  </div>
+</div>
 
-___
+---
+
+<div class="dropdown">
+  <button class="dropbtn">PHP ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/php/php.html">Introduction PHP</a>
+    <a href="{{ site.baseurl }}">PHP avancé</a>
+    <a href="{{ site.baseurl }}">PHP expert</a>
+  </div>
+</div>
 
 - [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
 - [PHP avancé](./php-advanced.md) : Maîtrisez les fonctionnalités avancées de PHP pour des projets robustes.
 - [PHP expert](./php-expert.md) : Créez des applications PHP performantes avec des architectures modernes.
 
-___
+---
 
 - [Introduction à Python (Django, Flask)](./python.md) : Construisez des applications web avec Django et Flask.
 - [Python avancé](./python-advanced.md) : Développez des solutions backend complexes avec Python.
 - [Python expert](./python-expert.md) : Maîtrisez les frameworks Python pour des projets professionnels.
 
-___
+---
 
 - [Introduction à Dart (avec shelf)](./dartbend.md) : Développez des API backend avec Dart et Shelf.
 - [Introduction à Go](./go.md) : Créez des applications backend rapides et efficaces avec Go.
@@ -78,7 +108,7 @@ ___
 - [Introduction à Flutter](./flutter.md) : Développez des applications mobiles.
 - [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
 
-___
+---
 
 ## Barèmes de notation
 
@@ -86,17 +116,18 @@ ___
 - PHP : [Exercices](./grading/php-exercises.md) | [Projet](./grading/php-project.md)
 - JavaScript : [Exercices](./grading/javascript-exercises.md) | [Projet](./grading/javascript-project.md)
 
-___
+---
 
 ## Exemples de code
 
 Consultez les exemples sur GitHub :
+
 - [HTML, CSS, JavaScript](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/html-css-js)
 - [PHP](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/php)
 - [JavaScript](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/javascript)
 - [Introduction à GitHub](https://github.com/votre-utilisateur/WebDevelopmentCourses/tree/main/github-intro/examples)
 
-___
+---
 
 ## Instructions
 
@@ -107,7 +138,7 @@ ___
   - PHP : Lancez `php -S localhost:8200 -t public` dans le dossier `public`.
 - **Vos projets** : Lisez [Introduction à GitHub](./github-intro.md) pour créer un dépôt et pousser vos travaux.
 
-___
+---
 
 ## Contact
 

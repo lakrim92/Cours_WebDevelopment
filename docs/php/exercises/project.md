@@ -261,7 +261,7 @@ git add . git commit -m "Projet ToDoList" git push origin main
 
 ## Contact
 
-Posez vos questions ! [Contact](../../contact.md)
+Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 
 
-[retour](../../php.md)
+[retour]({{ site.baseurl }}/php/php.html)

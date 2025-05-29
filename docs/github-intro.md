@@ -251,4 +251,4 @@ ___
 
 ---
 
-[retour](./index.md)
+[retour]({{ site.baseurl }}/index.html)

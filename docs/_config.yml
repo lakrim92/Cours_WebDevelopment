@@ -8,3 +8,5 @@ plugins:
 include:
   - assets/css/style.css
   - assets/js/dropdown.js
+baseurl: "/Cours_WebDevelopment"
+url: "https://lakrim92.github.io"

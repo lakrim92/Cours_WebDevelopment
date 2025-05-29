@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/exercises/exercices-partie4.html" />
+<meta property="og:url" content="http://localhost:4000/php/exercises/exercices-partie4.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/exercises/exercices-partie4.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <h3 id="exercices-pratiques">4.3 Exercices pratiques</h3>
+<h2 id="contexte-">Contexte :</h2>
+<p>Cette partie explore les tableaux associatifs, la boucle foreach, les fonctions, et les tableaux multidimensionnels. Les exercices mettent l’accent sur la manipulation de données complexes.</p>
+<p><strong>Exercice 1 : Affichage d’un profil</strong> :</p>
+<ul>
+<li>Créez un fichier <code>profil.php</code> dans <code>public/</code>.</li>
+<li>Déclarez un tableau associatif <code>$profil</code> avec les clés nom, age, et ville (ex. : &quot;nom&quot; =&gt; &quot;Luc&quot;, etc.).</li>
+<li>Affichez chaque information dans un paragraphe <code>&lt;p&gt;</code> avec foreach.</li>
+<li>Testez à <a href="http://localhost:8200/profil.php">http://localhost:8200/profil.php</a>.</li>
+<li>Fichiers à soumettre : <code>profil.php</code>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche &quot;Nom : Luc&quot;, &quot;Âge : 22&quot;, &quot;Ville : Paris&quot;.</p>
+<p><strong>Exercice 2 : Liste de produits</strong> :</p>
+<ul>
+<li>Créez un fichier <code>produits.php</code> dans <code>public/</code>.</li>
+<li>Déclarez un tableau multidimensionnel <code>$produits</code> avec 3 produits, chacun ayant nom et prix (ex. : [&quot;nom&quot; =&gt; &quot;Livre&quot;, &quot;prix&quot; =&gt; 15]).</li>
+<li>Utilisez <code>foreach</code> pour afficher une liste <code>&lt;ul&gt;&lt;li&gt;</code> avec chaque produit (ex. : &quot;Livre - 15€&quot;).</li>
+<li>Testez à <a href="http://localhost:8200/produits.php">http://localhost:8200/produits.php</a>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une liste à puces des produits et prix.</p>
+<p>Fichiers à soumettre : <code>produits.php</code>.</p>
+<p><strong>comment la boucle simplifie-t-elle le code ?</strong></p>
+<p><strong>Exercice 3 : Fonction de moyenne</strong> :</p>
+<ul>
+<li>Créez un fichier <code>moyenne.php</code> dans <code>public/</code>.</li>
+<li>Définissez une fonction <code>calculerMoyenne($notes)</code> qui prend un tableau de notes (ex. : [85, 90, 88]) et retourne la moyenne.</li>
+<li>Appelez la fonction avec un tableau et affichez le résultat dans un <code>&lt;p&gt;</code>.</li>
+<li>Testez à <a href="http://localhost:8200/moyenne.php">http://localhost:8200/moyenne.php</a>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une page affiche &quot;Moyenne : 87.67&quot;.</p>
+<p>Fichiers à soumettre : <code>moyenne.php</code>.</p>
+<p><strong>Exercice 4 : Équipe dynamique</strong> :</p>
+<ul>
+<li>Créez un fichier <code>equipe.php</code> dans <code>public/</code>.</li>
+<li>Déclarez un tableau multidimensionnel <code>$equipe</code> avec 3 membres, chacun ayant nom et role.</li>
+<li>Définissez une fonction <code>afficherEquipe($equipe)</code> qui utilise <code>foreach</code> pour afficher une liste <code>&lt;ul&gt;&lt;li&gt;</code> des membres.</li>
+<li>Appelez la fonction.</li>
+<li>Testez à <a href="http://localhost:8200/equipe.php">http://localhost:8200/equipe.php</a>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une liste à puces comme &quot;Alice - Designer&quot;.</p>
+<p>Fichiers à soumettre : <code>equipe.php</code>.</p>
+<p><strong>Exercice 5 : Filtrage de données</strong> :</p>
+<ul>
+<li>Créez un fichier <code>filtrage.php</code> dans <code>public/</code>.</li>
+<li>Déclarez un tableau multidimensionnel <code>$etudiants</code> avec 4 étudiants, chacun ayant nom et note.</li>
+<li>Utilisez <code>foreach</code> pour afficher uniquement les étudiants avec une note <strong>≥ 10</strong> dans une liste <code>&lt;ul&gt;&lt;li&gt;</code>.</li>
+<li>Testez à <a href="http://localhost:8200/filtrage.php">http://localhost:8200/filtrage.php</a>.</li>
+</ul>
+<p><strong>Exemple de résultat</strong> : Une liste des étudiants ayant réussi.</p>
+<p>Fichiers à soumettre : <code>filtrage.php</code>.</p>
+<hr />
+<h2 id="soumettre-vos-travaux">Soumettre vos travaux</h2>
+<ul>
+<li>Créez un dépôt GitHub (ex. : PHP-Exercices-partie2-VotreNom).</li>
+<li>Ajoutez vos fichiers pour chaque exercice.</li>
+<li>Poussez votre code</li>
+</ul>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"votre commentaire"</span>
+git push origin main
+</code></pre></div></div>
+<p>et partagez l’URL avec votre professeur.</p>
+<h2 id="contact">Contact</h2>
+<p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
+<p><a href="/php/php.html">retour</a></p>
+
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>
