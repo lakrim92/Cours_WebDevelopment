@@ -243,7 +243,7 @@ section {
 - **W3Schools PHP** [(w3schools.com/php)](https://www.w3schools.com/php/) : Tutoriels interactifs.
 - **Repl.it** [(replit.com)](https://replit.com/) : Testez vos scripts en ligne. 
 
-- [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
+- [Introduction à PHP]({{ site.baseurl }}/php/php.html) : Développez des applications web dynamiques.
 
 **Dépôt GitHub** : 
 - Créez un dépôt GitHub pour votre groupe (ex. : ToDoList-Equipe1). 
