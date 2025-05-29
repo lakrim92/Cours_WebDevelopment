@@ -20,9 +20,6 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
   </div>
 </div>
 
----
-
-
 <div class="dropdown">
   <button class="dropbtn">Dart ▼</button>
   <div class="dropdown-content">
@@ -31,8 +28,6 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
     <a href="{{ site.baseurl }}">Dart expert</a>
   </div>
 </div>
-
----
 
 <div class="dropdown">
   <button class="dropbtn">Javascript ▼</button>
@@ -56,8 +51,6 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
   </div>
 </div>
 
----
-
 <div class="dropdown">
   <button class="dropbtn">PHP ▼</button>
   <div class="dropdown-content">
@@ -67,8 +60,6 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
   </div>
 </div>
 
----
-
 <div class="dropdown">
   <button class="dropbtn">Python (Django, Flask) ▼</button>
   <div class="dropdown-content">
@@ -77,8 +68,6 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
     <a href="{{ site.baseurl }}">Python expert</a>
   </div>
 </div>
-
----
 
 <div class="dropdown">
   <button class="dropbtn">Dart (avec shlef) ▼</button>
@@ -124,6 +113,8 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
     <a href="{{ site.baseurl }}">C# expert</a>
   </div>
 </div>
+
+___
 
 ## Base de données
 
