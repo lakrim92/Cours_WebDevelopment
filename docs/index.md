@@ -9,7 +9,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 ## Cours
 
-### Frontend :
+## Frontend :
 
 <div class="dropdown">
   <button class="dropbtn">HTML-CSS-JS ▼</button>
@@ -45,7 +45,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 ---
 
-### Backend :
+## Backend :
 
 <div class="dropdown">
   <button class="dropbtn">Nodejs ▼</button>
@@ -67,46 +67,130 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
   </div>
 </div>
 
-- [Introduction à PHP](./php.md) : Développez des applications web dynamiques.
-- [PHP avancé](./php-advanced.md) : Maîtrisez les fonctionnalités avancées de PHP pour des projets robustes.
-- [PHP expert](./php-expert.md) : Créez des applications PHP performantes avec des architectures modernes.
+---
+
+<div class="dropdown">
+  <button class="dropbtn">Python (Django, Flask) ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}">Introduction à Python</a>
+    <a href="{{ site.baseurl }}">Python avancé</a>
+    <a href="{{ site.baseurl }}">Python expert</a>
+  </div>
+</div>
 
 ---
 
-- [Introduction à Python (Django, Flask)](./python.md) : Construisez des applications web avec Django et Flask.
-- [Python avancé](./python-advanced.md) : Développez des solutions backend complexes avec Python.
-- [Python expert](./python-expert.md) : Maîtrisez les frameworks Python pour des projets professionnels.
+<div class="dropdown">
+  <button class="dropbtn">Dart (avec shlef) ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/dartbend.md">Introduction à Dart</a>
+    <a href="{{ site.baseurl }}">Dart avancé</a>
+    <a href="{{ site.baseurl }}">Dart expert</a>
+  </div>
+</div>
 
----
+<div class="dropdown">
+  <button class="dropbtn">Go ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/go.md">Introduction à Go</a>
+    <a href="{{ site.baseurl }}">Go avancé</a>
+    <a href="{{ site.baseurl }}">Go expert</a>
+  </div>
+</div>
 
-- [Introduction à Dart (avec shelf)](./dartbend.md) : Développez des API backend avec Dart et Shelf.
-- [Introduction à Go](./go.md) : Créez des applications backend rapides et efficaces avec Go.
-- [Introduction à Java](./java.md) : Développez des applications backend robustes avec Java.
-- [Introduction à Kotlin](./Kotlin.md) : Construisez des backends modernes avec Kotlin.
-- [Introduction à C#](./c.md) : Créez des applications backend puissantes avec C#.
+<div class="dropdown">
+  <button class="dropbtn">Java ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/java.md">Introduction à Java</a>
+    <a href="{{ site.baseurl }}">Java avancé</a>
+    <a href="{{ site.baseurl }}">Java expert</a>
+  </div>
+</div>
 
-### Base de données
+<div class="dropdown">
+  <button class="dropbtn">Kotlin ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/kotlin.md">Introduction à Kotlin</a>
+    <a href="{{ site.baseurl }}">Kotlin avancé</a>
+    <a href="{{ site.baseurl }}">Kotlin expert</a>
+  </div>
+</div>
 
-- [Introduction à SQL (PostgreSQL, MySql, SQLite)](./sql.md) : Apprenez à gérer des bases de données relationnelles.
-- [Introduction à NoSQL (MongoDB, Firebase Firestore, Redis)](./nosql.md) : Maîtrisez les bases de données non relationnelles.
+<div class="dropdown">
+  <button class="dropbtn">C# ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/c.md">Introduction à C#</a>
+    <a href="{{ site.baseurl }}">C# avancé</a>
+    <a href="{{ site.baseurl }}">C# expert</a>
+  </div>
+</div>
 
-### API et Authentification
+## Base de données
 
-- [Introduction à REST](./rest.md) : Concevez des API RESTful pour des applications connectées.
-- [Introduction à GraphQL](./graphql.md) : Développez des API flexibles avec GraphQL.
-- [Introduction à oAuth2](./oauth2.md) : Sécurisez vos applications avec l’authentification oAuth2.
+<div class="dropdown">
+  <button class="dropbtn">SQL ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/sql.html">Introduction SQL (PostgreSQL, MySql, SQLite)</a>
+    <a href="{{ site.baseurl }}">SQL (PostgreSQL, MySql, SQLite) avancé</a>
+    <a href="{{ site.baseurl }}">SQL (PostgreSQL, MySql, SQLite) expert</a>
+  </div>
+</div>
 
-### DEVOPS
+<div class="dropdown">
+  <button class="dropbtn">NoSQL ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/nosql.html">Introduction à NoSQL (MongoDB, Firebase Firestore, Redis)</a>
+    <a href="{{ site.baseurl }}">NoSQL (MongoDB, Firebase Firestore, Redis) avancé</a>
+    <a href="{{ site.baseurl }}">NoSQL (MongoDB, Firebase Firestore, Redis) expert</a>
+  </div>
+</div>
 
-- [Introduction à Docker](./docker.md) : Conteneurisez vos applications pour un déploiement simplifié.
-- [Introduction à CI/CD (Github Actions, Gitlab CI)](./ci-cd.md) : Automatisez vos déploiements avec CI/CD.
-- [Introduction à Linux/Bash](./linux.md) : Maîtrisez les commandes Linux pour gérer des serveurs.
-- [Introduction à services cloud (Firebase, AWS, Google Cloud, DigitalOcean...)](./cloud.md) : Déployez vos applications sur le cloud.
+## API et Authentification
 
-### Bonus utiles
+<div class="dropdown">
+  <button class="dropbtn">REST ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/rest.html">Introduction à REST</a>
+    <a href="{{ site.baseurl }}">REST avancé</a>
+    <a href="{{ site.baseurl }}">REST expert</a>
+  </div>
+</div>
 
-- [Introduction à Flutter](./flutter.md) : Développez des applications mobiles.
-- [Introduction à GitHub](./github-intro.md) : Découvrez GitHub pour consulter ces cours et partager vos projets.
+<div class="dropdown">
+  <button class="dropbtn">GraphQL ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/graphql.html">Introduction à GrahQL</a>
+    <a href="{{ site.baseurl }}">GraphQL avancé</a>
+    <a href="{{ site.baseurl }}">GraphQL expert</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">oAuth2 ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/oauth2.html">Introduction à oAuth2</a>
+    <a href="{{ site.baseurl }}">oAuth2 avancé</a>
+    <a href="{{ site.baseurl }}">oAuth2 expert</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">DEVOPS ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/docker.html">Introduction Docker</a>
+    <a href="{{ site.baseurl }}/ci-cd.html">Introduction CI/CD (Github Actions, Gitlab CI)</a>
+    <a href="{{ site.baseurl }}/linux.html">Introduction à Linux/Bash</a>
+    <a href="{{ site.baseurl }}/cloud.html">Introduction à services cloud (Firebase, AWS, Google Cloud, DigitalOcean...)</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">BONUS UTILES ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/flutter.html">Introduction à flutter</a>
+    <a href="{{ site.baseurl }}">Introduction à GitHub</a>
+  </div>
+</div>
 
 ---
 
@@ -136,10 +220,10 @@ Consultez les exemples sur GitHub :
   - Téléchargez les fichiers depuis GitHub.
   - HTML/JS : Ouvrez `index.html` dans un navigateur.
   - PHP : Lancez `php -S localhost:8200 -t public` dans le dossier `public`.
-- **Vos projets** : Lisez [Introduction à GitHub](./github-intro.md) pour créer un dépôt et pousser vos travaux.
+- **Vos projets** : Lisez [Introduction à GitHub]({{ site.baseurl }}/github-intro.html) pour créer un dépôt et pousser vos travaux.
 
 ---
 
 ## Contact
 
-Posez vos questions ! [Contact](contact.md)
+Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
