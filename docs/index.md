@@ -165,6 +165,8 @@ ___
   </div>
 </div>
 
+___
+
 <div class="dropdown">
   <button class="dropbtn">DEVOPS ▼</button>
   <div class="dropdown-content">
@@ -174,6 +176,8 @@ ___
     <a href="{{ site.baseurl }}/cloud.html">Introduction à services cloud (Firebase, AWS, Google Cloud, DigitalOcean...)</a>
   </div>
 </div>
+
+___
 
 <div class="dropdown">
   <button class="dropbtn">BONUS UTILES ▼</button>
