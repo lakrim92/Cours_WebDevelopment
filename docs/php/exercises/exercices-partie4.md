@@ -82,4 +82,4 @@ et partagez l’URL avec votre professeur.
 Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 
 
-[retour](/php/php.html)
+[retour]({{ site.baseurl }}/php/php.html)
