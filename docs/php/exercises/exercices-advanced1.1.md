@@ -10,7 +10,7 @@ title: Extensions PHP pour VS Code
 
 **Objectif** : Créer une application Laravel qui affiche une liste d’utilisateurs en utilisant l’architecture MVC.
 
-### Instructions :
+## Instructions :
 
 1. Créez un projet Laravel nommé `user-management`.
 2. Générez un modèle `User` avec une migration et un contrôleur RESTful.
@@ -21,12 +21,12 @@ title: Extensions PHP pour VS Code
 7. Ajoutez une route pour accéder à la liste des utilisateurs.
 8. Testez en insérant manuellement des utilisateurs dans la base et en vérifiant l’affichage à `/users`.
 
-### Livrables :
+## Livrables :
 
 - Fichiers : modèle, contrôleur, vue, migration, routes.
 - Capture d’écran de la page `/users`.
 
-### Critères d’évaluation :
+## Critères d’évaluation :
 
 - Projet fonctionnel.
 - Modèle configuré correctement.
@@ -40,7 +40,7 @@ title: Extensions PHP pour VS Code
 
 **Objectif** : Permettre l’ajout d’un utilisateur via un formulaire, en utilisant Eloquent.
 
-### Instructions :
+## Instructions :
 
 - Ajoutez une méthode dans le contrôleur pour afficher un formulaire d’ajout d’utilisateur.
 - Créez une vue avec un formulaire pour saisir `name` et `email` (avec protection CSRF).
@@ -48,12 +48,12 @@ title: Extensions PHP pour VS Code
 - Ajoutez les routes pour afficher et traiter le formulaire.
 - Testez l’ajout en soumettant le formulaire et en vérifiant la liste des utilisateurs.
 
-### Livrables :
+## Livrables :
 
 - Fichiers : contrôleur, vue, routes.
 - Capture d’écran du formulaire et de la liste mise à jour.
 
-### Critères d’évaluation :
+## Critères d’évaluation :
 
 - Formulaire avec protection CSRF.
 - Création d’utilisateur via Eloquent.
@@ -66,13 +66,13 @@ title: Extensions PHP pour VS Code
 
 **Objectif** : Ajouter une fonctionnalité de recherche par nom avec Eloquent.
 
-### Instructions :
+## Instructions :
 
 1. Modifiez le contrôleur pour accepter un paramètre de recherche (`search`) via GET et filtrer les utilisateurs par nom.
 2. Ajoutez un formulaire de recherche dans la vue de la liste des utilisateurs.
 3. Testez la recherche en filtrant par un nom partiel et en vérifiant l’affichage de tous les utilisateurs sans recherche.
 
-### Livrables :
+## Livrables :
 
 - Fichiers : contrôleur, vue.
 - Capture d’écran avec et sans recherche.
@@ -89,7 +89,7 @@ title: Extensions PHP pour VS Code
 
 **Objectif** : Permettre la modification et la suppression d’utilisateurs via Eloquent.
 
-### Instructions :
+## Instructions :
 
 - Ajoutez des méthodes dans le contrôleur pour afficher un formulaire de modification et traiter la mise à jour d’un utilisateur.
 - Créez une vue pour le formulaire de modification.
@@ -98,12 +98,12 @@ title: Extensions PHP pour VS Code
 - Ajoutez les routes pour la modification et la suppression.
 - Testez la modification et la suppression d’un utilisateur.
 
-### Livrables :
+## Livrables :
 
 - Fichiers : contrôleur, vues, routes.
 - Capture d’écran du formulaire de modification et de la liste avec boutons.
 
-### Critères d’évaluation :
+## Critères d’évaluation :
 
 - Modification et suppression via Eloquent.
 - Formulaire de modification avec méthode PUT.
@@ -112,7 +112,7 @@ title: Extensions PHP pour VS Code
 
 ---
 
-### Instructions générales :
+## Instructions générales :
 
 - Utilisez un projet Laravel nommé `user-management`.
 - Testez dans un navigateur (ex. : Chrome).
