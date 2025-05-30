@@ -74,28 +74,71 @@
 <p><strong>Partie 4 : Projet en groupe – Application de gestion d’utilisateurs</strong></p>
 <hr />
 <h1 id="partie-1--architecture-mvc-et-eloquent">Partie 1 : Architecture MVC et Eloquent</h1>
-<h2 id="architecture-mvc">Architecture MVC</h2>
-<p><strong>MVC</strong> (Model-View-Controller) organise le code :</p>
+<h1 id="comprendre-larchitecture-mvc-model-view-controller">🧠 Comprendre l’Architecture MVC (Model-View-Controller)</h1>
+<p>L’architecture <strong>MVC</strong> est une manière d’organiser le code d’une application web pour le rendre <strong>plus clair, structuré et maintenable</strong>.</p>
+<p>Elle se compose de <strong>trois couches</strong> principales :</p>
+<table>
+<thead>
+<tr>
+<th>Composant</th>
+<th>Rôle</th>
+<th>Exemple Laravel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Model</strong></td>
+<td>Gère les <strong>données</strong> (accès à la base, logique métier)</td>
+<td><code>app/Models/User.php</code></td>
+</tr>
+<tr>
+<td><strong>View</strong></td>
+<td>Affiche l’<strong>interface utilisateur</strong> (HTML + données dynamiques)</td>
+<td><code>resources/views/users/index.blade.php</code></td>
+</tr>
+<tr>
+<td><strong>Controller</strong></td>
+<td>Gère les <strong>actions de l’utilisateur</strong> et <strong>relie</strong> Model + View</td>
+<td><code>app/Http/Controllers/UserController.php</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="comment-fonctionne-mvc-">🔁 Comment fonctionne MVC ?</h2>
+<ol>
+<li><strong>L’utilisateur</strong> accède à une URL (ex : <code>/users</code>).</li>
+<li><strong>Le routeur</strong> appelle la méthode correspondante dans un <strong>contrôleur</strong>.</li>
+<li>Le <strong>contrôleur</strong> :
 <ul>
-<li>Model : Gère les données (base de données).</li>
-<li>View : Affiche l’interface utilisateur.</li>
-<li>Controller : Gère la logique et les requêtes.</li>
+<li>récupère les données via le <strong>modèle</strong> (ex : <code>User::all()</code>),</li>
+<li>les transmet à une <strong>vue</strong> (ex : <code>users.index</code>).</li>
 </ul>
-<p>Exemple avec Laravel :</p>
-<h3 id="crez-un-projet-">1. Créez un projet :</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel user-management 
-<span class="nb">cd </span>user-management 
+</li>
+<li>La <strong>vue</strong> affiche les données à l’écran.</li>
+</ol>
+<hr />
+<h2 id="mise-en-pratique-avec-laravel">🚀 Mise en pratique avec Laravel</h2>
+<h3 id="cration-du-projet">1. Création du projet</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel user-management
+<span class="nb">cd </span>user-management
 php artisan serve
 </code></pre></div></div>
-<h3 id="crez-un-modle-et-un-contrleur-">2. Créez un modèle et un contrôleur :</h3>
+<blockquote>
+<p>Cela crée la structure du projet Laravel, et lance un serveur local sur <a href="http://localhost:8000">http://localhost:8000</a>.</p>
+</blockquote>
+<hr />
+<h3 id="gnrer-le-modle-le-contrleur-et-la-migration-">2. Générer le modèle, le contrôleur et la migration :</h3>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model User <span class="nt">-mcr</span>
 </code></pre></div></div>
 <ul>
-<li>-m : Crée une migration.</li>
-<li>-c : Crée un contrôleur.</li>
-<li>-r : Rend le contrôleur RESTful.</li>
+<li><code>User</code> est le nom du <strong>modèle</strong>.</li>
+<li><code>-m</code> : crée une <strong>migration</strong> (structure de la table <code>users</code>).</li>
+<li><code>-c</code> : crée un <strong>contrôleur</strong>.</li>
+<li><code>-r</code> : le contrôleur sera <strong>RESTful</strong> (avec les méthodes <code>index</code>, <code>create</code>, <code>store</code>, etc.)</li>
 </ul>
-<h3 id="exemple-de-contrleur-apphttpcontrollersusercontrollerphp-">3. Exemple de contrôleur (app/Http/Controllers/UserController.php) :</h3>
+<hr />
+<h3 id="exemple-de-contrleur">3. Exemple de Contrôleur</h3>
+<p>📄 <code>app/Http/Controllers/UserController.php</code></p>
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">App\Http\Controllers</span><span class="p">;</span>
 
 <span class="kn">use</span> <span class="nc">App\Models\User</span><span class="p">;</span>
@@ -105,118 +148,647 @@ php artisan serve
 <span class="p">{</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="nv">$users</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">all</span><span class="p">();</span>
-        <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'users.index'</span><span class="p">,</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">'users'</span><span class="p">));</span>
+        <span class="nv">$users</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">all</span><span class="p">();</span> <span class="c1">// Appel au Model</span>
+        <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'users.index'</span><span class="p">,</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">'users'</span><span class="p">));</span> <span class="c1">// Transmission à la View</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h3 id="exemple-de-vue-resourcesviewsusersindexbladephp-">4. Exemple de vue (resources/views/users/index.blade.php) :</h3>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Utilisateurs<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Liste des utilisateurs<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;ul&gt;</span>
+<hr />
+<h3 id="exemple-de-vue">4. Exemple de Vue</h3>
+<p>📄 <code>resources/views/users/index.blade.php</code></p>
+<pre><code class="language-blade">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Utilisateurs&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Liste des utilisateurs&lt;/h1&gt;
+    &lt;ul&gt;
         @foreach ($users as $user)
-            <span class="nt">&lt;li&gt;</span>{{ $user-&gt;name }}<span class="nt">&lt;/li&gt;</span>
+            &lt;li&gt;{{ $user-&gt;name }}&lt;/li&gt;
         @endforeach
-    <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<hr />
+<h3 id="ajouter-une-route-dans-coderouteswebphpcode">5. Ajouter une route dans <code>routes/web.php</code></h3>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">use</span> <span class="nc">App\Http\Controllers\UserController</span><span class="p">;</span>
+
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'index'</span><span class="p">]);</span>
 </code></pre></div></div>
-<h2 id="eloquent-orm">Eloquent ORM</h2>
-<p><strong>Eloquent</strong> simplifie les interactions avec la base de données. Exemple :</p>
-<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/Models/User.php</span>
-<span class="kn">namespace</span> <span class="nn">App\Models</span><span class="p">;</span>
+<blockquote>
+<p>En accédant à <code>http://localhost:8000/users</code>, Laravel appelle <code>UserController@index</code> qui récupère les utilisateurs et les envoie à la vue <code>users.index</code>.</p>
+</blockquote>
+<hr />
+<h2 id="rsum-pdagogique">📌 Résumé pédagogique</h2>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Emplacement</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td><code>app/Models/User.php</code></td>
+<td>Représente la table <code>users</code>, interagit avec la base</td>
+</tr>
+<tr>
+<td>View</td>
+<td><code>resources/views/users/index.blade.php</code></td>
+<td>Affiche les utilisateurs</td>
+</tr>
+<tr>
+<td>Controller</td>
+<td><code>app/Http/Controllers/UserController.php</code></td>
+<td>Coordonne l’affichage et les données</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="eloquent-orm">🧩 Eloquent ORM</h2>
+<p><strong>Eloquent</strong> est l’ORM (Object Relational Mapper) intégré de Laravel.<br />
+Il permet de manipuler les données de la base <strong>en utilisant des objets PHP</strong>, sans écrire de requêtes SQL brutes.</p>
+<hr />
+<h3 id="exemple--dfinir-un-modle">🛠 Exemple : Définir un modèle</h3>
+<p>📄 <code>app/Models/User.php</code></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">App\Models</span><span class="p">;</span>
 
 <span class="kn">use</span> <span class="nc">Illuminate\Database\Eloquent\Model</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nc">User</span> <span class="kd">extends</span> <span class="nc">Model</span>
 <span class="p">{</span>
+    <span class="c1">// Champs autorisés à l’insertion/mise à jour en masse</span>
     <span class="k">protected</span> <span class="nv">$fillable</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'email'</span><span class="p">];</span>
 <span class="p">}</span>
-
-<span class="c1">// Récupérer des utilisateurs</span>
-<span class="nv">$users</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">where</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'like'</span><span class="p">,</span> <span class="s1">'%John%'</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">();</span>
 </code></pre></div></div>
-<h3 id="exercice-11--liste-dutilisateurs-avec-mvc">Exercice 1.1 : Liste d’utilisateurs avec MVC</h3>
+<blockquote>
+<p><code>fillable</code> empêche les failles de type &quot;Mass Assignment&quot; en ne permettant que certains champs à être remplis lors d’un enregistrement ou d’une mise à jour.</p>
+</blockquote>
+<hr />
+<h3 id="rcuprer-des-utilisateurs-avec-eloquent">🔍 Récupérer des utilisateurs avec Eloquent</h3>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$users</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">where</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'like'</span><span class="p">,</span> <span class="s1">'%John%'</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">();</span>
+</code></pre></div></div>
+<blockquote>
+<p>Cela renvoie tous les utilisateurs dont le nom contient &quot;John&quot;.</p>
+</blockquote>
+<hr />
+<h3 id="autres-exemples-utiles">📘 Autres exemples utiles</h3>
+<h4 id="crer-un-utilisateur">🔹 Créer un utilisateur</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">User</span><span class="o">::</span><span class="nf">create</span><span class="p">([</span>
+    <span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'Jean Dupont'</span><span class="p">,</span>
+    <span class="s1">'email'</span> <span class="o">=&gt;</span> <span class="s1">'jean@example.com'</span><span class="p">,</span>
+<span class="p">]);</span>
+</code></pre></div></div>
+<h4 id="trouver-un-utilisateur-par-id">🔹 Trouver un utilisateur par ID</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$user</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">find</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div></div>
+<h4 id="mettre--jour-un-utilisateur">🔹 Mettre à jour un utilisateur</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$user</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">find</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="nf">update</span><span class="p">([</span><span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'Jean Modifié'</span><span class="p">]);</span>
+</code></pre></div></div>
+<h4 id="supprimer-un-utilisateur">🔹 Supprimer un utilisateur</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$user</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">find</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="nb">delete</span><span class="p">();</span>
+</code></pre></div></div>
+<hr />
+<h2 id="rsum-pdagogique-1">🧠 Résumé pédagogique</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Code Eloquent</th>
+<th>Equivalent SQL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lire tous les users</td>
+<td><code>User::all()</code></td>
+<td><code>SELECT * FROM users;</code></td>
+</tr>
+<tr>
+<td>Lire avec filtre</td>
+<td><code>User::where('name', 'like', '%John%')-&gt;get()</code></td>
+<td><code>SELECT * FROM users WHERE name LIKE '%John%';</code></td>
+</tr>
+<tr>
+<td>Créer</td>
+<td><code>User::create([...])</code></td>
+<td><code>INSERT INTO users (...) VALUES (...);</code></td>
+</tr>
+<tr>
+<td>Modifier</td>
+<td><code>$user-&gt;update([...])</code></td>
+<td><code>UPDATE users SET ... WHERE id = ...;</code></td>
+</tr>
+<tr>
+<td>Supprimer</td>
+<td><code>$user-&gt;delete()</code></td>
+<td><code>DELETE FROM users WHERE id = ...;</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>✨ Avec Eloquent, on travaille <strong>directement avec des objets</strong> plutôt qu'avec des lignes SQL, ce qui rend le code plus lisible, réutilisable et sûr.</p>
+</blockquote>
+<h2 id="exercices-">Exercices :</h2>
 <p><strong>À vous de jouer</strong> <a href="/php/exercises/exercices-advanced1.1.html">Exercices</a></p>
 <hr />
-<h1 id="partie-2--scurit-et-validation">Partie 2 : Sécurité et validation</h1>
-<h2 id="scurit">Sécurité</h2>
-<p>Protégez votre application contre :</p>
-<ul>
-<li><em><strong>XSS</strong></em> : Utilisez la syntaxe Blade  {{ $variable }}  pour échapper les sorties.</li>
-<li><em><strong>CSRF</strong></em> : Laravel inclut un token CSRF par défaut dans les formulaires (@csrf).</li>
-<li><em><strong>Injection SQL</strong></em> : Utilisez Eloquent ou des requêtes préparées.</li>
-</ul>
-<p>Exemple de formulaire sécurisé :</p>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">action=</span><span class="s">"/users"</span><span class="nt">&gt;</span>
+<h2 id="partie-2--scurit-et-validation">🛡️ Partie 2 : Sécurité et validation</h2>
+<h3 id="scurit-dans-laravel">🔒 Sécurité dans Laravel</h3>
+<p>Laravel propose plusieurs mécanismes intégrés pour protéger votre application web :</p>
+<table>
+<thead>
+<tr>
+<th>Type d'attaque</th>
+<th>Protection dans Laravel</th>
+<th>Explication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>XSS</strong> (Cross-Site Scripting)</td>
+<td><code>{{ $variable }}</code></td>
+<td>Échappe automatiquement le HTML pour éviter l’injection de scripts</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong> (Cross-Site Request Forgery)</td>
+<td><code>@csrf</code></td>
+<td>Génère un token CSRF dans les formulaires pour bloquer les requêtes non autorisées</td>
+</tr>
+<tr>
+<td><strong>Injection SQL</strong></td>
+<td>Eloquent ORM ou Query Builder</td>
+<td>Utilise des requêtes préparées automatiquement</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="exemple-de-formulaire-scuris">✅ Exemple de formulaire sécurisé</h3>
+<pre><code class="language-blade">&lt;form method=&quot;POST&quot; action=&quot;/users&quot;&gt;
     @csrf
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">required</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">required</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Ajouter<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span>```
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; required&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; required&gt;
+    &lt;button type=&quot;submit&quot;&gt;Ajouter&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<blockquote>
+<p>Ce formulaire est sécurisé contre les attaques CSRF et XSS grâce aux protections automatiques de Laravel.</p>
+</blockquote>
+<hr />
+<h2 id="validation">✅ Validation</h2>
+<p>Laravel permet de <strong>valider les données côté serveur</strong> très facilement via la méthode <code>validate()</code> sur l’objet <code>Request</code>.</p>
+<hr />
+<h3 id="exemple-de-validation-dans-un-contrleur">📄 Exemple de validation dans un contrôleur</h3>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/Http/Controllers/UserController.php</span>
 
-## Validation
+<span class="k">public</span> <span class="k">function</span> <span class="n">store</span><span class="p">(</span><span class="kt">Request</span> <span class="nv">$request</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$validated</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="nf">validate</span><span class="p">([</span>
+        <span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'required|string|max:255'</span><span class="p">,</span>
+        <span class="s1">'email'</span> <span class="o">=&gt;</span> <span class="s1">'required|email|unique:users,email'</span><span class="p">,</span>
+    <span class="p">]);</span>
 
-Validez les entrées avec Laravel :
+    <span class="nc">User</span><span class="o">::</span><span class="nf">create</span><span class="p">(</span><span class="nv">$validated</span><span class="p">);</span>
 
-```php
-// app/Http/Controllers/UserController.php
-public function store(Request $request)
-{
-    $validated = $request-&gt;validate([
-        'name' =&gt; 'required|string|max:255',
-        'email' =&gt; 'required|email|unique:users,email',
-    ]);
-    User::create($validated);
-    return redirect('/users');
-}
+    <span class="k">return</span> <span class="nf">redirect</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></div>
-<h3 id="exercice-21--formulaire-scuris">Exercice 2.1 : Formulaire sécurisé</h3>
+<blockquote>
+<p>Si la validation échoue, Laravel <strong>redirige automatiquement</strong> vers le formulaire avec les <strong>messages d’erreurs</strong> prêts à afficher.</p>
+</blockquote>
+<hr />
+<h3 id="rgles-de-validation-courantes">📌 Règles de validation courantes</h3>
+<table>
+<thead>
+<tr>
+<th>Règle</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>required</code></td>
+<td>Le champ est obligatoire</td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td>Le champ doit être une chaîne de caractères</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>Doit être un email valide</td>
+</tr>
+<tr>
+<td><code>unique:table,column</code></td>
+<td>Doit être unique dans la table</td>
+</tr>
+<tr>
+<td><code>max:255</code></td>
+<td>Longueur maximale de 255 caractères</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="exercice-21--formulaire-scuris">🎯 Exercice 2.1 : Formulaire sécurisé</h3>
+<p>Créez un formulaire d’ajout d’utilisateur avec :</p>
+<ul>
+<li>Un champ <code>name</code> obligatoire.</li>
+<li>Un champ <code>email</code> obligatoire, valide, et unique.</li>
+<li>Protection CSRF.</li>
+<li>Validation dans le contrôleur.</li>
+<li>Affichage des erreurs dans la vue si la validation échoue.</li>
+</ul>
+<pre><code class="language-blade">&lt;!-- resources/views/users/create.blade.php --&gt;
+&lt;form method=&quot;POST&quot; action=&quot;/users&quot;&gt;
+    @csrf
+
+    &lt;label&gt;Nom&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;{{ old('name') }}&quot;&gt;
+    @error('name')
+        &lt;div&gt;{{ $message }}&lt;/div&gt;
+    @enderror
+
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; value=&quot;{{ old('email') }}&quot;&gt;
+    @error('email')
+        &lt;div&gt;{{ $message }}&lt;/div&gt;
+    @enderror
+
+    &lt;button type=&quot;submit&quot;&gt;Enregistrer&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<hr />
+<blockquote>
+<p>💡 Utilisez <code>old('field')</code> pour <strong>préremplir les champs</strong> après une validation échouée, et <code>@error('field')</code> pour afficher les messages d’erreurs.</p>
+</blockquote>
+<hr />
+<h2 id="partie-22--gestion-des-erreurs-et-messages-flash">🧩 Partie 2.2 : Gestion des erreurs et messages flash</h2>
+<p>Après validation, il est important de <strong>guider l’utilisateur</strong> à travers des messages clairs en cas d’erreur ou de succès.</p>
+<hr />
+<h3 id="affichage-des-erreurs-de-validation">🛑 Affichage des erreurs de validation</h3>
+<p>Laravel redirige automatiquement avec les <strong>erreurs dans la variable globale <code>$errors</code></strong>.</p>
+<pre><code class="language-blade">&lt;!-- Exemple d'affichage global en haut du formulaire --&gt;
+@if ($errors-&gt;any())
+    &lt;div class=&quot;alert alert-danger&quot;&gt;
+        &lt;ul&gt;
+            @foreach ($errors-&gt;all() as $error)
+                &lt;li&gt;{{ $error }}&lt;/li&gt;
+            @endforeach
+        &lt;/ul&gt;
+    &lt;/div&gt;
+@endif
+</code></pre>
+<hr />
+<h3 id="messages-flash-de-succs">✅ Messages flash de succès</h3>
+<p>Laravel permet d’<strong>envoyer un message flash</strong> à la session après une action réussie (ex. : ajout d’un utilisateur).</p>
+<h4 id="dans-le-contrleur-">Dans le contrôleur :</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nf">redirect</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">with</span><span class="p">(</span><span class="s1">'success'</span><span class="p">,</span> <span class="s1">'Utilisateur ajouté avec succès.'</span><span class="p">);</span>
+</code></pre></div></div>
+<h4 id="dans-la-vue-ex-codeusersindexbladephpcode-">Dans la vue (ex. <code>users/index.blade.php</code>) :</h4>
+<pre><code class="language-blade">@if (session('success'))
+    &lt;div class=&quot;alert alert-success&quot;&gt;
+        {{ session('success') }}
+    &lt;/div&gt;
+@endif
+</code></pre>
+<hr />
+<h3 id="bonnes-pratiques">💡 Bonnes pratiques</h3>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Pourquoi ?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@error('field')</code></td>
+<td>Afficher l’erreur près du champ concerné</td>
+</tr>
+<tr>
+<td><code>old('field')</code></td>
+<td>Ne pas perdre les données déjà remplies</td>
+</tr>
+<tr>
+<td><code>session('success')</code></td>
+<td>Informer l’utilisateur après une action réussie</td>
+</tr>
+<tr>
+<td><code>session('error')</code> (option)</td>
+<td>Afficher un message d’échec général</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="exemple-complet-avec-messages">📌 Exemple complet avec messages</h3>
+<pre><code class="language-blade">&lt;!-- Formulaire avec messages globaux --&gt;
+@if ($errors-&gt;any())
+    &lt;div class=&quot;alert alert-danger&quot;&gt;
+        &lt;ul&gt;
+            @foreach ($errors-&gt;all() as $error)
+                &lt;li&gt;{{ $error }}&lt;/li&gt;
+            @endforeach
+        &lt;/ul&gt;
+    &lt;/div&gt;
+@endif
+
+@if (session('success'))
+    &lt;div class=&quot;alert alert-success&quot;&gt;
+        {{ session('success') }}
+    &lt;/div&gt;
+@endif
+
+&lt;form method=&quot;POST&quot; action=&quot;/users&quot;&gt;
+    @csrf
+
+    &lt;label&gt;Nom&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;{{ old('name') }}&quot;&gt;
+    @error('name')
+        &lt;div&gt;{{ $message }}&lt;/div&gt;
+    @enderror
+
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; value=&quot;{{ old('email') }}&quot;&gt;
+    @error('email')
+        &lt;div&gt;{{ $message }}&lt;/div&gt;
+    @enderror
+
+    &lt;button type=&quot;submit&quot;&gt;Ajouter&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<hr />
+<blockquote>
+<p>🧠 Astuce : Tu peux styliser ces messages avec Tailwind (<code>bg-red-100</code>, <code>text-green-600</code>) ou Bootstrap (<code>alert alert-danger</code>, <code>alert-success</code>) selon ton framework CSS.</p>
+</blockquote>
+<h2 id="partie-23--authentification-avec-laravel-breeze">🔐 Partie 2.3 : Authentification avec Laravel Breeze</h2>
+<p>Laravel propose plusieurs solutions d’authentification clé en main. La plus simple pour démarrer est <strong>Laravel Breeze</strong>.</p>
+<hr />
+<h3 id="installation-de-breeze">🚀 Installation de Breeze</h3>
+<p>Installe le package via Composer :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require laravel/breeze <span class="nt">--dev</span>
+</code></pre></div></div>
+<p>Génère les fichiers nécessaires :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan breeze:install
+</code></pre></div></div>
+<p>Installe les dépendances front-end et compile :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="o">&amp;&amp;</span> npm run dev
+</code></pre></div></div>
+<p>Lance la migration pour créer les tables des utilisateurs :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan migrate
+</code></pre></div></div>
+<hr />
+<h3 id="ce-que-breeze-installe-pour-toi">🧪 Ce que Breeze installe pour toi</h3>
+<ul>
+<li>Routes d’authentification (<code>/login</code>, <code>/register</code>, <code>/logout</code>, etc.)</li>
+<li>Contrôleurs pour gérer l’authentification</li>
+<li>Vues Blade (ou Inertia/Vue selon l’option choisie)</li>
+<li>Middleware <code>auth</code> pour sécuriser les routes</li>
+</ul>
+<hr />
+<h3 id="exemple-dutilisation">🧭 Exemple d’utilisation</h3>
+<h4 id="protger-une-route-avec-lauthentification-">Protéger une route avec l’authentification :</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// routes/web.php</span>
+
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/dashboard'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'dashboard'</span><span class="p">);</span>
+<span class="p">})</span><span class="o">-&gt;</span><span class="nf">middleware</span><span class="p">([</span><span class="s1">'auth'</span><span class="p">]);</span>
+</code></pre></div></div>
+<h4 id="rediriger-lutilisateur-connect-">Rediriger l’utilisateur connecté :</h4>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">use</span> <span class="nc">Illuminate\Support\Facades\Auth</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nc">Auth</span><span class="o">::</span><span class="nf">check</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nf">redirect</span><span class="p">(</span><span class="s1">'/dashboard'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<hr />
+<h3 id="exemple--afficher-le-nom-de-lutilisateur-connect">🧩 Exemple : Afficher le nom de l'utilisateur connecté</h3>
+<pre><code class="language-blade">&lt;!-- resources/views/dashboard.blade.php --&gt;
+
+&lt;h1&gt;Bienvenue {{ Auth::user()-&gt;name }} !&lt;/h1&gt;
+&lt;a href=&quot;{{ route('logout') }}&quot;&gt;Se déconnecter&lt;/a&gt;
+</code></pre>
+<hr />
+<h3 id="bonus--liens-utiles">✨ Bonus : Liens utiles</h3>
+<ul>
+<li>Laravel Breeze : <a href="https://laravel.com/docs/breeze">laravel.com/docs/breeze</a></li>
+<li>Authentification avancée : Laravel Jetstream ou Laravel Fortify</li>
+</ul>
+<hr />
+<blockquote>
+<p>✅ Laravel Breeze est idéal pour les projets simples ou pour apprendre l’authentification dans Laravel.</p>
+</blockquote>
+<h2 id="partie-24--gestion-des-rles-et-permissions-avec-laravel">🛡️ Partie 2.4 : Gestion des rôles et permissions avec Laravel</h2>
+<p>Pour gérer les rôles (ex. : admin, utilisateur) et les permissions, il est recommandé d’utiliser un package comme <strong>Spatie Laravel Permission</strong>.</p>
+<hr />
+<h3 id="installation-du-package">🚀 Installation du package</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require spatie/laravel-permission
+</code></pre></div></div>
+<p>Publie la configuration et les migrations :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan vendor:publish <span class="nt">--provider</span><span class="o">=</span><span class="s2">"Spatie</span><span class="se">\P</span><span class="s2">ermission</span><span class="se">\P</span><span class="s2">ermissionServiceProvider"</span>
+php artisan migrate
+</code></pre></div></div>
+<hr />
+<h3 id="configuration-du-modle-user">🔧 Configuration du modèle User</h3>
+<p>Modifie ton modèle <code>User</code> pour utiliser le trait fourni par Spatie :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/Models/User.php</span>
+
+<span class="kn">namespace</span> <span class="nn">App\Models</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">Illuminate\Foundation\Auth\User</span> <span class="k">as</span> <span class="nc">Authenticatable</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Spatie\Permission\Traits\HasRoles</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">User</span> <span class="kd">extends</span> <span class="nc">Authenticatable</span>
+<span class="p">{</span>
+    <span class="kn">use</span> <span class="nc">HasRoles</span><span class="p">;</span>
+
+    <span class="c1">// autres propriétés et méthodes</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<hr />
+<h3 id="cration-des-rles-et-assignation">⚙️ Création des rôles et assignation</h3>
+<p>Tu peux créer des rôles et permissions dans un Seeder ou via un script :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">use</span> <span class="nc">Spatie\Permission\Models\Role</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Spatie\Permission\Models\Permission</span><span class="p">;</span>
+
+<span class="c1">// Création de rôles</span>
+<span class="nv">$adminRole</span> <span class="o">=</span> <span class="nc">Role</span><span class="o">::</span><span class="nf">create</span><span class="p">([</span><span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'admin'</span><span class="p">]);</span>
+<span class="nv">$userRole</span> <span class="o">=</span> <span class="nc">Role</span><span class="o">::</span><span class="nf">create</span><span class="p">([</span><span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'user'</span><span class="p">]);</span>
+
+<span class="c1">// Création de permissions</span>
+<span class="nv">$editArticles</span> <span class="o">=</span> <span class="nc">Permission</span><span class="o">::</span><span class="nf">create</span><span class="p">([</span><span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'edit articles'</span><span class="p">]);</span>
+<span class="nv">$deleteArticles</span> <span class="o">=</span> <span class="nc">Permission</span><span class="o">::</span><span class="nf">create</span><span class="p">([</span><span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'delete articles'</span><span class="p">]);</span>
+
+<span class="c1">// Assignation de permissions à un rôle</span>
+<span class="nv">$adminRole</span><span class="o">-&gt;</span><span class="nf">givePermissionTo</span><span class="p">(</span><span class="nv">$editArticles</span><span class="p">);</span>
+<span class="nv">$adminRole</span><span class="o">-&gt;</span><span class="nf">givePermissionTo</span><span class="p">(</span><span class="nv">$deleteArticles</span><span class="p">);</span>
+
+<span class="c1">// Assignation d’un rôle à un utilisateur</span>
+<span class="nv">$user</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">find</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="nf">assignRole</span><span class="p">(</span><span class="s1">'admin'</span><span class="p">);</span>
+</code></pre></div></div>
+<hr />
+<h3 id="protection-des-routes-selon-rlepermission">🔐 Protection des routes selon rôle/permission</h3>
+<p>Tu peux protéger les routes ainsi :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Route</span><span class="o">::</span><span class="nf">group</span><span class="p">([</span><span class="s1">'middleware'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'role:admin'</span><span class="p">]],</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/admin'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'admin.dashboard'</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nc">Route</span><span class="o">::</span><span class="nf">group</span><span class="p">([</span><span class="s1">'middleware'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'permission:edit articles'</span><span class="p">]],</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/articles/edit'</span><span class="p">,</span> <span class="s1">'ArticleController@edit'</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+<hr />
+<h3 id="vrifications-dans-les-vues-blade">👀 Vérifications dans les vues Blade</h3>
+<pre><code class="language-blade">@role('admin')
+    &lt;p&gt;Contenu réservé aux administrateurs&lt;/p&gt;
+@endrole
+
+@can('edit articles')
+    &lt;button&gt;Modifier un article&lt;/button&gt;
+@endcan
+</code></pre>
+<hr />
+<h3 id="documentation-officielle">📚 Documentation officielle</h3>
+<ul>
+<li><a href="https://spatie.be/docs/laravel-permission/v5/introduction">Spatie Laravel Permission</a></li>
+<li><a href="https://laravel.com/docs/middleware">Middleware Laravel</a></li>
+<li><a href="https://laravel.com/docs/blade#roles-and-permissions">Blade Directives</a></li>
+</ul>
+<hr />
+<blockquote>
+<p>✅ Cette méthode est robuste et largement utilisée dans la communauté Laravel pour gérer les autorisations avancées.</p>
+</blockquote>
+<h3 id="exercice-25--formulaire-scuris">Exercice 2.5 : Formulaire sécurisé</h3>
 <p>À vous de jouer <a href="/php/exercises/exercices-advanced2.1.html">Exercices</a></p>
 <hr />
 <h1 id="partie-3--api-rest-et-tests-avec-phpunit">Partie 3 : API REST et tests avec PHPUnit</h1>
-<h2 id="api-rest">API REST</h2>
-<p>Créez une API REST avec Laravel :</p>
-<ol>
-<li>Créez une route API (routes/api.php) :</li>
-</ol>
+<h2 id="quest-ce-quune-api-">Qu’est-ce qu’une API ?</h2>
+<p><strong>API</strong> signifie <em>Application Programming Interface</em> (Interface de Programmation Applicative).<br />
+C’est un ensemble de règles qui permet à des applications différentes de communiquer entre elles.</p>
+<ul>
+<li>Imagine une API comme un <strong>serveur</strong> qui reçoit des requêtes (demandes) et renvoie des réponses.</li>
+<li>Par exemple, une application mobile météo demande la météo à un serveur via une API, et reçoit les données en retour.</li>
+</ul>
+<h3 id="pourquoi-utiliser-une-api-">Pourquoi utiliser une API ?</h3>
+<ul>
+<li><strong>Séparation des responsabilités</strong> : Le backend (serveur) gère les données, le frontend (interface utilisateur) affiche ces données.</li>
+<li><strong>Interopérabilité</strong> : Différents clients (applications web, mobiles, autres serveurs) peuvent utiliser la même API.</li>
+<li><strong>Flexibilité</strong> : Le backend peut évoluer indépendamment de l’interface utilisateur.</li>
+</ul>
+<hr />
+<h2 id="les-api-rest">Les API REST</h2>
+<p><strong>REST</strong> (Representational State Transfer) est un style d’architecture pour construire des API.</p>
+<p>Les principes clés de REST sont :</p>
+<ul>
+<li>
+<p>Utiliser les <strong>méthodes HTTP</strong> pour indiquer l’action à faire :</p>
+<ul>
+<li><code>GET</code> : récupérer des données</li>
+<li><code>POST</code> : créer des données</li>
+<li><code>PUT</code> / <code>PATCH</code> : modifier des données</li>
+<li><code>DELETE</code> : supprimer des données</li>
+</ul>
+</li>
+<li>
+<p>Avoir des <strong>URL claires</strong> représentant les ressources, par exemple <code>/users</code> pour accéder aux utilisateurs.</p>
+</li>
+<li>
+<p>Utiliser le format <strong>JSON</strong> pour échanger les données, car il est léger et facile à lire.</p>
+</li>
+</ul>
+<hr />
+<h2 id="exemple--crer-une-api-rest-avec-laravel">Exemple : créer une API REST avec Laravel</h2>
+<h3 id="dfinir-les-routes-api">1. Définir les routes API</h3>
+<p>Dans Laravel, les routes pour l’API sont définies dans <code>routes/api.php</code>.<br />
+Exemple :</p>
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">use</span> <span class="nc">App\Http\Controllers\UserController</span><span class="p">;</span>
 
-<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'index'</span><span class="p">]);</span>
-<span class="nc">Route</span><span class="o">::</span><span class="nf">post</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'store'</span><span class="p">]);</span>
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'index'</span><span class="p">]);</span> <span class="c1">// Liste tous les utilisateurs</span>
+<span class="nc">Route</span><span class="o">::</span><span class="nf">post</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'store'</span><span class="p">]);</span> <span class="c1">// Crée un nouvel utilisateur</span>
 </code></pre></div></div>
-<ol start="2">
-<li>Exemple de réponse JSON :</li>
-</ol>
-<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/Http/Controllers/UserController.php</span>
-
-<span class="kn">namespace</span> <span class="nn">App\Http\Controllers</span><span class="p">;</span>
+<h3 id="contrleur-pour-grer-les-requtes">2. Contrôleur pour gérer les requêtes</h3>
+<p>Dans <code>app/Http/Controllers/UserController.php</code>, on écrit les fonctions pour répondre à ces requêtes :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">App\Http\Controllers</span><span class="p">;</span>
 
 <span class="kn">use</span> <span class="nc">App\Models\User</span><span class="p">;</span>
 <span class="kn">use</span> <span class="nc">Illuminate\Http\JsonResponse</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Http\Request</span><span class="p">;</span>
 
 <span class="kd">class</span> <span class="nc">UserController</span> <span class="kd">extends</span> <span class="nc">Controller</span>
 <span class="p">{</span>
+    <span class="c1">// Retourne tous les utilisateurs en JSON</span>
     <span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">():</span> <span class="kt">JsonResponse</span>
     <span class="p">{</span>
         <span class="k">return</span> <span class="nf">response</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">json</span><span class="p">(</span><span class="nc">User</span><span class="o">::</span><span class="nf">all</span><span class="p">());</span>
     <span class="p">}</span>
+
+    <span class="c1">// Crée un nouvel utilisateur avec les données reçues</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">store</span><span class="p">(</span><span class="kt">Request</span> <span class="nv">$request</span><span class="p">):</span> <span class="kt">JsonResponse</span>
+    <span class="p">{</span>
+        <span class="nv">$validated</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="nf">validate</span><span class="p">([</span>
+            <span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'required|string|max:255'</span><span class="p">,</span>
+            <span class="s1">'email'</span> <span class="o">=&gt;</span> <span class="s1">'required|email|unique:users,email'</span><span class="p">,</span>
+        <span class="p">]);</span>
+
+        <span class="nv">$user</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">create</span><span class="p">(</span><span class="nv">$validated</span><span class="p">);</span>
+
+        <span class="k">return</span> <span class="nf">response</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">json</span><span class="p">(</span><span class="nv">$user</span><span class="p">,</span> <span class="mi">201</span><span class="p">);</span> <span class="c1">// Code 201 = créé</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<p>Testez avec un outil comme Postman ou curl :</p>
+<h3 id="tester-lapi">Tester l'API</h3>
+<p>Vous pouvez tester votre API avec :</p>
+<ul>
+<li>Postman : un outil graphique pour envoyer des requêtes HTTP</li>
+<li>curl (ligne de commande) :</li>
+</ul>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:8000/api/users
 </code></pre></div></div>
-<h3 id="tests-avec-phpunit">Tests avec PHPUnit</h3>
-<p>Laravel utilise <strong>PHPUnit</strong> pour les tests. Exemple :</p>
-<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// tests/Feature/UserTest.php</span>
-
-<span class="kn">namespace</span> <span class="nn">Tests\Feature</span><span class="p">;</span>
+<p>Cette commande envoie une requête GET pour récupérer la liste des utilisateurs.</p>
+<h3 id="rsum">Résumé</h3>
+<ul>
+<li>Une API REST permet à différentes applications d’échanger des données via des requêtes HTTP.</li>
+<li>Laravel facilite la création d’API avec des routes, contrôleurs et modèles.</li>
+<li>Les données sont souvent échangées en JSON.</li>
+<li>Tester avec Postman ou curl est essentiel pour vérifier que l’API fonctionne bien.</li>
+</ul>
+<h3 id="bonus--pourquoi-scuriser-une-api-">Bonus : Pourquoi sécuriser une API ?</h3>
+<p>Une API ouverte sans protection peut être utilisée abusivement.
+Laravel propose des mécanismes comme :</p>
+<ul>
+<li>Authentification (ex : tokens JWT, OAuth)</li>
+<li>Validation des données pour éviter les erreurs ou injections malveillantes</li>
+</ul>
+<h3 id="exercice-31-">Exercice 3.1 :</h3>
+<p>À vous de jouer <a href="/php/exercises/exercices-advanced2.1.html">Exercices</a></p>
+<hr />
+<h1 id="partie-4--tests-automatiss-avec-phpunit">Partie 4 : Tests automatisés avec PHPUnit</h1>
+<h2 id="pourquoi-tester-une-api-">Pourquoi tester une API ?</h2>
+<ul>
+<li><strong>Assurer la qualité</strong> : Vérifier que l’API fonctionne correctement et retourne les bonnes données.</li>
+<li><strong>Éviter les régressions</strong> : Si tu modifies le code, les tests te disent si quelque chose casse.</li>
+<li><strong>Faciliter le développement</strong> : Tests automatisés = gain de temps, plus besoin de tester manuellement.</li>
+</ul>
+<hr />
+<h2 id="phpunit-dans-laravel">PHPUnit dans Laravel</h2>
+<p>Laravel utilise <strong>PHPUnit</strong>, un framework de test pour PHP, intégré et configuré par défaut.</p>
+<h3 id="o-crire-les-tests-">Où écrire les tests ?</h3>
+<ul>
+<li>Dans le dossier <code>tests/Feature</code> pour tester des fonctionnalités (ex : routes, API)</li>
+<li>Dans le dossier <code>tests/Unit</code> pour tester des unités de code plus petites (ex : méthodes, classes)</li>
+</ul>
+<hr />
+<h2 id="exemple--tester-lapi-users">Exemple : Tester l’API users</h2>
+<p>Crée un fichier <code>tests/Feature/UserTest.php</code> :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">Tests\Feature</span><span class="p">;</span>
 
 <span class="kn">use</span> <span class="nc">Illuminate\Foundation\Testing\RefreshDatabase</span><span class="p">;</span>
 <span class="kn">use</span> <span class="nc">Tests\TestCase</span><span class="p">;</span>
@@ -224,33 +796,57 @@ public function store(Request $request)
 
 <span class="kd">class</span> <span class="nc">UserTest</span> <span class="kd">extends</span> <span class="nc">TestCase</span>
 <span class="p">{</span>
-    <span class="kn">use</span> <span class="nc">RefreshDatabase</span><span class="p">;</span>
+    <span class="kn">use</span> <span class="nc">RefreshDatabase</span><span class="p">;</span> <span class="c1">// Rafraîchit la base de données pour chaque test</span>
 
     <span class="k">public</span> <span class="k">function</span> <span class="n">test_can_list_users</span><span class="p">():</span> <span class="kt">void</span>
     <span class="p">{</span>
+        <span class="c1">// Crée 3 utilisateurs en base de données</span>
         <span class="nc">User</span><span class="o">::</span><span class="nf">factory</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">count</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">create</span><span class="p">();</span>
 
+        <span class="c1">// Envoie une requête GET à l’API users</span>
         <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/api/users'</span><span class="p">);</span>
 
+        <span class="c1">// Vérifie que la réponse HTTP est 200 (OK)</span>
         <span class="nv">$response</span><span class="o">-&gt;</span><span class="nf">assertStatus</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+                <span class="c1">// Vérifie qu’il y a bien 3 éléments dans la réponse JSON</span>
                 <span class="o">-&gt;</span><span class="nf">assertJsonCount</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<p>Configurer les tests :</p>
+<h3 id="explications">Explications</h3>
+<ul>
+<li><code>use RefreshDatabase</code> : Laravel vide la base de données avant chaque test pour un environnement propre.</li>
+<li><code>User::factory()-&gt;count(3)-&gt;create()</code> : crée 3 utilisateurs fictifs avec les données par défaut.</li>
+<li><code>$this-&gt;get('/api/users')</code> : simule une requête HTTP GET vers <code>/api/users</code>.</li>
+<li><code>assertStatus(200)</code> : vérifie que la requête a réussi (code 200).</li>
+<li><code>assertJsonCount(3)</code> : vérifie que la réponse JSON contient exactement 3 éléments.</li>
+</ul>
+<h3 id="configurer-la-base-de-donnes-pour-les-tests">Configurer la base de données pour les tests</h3>
 <ol>
-<li>Créez une base de données de test (ex. : database/database.sqlite).</li>
-<li>Mettez à jour .env :</li>
+<li>Crée une base SQLite pour les tests (fichier <code>database/database.sqlite</code>) :</li>
 </ol>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DB_CONNECTION=sqlite 
-DB_DATABASE=database/database.sqlite
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">touch </span>database/database.sqlite
 </code></pre></div></div>
-<ol start="3">
-<li>Exécutez :</li>
+<ol start="2">
+<li>Dans le fichier <code>.env.testing</code> (ou <code>.env</code> si tu testes directement), configure la base de données :</li>
 </ol>
+<pre><code class="language-env">DB_CONNECTION=sqlite
+DB_DATABASE=/full/path/to/database/database.sqlite
+</code></pre>
+<h3 id="lancer-les-test">Lancer les test</h3>
+<p>Pour exécuter tous les tests, lance la commande :</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan <span class="nb">test</span>
 </code></pre></div></div>
-<h3 id="exercice-31--api-et-tests">Exercice 3.1 : API et tests</h3>
+<p>Ou directement PHPUnit:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/phpunit
+</code></pre></div></div>
+<p>Laravel affichera un rapport des tests passés ou échoués.</p>
+<h3 id="pourquoi-crire-des-tests-">Pourquoi écrire des tests ?</h3>
+<ul>
+<li>Tu gagnes en confiance lors des modifications</li>
+<li>Tu détectes rapidement les bugs</li>
+<li>Tu peux automatiser ces tests dans un système d’intégration continue (CI/CD)</li>
+</ul>
 <p>À vous de jouer <a href="/php/exercises/exercices-advanced3.1.html">Exercices</a></p>
 <hr />
 <h1 id="partie-4--projet-en-groupe--application-de-gestion-dutilisateurs">Partie 4 : Projet en groupe – Application de gestion d’utilisateurs</h1>
