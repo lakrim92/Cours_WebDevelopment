@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cours de Développement Web | Cours Web Development</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Cours de Développement Web | Cours Web Development</title>
 <meta name="generator" content="Jekyll v3.10.0" />
@@ -206,11 +212,29 @@
 </div>
 <div class="section-container">
 <h3>Barèmes de Notation</h3>
-<ul>
-<li>HTML, CSS, JavaScript : <a href="/grading/html-css-js-exercises.html">Exercices</a> | <a href="/grading/html-css-js-project.html">Projet</a></li>
-<li>PHP : <a href="/grading/php-exercises.html">Exercices</a> | <a href="/grading/php-project.html">Projet</a></li>
-<li>JavaScript : <a href="/grading/javascript-exercises.html">Exercices</a> | <a href="/grading/javascript-project.html">Projet</a></li>
-</ul>
+<div class="dropdown-container">
+<div class="dropdown">
+  <button class="dropbtn">HTML CSS JS ▼</button>
+  <div class="dropdown-content">
+    <a href="/grading/html-css-js-exercises.html">Introduction à HTML-CSS-JS exercices</a>
+    <a href="/grading/html-css-js-project.html">Introduction à HTML-CSS-JS projet</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">PHP ▼</button>
+  <div class="dropdown-content">
+    <a href="/grading/php-exercises.html">Introduction à PHP exercices</a>
+    <a href="/grading/php-project.html">Introduction à PHP projet</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">JAVASCRIPT ▼</button>
+  <div class="dropdown-content">
+    <a href="/grading/javascript-exercises.html">Introduction à Javascript exercices</a>
+    <a href="/grading/javascript-project.html">Introduction à Javascript projet</a>
+  </div>
+</div>
+</div>
 </div>
 <div class="section-container">
 <h3>Instructions</h3>
@@ -228,7 +252,7 @@
 </div>
 <div class="section-container">
 <h3>Contact</h3>
-Posez vos questions ! [Contact](/contact.html)
+Posez vos questions ! <a href="/contact.html">Contact</a>
 </div>
 
     </div>

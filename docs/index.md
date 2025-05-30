@@ -203,10 +203,31 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 <div class="section-container">
 <h3>Barèmes de Notation</h3>
+<div class="dropdown-container">
+<div class="dropdown">
+  <button class="dropbtn">HTML CSS JS ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/grading/html-css-js-exercises.html">Introduction à HTML-CSS-JS exercices</a>
+    <a href="{{ site.baseurl }}/grading/html-css-js-project.html">Introduction à HTML-CSS-JS projet</a>
+  </div>
+</div>
 
-- HTML, CSS, JavaScript : [Exercices]({{ site.baseurl }}/grading/html-css-js-exercises.html) | [Projet]({{ site.baseurl }}/grading/html-css-js-project.html)
-- PHP : [Exercices]({{ site.baseurl }}/grading/php-exercises.html) | [Projet]({{ site.baseurl }}/grading/php-project.html)
-- JavaScript : [Exercices]({{ site.baseurl }}/grading/javascript-exercises.html) | [Projet]({{ site.baseurl }}/grading/javascript-project.html)
+<div class="dropdown">
+  <button class="dropbtn">PHP ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/grading/php-exercises.html">Introduction à PHP exercices</a>
+    <a href="{{ site.baseurl }}/grading/php-project.html">Introduction à PHP projet</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">JAVASCRIPT ▼</button>
+  <div class="dropdown-content">
+    <a href="{{ site.baseurl }}/grading/javascript-exercises.html">Introduction à Javascript exercices</a>
+    <a href="{{ site.baseurl }}/grading/javascript-project.html">Introduction à Javascript projet</a>
+  </div>
+</div>
+</div>
 </div>
 
 <div class="section-container">
@@ -222,5 +243,5 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 <div class="section-container">
 <h3>Contact</h3>
-Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
+Posez vos questions ! <a href="{{ site.baseurl }}/contact.html">Contact</a>
 </div>
