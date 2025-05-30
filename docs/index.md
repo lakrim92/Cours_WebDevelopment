@@ -57,7 +57,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
   <button class="dropbtn">PHP ▼</button>
   <div class="dropdown-content">
     <a href="{{ site.baseurl }}/php/php.html">Introduction PHP</a>
-    <a href="{{ site.baseurl }}">PHP avancé</a>
+    <a href="{{ site.baseurl }}/php/php-advanced.html">PHP avancé</a>
     <a href="{{ site.baseurl }}">PHP expert</a>
   </div>
 </div>

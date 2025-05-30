@@ -1,3 +1,7 @@
+---
+layout: default
+title: Extensions PHP pour VS Code
+---
 
 # Support de cours : PHP Avancé
 
@@ -54,7 +58,9 @@ Exemple avec Laravel :
 ### 1. Créez un projet :
 
 ```bash
-composer create-project laravel/laravel user-management cd user-management php artisan serve
+composer create-project laravel/laravel user-management 
+cd user-management 
+php artisan serve
 ```
 
 ### 2. Créez un modèle et un contrôleur :
@@ -70,26 +76,65 @@ php artisan make:model User -mcr
 ### 3. Exemple de contrôleur (app/Http/Controllers/UserController.php) :
 
 ```php
-namespace App\Http\Controllers; use App\Models\User; use Illuminate\Http\Request; class UserController extends Controller { public function index() { $users = User::all(); return view('users.index', compact('users')); } }
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    public function index()
+    {
+        $users = User::all();
+        return view('users.index', compact('users'));
+    }
+}
 ```
 
 ### 4. Exemple de vue (resources/views/users/index.blade.php) : 
 
+{% raw %}
 ```html
-<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <title>Utilisateurs</title> </head> <body> <h1>Liste des utilisateurs</h1> <ul> @foreach ($users as $user) <li>{{ $user->name }}</li> @endforeach </ul> </body> </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Utilisateurs</title>
+</head>
+<body>
+    <h1>Liste des utilisateurs</h1>
+    <ul>
+        @foreach ($users as $user)
+            <li>{{ $user->name }}</li>
+        @endforeach
+    </ul>
+</body>
+</html>
 ```
+{% endraw %}
 
 ## Eloquent ORM
 
 **Eloquent** simplifie les interactions avec la base de données. Exemple :
 
 ```php
-// app/Models/User.php namespace App\Models; use Illuminate\Database\Eloquent\Model; class User extends Model { protected $fillable = ['name', 'email']; } // Récupérer des utilisateurs $users = User::where('name', 'like', '%John%')->get();
+// app/Models/User.php
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    protected $fillable = ['name', 'email'];
+}
+
+// Récupérer des utilisateurs
+$users = User::where('name', 'like', '%John%')->get();
 ```
 
 ### Exercice 1.1 : Liste d’utilisateurs avec MVC
 
-À vous de jouer [Exercices](./php/exercises/exercices-advanced1.1.md)
+**À vous de jouer** [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced1.1.html)
 
 ___
 
@@ -98,27 +143,40 @@ ___
 ## Sécurité
 
 Protégez votre application contre :
-- ***XSS*** : Utilisez la syntaxe Blade {{ $variable }} pour échapper les sorties. 
+- ***XSS*** : Utilisez la syntaxe Blade {% raw %} {{ $variable }} {% endraw %} pour échapper les sorties. 
 - ***CSRF*** : Laravel inclut un token CSRF par défaut dans les formulaires (@csrf). 
 - ***Injection SQL*** : Utilisez Eloquent ou des requêtes préparées. 
 
 Exemple de formulaire sécurisé :
 
 ```html
-<form method="POST" action="/users"> @csrf <input type="text" name="name" required> <input type="email" name="email" required> <button type="submit">Ajouter</button> </form>
-```
+<form method="POST" action="/users">
+    @csrf
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <button type="submit">Ajouter</button>
+</form>```
 
 ## Validation
 
 Validez les entrées avec Laravel :
 
 ```php
-// app/Http/Controllers/UserController.php public function store(Request $request) { $validated = $request->validate([ 'name' => 'required|string|max:255', 'email' => 'required|email|unique:users,email', ]); User::create($validated); return redirect('/users'); }
+// app/Http/Controllers/UserController.php
+public function store(Request $request)
+{
+    $validated = $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|unique:users,email',
+    ]);
+    User::create($validated);
+    return redirect('/users');
+}
 ```
 
 ### Exercice 2.1 : Formulaire sécurisé
 
-À vous de jouer [Exercices](./php/exercises/exercices-advanced2.1.md)
+À vous de jouer [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced2.1.html)
 
 ___
 
@@ -130,13 +188,29 @@ Créez une API REST avec Laravel :
 1. Créez une route API (routes/api.php) :
 
 ```php
-use App\Http\Controllers\UserController; Route::get('/users', [UserController::class, 'index']); Route::post('/users', [UserController::class, 'store']);
+use App\Http\Controllers\UserController;
+
+Route::get('/users', [UserController::class, 'index']);
+Route::post('/users', [UserController::class, 'store']);
 ```
 
 2. Exemple de réponse JSON :
 
 ```php
-// app/Http/Controllers/UserController.php public function index() { return response()->json(User::all()); }
+// app/Http/Controllers/UserController.php
+
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use Illuminate\Http\JsonResponse;
+
+class UserController extends Controller
+{
+    public function index(): JsonResponse
+    {
+        return response()->json(User::all());
+    }
+}
 ```
 
 Testez avec un outil comme Postman ou curl :
@@ -150,7 +224,28 @@ curl http://localhost:8000/api/users
 Laravel utilise **PHPUnit** pour les tests. Exemple :
 
 ```php
-// tests/Feature/UserTest.php namespace Tests\Feature; use Illuminate\Foundation\Testing\RefreshDatabase; use Tests\TestCase; use App\Models\User; class UserTest extends TestCase { use RefreshDatabase; public function test_can_list_users() { User::factory()->count(3)->create(); $response = $this->get('/api/users'); $response->assertStatus(200) ->assertJsonCount(3); } }
+// tests/Feature/UserTest.php
+
+namespace Tests\Feature;
+
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
+use App\Models\User;
+
+class UserTest extends TestCase
+{
+    use RefreshDatabase;
+
+    public function test_can_list_users(): void
+    {
+        User::factory()->count(3)->create();
+
+        $response = $this->get('/api/users');
+
+        $response->assertStatus(200)
+                ->assertJsonCount(3);
+    }
+}
 ```
 
 Configurer les tests :
@@ -158,7 +253,8 @@ Configurer les tests :
 2. Mettez à jour .env :
 
 ```text
-DB_CONNECTION=sqlite DB_DATABASE=database/database.sqlite
+DB_CONNECTION=sqlite 
+DB_DATABASE=database/database.sqlite
 ```
 
 3. Exécutez :
@@ -169,14 +265,14 @@ php artisan test
 
 ### Exercice 3.1 : API et tests
 
-À vous de jouer [Exercices](./php/exercises/exercices-advanced3.1.md)
+À vous de jouer [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced3.1.html)
 
 ___
 
 # Partie 4 : Projet en groupe – Application de gestion d’utilisateurs
 
-**Cliquez sur le lien** : [Projet](./php/exercises/project-advanced.md)
+**Cliquez sur le lien** : [Projet]({{ site.baseurl }}/php/exercises/project-advanced.html)
 
 ---
 
-[retour](./index.md)
+[retour]({{ site.baseurl }}/index.html)

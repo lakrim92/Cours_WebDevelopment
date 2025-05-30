@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/php-advanced.html" />
+<meta property="og:url" content="http://localhost:4000/php/php-advanced.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/php-advanced.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <div class="site-content">
+    <h1 id="support-de-cours--php-avanc">Support de cours : PHP Avancé</h1>
+<p>Bienvenue dans le cours <strong>PHP Avancé</strong> !</p>
+<p>Ce cours s’adresse aux apprenants ayant suivi Introduction à PHP ou possédant des bases solides (variables, fonctions, formulaires, MySQL, sessions). Vous apprendrez des techniques modernes : <strong>architecture MVC, ORM avec Eloquent (Laravel), sécurité (XSS, CSRF), API REST</strong>, et <strong>outils (Composer, PHPUnit</strong>). À travers des exercices complexes et un projet en groupe (application de gestion d’utilisateurs), vous serez prêt à développer des applications backend robustes et sécurisées.</p>
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+<ul>
+<li>Maîtriser l’<strong>architecture MVC</strong> avec Laravel.</li>
+<li>Utiliser <strong>Eloquent</strong> pour interagir avec une base de données.</li>
+<li>Implémenter des pratiques de <strong>sécurité</strong> (validation, protection XSS/CSRF).</li>
+<li>Développer une <strong>API REST</strong> avec Laravel.</li>
+<li>Configurer des <strong>outils</strong> comme Composer et PHPUnit pour tests unitaires.</li>
+<li>Développer un projet en groupe : une application de gestion d’utilisateurs.</li>
+</ul>
+<h3 id="prrequis">Prérequis</h3>
+<ul>
+<li><strong>Connaissances</strong> :
+<ul>
+<li>Maîtrise de PHP (voir Introduction à PHP).</li>
+<li>Familiarité avec MySQL, formulaires, sessions, et GET/POST.</li>
+<li>Notions de base sur HTML/CSS/JS (voir Introduction à HTML, CSS et JavaScript).</li>
+</ul>
+</li>
+<li>Outils :
+<ul>
+<li><a href="">Visual Studio Code</a> avec extensions PHP, Laravel.</li>
+<li><a href="">PHP</a> (version 8.1+ recommandée).</li>
+<li><a href="">Composer</a> pour gérer les dépendances.</li>
+<li><a href="">MySQL</a> ou <a href="">MariaDB</a>.</li>
+<li><a href="">Laravel</a> (installé via Composer).</li>
+<li>Navigateur moderne (Chrome, Firefox) avec outils de développement.</li>
+<li>Compte GitHub pour soumettre vos travaux (voir Introduction à GitHub).</li>
+</ul>
+</li>
+<li>Temps estimé : 12-15 heures (lectures, exercices, projet).</li>
+</ul>
+<h3 id="structure-du-cours">Structure du cours</h3>
+<p><strong>Partie 1 : Architecture MVC et Eloquent</strong></p>
+<p><strong>Partie 2 : Sécurité et validation</strong></p>
+<p><strong>Partie 3 : API REST et tests avec PHPUnit</strong></p>
+<p><strong>Partie 4 : Projet en groupe – Application de gestion d’utilisateurs</strong></p>
+<hr />
+<h1 id="partie-1--architecture-mvc-et-eloquent">Partie 1 : Architecture MVC et Eloquent</h1>
+<h2 id="architecture-mvc">Architecture MVC</h2>
+<p><strong>MVC</strong> (Model-View-Controller) organise le code :</p>
+<ul>
+<li>Model : Gère les données (base de données).</li>
+<li>View : Affiche l’interface utilisateur.</li>
+<li>Controller : Gère la logique et les requêtes.</li>
+</ul>
+<p>Exemple avec Laravel :</p>
+<h3 id="crez-un-projet-">1. Créez un projet :</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel user-management 
+<span class="nb">cd </span>user-management 
+php artisan serve
+</code></pre></div></div>
+<h3 id="crez-un-modle-et-un-contrleur-">2. Créez un modèle et un contrôleur :</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model User <span class="nt">-mcr</span>
+</code></pre></div></div>
+<ul>
+<li>-m : Crée une migration.</li>
+<li>-c : Crée un contrôleur.</li>
+<li>-r : Rend le contrôleur RESTful.</li>
+</ul>
+<h3 id="exemple-de-contrleur-apphttpcontrollersusercontrollerphp-">3. Exemple de contrôleur (app/Http/Controllers/UserController.php) :</h3>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">App\Http\Controllers</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">App\Models\User</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Http\Request</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">UserController</span> <span class="kd">extends</span> <span class="nc">Controller</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$users</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">all</span><span class="p">();</span>
+        <span class="k">return</span> <span class="nf">view</span><span class="p">(</span><span class="s1">'users.index'</span><span class="p">,</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">'users'</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h3 id="exemple-de-vue-resourcesviewsusersindexbladephp-">4. Exemple de vue (resources/views/users/index.blade.php) :</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Utilisateurs<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Liste des utilisateurs<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        @foreach ($users as $user)
+            <span class="nt">&lt;li&gt;</span>{{ $user-&gt;name }}<span class="nt">&lt;/li&gt;</span>
+        @endforeach
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<h2 id="eloquent-orm">Eloquent ORM</h2>
+<p><strong>Eloquent</strong> simplifie les interactions avec la base de données. Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/Models/User.php</span>
+<span class="kn">namespace</span> <span class="nn">App\Models</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">Illuminate\Database\Eloquent\Model</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">User</span> <span class="kd">extends</span> <span class="nc">Model</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$fillable</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'email'</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// Récupérer des utilisateurs</span>
+<span class="nv">$users</span> <span class="o">=</span> <span class="nc">User</span><span class="o">::</span><span class="nf">where</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'like'</span><span class="p">,</span> <span class="s1">'%John%'</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">();</span>
+</code></pre></div></div>
+<h3 id="exercice-11--liste-dutilisateurs-avec-mvc">Exercice 1.1 : Liste d’utilisateurs avec MVC</h3>
+<p><strong>À vous de jouer</strong> <a href="/php/exercises/exercices-advanced1.1.html">Exercices</a></p>
+<hr />
+<h1 id="partie-2--scurit-et-validation">Partie 2 : Sécurité et validation</h1>
+<h2 id="scurit">Sécurité</h2>
+<p>Protégez votre application contre :</p>
+<ul>
+<li><em><strong>XSS</strong></em> : Utilisez la syntaxe Blade  {{ $variable }}  pour échapper les sorties.</li>
+<li><em><strong>CSRF</strong></em> : Laravel inclut un token CSRF par défaut dans les formulaires (@csrf).</li>
+<li><em><strong>Injection SQL</strong></em> : Utilisez Eloquent ou des requêtes préparées.</li>
+</ul>
+<p>Exemple de formulaire sécurisé :</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">"POST"</span> <span class="na">action=</span><span class="s">"/users"</span><span class="nt">&gt;</span>
+    @csrf
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">required</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">required</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Ajouter<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>```
+
+## Validation
+
+Validez les entrées avec Laravel :
+
+```php
+// app/Http/Controllers/UserController.php
+public function store(Request $request)
+{
+    $validated = $request-&gt;validate([
+        'name' =&gt; 'required|string|max:255',
+        'email' =&gt; 'required|email|unique:users,email',
+    ]);
+    User::create($validated);
+    return redirect('/users');
+}
+</code></pre></div></div>
+<h3 id="exercice-21--formulaire-scuris">Exercice 2.1 : Formulaire sécurisé</h3>
+<p>À vous de jouer <a href="/php/exercises/exercices-advanced2.1.html">Exercices</a></p>
+<hr />
+<h1 id="partie-3--api-rest-et-tests-avec-phpunit">Partie 3 : API REST et tests avec PHPUnit</h1>
+<h2 id="api-rest">API REST</h2>
+<p>Créez une API REST avec Laravel :</p>
+<ol>
+<li>Créez une route API (routes/api.php) :</li>
+</ol>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">use</span> <span class="nc">App\Http\Controllers\UserController</span><span class="p">;</span>
+
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'index'</span><span class="p">]);</span>
+<span class="nc">Route</span><span class="o">::</span><span class="nf">post</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">,</span> <span class="p">[</span><span class="nc">UserController</span><span class="o">::</span><span class="n">class</span><span class="p">,</span> <span class="s1">'store'</span><span class="p">]);</span>
+</code></pre></div></div>
+<ol start="2">
+<li>Exemple de réponse JSON :</li>
+</ol>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/Http/Controllers/UserController.php</span>
+
+<span class="kn">namespace</span> <span class="nn">App\Http\Controllers</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">App\Models\User</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Http\JsonResponse</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">UserController</span> <span class="kd">extends</span> <span class="nc">Controller</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">():</span> <span class="kt">JsonResponse</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">response</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">json</span><span class="p">(</span><span class="nc">User</span><span class="o">::</span><span class="nf">all</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Testez avec un outil comme Postman ou curl :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:8000/api/users
+</code></pre></div></div>
+<h3 id="tests-avec-phpunit">Tests avec PHPUnit</h3>
+<p>Laravel utilise <strong>PHPUnit</strong> pour les tests. Exemple :</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// tests/Feature/UserTest.php</span>
+
+<span class="kn">namespace</span> <span class="nn">Tests\Feature</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">Illuminate\Foundation\Testing\RefreshDatabase</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Tests\TestCase</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">App\Models\User</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">UserTest</span> <span class="kd">extends</span> <span class="nc">TestCase</span>
+<span class="p">{</span>
+    <span class="kn">use</span> <span class="nc">RefreshDatabase</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">test_can_list_users</span><span class="p">():</span> <span class="kt">void</span>
+    <span class="p">{</span>
+        <span class="nc">User</span><span class="o">::</span><span class="nf">factory</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">count</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">create</span><span class="p">();</span>
+
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/api/users'</span><span class="p">);</span>
+
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="nf">assertStatus</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+                <span class="o">-&gt;</span><span class="nf">assertJsonCount</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Configurer les tests :</p>
+<ol>
+<li>Créez une base de données de test (ex. : database/database.sqlite).</li>
+<li>Mettez à jour .env :</li>
+</ol>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DB_CONNECTION=sqlite 
+DB_DATABASE=database/database.sqlite
+</code></pre></div></div>
+<ol start="3">
+<li>Exécutez :</li>
+</ol>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan <span class="nb">test</span>
+</code></pre></div></div>
+<h3 id="exercice-31--api-et-tests">Exercice 3.1 : API et tests</h3>
+<p>À vous de jouer <a href="/php/exercises/exercices-advanced3.1.html">Exercices</a></p>
+<hr />
+<h1 id="partie-4--projet-en-groupe--application-de-gestion-dutilisateurs">Partie 4 : Projet en groupe – Application de gestion d’utilisateurs</h1>
+<p><strong>Cliquez sur le lien</strong> : <a href="/php/exercises/project-advanced.html">Projet</a></p>
+<hr />
+<p><a href="/index.html">retour</a></p>
+
+    </div>
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>
