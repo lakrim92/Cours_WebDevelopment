@@ -6,7 +6,7 @@ title: Extensions PHP pour VS Code
 
 ---
 
-# Exercice 1.1 : Liste d’utilisateurs avec MVC
+## Exercice 1.1 : Liste d’utilisateurs avec MVC
 
 **Objectif** : Créer une application Laravel qui affiche une liste d’utilisateurs en utilisant l’architecture MVC.
 
