@@ -42,7 +42,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## Backend
+<h3>Backend</h3>
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">Nodejs ▼</button>
@@ -119,7 +119,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## Bases de données
+<h3>Bases de données</h3>
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">SQL ▼</button>
@@ -142,7 +142,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## API et Authentification
+<h3>API et Authentification</h3>
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">REST ▼</button>
@@ -174,7 +174,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## DevOps
+<h3>DevOps</h3>
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">DevOps ▼</button>
@@ -189,7 +189,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## Bonus Utiles
+<h3>Bonus Utiles</h3>
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">Bonus Utiles ▼</button>
@@ -202,7 +202,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## Barèmes de Notation
+<h3>Barèmes de Notation</h3>
 
 - HTML, CSS, JavaScript : [Exercices]({{ site.baseurl }}/grading/html-css-js-exercises.html) | [Projet]({{ site.baseurl }}/grading/html-css-js-project.html)
 - PHP : [Exercices]({{ site.baseurl }}/grading/php-exercises.html) | [Projet]({{ site.baseurl }}/grading/php-project.html)
@@ -210,17 +210,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## Exemples de Code
-
-Consultez les exemples sur GitHub :
-- [HTML, CSS, JavaScript](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/html-css-js)
-- [PHP](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/php)
-- [JavaScript](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/javascript)
-- [Introduction à GitHub](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/github-intro/examples)
-</div>
-
-<div class="section-container">
-## Instructions
+<h3>Instructions</h3>
 
 - **Lire les cours** : Utilisez les liens ci-dessus.
 - **Tester les exemples** :
@@ -231,6 +221,6 @@ Consultez les exemples sur GitHub :
 </div>
 
 <div class="section-container">
-## Contact
+<h3>Contact</h3>
 Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 </div>
