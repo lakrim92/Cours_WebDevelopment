@@ -203,19 +203,20 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 <div class="section-container">
 ## Barèmes de Notation
-<div class="dropdown-container">
-<div class="dropdown">
-  <button class="dropbtn">Barèmes de Notation ▼</button>
-  <div class="dropdown-content">
-    <a href="{{ site.baseurl }}/grading/html-css-js.html">Introduction à HTML-CSS-JS exercices</a>
-    <a href="{{ site.baseurl }}/grading/html-css-js-project.html">Introduction à HTML-CSS-JS Projet</a>
-    <a href="{{ site.baseurl }}/grading/php-exercices.html">Introduction à PHP exercices</a>
-    <a href="{{ site.baseurl }}/grading/php-project.html">Introduction à PHP Projet</a>
-    <a href="{{ site.baseurl }}/grading/javascript-exercices.html">Introduction à Javascript exercices</a>
-    <a href="{{ site.baseurl }}/grading/javascript-project.html">Introduction à Javascript Projet</a>
-  </div>
+
+- HTML, CSS, JavaScript : [Exercices]({{ site.baseurl }}/grading/html-css-js-exercises.html) | [Projet]({{ site.baseurl }}/grading/html-css-js-project.html)
+- PHP : [Exercices]({{ site.baseurl }}/grading/php-exercises.html) | [Projet]({{ site.baseurl }}/grading/php-project.html)
+- JavaScript : [Exercices]({{ site.baseurl }}/grading/javascript-exercises.html) | [Projet]({{ site.baseurl }}/grading/javascript-project.html)
 </div>
-</div>
+
+<div class="section-container">
+## Exemples de Code
+
+Consultez les exemples sur GitHub :
+- [HTML, CSS, JavaScript](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/html-css-js)
+- [PHP](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/php)
+- [JavaScript](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/javascript)
+- [Introduction à GitHub](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/github-intro/examples)
 </div>
 
 <div class="section-container">
@@ -231,6 +232,5 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 
 <div class="section-container">
 ## Contact
-
 Posez vos questions ! [Contact]({{ site.baseurl }}/contact.html)
 </div>
