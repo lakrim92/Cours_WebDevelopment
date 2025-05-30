@@ -219,22 +219,6 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-## Barèmes de Notation
-
-- JavaScript : [Exercices]({{ site.baseurl }}/grading/javascript-exercises.html) | [Projet]({{ site.baseurl }}/grading/javascript-project.html)
-</div>
-
-<div class="section-container">
-## Exemples de Code
-
-Consultez les exemples sur GitHub :
-- [HTML, CSS, JavaScript](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/html-css-js)
-- [PHP](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/php)
-- [JavaScript](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/javascript)
-- [Introduction à GitHub](https://github.com/lakrim92/Cours_WebDevelopment/tree/main/github-intro/examples)
-</div>
-
-<div class="section-container">
 ## Instructions
 
 - **Lire les cours** : Utilisez les liens ci-dessus.
