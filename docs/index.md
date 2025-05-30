@@ -10,7 +10,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 ## Cours
 
 <div class="section-container">
-### Frontend
+<h3>Frontend</h3>
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">HTML-CSS-JS ▼</button>
