@@ -1,3 +1,26 @@
+/* Style général */
+body {
+    font-family: 'Linux Libertine', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    /* Élargi pour plus d'espace */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    /* Fond léger pour contraste */
+}
+
+/* Conteneur principal pour les sections */
+.section-container {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
 /* Style des titres inspiré de Wikipédia */
 h1,
 h2,
@@ -15,19 +38,18 @@ h6 {
 h1 {
     font-size: 2.2em;
     font-weight: normal;
+    text-align: center;
+    /* Centré pour le titre principal */
 }
 
 h2 {
     font-size: 1.8em;
     font-weight: normal;
     background-color: #f5f5f5;
-    /* Fond gris clair */
     padding: 0.3em 0.6em;
-    /* Padding pour encadrer */
     display: inline-block;
-    /* Adapte le fond à la largeur du texte */
     border-radius: 4px;
-    /* Coins arrondis */
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -35,21 +57,17 @@ h3 {
     font-weight: normal;
 }
 
-/* Style du texte général */
-body {
-    font-family: 'Linux Libertine', 'Times New Roman', serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Style des menus déroulants */
+.dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* Espacement entre les menus */
+    margin: 20px 0;
 }
 
-/* Style des menus déroulants */
 .dropdown {
     position: relative;
-    display: inline-block;
-    margin: 10px 0;
 }
 
 .dropbtn {
@@ -59,7 +77,11 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    /* Bouton occupe toute la largeur du conteneur */
+    box-sizing: border-box;
 }
 
 .dropbtn:hover {
@@ -70,10 +92,12 @@ body {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    border-radius: 4px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* Coins nets pour les liens */
 }
 
 .dropdown-content a {
@@ -82,10 +106,28 @@ body {
     text-decoration: none;
     display: block;
     font-family: 'Linux Libertine', serif;
+    transition: background-color 0.2s;
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+}
+
+/* Style des séparateurs (<hr>) */
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 30px 0;
+}
+
+/* Style des listes (ex. : barèmes de notation) */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 /* Style pour les images de profil */
@@ -94,4 +136,30 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 4px;
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .section-container {
+        padding: 15px;
+        margin: 10px 10px;
+    }
+
+    .dropdown-container {
+        grid-template-columns: 1fr;
+        /* Une colonne sur mobile */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
