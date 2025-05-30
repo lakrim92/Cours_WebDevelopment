@@ -7,9 +7,9 @@ title: Cours de Développement Web
 
 Ce site regroupe des cours interactifs pour apprendre le développement web, conçus pour des débutants. Utilisez les menus ci-dessous pour naviguer.
 
-<div class="section-container">
 ## Cours
 
+<div class="section-container">
 ### Frontend
 <div class="dropdown-container">
 <div class="dropdown">
@@ -42,7 +42,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-### Backend
+## Backend
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">Nodejs ▼</button>
@@ -119,7 +119,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-### Bases de données
+## Bases de données
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">SQL ▼</button>
@@ -142,7 +142,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-### API et Authentification
+## API et Authentification
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">REST ▼</button>
@@ -174,7 +174,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-### DevOps
+## DevOps
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">DevOps ▼</button>
@@ -189,7 +189,7 @@ Ce site regroupe des cours interactifs pour apprendre le développement web, con
 </div>
 
 <div class="section-container">
-### Bonus Utiles
+## Bonus Utiles
 <div class="dropdown-container">
 <div class="dropdown">
   <button class="dropbtn">Bonus Utiles ▼</button>
