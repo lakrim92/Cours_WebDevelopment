@@ -878,7 +878,7 @@ Laravel affichera un rapport des tests passés ou échoués.
 
 ___
 
-# Partie 4 : Projet en groupe – Application de gestion d’utilisateurs
+# Partie 5 : Projet en groupe – Application de gestion d’utilisateurs
 
 **Cliquez sur le lien** : [Projet]({{ site.baseurl }}/php/exercises/project-advanced.html)
 
