@@ -158,3 +158,22 @@
         font-size: 1.5em !important;
     }
 }
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo-container img {
+    max-width: 80px;
+    /* Ajustez selon la taille souhaitée */
+    height: auto;
+}
+
+.site-content {
+    position: relative;
+    padding-top: 80px;
+    /* Espace pour éviter chevauchement avec le logo */
+}

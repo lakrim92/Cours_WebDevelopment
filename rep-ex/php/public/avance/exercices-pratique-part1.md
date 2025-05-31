@@ -1,6 +1,8 @@
-Solutions : Exercice 1.1 - Liste d’utilisateurs avec MVC
-Fichiers :
+# Solutions : Exercice 1.1 - Liste d’utilisateurs avec MVC
 
+## Fichiers :
+
+```php
 database/migrations/*_create_users_table.php :
 
 Schema::create('users', function (Blueprint $table) {
@@ -9,8 +11,9 @@ Schema::create('users', function (Blueprint $table) {
     $table->string('email')->unique();
     $table->timestamps();
 });
+``` 
 
-
+```php
 app/Models/User.php :
 
 namespace App\Models;
@@ -21,8 +24,9 @@ class User extends Model
 {
     protected $fillable = ['name', 'email'];
 }
+```
 
-
+```php
 app/Http/Controllers/UserController.php :
 
 namespace App\Http\Controllers;
@@ -38,8 +42,9 @@ class UserController extends Controller
         return view('users.index', compact('users'));
     }
 }
+```
 
-
+```php
 resources/views/users/index.blade.php :
 
 <!DOCTYPE html>
@@ -57,21 +62,25 @@ resources/views/users/index.blade.php :
     </ul>
 </body>
 </html>
-
-
+```
+```php
 routes/web.php :
 
 use App\Http\Controllers\UserController;
 
 Route::get('/users', [UserController::class, 'index']);
 
-Commandes :
+```
+
+## Commandes :
+
+```bash
 composer create-project laravel/laravel user-management
 cd user-management
 php artisan make:model User -mcr
 php artisan migrate
 php artisan serve
-
+```
 
 Solutions : Exercice 1.2 - Ajout d’un utilisateur avec Eloquent
 Fichiers :

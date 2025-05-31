@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Extensions PHP pour VS Code
+title: # Architecture MVC et Eloquent
 ---
 # Architecture MVC et Eloquent
 
 ---
 
-## Exercice 1.1 : Liste d’utilisateurs avec MVC
+# Exercice 1.1 : Liste d’utilisateurs avec MVC
 
 **Objectif** : Créer une application Laravel qui affiche une liste d’utilisateurs en utilisant l’architecture MVC.
 

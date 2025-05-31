@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Extensions PHP pour VS Code
+title:  Les bases de PHP avec formulaires
 ---
+
+#  Les bases de PHP avec formulaires
 
 ### 3.3 Exercices pratiques
 

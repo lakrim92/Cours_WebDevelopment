@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests automatisés avec PHPUnit | Cours Web Development</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Tests automatisés avec PHPUnit | Cours Web Development</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Tests automatisés avec PHPUnit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Support de cours pour le développement web" />
+<meta property="og:description" content="Support de cours pour le développement web" />
+<link rel="canonical" href="http://localhost:4000/php/exercises/exercices-advanced4.1.html" />
+<meta property="og:url" content="http://localhost:4000/php/exercises/exercices-advanced4.1.html" />
+<meta property="og:site_name" content="Cours Web Development" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tests automatisés avec PHPUnit" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Tests automatisés avec PHPUnit","url":"http://localhost:4000/php/exercises/exercices-advanced4.1.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="/img/light-logo.png" alt="Logo du Cours Ai-Autoheal">
+    </div>
+    <div class="site-content">
+    <h1 id="tests-automatiss-avec-phpunit">Tests automatisés avec PHPUnit</h1>
+<hr />
+<h2 id="exercice-41--test-de-rcupration-de-la-liste-des-utilisateurs">Exercice 4.1 : Test de récupération de la liste des utilisateurs</h2>
+<p><strong>Objectif</strong> : Écrire un test fonctionnel pour vérifier que l’API peut lister tous les utilisateurs.</p>
+<h2 id="instructions-">Instructions :</h2>
+<ol>
+<li>Créez un fichier de test dans <code>tests/Feature/UserApiTest.php</code>.</li>
+<li>Écrivez un test pour vérifier qu’une requête <code>GET</code> à <code>/api/users</code> retourne un code de statut 200 et le bon nombre d’utilisateurs.</li>
+<li>Utilisez <code>RefreshDatabase</code> pour garantir une base de données propre à chaque test.</li>
+<li>Créez 5 utilisateurs de test à l’aide d’une factory.</li>
+<li>Vérifiez que la réponse JSON contient exactement 5 utilisateurs.</li>
+<li>Configurez une base de données <strong>SQLite</strong> pour les tests.</li>
+<li>Exécutez les tests et confirmez qu’ils passent.</li>
+</ol>
+<h2 id="livrables-">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation-">Critères d’évaluation :</h2>
+<ul>
+<li>Configuration correcte du test avec <code>RefreshDatabase</code>.</li>
+<li>Utilisation appropriée de la factory pour créer des utilisateurs.</li>
+<li>Assertions précises pour le code de statut et le nombre d’éléments <code>JSON</code>.</li>
+<li>Base de données <strong>SQLite</strong> configurée.</li>
+</ul>
+<h1 id="exercice-42--test-de-cration-dun-utilisateur">Exercice 4.2 : Test de création d’un utilisateur</h1>
+<p><strong>Objectif</strong> : Écrire un test pour vérifier que l’API peut créer un utilisateur.</p>
+<h2 id="instructions--1">Instructions :</h2>
+<ol>
+<li>Dans <code>tests/Feature/UserApiTest.php</code>, ajoutez un test pour une requête <code>POST</code> à <code>/api/users</code>.</li>
+<li>Envoyez un payload valide avec <code>name</code> et <code>email</code>.</li>
+<li>Vérifiez que la réponse retourne un code de statut 201 et les données de l’utilisateur créé.</li>
+<li>Vérifiez que l’utilisateur est enregistré dans la base de données.</li>
+<li>Assurez-vous que le test utilise <code>RefreshDatabase</code>.</li>
+<li>Exécutez les tests et confirmez qu’ils passent.</li>
+</ol>
+<h2 id="livrables--1">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation--1">Critères d’évaluation :</h2>
+<ul>
+<li>Simulation correcte de la requête <code>POST</code>.</li>
+<li>Payload valide et assertions de réponse.</li>
+<li>Vérification de la base de données.</li>
+<li>Utilisation de <code>RefreshDatabase</code>.</li>
+</ul>
+<h1 id="exercice-43--test-de-validation-pour-la-cration-dun-utilisateur">Exercice 4.3 : Test de validation pour la création d’un utilisateur</h1>
+<p><strong>Objectif</strong> : Tester les règles de validation de l’API pour la création d’un utilisateur.</p>
+<h2 id="instructions--2">Instructions :</h2>
+<ol>
+<li>Dans <code>tests/Feature/UserApiTest.php</code>, ajoutez un test pour vérifier les erreurs de validation d’une requête <code>POST</code> à <code>/api/users</code>.</li>
+<li>Envoyez un payload invalide (par exemple, <code>name</code> vide ou <code>email</code> non valide).</li>
+<li>Vérifiez que la réponse retourne un code de statut 422 et inclut des messages d’erreur.</li>
+<li>Assurez-vous que le test utilise <code>RefreshDatabase</code>.</li>
+<li>Exécutez les tests et confirmez qu’ils passent.</li>
+</ol>
+<h2 id="livrables--2">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation--2">Critères d’évaluation :</h2>
+<ul>
+<li>Simulation correcte des données invalides.</li>
+<li>Assertion pour le statut 422 et les messages d’erreur.</li>
+<li>Utilisation de <code>RefreshDatabase</code>.</li>
+</ul>
+<h1 id="exercice-44--test-de-mise--jour-et-suppression-dun-utilisateur">Exercice 4.4 : Test de mise à jour et suppression d’un utilisateur</h1>
+<p><strong>Objectif</strong> : Écrire des tests pour la mise à jour et la suppression d’un utilisateur via l’API.</p>
+<h2 id="instructions--3">Instructions :</h2>
+<ol>
+<li>Dans <code>tests/Feature/UserApiTest.php</code>, ajoutez des tests pour :
+<ul>
+<li>Une requête <code>PUT</code> à <code>/api/users/{id}</code> pour mettre à jour name et email d’un utilisateur.</li>
+<li>Une requête <code>DELETE</code> à <code>/api/users/{id}</code> pour supprimer un utilisateur.</li>
+</ul>
+</li>
+<li>Pour le test de mise à jour, vérifiez un code de statut 200 et les données mises à jour dans la réponse et la base de données.</li>
+<li>Pour le test de suppression, vérifiez un code de statut 204 et que l’utilisateur est supprimé de la base de données.</li>
+<li>Utilisez RefreshDatabase et créez un utilisateur de test avec une factory.</li>
+<li>Exécutez les tests et confirmez qu’ils passent.</li>
+</ol>
+<h2 id="livrables--3">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation--3">Critères d’évaluation :</h2>
+<ul>
+<li>Tests corrects pour la mise à jour et la suppression.</li>
+<li>Assertions appropriées pour les codes de statut et l’état de la base de données.</li>
+<li>Utilisation de <code>RefreshDatabase</code> et de la <code>factory</code>.</li>
+</ul>
+<h1 id="exercice-45--test-daccs-non-autoris--lapi-protge">Exercice 4.5 : Test d’accès non autorisé à l’API protégée</h1>
+<p><strong>Objectif</strong> : Tester les endpoints de l’API protégés par l’authentification Sanctum.</p>
+<h2 id="instructions--4">Instructions :</h2>
+<ol>
+<li>Dans <code>tests/Feature/UserApiTest.php</code>, ajoutez un test pour vérifier qu’une requête <code>GET</code> à <code>/api/users</code> sans token retourne un code de statut 401.</li>
+<li>Ajoutez un test pour vérifier qu’une requête <code>POST</code> à <code>/api/users</code> avec un token valide réussit (code 201).</li>
+<li>Utilisez une factory pour créer un utilisateur et générez un token Sanctum pour le test autorisé.</li>
+<li>Assurez-vous que <code>RefreshDatabase</code> est utilisé.</li>
+<li>Exécutez les tests et confirmez qu’ils passent.</li>
+</ol>
+<h2 id="livrables--4">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation--4">Critères d’évaluation :</h2>
+<ul>
+<li>Test correct pour l’accès non autorisé (401).</li>
+<li>Test réussi avec token (201).</li>
+<li>Utilisation appropriée de <code>Sanctum</code> et <code>RefreshDatabase</code>.</li>
+</ul>
+<h2 id="instructions-gnrales-">Instructions générales :</h2>
+<ul>
+<li>Utilisez le projet <code>Laravel user-management</code>.</li>
+<li>Testez avec la commande <code>php artisan test</code>.</li>
+<li>Vérifiez les erreurs dans <code>storage/logs/laravel.log</code>.</li>
+<li>Poussez le code sur <strong>GitHub</strong> avec un <strong>README</strong> expliquant l’exécution des tests.</li>
+<li>Fournissez les captures d’écran demandées.</li>
+<li>Ressources : <a href="https://laravel.com/docs/12.x/testing">Documentation Laravel Testing</a>, <a href="https://phpunit.de/index.html">PHPUnit</a>, <a href="https://laravel-france.com/posts/comment-fonctionne-laravel-sanctum">Sanctum</a>.</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
+<p><a href="/php/php-advanced.html">retour</a></p>
+
+    </div>
+    <script src="/assets/js/dropdown.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <title>API REST et tests avec PHPUnit | Cours Web Development</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -13,9 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
     <script>hljs.highlightAll();</script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<title>API REST et tests avec PHPUnit | Cours Web Development</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:title" content="API REST et tests avec PHPUnit" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Support de cours pour le développement web" />
 <meta property="og:description" content="Support de cours pour le développement web" />
@@ -24,22 +24,149 @@
 <meta property="og:site_name" content="Cours Web Development" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<meta property="twitter:title" content="API REST et tests avec PHPUnit" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/exercises/exercices-advanced3.1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"API REST et tests avec PHPUnit","url":"http://localhost:4000/php/exercises/exercices-advanced3.1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
+    <div class="logo-container">
+        <img src="/img/light-logo.png" alt="Logo du Cours Ai-Autoheal">
+    </div>
     <div class="site-content">
-    <h2 id="exercice-31--api-et-tests">Exercice 3.1 : API et tests</h2>
+    <h1 id="api-rest-et-tests-avec-phpunit">API REST et tests avec PHPUnit</h1>
+<hr />
+<h2 id="exercice-31--cration-dune-api-rest-pour-les-utilisateurs">Exercice 3.1 : Création d’une API REST pour les utilisateurs</h2>
+<p><strong>Objectif</strong> : Développer une API REST pour gérer les utilisateurs.</p>
+<h2 id="instructions-">Instructions :</h2>
 <ol>
-<li>Reprenez le projet de l’exercice 2.1.</li>
-<li>Créez une API REST pour lister et ajouter des utilisateurs.</li>
-<li>Écrivez un test PHPUnit pour vérifier que l’API retourne la liste des utilisateurs.</li>
-<li>Testez l’API avec Postman ou curl.</li>
+<li>Dans routes/api.php, définissez des routes pour lister tous les utilisateurs (<code>GET /api/users</code>) et créer un utilisateur (<code>POST /api/users</code>).</li>
+<li>Modifiez le contrôleur <code>UserController</code> pour implémenter les méthodes index (retourne tous les utilisateurs en JSON) et store (crée un utilisateur avec validation).</li>
+<li>Validez les champs name (<code>requis, texte, max 255 caractères</code>) et email (<code>requis, email valide, unique</code>).</li>
+<li>Retournez une réponse <code>JSON</code> avec un code <code>HTTP 201</code> pour la création.</li>
+<li>Testez l’API avec <code>Postman</code> ou <code>curl</code> pour lister et créer un utilisateur.</li>
 </ol>
+<h2 id="livrables-">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>routes/api.php</code>, <code>UserController.php</code>.</li>
+<li>Captures d’écran des requêtes <code>Postman/curl</code> et <code>réponses JSON</code>.</li>
+</ul>
+<h2 id="critres-dvaluation-">Critères d’évaluation :</h2>
+<ul>
+<li>Routes <strong>API</strong> correctes.</li>
+<li>Réponses <strong>JSON</strong> valides.</li>
+<li>Validation des données.</li>
+<li>Code <strong>HTTP 201</strong> pour création.</li>
+</ul>
+<h1 id="exercice-32--extension-de-lapi-rest-avec-mise--jour-et-suppression">Exercice 3.2 : Extension de l’API REST avec mise à jour et suppression</h1>
+<p><strong>Objectif</strong> : Ajouter des endpoints pour modifier et supprimer des utilisateurs.</p>
+<h2 id="instructions--1">Instructions :</h2>
+<ol>
+<li>Ajoutez des routes dans <code>routes/api.php</code> pour mettre à jour un utilisateur (<code>PUT /api/users/{id}</code>) et le supprimer (<code>DELETE /api/users/{id}</code>).</li>
+<li>Implémentez les méthodes <code>update</code> et <code>destroy</code> dans <code>UserController</code> pour gérer ces requêtes.</li>
+<li>Validez les données pour <code>update</code> (<code>name requis</code>, <code>email unique</code> sauf pour l’utilisateur courant).</li>
+<li>Retournez des réponses <strong>JSON</strong> avec codes <strong>HTTP</strong> appropriés (200 pour mise à jour, 204 pour suppression).</li>
+<li>Testez avec <code>Postman</code> ou <code>curl</code>.</li>
+</ol>
+<h2 id="livrables--1">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>routes/api.php</code>, <code>UserController.php</code>.</li>
+<li>Captures d’écran des requêtes et réponses.</li>
+</ul>
+<h2 id="critres-dvaluation--1">Critères d’évaluation :</h2>
+<ul>
+<li>Routes pour mise à jour et suppression.</li>
+<li>Validation correcte pour update.</li>
+<li>Codes HTTP appropriés.</li>
+</ul>
+<ul>
+<li>Réponses JSON fonctionnelles.</li>
+</ul>
+<h1 id="exercice-33--tests-unitaires-avec-phpunit">Exercice 3.3 : Tests unitaires avec PHPUnit</h1>
+<p><strong>Objectif</strong> : Écrire des tests unitaires pour l’API des utilisateurs.</p>
+<p>##Instructions :</p>
+<ol>
+<li>Créez un test dans <code>tests/Feature/UserApiTest.php</code> pour vérifier :
+<ul>
+<li>La récupération de la liste des utilisateurs (<code>GET /api/users</code>).</li>
+<li>La création d’un utilisateur (<code>POST /api/users</code>).</li>
+</ul>
+</li>
+<li>Utilisez <code>RefreshDatabase</code> pour réinitialiser la base de données entre les tests.</li>
+<li>Vérifiez les codes <strong>HTTP</strong> (200 pour liste, 201 pour création) et le contenu <strong>JSON</strong>.</li>
+<li>Configurez une base de données de test (ex. : <strong>SQLite</strong>).</li>
+<li>Exécutez les tests avec <code>php artisan test</code>.</li>
+</ol>
+<h2 id="livrables--2">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation--2">Critères d’évaluation :</h2>
+<ul>
+<li>Tests fonctionnels pour <code>GET</code> et <code>POST</code>.</li>
+<li>Utilisation de RefreshDatabase.</li>
+<li>Vérification des codes <code>HTTP</code> et <code>JSON</code>.</li>
+<li>Configuration de la base de test.</li>
+</ul>
+<h1 id="exercice-34--scurisation-de-lapi-avec-authentification">Exercice 3.4 : Sécurisation de l’API avec authentification</h1>
+<p><strong>Objectif</strong> : Protéger les endpoints de l’API avec une authentification par token.</p>
+<h2 id="instructions--2">Instructions :</h2>
+<ol>
+<li>Configurez Laravel Sanctum pour l’authentification par token.</li>
+<li>Protégez les routes /api/users (<code>GET, POST, PUT, DELETE</code>) avec le middleware <code>auth:sanctum</code>.</li>
+<li>Créez une route pour générer un token (<code>POST /api/login</code>) en vérifiant les identifiants.</li>
+<li>Testez l’accès aux endpoints avec un token valide et invalide via <code>Postman</code>.</li>
+<li>Vérifiez que les endpoints sont inaccessibles sans authentification.</li>
+</ol>
+<h2 id="livrables--3">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>routes/api.php</code>, <code>UserController.php</code>, configuration Sanctum.</li>
+<li>Captures d’écran des requêtes avec/sans token.</li>
+</ul>
+<h2 id="critres-dvaluation--3">Critères d’évaluation :</h2>
+<ul>
+<li>Installation de Sanctum.</li>
+<li>Routes protégées.</li>
+<li>Génération de token fonctionnelle.</li>
+<li>Vérification d’accès sécurisé.</li>
+</ul>
+<h1 id="exercice-35--test-avanc-avec-phpunit-et-authentification">Exercice 3.5 : Test avancé avec PHPUnit et authentification</h1>
+<p><strong>Objectif</strong> : Écrire des tests pour les endpoints protégés par authentification.</p>
+<h2 id="instructions--3">Instructions :</h2>
+<ol>
+<li>Ajoutez des tests dans <code>UserApiTest.ph</code>p pour vérifier :
+<ul>
+<li>L’accès non autorisé à <code>/api/users</code> sans token (code 401).</li>
+<li>La création d’un utilisateur avec un token valide.</li>
+</ul>
+</li>
+<li>Créez un utilisateur de test avec un token Sanctum dans le setup du test.</li>
+<li>Utilisez actingAs pour simuler l’authentification.</li>
+<li>Exécutez les tests et vérifiez les résultats.</li>
+</ol>
+<h2 id="livrables--4">Livrables :</h2>
+<ul>
+<li>Fichier : <code>UserApiTest.php</code>.</li>
+<li>Capture d’écran des résultats des tests.</li>
+</ul>
+<h2 id="critres-dvaluation--4">Critères d’évaluation :</h2>
+<ul>
+<li>Tests pour accès non autorisé et autorisé.</li>
+<li>Utilisation de actingAs et Sanctum.</li>
+<li>Résultats de tests corrects.</li>
+</ul>
+<h2 id="instructions-gnrales-">Instructions générales :</h2>
+<ul>
+<li>Utilisez un projet <code>Laravel user-management</code>.</li>
+<li>Testez dans <code>Postman</code> ou <code>curl</code>.</li>
+<li>Vérifiez les erreurs dans <code>storage/logs/laravel.log</code>.</li>
+<li>Poussez sur GitHub avec <code>README</code>.</li>
+<li>Fournissez les captures d’écran.</li>
+<li>Ressources : <a href="https://github.com/laravel/docs">Laravel Docs</a>, <a href="https://spatie.be/docs/laravel-permission/v6/introduction">Spatie</a>, <a href="https://phpunit.de/index.html">PHPUnit</a>.</li>
+</ul>
 <h2 id="contact">Contact</h2>
 <p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
 <p><a href="/php/php-advanced.html">retour</a></p>

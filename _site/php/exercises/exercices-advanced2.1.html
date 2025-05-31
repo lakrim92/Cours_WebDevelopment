@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extensions PHP pour VS Code | Cours Web Development</title>
+    <title>Sécurité et validation | Cours Web Development</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -13,9 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
     <script>hljs.highlightAll();</script>
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Extensions PHP pour VS Code | Cours Web Development</title>
+<title>Sécurité et validation | Cours Web Development</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Extensions PHP pour VS Code" />
+<meta property="og:title" content="Sécurité et validation" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Support de cours pour le développement web" />
 <meta property="og:description" content="Support de cours pour le développement web" />
@@ -24,22 +24,135 @@
 <meta property="og:site_name" content="Cours Web Development" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Extensions PHP pour VS Code" />
+<meta property="twitter:title" content="Sécurité et validation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Extensions PHP pour VS Code","url":"http://localhost:4000/php/exercises/exercices-advanced2.1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Support de cours pour le développement web","headline":"Sécurité et validation","url":"http://localhost:4000/php/exercises/exercices-advanced2.1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 <body>
+    <div class="logo-container">
+        <img src="/img/light-logo.png" alt="Logo du Cours Ai-Autoheal">
+    </div>
     <div class="site-content">
-    <h2 id="exercice-21--formulaire-scuris">Exercice 2.1 : Formulaire sécurisé</h2>
+    <h1 id="scurit-et-validation">Sécurité et validation</h1>
+<hr />
+<h1 id="exercice-21--formulaire-scuris-avec-validation">Exercice 2.1 : Formulaire sécurisé avec validation</h1>
+<p><strong>Objectif</strong> : Créer un formulaire sécurisé pour ajouter un utilisateur, avec validation et affichage des erreurs.</p>
+<h2 id="instructions-">Instructions :</h2>
 <ol>
-<li>Reprenez le projet de l’exercice 1.1.</li>
-<li>Ajoutez un formulaire pour créer un utilisateur avec validation (nom, email).</li>
-<li>Protégez contre XSS et CSRF.</li>
-<li>Affichez les erreurs de validation dans la vue.</li>
+<li>Créez une vue Blade pour un formulaire d’ajout d’utilisateur avec les champs <code>name</code> (<code>obligatoire</code>, <code>texte</code>) et <code>email</code> (<code>obligatoire</code>, <code>email valide</code>, unique dans <code>users</code>).</li>
+<li>Ajoutez la protection <strong>CSRF</strong>.</li>
+<li>Utilisez <code>old()</code> pour préremplir les champs en cas d’erreur.</li>
+<li>Affichez les erreurs spécifiques à chaque champ.</li>
+<li>Implémentez une méthode dans le contrôleur pour valider les données et créer l’utilisateur.</li>
+<li>Testez en soumettant des données invalides (ex. : <code>email non valide</code>) et <code>valides</code>.</li>
 </ol>
+<h2 id="livrables-">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>vue</code>, <code>contrôleur</code>.</li>
+<li>Capture d’écran du formulaire avec erreurs.</li>
+</ul>
+<h2 id="critres-dvaluation-">Critères d’évaluation :</h2>
+<ul>
+<li>Formulaire avec <strong>CSRF</strong>.</li>
+<li>Validation correcte (<code>name</code>, <code>email</code>).</li>
+<li>Affichage des erreurs et préremplissage.</li>
+<li>Création d’utilisateur fonctionnelle.</li>
+</ul>
+<hr />
+<h1 id="exercice-22--gestion-des-erreurs-et-messages-flash">Exercice 2.2 : Gestion des erreurs et messages flash</h1>
+<p><strong>Objectif</strong> : Améliorer l’expérience utilisateur avec des messages d’erreurs globaux et des messages flash.</p>
+<h2 id="instructions--1">Instructions :</h2>
+<ol>
+<li>Modifiez la vue du formulaire pour afficher une liste globale des erreurs en haut si la validation échoue.</li>
+<li>Ajoutez un message flash de succès dans le contrôleur après ajout d’un utilisateur.</li>
+<li>Affichez le message flash dans la vue de la liste des utilisateurs.</li>
+<li>Testez avec une validation échouée et réussie.</li>
+</ol>
+<h2 id="livrables--1">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>vues</code>, <code>contrôleur</code>.</li>
+<li>Capture d’écran avec erreurs globales et message flash.</li>
+</ul>
+<h2 id="critres-dvaluation--1">Critères d’évaluation :</h2>
+<ul>
+<li>Affichage des erreurs globales.</li>
+<li>Message flash après succès.</li>
+<li>Affichage correct du message flash.</li>
+</ul>
+<h1 id="exercice-23--authentification-avec-laravel-breeze">Exercice 2.3 : Authentification avec Laravel Breeze</h1>
+<ol>
+<li>Installez <strong>Laravel Breeze</strong> avec l’option <strong>Blade</strong>.</li>
+<li>Protégez la route <code>/users</code> avec le <code>middleware auth</code>.</li>
+<li>Affichez le nom de l’utilisateur connecté dans la vue de la liste des utilisateurs.</li>
+<li>Ajoutez un lien de déconnexion.</li>
+<li>Testez l’inscription, la connexion, et l’accès sécurisé à <code>/users</code>.</li>
+</ol>
+<h2 id="livrables--2">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>routes</code>, <code>vue</code>.</li>
+<li>Capture d’écran de la page avec utilisateur connecté.</li>
+</ul>
+<h2 id="critres-dvaluation--2">Critères d’évaluation :</h2>
+<ul>
+<li>Installation de <strong>Breeze</strong>.</li>
+<li>Route protégée.</li>
+<li>Affichage du nom et lien de déconnexion.</li>
+</ul>
+<h1 id="exercice-24--gestion-des-rles-avec-spatie-laravel-permission">Exercice 2.4 : Gestion des rôles avec Spatie Laravel Permission</h1>
+<p><strong>Objectif</strong> : Restreindre l’ajout d’utilisateurs aux administrateurs avec une permission spécifique.</p>
+<h2 id="instructions--2">Instructions :</h2>
+<ol>
+<li>Installez <strong>Spatie Laravel Permission</strong>.</li>
+<li>Configurez le modèle <code>User</code> avec le trait <code>HasRoles</code>.</li>
+<li>Créez 2 rôles (<code>admin, user</code>) et 1 permission (<code>edit users</code>) via un <code>seeder</code>.</li>
+<li>Protégez la route d’ajout d’utilisateur avec la permission edit users.</li>
+<li>Affichez un bouton d’ajout dans la liste uniquement pour les utilisateurs ayant la permission <code>edit_users</code>.</li>
+<li>Testez avec un utilisateur admin et un utilisateur normal.</li>
+</ol>
+<h2 id="livrables--3">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>modèle</code>, <code>seeder</code>, <code>routes</code>, <code>vue</code>.</li>
+<li>Capture d’écran avec bouton conditionnel.</li>
+</ul>
+<h2 id="critres-dvaluation--3">Critères d’évaluation :</h2>
+<ul>
+<li>Installation correcte de <strong>Spatie</strong>.</li>
+<li>Rôles et permission créés.</li>
+<li>Route protégée.</li>
+<li>Bouton conditionnel.</li>
+</ul>
+<h1 id="exercice-25--formulaire-scuris-avanc-avec-messages-flash">Exercice 2.5 : Formulaire sécurisé avancé avec messages flash</h1>
+<ol>
+<li>Créez une vue pour un formulaire avec des champs <code>name</code>, <code>email</code>, et <code>phone</code> (<code>optionnel, format téléphone valide</code>).</li>
+<li>Ajoutez la protection <strong>CSRF</strong> et la validation (<code>name: requis, email: unique, phone: format téléphone ou null</code>).</li>
+<li>Affichez les erreurs globales et spécifiques.</li>
+<li>Ajoutez un message flash de succès après ajout.</li>
+<li>Affichez le message flash dans la liste des utilisateurs.</li>
+<li>Testez avec données valides et invalides.</li>
+</ol>
+<h2 id="livrables--4">Livrables :</h2>
+<ul>
+<li>Fichiers : <code>vue</code>, <code>contrôleur</code>.</li>
+<li>Capture d’écran avec erreurs et message flash.</li>
+</ul>
+<h2 id="critres-dvaluation--4">Critères d’évaluation :</h2>
+<ul>
+<li>Formulaire avec validation avancée.</li>
+<li>Affichage des erreurs.</li>
+<li>Message flash fonctionnel.</li>
+</ul>
+<p>Instructions générales :</p>
+<ul>
+<li>Utilisez un projet <code>Laravel user-management</code>.</li>
+<li>Testez dans un navigateur.</li>
+<li>Vérifiez les erreurs dans <code>logs/php_errors.log</code>.</li>
+<li>Poussez sur GitHub avec <code>README</code>.</li>
+<li>Fournissez les captures d’écran.</li>
+<li>Ressources : <a href="https://github.com/laravel/docs">Laravel Docs</a>, <a href="https://spatie.be/docs/laravel-permission/v6/introduction">Spatie</a>.</li>
+</ul>
 <h2 id="contact">Contact</h2>
 <p>Posez vos questions ! <a href="/contact.html">Contact</a></p>
 <p><a href="/php/php-advanced.html">retour</a></p>

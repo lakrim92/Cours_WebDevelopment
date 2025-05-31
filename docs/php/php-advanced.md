@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Extensions PHP pour VS Code
+title: PHP Avancé
 ---
 
 # Support de cours : PHP Avancé
@@ -662,9 +662,9 @@ Route::group(['middleware' => ['permission:edit articles']], function () {
 
 > ✅ Cette méthode est robuste et largement utilisée dans la communauté Laravel pour gérer les autorisations avancées.
 
-### Exercice 2.5 : Formulaire sécurisé
+## Exercice 2.5 
 
-À vous de jouer [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced2.1.html)
+**À vous de jouer** [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced2.1.html)
 
 ___
 
@@ -776,9 +776,9 @@ Laravel propose des mécanismes comme :
 - Authentification (ex : tokens JWT, OAuth)
 - Validation des données pour éviter les erreurs ou injections malveillantes
 
-### Exercice 3.1 : 
+## Exercice 3.1  
 
-À vous de jouer [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced2.1.html)
+**À vous de jouer** [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced3.1.html)
 
 ---
 
@@ -878,7 +878,9 @@ Laravel affichera un rapport des tests passés ou échoués.
 - Tu détectes rapidement les bugs
 - Tu peux automatiser ces tests dans un système d’intégration continue (CI/CD)
 
-À vous de jouer [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced3.1.html)
+## Exercice 4.1
+
+**À vous de jouer** [Exercices]({{ site.baseurl }}/php/exercises/exercices-advanced4.1.html)
 
 ___
 

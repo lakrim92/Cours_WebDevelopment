@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Extensions PHP pour VS Code
+title: Projet en groupe - Création d’une application web interactive
 ---
+
+# Projet en groupe - Création d’une application web interactive
 
 # Partie 5 : Projet en groupe - Création d’une application web interactive
 

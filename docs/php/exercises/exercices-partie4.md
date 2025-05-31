@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Extensions PHP pour VS Code
+title: Les bases de PHP avec tableaux et boucles
 ---
 
-### 4.3 Exercices pratiques
+### 4.3 Les bases de PHP avec tableaux et boucles
 
 
 ## Contexte : 
