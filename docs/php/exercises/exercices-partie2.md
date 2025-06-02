@@ -10,9 +10,7 @@ title: Les bases de PHP
 
 ### Exercices PHP - Mise en pratique
 
----
-
-### Contexte : 
+## Contexte : 
 
 Cette partie couvre la syntaxe de base, les variables, les conditions, les boucles, les tableaux, et l'intégration avec HTML. Les exercices visent à pratiquer ces concepts dans des scripts PHP simples.
 
